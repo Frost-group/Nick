@@ -1,3 +1,5 @@
+Folders containing relevant files for FF development for OBT,  Initially doing with fully glycolated sidechains
+
 # Filename keys
 OT = oxythiophene
 OBT = oxy-bi-thiophene

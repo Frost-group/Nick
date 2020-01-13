@@ -15,25 +15,177 @@
 
 [ atoms ]
 ; Left thiophene unit (Sinister)
- CS1
- CS2 	
- CS3
- CS4
- SS
- OS
- HS
+; name type charge chargegroup
+ CS1	CSA	+0.029	1
+ CS2 	CSB	+0.256	2
+ CS3	CSB	-0.340	3
+ CS4	CSA	+0.112	4
+ SS	ST	-0.231	5
+ OS	OSR	-0.272  6
+ HS	HCS	+0.244	3 
+; Total charge of -0.202
 
 ; Right thiophene unit (Dextrose) 
- CD1
- CD2
- CD3
- CD4
- SD
- OD
- HD
+ CD1	CSA	+0.029	7
+ CD2	CSB	+0.256	8
+ CD3	CSB	-0.340	9
+ CD4	CSA	+0.112	10
+ SD	ST      -0.231	11
+ OD	OSR     -0.272  12     
+ HD	HCS	+0.244	9
+; Total charge of -0.202
 
-
-
-
-
+; Left sidechain 
+ C0	CT	X	13
+ H01	HC	X	13
+ H02	HC	X	13
+ C1	CT	X	14
+ H11	HT	X	14
+ H12	HT	X	14
+ O2	OT	X	15
+ C3	CT	X	16
+ H31	HT	X	16
+ H32	HT	X	16
+ C4 	CT	X	17
+ H41	HT	X	17
+ H42	HT	X	17
+ O5	OT	X	18
+ C6	CT	X	19
+ H61	CT	X	19
+ H62	HT	X	19
+ C7	HT	X	20
+ H71	HT	X	20
+ H72	HT	X	20
+ O8 	OT	X	21
+ C9	CT	X	22
+ H91 	HT	X	22
+ H92	HT	X	22
+ H93	HT	X	22
  
+
+; Right sidechain 
+ Ca	CT	X	23
+ Ha1	HC	X	23
+ Ha2	HC	X	23
+ Cb	CT	X	24
+ Hb1	HT	X	24
+ Hb2	HT	X	24
+ Oc	OT	X	25
+ Cd	CT	X	26
+ Hd1	HT	X	26
+ Hd2	HT	X	26
+ Ce 	CT	X	27
+ He1	HT	X	27
+ He2	HT	X	27
+ Of	OT	X	28
+ Cg	CT	X	29
+ Hg1	CT	X	29
+ Hg2	HT	X	29
+ Ch	HT	X	30
+ Hh1	HT	X	30
+ Hh2	HT	X	30
+ Oi 	OT	X	31
+ Cj	CT	X	32
+ Hj1 	HT	X	32
+ Hj2	HT	X	32
+ Hj3	HT	X	32
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Ca
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	H91
+ C9	H92
+ C9	H93
+   
+; Right Sidechain
+ Ca	Cb
+ Ca	Ha1
+ Ca	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Hj1
+ Cj	Hj2
+ Cj	Hj3
+
+; between monomers
+ CD4	+CS4
+
+
+
+
+
+
+
+
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+

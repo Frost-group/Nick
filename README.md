@@ -25,8 +25,8 @@ File_lib = Folder containing useful structural files.  Including pdb fragment fi
 Temp_files = Folder containing any small unecessary intermediate files. Can be cleared periodically
 
 # Main activity 
-0001 = setting up gaussian models of constituent elements of OBT. OT and OBT IR and raman calculations.
+0001 = Gaussian opt and freq calculations of different olligomers related to OBT
 
-0002 = Forcefield development for OBT.  Folder set up as a MD run folder, and the forcefield parameters are in gmx.ff/ . This follows the FF1 scheme for partial charges as shown in Moreno et al J. Phys. Chem. 2019
+0002 = Forcefield development for OBT.  Folder set up as a MD run folder, and the forcefield parameters are in gmx.ff/ . This follows the FF2 scheme from Morena et. al. J Phys Chem
 
-0003 = Calculation of partial charges for different arrangements of oligomers of OBT, using same method as in Morena et. al. 
+0003 = Calculation of partial charges for different arrangements of oligomers of OBT, using ChelpG 

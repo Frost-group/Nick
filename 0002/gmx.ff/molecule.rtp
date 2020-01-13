@@ -36,59 +36,59 @@
 ; Total charge of -0.202
 
 ; Left sidechain 
- C0	CT	X	13
- H01	HC	X	13
- H02	HC	X	13
- C1	CT	X	14
- H11	HT	X	14
- H12	HT	X	14
- O2	OT	X	15
- C3	CT	X	16
- H31	HT	X	16
- H32	HT	X	16
- C4 	CT	X	17
- H41	HT	X	17
- H42	HT	X	17
- O5	OT	X	18
- C6	CT	X	19
- H61	CT	X	19
- H62	HT	X	19
- C7	HT	X	20
- H71	HT	X	20
- H72	HT	X	20
- O8 	OT	X	21
- C9	CT	X	22
- H91 	HT	X	22
- H92	HT	X	22
- H93	HT	X	22
+ C0	CR!	X	13
+ H01	HR	X	13
+ H02	HR	X	13
+ C1	CR	X	14
+ H11	HR	X	14
+ H12	HR	X	14
+ O2	OR	X	15
+ C3	CR	X	16
+ H31	HR	X	16
+ H32	HR	X	16
+ C4 	CR	X	17
+ H41	HR	X	17
+ H42	HR	X	17
+ O5	OR	X	18
+ C6	CR	X	19
+ H61	CR	X	19
+ H62	HR	X	19
+ C7	HR	X	20
+ H71	HR	X	20
+ H72	HR	X	20
+ O8 	OR	X	21
+ C9	CR	X	22
+ H91 	HR	X	22
+ H92	HR	X	22
+ H93	HR	X	22
  
 
 ; Right sidechain 
- Ca	CT	X	23
- Ha1	HC	X	23
- Ha2	HC	X	23
- Cb	CT	X	24
- Hb1	HT	X	24
- Hb2	HT	X	24
- Oc	OT	X	25
- Cd	CT	X	26
- Hd1	HT	X	26
- Hd2	HT	X	26
- Ce 	CT	X	27
- He1	HT	X	27
- He2	HT	X	27
- Of	OT	X	28
- Cg	CT	X	29
- Hg1	CT	X	29
- Hg2	HT	X	29
- Ch	HT	X	30
- Hh1	HT	X	30
- Hh2	HT	X	30
- Oi 	OT	X	31
- Cj	CT	X	32
- Hj1 	HT	X	32
- Hj2	HT	X	32
- Hj3	HT	X	32
+ Ca	CR!	X	23
+ Ha1	HR	X	23
+ Ha2	HR	X	23
+ Cb	CR	X	24
+ Hb1	HR	X	24
+ Hb2	HR	X	24
+ Oc	OR	X	25
+ Cd	CR	X	26
+ Hd1	HR	X	26
+ Hd2	HR	X	26
+ Ce 	CR	X	27
+ He1	HR	X	27
+ He2	HR	X	27
+ Of	OR	X	28
+ Cg	CR	X	29
+ Hg1	CR	X	29
+ Hg2	HR	X	29
+ Ch	HR	X	30
+ Hh1	HR	X	30
+ Hh2	HR	X	30
+ Oi 	OR	X	31
+ Cj	CR	X	32
+ Hj1 	HR	X	32
+ Hj2	HR	X	32
+ Hj3	HR	X	32
 
 [ bonds ]
 ; Left Thiophene
@@ -193,22 +193,5 @@ CD3	HD
  CD3	CD1	CD2	OD
 
  SD	CD2	CD1	CS1
-
-
-
-
-
-	
- 
-
-
-
-
-
-
-
-
-
-
 
 

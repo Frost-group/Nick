@@ -1,0 +1,16 @@
+[ atomtypes ]
+; name       mass      charge    ptype      sigma      eps
+; thiophene
+ CSA	12.01100	0.000	A	0.355	0.293	; Moreno / opls_145
+ CSB	12.01100	0.000	A	0.355	0.293	; Moreno / opls_145
+ HCS	 1.00800	0.000	A	0.242	0.126	; Moreno / opls_146
+ ST	32.06000	0.000	A	0.355	1.046	; Moreno
+ OSR	15.99940	0.000	A	0.307	0.711	; opls_167 for phenol
+
+; sidechain
+ CR!	12.01100	0.000	A	0.350	0.276	; opls_157 (alcohol)
+ CR	12.01100	0.000	A	0.350	0.276	; opls_157 (alcohol)
+ HR 	 1.00800	0.000	A	0.250	0.126	; opls_156 (alcohol)
+ OR	15.99940	0.000	A	0.307	0.711	; opls_078 (alcohol) 
+                
+

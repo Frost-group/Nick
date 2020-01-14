@@ -21,3 +21,4 @@
 
 #include "ffnonbonded.itp"
 #include "ffbonded.itp"
+#include "ffOBT.itp"

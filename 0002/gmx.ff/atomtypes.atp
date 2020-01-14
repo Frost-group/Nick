@@ -1,3 +1,18 @@
+ ; Parameters for the OBT molecules
+ CSA	12.01100
+ CSB	12.01100
+ CR!	12.01100
+ CR	12.01100 
+ HCS	 1.00800
+ HR 	 1.00800
+ ST	32.06000
+ OSR	15.99940
+ OR	15.99940
+
+ 
+ 
+
+
 ; OPLS atom types and masses.
 ; Atom types are named opls_X, where X is the OPLS number.
 ; The opls_ prefix is to avoid users confusing atom types

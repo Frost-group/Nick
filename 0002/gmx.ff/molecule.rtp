@@ -16,23 +16,23 @@
 [ atoms ]
 ; Left thiophene unit (Sinister)
 ; name type charge chargegroup
- CS1	CSA	-0.021	1
- CS2 	CSB	+0.276	2
- CS3	CSB	-0.353	3
- CS4	CSA	+0.108	4
+ CS1	CA	-0.021	1
+ CS2 	CB	+0.276	2
+ CS3	CB	-0.353	3
+ CS4	CA	+0.108	4
  SS	ST	-0.186	5
- OS	OSR	-0.290	6
- HS	HCS	+0.225	3 
+ OS	OT	-0.290	6
+ HS	HT	+0.225	3 
 ; Total charge of -0.241
 
 ; Right thiophene unit (Dextrose) 
- CD1	CSA	-0.021	7
- CD2	CSB	+0.276	8
- CD3	CSB	-0.353	9
- CD4	CSA	+0.108	10
+ CD1	CA	-0.021	7
+ CD2	CB	+0.276	8
+ CD3	CB	-0.353	9
+ CD4	CA	+0.108	10
  SD	ST      -0.186	11
- OD	OSR     -0.290 	12
- HD	HCS	+0.225	9
+ OD	OT	-0.290 	12
+ HD	HT	+0.225	9
 ; Total charge of -0.241 
 
 ; Left sidechain 

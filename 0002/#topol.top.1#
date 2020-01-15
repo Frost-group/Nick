@@ -2,7 +2,7 @@
 ;	File 'topol.top' was generated
 ;	By user: nicholassiemons (501)
 ;	On host: dyn204-80.ph.ic.ac.uk
-;	At date: Wed Jan 15 15:49:58 2020
+;	At date: Wed Jan 15 15:28:17 2020
 
 ;
 ;	This is a standalone topology file
@@ -66,7 +66,7 @@ Other               3
     37         HG      1     PM    H91     24      0.007      1.008   ; qtot -0.255
     38         HG      1     PM    H92     24      0.007      1.008   ; qtot -0.248
     39         HG      1     PM    H93     24      0.007      1.008   ; qtot -0.241
-    40        CG!      1     PM    Caa     25      0.149     12.011   ; qtot -0.092
+    40        CG!      1     PM     Ca     25      0.149     12.011   ; qtot -0.092
     41         HG      1     PM    Ha1     25      0.009      1.008   ; qtot -0.083
     42         HG      1     PM    Ha2     25      0.009      1.008   ; qtot -0.074
     43         CG      1     PM     Cb     26      0.434     12.011   ; qtot 0.36

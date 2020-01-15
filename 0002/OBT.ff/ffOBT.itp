@@ -70,17 +70,17 @@
 
 [ dihedraltypes ]
 ; Improper dihedrals - not sure if theyre needed
- ST	CAA	CBB	CBB	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO 
- CAA	CBB	CBB	CAA	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CBB	CAA	ST	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CAA	ST	CAA	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	ST	CAA	CBB	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	CAA	CBB	ST	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CAA	CAA	HT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	CBB	CBB	HT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- ST	CBB	CAA	CAA	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CAA	CBB	OT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	CBB	CBB	HT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ ST	CAA	CBB	CBB	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO 
+ CAA	CBB	CBB	CAA	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CBB	CAA	ST	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CAA	ST	CAA	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	ST	CAA	CBB	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	CAA	CBB	ST	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CAA	CAA	HT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	CBB	CBB	HT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ ST	CBB	CAA	CAA	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CAA	CBB	OT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	CBB	CBB	HT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
 
 
 ; Ryckaert-Bellemans Dihedrals

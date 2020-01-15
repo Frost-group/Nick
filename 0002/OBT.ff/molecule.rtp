@@ -65,7 +65,7 @@
  
 
 ; Right sidechain 
- Ca	CG!	+0.149	23
+ Caa	CG!	+0.149	23
  Ha1	HG	+0.009	23
  Ha2	HG	+0.009	23
  Cb	CG	+0.434	24
@@ -112,7 +112,7 @@ CD3	HD
 
 ; Bonds to sidechains
  OS	C0
- OD	Ca
+ OD	Caa
 
 ; thiophene-thiophene
  CS1	CD1
@@ -144,9 +144,9 @@ CD3	HD
  C9	H93
    
 ; Right Sidechain
- Ca	Cb
- Ca	Ha1
- Ca	Ha2
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
  Cb	Oc
  Cb	Hb1
  Cb	Hb2

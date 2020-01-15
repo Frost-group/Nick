@@ -22,7 +22,7 @@
  CAA	CBB	1	0.14000	392459.2	; opls CA to CA
  CBB	CBB	1	0.14000	392459.2	; opls CA to CA
  CBB	HT	1	0.10800	307105.6	; opls CA to HA
- CAA	CA	1	0.14000 392459.2	; opls CA to CA
+ CAA	CAA	1	0.14000 392459.2	; opls CA to CA
  CBB	OT	1	0.13640	376560.0	; opls CA to OH 
 
 ; sidechain
@@ -58,19 +58,29 @@
  CG	CG	HG	1	110.700	313.800	; from Drew P
  OG	CG	HG	1	109.500	292.880	; from Drew P
  HG	CG	HG	1	107.800	276.144	; from Drew P
-  
+ HG	CG!	HG	1	107.800 276.144 ; from Drew P
+ HG	CG!	CG	1	110.700 313.800 ; from Drew P 
+ CG!	CG	HG	1	110.700	313.800	; from Drew P
+ CG!	CG	OG	1	109.500	418.400 ; from Drew P
+ 
 ; thiophene - sidechain
- CBB	OT	CG!	1	115.44	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
-
-
+ CBB	OT	CG!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ CAA	CBB	OT	1	123.378	174.640 ; Bhatta J Phys Chem - check with QCC (changed C to O)
+ OT	CG!	HG	1	109.500 292.880 ; from Drew P
 
 [ dihedraltypes ]
 ; Improper dihedrals - not sure if theyre needed
-; ST	CAA	CBB	CBB	2	180.000	391.47000 ; check these!  Taken from drews params for PFO 
-; CAA	CBB	CBB	CAA	2	180.000 391.47000 ; check these!  Taken from drews params for PFO
-; CBB	CBB	CAA	ST	2	180.000	391.47000 ; check these!  Taken from drews params for PFO
-; CBB	CAA	ST	CAA	2	180.000	391.47000 ; check these!  Taken from drews params for PFO
-; CAA	ST	CAA	CBB	2	180.000	391.47000 ; check these!  Taken from drews params for PFO
+ ST	CAA	CBB	CBB	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO 
+ CAA	CBB	CBB	CAA	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CBB	CAA	ST	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CAA	ST	CAA	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	ST	CAA	CBB	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	CAA	CBB	ST	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CAA	CAA	HT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	CBB	CBB	HT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ ST	CBB	CAA	CAA	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CBB	CAA	CBB	OT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ CAA	CBB	CBB	HT	2	0	0	; 180.000 391.47000 ; check these!  Taken from drews params for PFO
 
 
 ; Ryckaert-Bellemans Dihedrals
@@ -78,15 +88,18 @@
 
 ; thiophene
  ST	CAA	CAA	ST	3	12.3566      0.6573     -17.7091    1.6648    7.8889    0.000 	; Bhatta J Phys Chem
- CB	CAA	ST	CAA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
+ CBB	CAA	ST	CAA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
  CAA	ST	CAA	CBB	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
  CAA	CBB	CBB	CAA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
+ CBB	CAA	CAA	CBB	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
  CBB	CBB	CAA	ST	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
  OT 	CBB	CBB	CAA	3	492.2476   996.87984    861.7366  471.9970  114.9219    0.000   ; Bhatta J Phys Chem
 	
 ; thiophene - sidechain
  CBB	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem
- CBB	OT	CG!	CG	3        1.715      2.845        1.046    -5.607     -0.000     0.000   ; from Drew  
+ CBB	OT	CG!	CG	3        1.715      2.845        1.046    -5.607     -0.000     0.000   ; from Drew   
+ CAA	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem - CHECK WITH QCC
+ OT	CG!	CG	OG	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
 ; thiophene - thiophene
  ST	CAA	CAA	CBB	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; Bhatta J Phys Chem
@@ -94,8 +107,10 @@
 
 
 ; sidechain 
- CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000
- HG	CG	CG	HG	3	0.628	1.883   0.000  -2.510  -0.000   0.000
- HG	CG	CG	OG	3	0.979	2.937   0.000  -3.916  -0.000   0.000
- HG	CG	OG	CG	3	1.590	4.770   0.000  -6.360  -0.000   0.000
- OG	CG	CG	OG	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
+ CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew
+ CG!	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew
+ HG	CG	CG	HG	3	0.628	1.883   0.000  -2.510  -0.000   0.000	; from Drew
+ HG	CG	CG	OG	3	0.979	2.937   0.000  -3.916  -0.000   0.000	; from Drew
+ HG	CG	OG	CG	3	1.590	4.770   0.000  -6.360  -0.000   0.000	; from Drew
+ OG	CG	CG	OG	3	-1.151	1.151   0.000  -0.000  -0.000   0.000	; from Drew
+ 

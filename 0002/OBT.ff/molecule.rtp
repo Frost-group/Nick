@@ -114,6 +114,9 @@ CD3	HD
  OS	C0
  OD	Ca
 
+; thiophene-thiophene
+ CS1	CD1
+
 ; Left Sidechain
  C0	C1
  C0	H01

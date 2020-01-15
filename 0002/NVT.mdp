@@ -7,7 +7,7 @@ integrator		= md
 dt			= 0.001
 nsteps		=	10000 
 comm_mode		= linear
-nstcomm			= 100
+nstcomm			= 50
 comm_grps		=
 
 ; Output control

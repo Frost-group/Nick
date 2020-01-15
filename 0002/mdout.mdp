@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: nicholassiemons (501)
 ;	On host: dyn204-80.ph.ic.ac.uk
-;	At date: Wed Jan 15 12:15:23 2020
+;	At date: Wed Jan 15 13:33:33 2020
 
 ;
 
@@ -26,7 +26,7 @@ simulation-part          = 1
 ; mode for center of mass motion removal
 comm_mode                = linear
 ; number of steps for center of mass motion removal
-nstcomm                  = 100
+nstcomm                  = 50
 ; group(s) for center of mass motion removal
 comm-grps                = 
 

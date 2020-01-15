@@ -1,0 +1,75 @@
+[ atomtypes ]
+; name       mass      charge    ptype      sigma      eps
+; thiophene
+ CA	12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA 
+ CB	12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA
+ HT	 1.00800	0.000	A	0.242	0.126	; Moreno / opls_146 , HA
+ ST	32.06000	0.000	A	0.355	1.046	; Moreno / opls_633 , S
+ OT	15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
+
+; sidechain
+ CR!	12.01100	0.000	A	0.350	0.276	; from Drew P 
+ CR	12.01100	0.000	A	0.350	0.276	; from Drew P 
+ HR 	 1.00800	0.000	A	0.250	0.126	; from Drew P 
+ OR	15.99940	0.000	A	0.290	0.586	; from Drew P 
+                
+
+
+[ bondtypes ]
+;  i    j func        b0          kb
+; thiophene
+ ST	CA	1	0.18100	185769.6	; opls SH to CA
+ CA	CB	1	0.14000	392459.2	; opls CA to CA
+ CB	CB	1	0.14000	392459.2	; opls CA to CA
+ CA	HT	1	0.10800	307105.6	; opls CA to HA
+ CA	CA	1	0.14000 392459.2	; opls CA to CA 
+
+; sidechain
+ CR!	CR	1	0.15290 224262.4	; from Drew P
+ CR!	HR	1	0.10900 284512.0	; from Drew P
+ CR	CR	1	0.15290	224262.4	; from Drew P
+ CR	HR	1	0.10900 284512.0	; from Drew P
+ CR	OR	1	0.14100 267776.0	; from Drew P
+ 
+; thiophene-sidechain
+ OT	CR!	1	0.14100 267776.0	; opls OH to CT - check with QCC 
+
+
+
+
+[ angletypes ]
+;  i    j    k  func    theta0      ktheta
+; thiophene ring
+ CA	ST	CA	1	 92.774	X 	; Marcon JACS comms
+ ST	CA	CB	1	110.292	X 	; Marcon JACS comms
+ CA	CB	CB	1	113.322	X	; Marcon JACS comms
+ CB	CB	HT	1	123.700	X	; Marcon JACS comms
+ CA	CA	CB	1	130.140	X	; Marcon JACS comms
+ HT	CB	CA	1	122.979 X	; Marcon JACS comms
+ ST	CA	CB	1	119.569 X	; Marcon JACS comms
+ OT	CB	CB	1	123.378	X	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ CA	CB	OT	1	124.554	X	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ 
+; sidechain
+  
+
+; thiophene - sidechain
+ CB	OT	CR!	1	115.44	X	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ OT	CR!	CR	1	109.500	418.400	; from Drew P
+ CR	CR	OR	1	109.500	418.400 ; from Drew P
+ CR	OR	CR	1	109.500	502.080	; from Drew P
+ CR	CR	HR	1	110.700	313.800	; from Drew P
+ OR	CR	HR	1	109.500	292.880	; from Drew P
+ HR	CR	OR	1	107.800	276.144	; from Drew P
+
+
+
+
+
+
+
+
+
+
+
+

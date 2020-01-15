@@ -8,9 +8,9 @@ scp HPC:$H/\*txt . > /dev/null 2>&1
 
 cd ../0002/
 dsd
-scp HPC:$H/\*log . > /dev/null 2>&1
-scp HPC:$H/\*pdb . > /dev/null 2>&1
-scp HPC:$H/\*txt . > /dev/null 2>&1
+scp HPC:$H/OBT.ff/\*log . > /dev/null 2>&1
+scp HPC:$H/OBT.ff/\*pdb . > /dev/null 2>&1
+scp HPC:$H/OBT.ff/\*txt . > /dev/null 2>&1
 
 cd ../0003/
 dsd

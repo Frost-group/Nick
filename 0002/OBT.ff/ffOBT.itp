@@ -40,27 +40,57 @@
 [ angletypes ]
 ;  i    j    k  func    theta0      ktheta
 ; thiophene ring
- CA	ST	CA	1	 92.774	X 	; Marcon JACS comms
- ST	CA	CB	1	110.292	X 	; Marcon JACS comms
- CA	CB	CB	1	113.322	X	; Marcon JACS comms
- CB	CB	HT	1	123.700	X	; Marcon JACS comms
- CA	CA	CB	1	130.140	X	; Marcon JACS comms
- HT	CB	CA	1	122.979 X	; Marcon JACS comms
- ST	CA	CB	1	119.569 X	; Marcon JACS comms
- OT	CB	CB	1	123.378	X	; Bhatta J Phys Chem - check with QCC (changed C to O)
- CA	CB	OT	1	124.554	X	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ CA	ST	CA	1	 92.774	361.330	; Moreno - check units as taken from lammps
+ ST	CA	CB	1	110.292	361.330	; Moreno - check units as taken from lammps
+ CA	CB	CB	1	113.322	165.611	; Moreno - check units as taken from lammps
+ CB	CB	HT	1	123.700	147.540	; Moreno - check units as taken from lammps
+ CA	CA	CB	1	130.140	228.840	; Moreno - check units as taken from lammps
+ HT	CB	CA	1	122.979 147.540	; Moreno - check units as taken from lammps
+ ST	CA	CB	1	119.569 174.640	; Moreno - check units as taken from lammps
+ OT	CB	CB	1	123.378	696.824	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ CA	CB	OT	1	124.554	695.882	; Bhatta J Phys Chem - check with QCC (changed C to O)
  
 ; sidechain
-  
-
-; thiophene - sidechain
- CB	OT	CR!	1	115.44	X	; Bhatta J Phys Chem - check with QCC (changed C to O)
  OT	CR!	CR	1	109.500	418.400	; from Drew P
  CR	CR	OR	1	109.500	418.400 ; from Drew P
  CR	OR	CR	1	109.500	502.080	; from Drew P
  CR	CR	HR	1	110.700	313.800	; from Drew P
  OR	CR	HR	1	109.500	292.880	; from Drew P
  HR	CR	OR	1	107.800	276.144	; from Drew P
+  
+; thiophene - sidechain
+ CB	OT	CR!	1	115.44	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+
+
+
+[ dihedraltypes ]
+; Improper dihedrals - not sure if theyre needed
+; ST	CA	CB	CB	2	180.000	391.47000 ; check these!  Taken from drews params for PFO 
+; CA	CB	CB	CA	2	180.000 391.47000 ; check these!  Taken from drews params for PFO
+; CB	CB	CA	ST	2	180.000	391.47000 ; check these!  Taken from drews params for PFO
+; CB	CA	ST	CA	2	180.000	391.47000 ; check these!  Taken from drews params for PFO
+; CA	ST	CA	CB	2	180.000	391.47000 ; check these!  Taken from drews params for PFO
+
+
+; Ryckaert-Bellemans Dihedrals
+; X    j    k    X func      C0       C1       C2       C3       C4       C5
+
+; thiophene
+ ST	CA	CA	ST	3	12.3566      0.6573     -17.7091    1.6648    7.8889    0.000 	; Bhatta J Phys Chem
+ CB	CA	ST	CA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
+ CA	ST	CA	CB	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
+ CA	CB	CB	CA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
+ CB	CB	CA	ST	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
+ OT 	CB	CB	CA	3	492.2476   996.87984    861.7366  471.9970  114.9219    0.000   ; Bhatta J Phys Chem
+	
+; thiophene - sidechain
+ CB	CB	OT	CR!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem
+ CB	OT	CR!	CR	3        1.715      2.845        1.046    -5.607     -0.000     0.000   ; from Drew  
+
+; thiophene - thiophene
+ ST	CA	CA	CB	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; Bhatta J Phys Chem
+ CB	CB	CA	CA	3	316.2894  485.3440     178.5689   -6.3931   -15.9565    0.000   ; Bhatta J Phys Chem
+
 
 
 

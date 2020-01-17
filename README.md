@@ -35,8 +35,10 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 		AI = alkylated sidechains, first unit
 		AM = alkylated sidecahins, middle unit
 		AF = alkylated sidecahins, end unit
-		SM = tin-terminated monomer (Sn Me3 terminated)
-		BM = Bromine terminated monomer
+		GS = tin-terminated monomer (Sn Me3 terminated) with glycole sidechains
+		GB = Bromine terminated monomer with glycol sidecahins
+		AS = tin-terminated monomer (Sn Me3 terminated) with alkylated sidechains
+		AB = Bromine terminated monomer with alkylated sidecahins
 
 
 0003 = Calculation of partial charges for different arrangements of oligomers of OBT, using ChelpG 

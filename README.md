@@ -27,7 +27,17 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 # Main activity 
 0001 = Gaussian opt and freq calculations of different olligomers related to OBT
 
-0002 = Forcefield development for OBT.  Folder set up as a MD run folder, and the forcefield parameters are in OBT.ff/ . This follows the FF2 scheme from Morena et. al. J Phys Chem
+0002 = Forcefield development for OBT.  Folder set up as a MD run folder, and the forcefield parameters are in OBT.ff/ . This follows the FF2 scheme from Morena et. al. J Phys Chem.   
+	Code for residues - 	
+		GI = glycolated sidechains, first unit
+		GM = glycolated sidechains, middle unit
+		GE = glycolated sidechains, end unit
+		AI = alkylated sidechains, first unit
+		AM = alkylated sidecahins, middle unit
+		AF = alkylated sidecahins, end unit
+		SM = tin-terminated monomer (Sn Me3 terminated)
+		BM = Bromine terminated monomer
+
 
 0003 = Calculation of partial charges for different arrangements of oligomers of OBT, using ChelpG 
 

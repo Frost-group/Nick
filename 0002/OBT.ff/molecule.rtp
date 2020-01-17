@@ -13,7 +13,7 @@
 
 
 
-[ PI ]
+[ GI ]
 ; Initial unit, with H terminals
 
 [ atoms ]
@@ -215,7 +215,7 @@ CD3	HD
 
 
 
-[ PM ]
+[ GM ]
 ; Middle unit, without any terminal atoms
 
 [ atoms ]
@@ -410,7 +410,7 @@ CD3	HD
 
 
 
-[ PE ]
+[ GE ]
 ; End unit, with H terminals
 
 [ atoms ]

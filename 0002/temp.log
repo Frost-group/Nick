@@ -1,5 +1,5 @@
-Log file opened on Fri Jan 17 15:39:12 2020
-Host: dyn204-80.ph.ic.ac.uk  pid: 16763  rank ID: 0  number of ranks:  1
+Log file opened on Fri Jan 17 15:54:58 2020
+Host: dyn204-80.ph.ic.ac.uk  pid: 17650  rank ID: 0  number of ranks:  1
                    :-) GROMACS - gmx mdrun, VERSION 5.1.4 (-:
 
                             GROMACS is written by:
@@ -135,7 +135,7 @@ Input Parameters:
    comm-mode                      = Linear
    nstcomm                        = 100
    bd-fric                        = 0
-   ld-seed                        = 4268211041
+   ld-seed                        = 2952329088
    emtol                          = 10
    emstep                         = 0.01
    niter                          = 20
@@ -336,7 +336,7 @@ Making 1D domain decomposition grid 2 x 1 x 1, home cell index 0 0 0
 
 Initiating Steepest Descents
 Atom distribution over 2 domains: av 97 stddev 0 min 97 max 97
-Started Steepest Descents on rank 0 Fri Jan 17 15:39:12 2020
+Started Steepest Descents on rank 0 Fri Jan 17 15:54:58 2020
 
 Steepest Descents:
    Tolerance (Fmax)   =  1.00000e+01
@@ -352,7 +352,7 @@ Steepest Descents:
  Pressure (bar)
     0.00000e+00
 
-DD  step 0 load imb.: force 10.2%
+DD  step 0 load imb.: force 19.2%
 
            Step           Time         Lambda
               1        1.00000        0.00000
@@ -9647,7 +9647,7 @@ DD  step 0 load imb.: force 10.2%
  Pressure (bar)
     0.00000e+00
 
-DD  step 999 load imb.: force 21.7%
+DD  step 999 load imb.: force 20.0%
 
            Step           Time         Lambda
            1000     1000.00000        0.00000
@@ -18977,7 +18977,7 @@ DD  step 999 load imb.: force 21.7%
  Pressure (bar)
     0.00000e+00
 
-DD  step 1999 load imb.: force 21.6%
+DD  step 1999 load imb.: force 20.9%
 
            Step           Time         Lambda
            2000     2000.00000        0.00000
@@ -28307,7 +28307,7 @@ DD  step 1999 load imb.: force 21.6%
  Pressure (bar)
     0.00000e+00
 
-DD  step 2999 load imb.: force 15.7%
+DD  step 2999 load imb.: force 15.0%
 
            Step           Time         Lambda
            3000     3000.00000        0.00000
@@ -37645,7 +37645,7 @@ DD  step 2999 load imb.: force 15.7%
  Pressure (bar)
     0.00000e+00
 
-DD  step 3999 load imb.: force 36.3%
+DD  step 3999 load imb.: force 38.0%
 
            Step           Time         Lambda
            4000     4000.00000        0.00000
@@ -44508,25 +44508,25 @@ On 2 MPI ranks
  Computing:          Num   Num      Call    Wall time         Giga-Cycles
                      Ranks Threads  Count      (s)         total sum    %
 -----------------------------------------------------------------------------
- Domain decomp.         2    1       5722       0.323          2.976  17.9
+ Domain decomp.         2    1       5722       0.449          4.140  20.0
  DD comm. load          2    1          5       0.000          0.001   0.0
- Neighbor search        2    1       4731       0.096          0.888   5.3
- Force                  2    1       4731       0.154          1.419   8.5
- Wait + Comm. F         2    1       4731       0.163          1.500   9.0
- NB X/F buffer ops.     2    1       4731       0.001          0.010   0.1
- Comm. energies         2    1       4731       0.075          0.696   4.2
- Rest                                           0.996          9.183  55.1
+ Neighbor search        2    1       4731       0.097          0.896   4.3
+ Force                  2    1       4731       0.164          1.512   7.3
+ Wait + Comm. F         2    1       4731       0.170          1.567   7.6
+ NB X/F buffer ops.     2    1       4731       0.001          0.011   0.1
+ Comm. energies         2    1       4731       0.093          0.859   4.2
+ Rest                                           1.266         11.668  56.5
 -----------------------------------------------------------------------------
- Total                                          1.809         16.673 100.0
+ Total                                          2.241         20.654 100.0
 -----------------------------------------------------------------------------
 
-NOTE: 18 % of the run time was spent in domain decomposition,
-      5 % of the run time was spent in pair search,
+NOTE: 20 % of the run time was spent in domain decomposition,
+      4 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
 
                Core t (s)   Wall t (s)        (%)
-       Time:        3.618        1.809      200.0
+       Time:        4.482        2.241      200.0
                (steps/hour)
-Performance:      9414118.8
-Finished mdrun on rank 0 Fri Jan 17 15:39:14 2020
+Performance:      7599564.4
+Finished mdrun on rank 0 Fri Jan 17 15:55:00 2020

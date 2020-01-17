@@ -22,6 +22,7 @@
  CAA	CBB	1	0.14000	392459.2	; opls CA to CA
  CBB	CBB	1	0.14000	392459.2	; opls CA to CA
  CBB	HT	1	0.10800	307105.6	; opls CA to HA
+ CAA	HT	1	0.10800	307105.6	; opls CA to HA
  CAA	CAA	1	0.14000 392459.2	; opls CA to CA
  CBB	OT	1	0.13640	376560.0	; opls CA to OH 
 
@@ -45,6 +46,8 @@
  ST	CAA	CBB	1	110.292	361.330	; Marcon - check units as taken from lammps
  CAA	CBB	CBB	1	113.322	165.611	; Marcon - check units as taken from lammps
  CBB	CBB	HT	1	123.700	147.540	; Marcon - check units as taken from lammps
+ CBB	CAA	HT	1	123.700	147.540	; Marcon - check units as taken from lammps
+ ST	CAA	HT	1	123.700	147.540	; Marcon - check units as taken from lammps
  CAA	CAA	CBB	1	130.140	228.840	; Marcon - check units as taken from lammps
  HT	CBB	CAA	1	122.979 147.540	; Marcon - check units as taken from lammps
  ST	CAA	CAA	1	119.569 174.640	; Marcon - check units as taken from lammps
@@ -70,17 +73,18 @@
 
 [ dihedraltypes ]
 ; Improper dihedrals - not sure if theyre needed
- ST	CAA	CBB	CBB	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO 
- CAA	CBB	CBB	CAA	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CBB	CAA	ST	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CAA	ST	CAA	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	ST	CAA	CBB	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	CAA	CBB	ST	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CAA	CAA	HT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	CBB	CBB	HT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- ST	CBB	CAA	CAA	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CBB	CAA	CBB	OT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
- CAA	CBB	CBB	HT	2	0	0	;	 180.000 391.47000 ; check these!  Taken from drews params for PFO
+ ST	CAA	CBB	CBB	2	0	391.47000	;   check these!  Taken from drews params for PFO 
+ CAA	CBB	CBB	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CBB	CBB	CAA	ST	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CBB	CAA	ST	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CAA	ST	CAA	CBB	2	0	391.47000	;   check these!  Taken from drews params for PFO
+
+ CBB	CBB	CAA	HT	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CBB	CBB	CAA	HT	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CAA	CBB	ST	HT	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CBB	CBB	CAA	OT	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CAA	ST	CBB	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CAA	CBB	ST	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
 
 
 ; Ryckaert-Bellemans Dihedrals
@@ -103,6 +107,7 @@
 
 ; thiophene - thiophene
  ST	CAA	CAA	CBB	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; Bhatta J Phys Chem
+ CAA	ST	CAA	CAA	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; CHECK THIS - RANDOMLY ADDED
  CBB	CBB	CAA	CAA	3	316.2894  485.3440     178.5689   -6.3931   -15.9565    0.000   ; Bhatta J Phys Chem
 
 

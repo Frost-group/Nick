@@ -1,11 +1,11 @@
 ; Preprocessing
 include			= -I../more.lib
-define			= -DPOSRES
+define			= 
 
 ; Run control
 integrator		= md
 dt			= 0.001
-nsteps		=	10000 
+nsteps			= 10000 
 comm_mode		= linear
 nstcomm			= 50
 comm_grps		=
@@ -17,7 +17,7 @@ nstenergy       = 50
 nstlog          = 50
 
 ; Bonds
-constraints             = h-bonds
+constraints         = none
 constraint_algorithm	= LINCS
 continuation		= no
 lincs_order		= 4

@@ -6,6 +6,7 @@
  HT	 1.00800	0.000	A	0.242	0.126	; Moreno / opls_146 , HA
  ST	32.06000	0.000	A	0.355	1.046	; Moreno / opls_633 , S
  OT	15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
+ BT	79.90400	0.000	A	0.347	0.197 	; opls_730 bromobenzene
 
 ; sidechain
  CG!	12.01100	0.000	A	0.350	0.276	; from Drew P 
@@ -25,6 +26,7 @@
  CAA	HT	1	0.10800	307105.6	; opls CA to HA
  CAA	CAA	1	0.14000 392459.2	; opls CA to CA
  CBB	OT	1	0.13640	376560.0	; opls CA to OH 
+ CAA	BT	1	0.18700	251040.0	; opls CA to Br
 
 ; sidechain
  CG!	CG	1	0.15290 224262.4	; from Drew P
@@ -53,6 +55,9 @@
  ST	CAA	CAA	1	119.569 174.640	; Marcon - check units as taken from lammps
  OT	CBB	CBB	1	123.378	696.824	; Bhatta J Phys Chem - check with QCC (changed C to O)
  CA	CBB	OT	1	124.554	695.882	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ CBB	CAA	BT	1	120.000	627.600	; OPLS - CA CA Br - check
+ ST	CAA	BT	1	120.000 627.600 ; OPLS - CA CA Br - check
+
  
 ; sidechain
  OT	CG!	CG	1	109.500	418.400	; from Drew P
@@ -85,7 +90,7 @@
  CBB	CBB	CAA	OT	2	0	391.47000	;   check these!  Taken from drews params for PFO
  CAA	ST	CBB	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
  CAA	CBB	ST	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
-
+ CAA	ST	CBB	BT	2	0	391.47000	;   check these!  Taken from drews params for PFO
 
 ; Ryckaert-Bellemans Dihedrals
 ; X    j    k    X func      C0       C1       C2       C3       C4       C5

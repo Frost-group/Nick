@@ -1,6 +1,6 @@
 %mem=50GB
 %nprocshared=16
-#p opt b3lyp/lanl2dz
+#p opt pop=MKUFF b3lyp/lanl2dz
 
 3G_1m_0sc_Sn_opt_pop.gjf
 

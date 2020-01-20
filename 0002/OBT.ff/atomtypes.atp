@@ -1,17 +1,17 @@
  ; Parameters for the OBT molecules
- CAA	12.01100
- CBB	12.01100
- CG!	12.01100
- CG	12.01100 
- HT	 1.00800
- HG 	 1.00800
- ST	32.06000
- OT	15.99940
- OG	15.99940
- BT	79.90400
- 
-
- 
+ CAA	 12.01100
+ CBB	 12.01100
+ CG!	 12.01100
+ CG	 12.01100 
+ HT	  1.00800
+ HG 	  1.00800
+ ST	 32.06000
+ OT	 15.99940
+ OG	 15.99940
+ BT	 79.90400
+ CL!	 12.01100
+ CL	 12.01100 
+ HL	 1.00800
 
 
 ; OPLS atom types and masses.

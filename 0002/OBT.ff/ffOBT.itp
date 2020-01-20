@@ -1,19 +1,23 @@
 [ atomtypes ]
 ; name       mass      charge    ptype      sigma      eps
 ; thiophene
- CAA	12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA 
- CBB	12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA
- HT	 1.00800	0.000	A	0.242	0.126	; Moreno / opls_146 , HA
- ST	32.06000	0.000	A	0.355	1.046	; Moreno / opls_633 , S
- OT	15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
- BT	79.90400	0.000	A	0.347	0.197 	; opls_730 bromobenzene
+ CAA	 12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA 
+ CBB	 12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA
+ HT	  1.00800	0.000	A	0.242	0.126	; Moreno / opls_146 , HA
+ ST	 32.06000	0.000	A	0.355	1.046	; Moreno / opls_633 , S
+ OT	 15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
+ BT	 79.90400	0.000	A	0.347	0.197 	; opls_730 bromobenzene 
 
-; sidechain
+; glycolate sidechain
  CG!	12.01100	0.000	A	0.350	0.276	; from Drew P 
  CG	12.01100	0.000	A	0.350	0.276	; from Drew P 
  HG 	 1.00800	0.000	A	0.250	0.126	; from Drew P 
  OG	15.99940	0.000	A	0.290	0.586	; from Drew P 
-                
+
+; Alkylated sidechain
+ CL!	12.01100	0.000	A	0.350	0.347	; opls_139
+ CL	12.01100	0.000	A	0.350	0.347	; opls_139
+ HL	1.00800		0.000	A	0.250	0.126	; opls_140
 
 
 [ bondtypes ]
@@ -26,14 +30,20 @@
  CAA	HT	1	0.10800	307105.6	; opls CA to HA
  CAA	CAA	1	0.14000 392459.2	; opls CA to CA
  CBB	OT	1	0.13640	376560.0	; opls CA to OH 
- CAA	BT	1	0.18700	251040.0	; opls CA to Br
+ CAA	BT	1	0.18700	251040.0	; opls CA to Br 
 
-; sidechain
+; glycol sidechain
  CG!	CG	1	0.15290 224262.4	; from Drew P
  CG!	HG	1	0.10900 284512.0	; from Drew P
  CG	CG	1	0.15290	224262.4	; from Drew P
  CG	HG	1	0.10900 284512.0	; from Drew P
  CG	OG	1	0.14100 267776.0	; from Drew P
+
+; alkyl side chains
+ CL!	CL	1	0.15290	224262.4	; from Drew P opls_139 - opls_139
+ CL	CL	1	0.15290	224262.4	; from Drew P opls_139 - opls_139
+ CL!	HL	1	0.10900	284512.0	; from Drew P opls_139 - opls_140
+ CL	HL	1	0.10900	284512.0	; from Drew P opls_139 - opls_140
  
 ; thiophene-sidechain
  OT	CG!	1	0.14100 267776.0	; opls OH to CT - check with QCC 
@@ -58,8 +68,7 @@
  CBB	CAA	BT	1	120.000	627.600	; OPLS - CA CA Br - check
  ST	CAA	BT	1	120.000 627.600 ; OPLS - CA CA Br - check
 
- 
-; sidechain
+; glycol sidechain
  OT	CG!	CG	1	109.500	418.400	; from Drew P
  CG	CG	OG	1	109.500	418.400 ; from Drew P
  CG	OG	CG	1	109.500	502.080	; from Drew P
@@ -70,14 +79,29 @@
  HG	CG!	CG	1	110.700 313.800 ; from Drew P 
  CG!	CG	HG	1	110.700	313.800	; from Drew P
  CG!	CG	OG	1	109.500	418.400 ; from Drew P
+
+; Alkyl sidechains
+ CL	CL	CL	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
+ CL	CL	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ HL	CL	HL	1	107.800 276.144 ; form Drew opls_140 - opls_139 - opls_140	
+ CL!	CL	CL	1	112.700 488.273 ; from Drew opls_139 - opls_139 - opls_139
+ CL!	CL	HL	1	110.700 313.800 ; from Drew opls_139 - opls_139 - opls_140
+ HL	CL!	HL	1	107.800 276.144 ; form Drew opls_140 - opls_139 - opls_140
+
  
-; thiophene - sidechain
+; thiophene - glycol sidechain
  CBB	OT	CG!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
  CAA	CBB	OT	1	123.378	174.640 ; Bhatta J Phys Chem - check with QCC (changed C to O)
  OT	CG!	HG	1	109.500 292.880 ; from Drew P
 
+; thiophene - alkyl sidechain
+ CBB	OT	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ OT	CL!	HL	1	109.500 292.880 ; from Drew P
+
+
+
 [ dihedraltypes ]
-; Improper dihedrals - not sure if theyre needed
+; Improper dihedrals
  ST	CAA	CBB	CBB	2	0	391.47000	;   check these!  Taken from drews params for PFO 
  CAA	CBB	CBB	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
  CBB	CBB	CAA	ST	2	0	391.47000	;   check these!  Taken from drews params for PFO
@@ -104,7 +128,7 @@
  CBB	CBB	CAA	ST	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
  OT 	CBB	CBB	CAA	3	492.2476   996.87984    861.7366  471.9970  114.9219    0.000   ; Bhatta J Phys Chem
 	
-; thiophene - sidechain
+; thiophene - glycol sidechain
  CBB	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem
  CBB	OT	CG!	CG	3        1.715      2.845        1.046    -5.607     -0.000     0.000   ; from Drew   
  CAA	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem - CHECK WITH QCC
@@ -115,8 +139,7 @@
  CAA	ST	CAA	CAA	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; CHECK THIS - RANDOMLY ADDED
  CBB	CBB	CAA	CAA	3	316.2894  485.3440     178.5689   -6.3931   -15.9565    0.000   ; Bhatta J Phys Chem
 
-
-; sidechain 
+; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew
  CG!	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew
  HG	CG	CG	HG	3	0.628	1.883   0.000  -2.510  -0.000   0.000	; from Drew

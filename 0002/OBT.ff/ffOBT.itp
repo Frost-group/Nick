@@ -7,6 +7,9 @@
  ST	 32.06000	0.000	A	0.355	1.046	; Moreno / opls_633 , S
  OT	 15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
  BT	 79.90400	0.000	A	0.347	0.197 	; opls_730 bromobenzene 
+ SnT	 118.7100	0.000	A	0.347	0.197 	; Just here to see if works - need to change
+ CSn	 12.01100	0.000	A	0.355	0.293	; Just here to see if works - need to change
+ HSn	  1.00800	0.000	A	0.355	0.293	; Just here to see if works - need to change
 
 ; glycolate sidechain
  CG!	12.01100	0.000	A	0.350	0.276	; from Drew P 
@@ -31,6 +34,9 @@
  CAA	CAA	1	0.14000 392459.2	; opls CA to CA
  CBB	OT	1	0.13640	376560.0	; opls CA to OH 
  CAA	BT	1	0.18700	251040.0	; opls CA to Br 
+ CAA	SnT	1	0.18700	251040.0	; just to see if works - need to change
+ CSn	SnT	1	0.18700	251040.0	; just to see if works - need to change
+ CSn	HSn	1	0.10800	307105.6	; just to see if works - need to change
 
 ; glycol sidechain
  CG!	CG	1	0.15290 224262.4	; from Drew P
@@ -68,6 +74,12 @@
  CA	CBB	OT	1	124.554	695.882	; Bhatta J Phys Chem - check with QCC (changed C to O)
  CBB	CAA	BT	1	120.000	627.600	; OPLS - CA CA Br - check
  ST	CAA	BT	1	120.000 627.600 ; OPLS - CA CA Br - check
+ CBB	CAA	SnT	1	120.000	627.600	; just to see if works - need to change
+ ST	CAA	SnT	1	120.000 627.600 ; just to see if works - need to change
+ CSn	SnT	CSn	1	120.000 627.600 ; just to see if works - need to change
+ CAA	SnT	CSn	1	120.000 627.600 ; just to see if works - need to change
+ HSn	CSn	HSn	1	107.800 276.144 ; just to see if works - need to change
+ SnT	CSn	HSn	1	109.500 292.880 ; just to see if works - need to change
 
 ; glycol sidechain
  OT	CG!	CG	1	109.500	418.400	; from Drew P
@@ -118,6 +130,7 @@
  CAA	ST	CBB	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
  CAA	CBB	ST	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
  CAA	ST	CBB	BT	2	0	391.47000	;   check these!  Taken from drews params for PFO
+ CAA	ST	CBB	SnT	2	0	391.47000	;   check these!  Just here to see if works - need to change
 
 ; Ryckaert-Bellemans Dihedrals
 ; X    j    k    X func      C0       C1       C2       C3       C4       C5
@@ -130,6 +143,8 @@
  CBB	CAA	CAA	CBB	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
  CBB	CBB	CAA	ST	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
  OT 	CBB	CBB	CAA	3	492.2476   996.87984    861.7366  471.9970  114.9219    0.000   ; Bhatta J Phys Chem
+ CBB	CAA	SnT	CSn	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
+ CAA	SnT	CSn	HSn	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
 	
 ; thiophene - glycol sidechain
  CBB	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem

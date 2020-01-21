@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: nicholassiemons (501)
 ;	On host: dyn204-80.ph.ic.ac.uk
-;	At date: Tue Jan 21 13:25:57 2020
+;	At date: Tue Jan 21 15:11:09 2020
 
 ;
 
@@ -26,7 +26,7 @@ simulation-part          = 1
 ; mode for center of mass motion removal
 comm_mode                = linear
 ; number of steps for center of mass motion removal
-nstcomm                  = 50
+nstcomm                  = 10
 ; group(s) for center of mass motion removal
 comm-grps                = 
 
@@ -52,13 +52,13 @@ rtpi                     = 0.05
 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                  = 50
-nstvout                  = 50
+nstxout                  = 10
+nstvout                  = 10
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
-nstlog                   = 50
+nstlog                   = 10
 nstcalcenergy            = 100
-nstenergy                = 50
+nstenergy                = 10
 ; Output frequency and precision for .xtc file
 nstxout-compressed       = 0
 compressed-x-precision   = 1000

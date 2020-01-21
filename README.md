@@ -44,4 +44,4 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0003 = Calculation of partial charges for different arrangements of oligomers of OBT, using ChelpG 
 
 0004 = population calculations using the heavy atom terminations, for which we have the crystal structures
-	_Sn = terminated with SN-(CH3)3
+	_Sn = terminated with SN-(CH3)3 , _Br = terminated with Br atoms

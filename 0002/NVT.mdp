@@ -7,14 +7,14 @@ integrator		= md
 dt			= 0.001
 nsteps			= 10000 
 comm_mode		= linear
-nstcomm			= 50
+nstcomm			= 10
 comm_grps		=
 
 ; Output control
-nstxout         = 50
-nstvout         = 50
-nstenergy       = 50
-nstlog          = 50
+nstxout         = 10
+nstvout         = 10
+nstenergy       = 10
+nstlog          = 10
 
 ; Bonds
 constraints         = none

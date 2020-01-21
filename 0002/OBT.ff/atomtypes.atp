@@ -9,9 +9,12 @@
  OT	 15.99940
  OG	 15.99940
  BT	 79.90400
+ SnT	 118.7100
  CL!	 12.01100
  CL	 12.01100 
  HL	 1.00800
+ CSn	 12.01100
+ HSn	  1.00800
 
 
 ; OPLS atom types and masses.
@@ -159,7 +162,7 @@
  opls_128    1.00800  ; Updated ammonia parameters - JPC B 2001, 105, 6474
  opls_129   20.17970  ; Neon                          Hirschfelder (Wiley,1954)
  opls_130    4.00260  ; Helium                        Hirschfelder (Wiley,1954)
-:~/Dropbox/PFO/PFO_beta/Params19/HPC_1/Analysis opls_131   12.01100  ; C in C=O for UA formamide, DMF.
+ opls_131   12.01100  ; C in C=O for UA formamide, DMF.
  opls_132   15.03500  ; CH3 in HCON(CH3)2 DMF
  opls_135   12.01100  ; alkane CH3 
  opls_136   12.01100  ; alkane CH2 
@@ -309,7 +312,7 @@
  opls_277   12.01100  ; AA C: aldehyde - for C-alpha use #135-#139
  opls_278   15.99940  ; AA O: aldehyde  
  opls_279    1.00800  ; AA H-alpha in aldehyde & formamide
- opls_280   12.01100  ; AA C: ketone - for C-al:~/Dropbox/PFO/PFO_beta/Params19/HPC_1/Analysispha use #135-#139
+ opls_280   12.01100  ; AA C: ketone - for C-alpha use #135-#139
  opls_281   15.99940  ; AA O: ketone 
  opls_282    1.00800  ; AA H on C-alpha in ketone & aldehyde
  opls_283   12.01100  ; CA on C-terminal ALA,CYS,SER,THR,HIS,ASP,ASN
@@ -604,7 +607,7 @@
  opls_575   12.01100  ; C5  in oxazole
  opls_576    1.00800  ; H2  in oxazole
  opls_577    1.00800  ; H4  in oxazole
- opls_578    1.00800  ; H5  in oxazole:~/Dropbox/PFO/PFO_beta/Params19/HPC_1/Analysis
+ opls_578    1.00800  ; H5  in oxazole
  opls_579   15.99940  ; O   in isoxazole
  opls_580   14.00670  ; N   in isoxazole
  opls_581   12.01100  ; C3  in isoxazole

@@ -47,6 +47,7 @@
  
 ; thiophene-sidechain
  OT	CG!	1	0.14100 267776.0	; opls OH to CT - check with QCC 
+ OT	CL!	1	0.14100 267776.0	; opls OH to CT - check with QCC 
 
 
 
@@ -83,10 +84,12 @@
 ; Alkyl sidechains
  CL	CL	CL	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
  CL	CL	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ CL	CL!	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
  HL	CL	HL	1	107.800 276.144 ; form Drew opls_140 - opls_139 - opls_140	
  CL!	CL	CL	1	112.700 488.273 ; from Drew opls_139 - opls_139 - opls_139
  CL!	CL	HL	1	110.700 313.800 ; from Drew opls_139 - opls_139 - opls_140
  HL	CL!	HL	1	107.800 276.144 ; form Drew opls_140 - opls_139 - opls_140
+ OT	CL!	CL	1	109.500	418.400	; from Drew P
 
  
 ; thiophene - glycol sidechain
@@ -134,6 +137,12 @@
  CAA	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem - CHECK WITH QCC
  OT	CG!	CG	OG	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
+; thiophene - alkyl sidechain
+ CBB	CBB	OT	CL!	3	 1.3284	4.7153	59.1743	-93.290	28.111	0.000   ; Bhatta J Phys Chem
+ CBB	OT	CL!	CL	3        1.715	2.845	1.046	-5.607	-0.000	0.000   ; from Drew   
+ CAA	CBB	OT	CL!	3	 1.3284	4.7153	59.1743	-93.290	28.111	0.000   ; Bhatta J Phys Chem - CHECK WITH QCC
+ OT	CL!	CL	CL	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
+
 ; thiophene - thiophene
  ST	CAA	CAA	CBB	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; Bhatta J Phys Chem
  CAA	ST	CAA	CAA	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; CHECK THIS - RANDOMLY ADDED
@@ -146,4 +155,11 @@
  HG	CG	CG	OG	3	0.979	2.937   0.000  -3.916  -0.000   0.000	; from Drew
  HG	CG	OG	CG	3	1.590	4.770   0.000  -6.360  -0.000   0.000	; from Drew
  OG	CG	CG	OG	3	-1.151	1.151   0.000  -0.000  -0.000   0.000	; from Drew
- 
+
+; alkyl sidechain 
+ CL	CL	CL	CL	3	2.9288	-1.4644	0.209	-1.6736	0.0	0.0	; opls_139 - opls_139 - opls_139 - opls_139 
+ CL	CL	CL	HL	3	0.6276	1.88280	0.000	-2.5104	0.0	0.0	; opls_139 - opls_139 - opls_139 - opls_140
+ HL	CL	CL	HL	3	0.6276  1.88280 0.000   -2.5104 0.0     0.0     ; opls_140 - opls_139 - opls_139 - opls_140
+ CL!	CL	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_139
+ HL	CL!	CL	HL	3       0.6276  1.88280 0.000   -2.5104 0.0     0.0     ; opls_140 - opls_139 - opls_139 - opls_140
+ CL	CL!	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_139

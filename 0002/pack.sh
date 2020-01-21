@@ -6,21 +6,21 @@ filetype pdb
 output olig.pdb 
 
 
-structure GI.pdb 
+structure AI.pdb 
 number 1 
 center 
 fixed -7.950 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure AM.pdb 
 number 1 
 center 
 fixed 0 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GE.pdb 
+structure AE.pdb 
 number 1 
 center 
 fixed 7.95 0 0 0 0 0

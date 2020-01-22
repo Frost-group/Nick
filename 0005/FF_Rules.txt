@@ -1,0 +1,32 @@
+GENERAL RULES FOLLOWED IN MAKING FORCEFIELD
+
+Residue naming schemes - 
+Two letter naming. 
+`G` or `A` means either glycolated or alkylated sidechains
+`I` `M` `E` means either initial , middle or end monomer of a polymer
+`S` `B` means either tin-terminated or bromine-terminated
+
+Atom Naming Scheme - 
+First letter (or two) is the element identifier
+Atoms on the `left' thiophene ring of the monomer contain an "S" after the element identifier
+Atoms on the `right' thiophene ring of the monomer contain an "D" after the element identifier
+Atoms on a sidechain on a left thiophene ring are iterated over with numbers, starting at `0'.  Bonded carbons and hydrogens always share the same first number after the element identifier.
+Atoms on a sidechain on a right thiophene ring are iterated over with lowercase letters, starting at a.  Bonded carbons and hydrogens always share the same first letter after the element identifier.  'Ca' is replaced with 'Caa' so it is not mistaken for Calcium. 
+In the case of sidechains in the `AB` and `AS` residues on the left thiophene, where 14 carbons are on the sidechain, the interations after `9` follow the pattern - `v` `p` `q` `t` . On the right sidechain the iterations carry on as normnal through the alphabet. 
+Sn terminals - if Sn terminal is attached to a left thiophene, carbons contain `x`. If attached to right thiophene, carbons contain `y`. Carbons and hydrogens iterated over with numbers. 
+
+Type Naming Scheme -
+First letter or two is the element identifier
+If the element is on an alkyl sidechain, it contains `L` (avoided `A` as it would look like calcium).  
+If the element is on an glycol sidechain, it contains `G`.
+The first carbon of a side chain contains an exclamation mark   
+For all elements in the rings, except carbon, there is a `T` in the element type (for thiophene)
+For carbons bonded to the sulfur (so called alpha carbons), type is `CAA`
+For carbons not bonded to the sulfur (so called beta carbons), type is `CBB`
+
+
+
+
+
+
+Atom types broadly based on opls-aa.  Where 

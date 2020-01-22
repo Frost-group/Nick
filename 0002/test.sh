@@ -2,7 +2,7 @@ source ~/.zshrc
 
 
 sh pack.sh
-gmx editconf -f GS.pdb -o test.gro -box 5 5 5
+gmx editconf -f AS.pdb -o test.gro -box 5 5 5
 echo "1" | gmx pdb2gmx -f test.gro
 gmx grompp -f EM.mdp -p topol.top -r test.gro -o temp.tpr
 gmx mdrun -s temp.tpr -deffnm temp
@@ -18,6 +18,6 @@ rm nvt_temp.log
 rm nvt_temp_prev.cpt
 rm posre.itp
 rm temp.edr
-;rm temp.gro
+rm temp.gro
 rm temp.log
 rm temp.trr

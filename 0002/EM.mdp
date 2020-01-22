@@ -18,7 +18,7 @@ rlist			= 1.0
 constraints		= none
 
 ; Electrostatics
-coulombtype		= Cut-off
+coulombtype		= cut-off
 rcoulomb		= 1.0
 epsilon_r		= 1
 

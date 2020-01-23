@@ -1,32 +1,32 @@
 [ atomtypes ]
 ; name       mass      charge    ptype      sigma      eps
 ; thiophene
- CAA	 12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA 
- CBB	 12.01100	0.000	A	0.355	0.293	; Moreno / opls_145 , CA
- HT	  1.00800	0.000	A	0.242	0.126	; Moreno / opls_146 , HA
- ST	 32.06000	0.000	A	0.355	1.046	; Moreno / opls_633 , S
+ CAA	 12.01100	0.000	A	0.355	0.293	; opls_145 , CA 
+ CBB	 12.01100	0.000	A	0.355	0.293	; opls_145 , CA
+ HT	  1.00800	0.000	A	0.242	0.126	; opls_146 , HA
+ ST	 32.06000	0.000	A	0.355	1.046	; opls_633 , S
  OT	 15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
- BT	 79.90400	0.000	A	0.347	0.197 	; opls_730 bromobenzene 
- SnT	 118.7100	0.000	A	0.347	0.197 	; Just here to see if works - need to change
- CSn	 12.01100	0.000	A	0.355	0.293	; Just here to see if works - need to change
- HSn	  1.00800	0.000	A	0.355	0.293	; Just here to see if works - need to change
+ BT	 79.90400	0.000	A	0.347	1.977 	; opls_730 bromobenzene , Br
+ SnT	 118.7100	0.000	A	0.367	2.420 	; opls_732 iodobenzene , I
+ CSn	 12.01100	0.000	A	0.350	0.276	; opls_139 alkane C , CT
+ HSn	  1.00800	0.000	A	0.250	0.126	; opls_140 alkane H , HC
 
 ; glycolate sidechain
- CG!	12.01100	0.000	A	0.350	0.276	; from Drew P 
- CG	12.01100	0.000	A	0.350	0.276	; from Drew P 
- HG 	 1.00800	0.000	A	0.250	0.126	; from Drew P 
- OG	15.99940	0.000	A	0.290	0.586	; from Drew P 
+ CG!	12.01100	0.000	A	0.350	0.276	; from Drew P , opls_139 alkane C , CT
+ CG	12.01100	0.000	A	0.350	0.276	; from Drew P , opls_139 alkane C , CT
+ HG 	 1.00800	0.000	A	0.250	0.126	; from Drew P , opls_140 alkane H , CT
+ OG	15.99940	0.000	A	0.290	0.586	; from Drew P , opls_180 dialkyl ether O , OS
 
 ; Alkylated sidechain
- CL!	12.01100	0.000	A	0.350	0.347	; opls_139
- CL	12.01100	0.000	A	0.350	0.347	; opls_139
- HL	1.00800		0.000	A	0.250	0.126	; opls_140
+ CL!	12.01100	0.000	A	0.350	0.347	; opls_139 , alkane C , CT
+ CL	12.01100	0.000	A	0.350	0.347	; opls_139 , alkane C , CT
+ HL	1.00800		0.000	A	0.250	0.126	; opls_140 , alkane H , HC
 
 
 [ bondtypes ]
 ;  i    j func        b0          kb
 ; thiophene
- ST	CAA	1	0.18100	185769.6	; opls SH to CA
+ ST	CAA	1	0.17600	209200.0	; opls S to CA
  CAA	CBB	1	0.14000	392459.2	; opls CA to CA
  CBB	CBB	1	0.14000	392459.2	; opls CA to CA
  CBB	HT	1	0.10800	307105.6	; opls CA to HA
@@ -34,26 +34,26 @@
  CAA	CAA	1	0.14000 392459.2	; opls CA to CA
  CBB	OT	1	0.13640	376560.0	; opls CA to OH 
  CAA	BT	1	0.18700	251040.0	; opls CA to Br 
- CAA	SnT	1	0.18700	251040.0	; just to see if works - need to change
- CSn	SnT	1	0.18700	251040.0	; just to see if works - need to change
- CSn	HSn	1	0.10800	307105.6	; just to see if works - need to change
+ CAA	SnT	1	0.21300	230120.0	; opls CA to I, bond length from gaussian
+ CSn	SnT	1	0.21420	230120.0	; opls CA to I, bond length from gaussian
+ CSn	HSn	1	0.10900	284512.0	; opls CT to HC 
 
 ; glycol sidechain
- CG!	CG	1	0.15290 224262.4	; from Drew P
- CG!	HG	1	0.10900 284512.0	; from Drew P
- CG	CG	1	0.15290	224262.4	; from Drew P
- CG	HG	1	0.10900 284512.0	; from Drew P
- CG	OG	1	0.14100 267776.0	; from Drew P
+ CG!	CG	1	0.15290 224262.4	; from Drew P , CT to CT
+ CG!	HG	1	0.10900 284512.0	; from Drew P , CT to HC
+ CG	CG	1	0.15290	224262.4	; from Drew P , CT to CT
+ CG	HG	1	0.10900 284512.0	; from Drew P , CT to HC
+ CG	OG	1	0.14100 267776.0	; from Drew P , CT to OS
 
 ; alkyl side chains
- CL!	CL	1	0.15290	224262.4	; from Drew P opls_139 - opls_139
- CL	CL	1	0.15290	224262.4	; from Drew P opls_139 - opls_139
- CL!	HL	1	0.10900	284512.0	; from Drew P opls_139 - opls_140
- CL	HL	1	0.10900	284512.0	; from Drew P opls_139 - opls_140
+ CL!	CL	1	0.15290	224262.4	; from Drew P , CT to CT
+ CL	CL	1	0.15290	224262.4	; from Drew P , CT to CT
+ CL!	HL	1	0.10900	284512.0	; from Drew P , CT to HC
+ CL	HL	1	0.10900	284512.0	; from Drew P , CT to HC
  
 ; thiophene-sidechain
- OT	CG!	1	0.14100 267776.0	; opls OH to CT - check with QCC 
- OT	CL!	1	0.14100 267776.0	; opls OH to CT - check with QCC 
+ OT	CG!	1	0.14100 267776.0	; opls CT to OS 
+ OT	CL!	1	0.14100 267776.0	; opls CT to OS
 
 
 
@@ -61,25 +61,25 @@
 [ angletypes ]
 ;  i    j    k  func    theta0      ktheta
 ; thiophene ring
- CAA	ST	CAA	1	 92.774	361.330	; Marcon - check units as taken from lammps
- ST	CAA	CBB	1	110.292	361.330	; Marcon - check units as taken from lammps
- CAA	CBB	CBB	1	113.322	165.611	; Marcon - check units as taken from lammps
- CBB	CBB	HT	1	123.700	147.540	; Marcon - check units as taken from lammps
- CBB	CAA	HT	1	123.700	147.540	; Marcon - check units as taken from lammps
- ST	CAA	HT	1	123.700	147.540	; Marcon - check units as taken from lammps
- CAA	CAA	CBB	1	130.140	228.840	; Marcon - check units as taken from lammps
- HT	CBB	CAA	1	122.979 147.540	; Marcon - check units as taken from lammps
- ST	CAA	CAA	1	119.569 174.640	; Marcon - check units as taken from lammps
- OT	CBB	CBB	1	123.378	696.824	; Bhatta J Phys Chem - check with QCC (changed C to O)
- CA	CBB	OT	1	124.554	695.882	; Bhatta J Phys Chem - check with QCC (changed C to O)
- CBB	CAA	BT	1	120.000	627.600	; OPLS - CA CA Br - check
- ST	CAA	BT	1	120.000 627.600 ; OPLS - CA CA Br - check
- CBB	CAA	SnT	1	120.000	627.600	; just to see if works - need to change
- ST	CAA	SnT	1	120.000 627.600 ; just to see if works - need to change
- CSn	SnT	CSn	1	120.000 627.600 ; just to see if works - need to change
- CAA	SnT	CSn	1	120.000 627.600 ; just to see if works - need to change
- HSn	CSn	HSn	1	107.800 276.144 ; just to see if works - need to change
- SnT	CSn	HSn	1	109.500 292.880 ; just to see if works - need to change
+ CAA	ST	CAA	1	 91.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602 
+ ST	CAA	CBB	1	112.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ CAA	CBB	CBB	1	112.50	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ CBB	CBB	HT	1	124.00	292.88	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ CBB	CAA	HT	1	123.50	292.88	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ ST	CAA	HT	1	112.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ CAA	CAA	CBB	1	129.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ HT	CBB	CAA	1	123.50	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ ST	CAA	CAA	1	119.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
+ OT	CBB	CBB	1	126.11	XXXXX	;   , angle from QCC
+ CA	CBB	OT	1	119.60	XXXXX	;   , angle from QCC
+ CBB	CAA	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
+ ST	CAA	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
+ CBB	CAA	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC
+ ST	CAA	SnT	1	125.73	627.600	;   OPLS - CA CA I , qngle from QCC
+ CSn	SnT	CSn	1	 97.86	518.816	;   OPLS - CT S CT , angle from QCC (tentative)
+ CAA	SnT	CSn	1	111.40	518.816	;   OPLS - CT S CT , angle from QCC (tentative)
+ HSn	CSn	HSn	1	109.49	276.144	;   opls HC CT HC , angle from QCC
+ SnT	CSn	HSn	1	109.43	292.880	;   opls HC CT S , angle from QCC (tentative)
 
 ; glycol sidechain
  OT	CG!	CG	1	109.500	418.400	; from Drew P

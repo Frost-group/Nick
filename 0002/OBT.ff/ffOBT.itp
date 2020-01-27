@@ -82,7 +82,7 @@
  SnT	CSn	HSn	1	109.43	292.880	;   opls HC CT S , angle from QCC (tentative)
 
 ; glycol sidechain
- OT	CG!	CG	1	109.500	418.400	; from Drew P
+ OT	CG!	CG	1	109.500	418.400	; from Drew P 
  CG	CG	OG	1	109.500	418.400 ; from Drew P
  CG	OG	CG	1	109.500	502.080	; from Drew P
  CG	CG	HG	1	110.700	313.800	; from Drew P
@@ -130,7 +130,8 @@
  CAA	ST	CBB	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
  CAA	CBB	ST	CAA	2	0	391.47000	;   check these!  Taken from drews params for PFO
  CAA	ST	CBB	BT	2	0	391.47000	;   check these!  Taken from drews params for PFO
- CAA	ST	CBB	SnT	2	0	391.47000	;   check these!  Just here to see if works - need to change
+ CAA	ST	CBB	SnT	2	0	391.47000	;   check these!  Taken from drews params for PFO
+
 
 ; Ryckaert-Bellemans Dihedrals
 ; X    j    k    X func      C0       C1       C2       C3       C4       C5

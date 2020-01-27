@@ -1,0 +1,20 @@
+# This file was created Mon Jan 27 09:59:05 2020
+# Created by:
+#                   :-) GROMACS - gmx angle, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx angle -f angle.gro -n angle.ndx
+# gmx angle is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "Angle Distribution: angle"
+@    xaxis  label "Degrees"
+@    yaxis  label ""
+@TYPE xy
+@    subtitle "average angle: 139.929\So\N"
+       139    0.000000
+       140    1.000000
+       141    0.000000

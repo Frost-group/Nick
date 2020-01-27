@@ -49,3 +49,5 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0005 = Information on the forcefield contained in 0002.  Naming schemes and rules etc
 
 0006 = rerun calculations in 0001 and 0003 but using the wB97XD functional to include dispersion correction (Jarv recommend).
+
+0007 = O-angle scan files.  Gaussian scan performed by Drew P. 

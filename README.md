@@ -51,3 +51,9 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0006 = rerun calculations in 0001 and 0003 but using the wB97XD functional to include dispersion correction (Jarv recommend).
 
 0007 = O-angle scan files.  Gaussian scan performed by Drew P. 
+
+0008 = inner-dihedral scan optimisation
+
+0009 = outer-dihedral scan optimisation
+
+0010 = forcefield with optimised parameters

@@ -21,42 +21,42 @@
 [ atoms ]
 ; Left thiophene unit (Sinister)
 ; name type charge chargegroup
- CS1	CAA	-0.069435 	1
- CS2 	CBB	 0.415214 	2
- CS3	CBB	-0.265089	3
- CS4	CAA	-0.200667 	4
- SS	ST	 0.031706	5
- OS	OT	-0.490052	6
- HS	HT	 0.152542 	3 
- HS2	HT	 0.178729	4
-; Total charge of -0.241
+ CS1	CAA	-0.077 	1
+ CS2 	CBB	 0.426 	2
+ CS3	CBB	-0.263	3
+ CS4	CAA	-0.199 	4
+ SS	ST	 0.02 	5
+ OS	OT	-0.501	6
+ HS	HT	 0.15  	3 
+ HS2	HT	 0.177	4
+; Total charge of -0.267
 
 ; Right thiophene unit (Dextrose) 
- CD1	CAA	 -0.085295	7
- CD2	CBB	  0.437054	8
- CD3	CBB	 -0.260013 	9
- CD4	CAA	 -0.198156  	10
- SD	ST        0.008596 	11
- OD	OT	 -0.509985  	12
- HD	HT	  0.147127  	9
- HD2	HT	  0.175269	10
-; Total charge of -0.241 
+ CD1	CAA	-0.077 	7
+ CD2	CBB	 0.426 	8
+ CD3	CBB	-0.263 	9
+ CD4	CAA	-0.199 	10
+ SD	ST       0.02  	11
+ OD	OT	-0.501 	12
+ HD	HT	 0.15  	9
+ HD2	HT	 0.177 	10
+; Total charge of -0.267
 
 
 ; Left sidechain 
- C0	CL!	 0.407886	13
- H01	HL	-0.077992	13
- H02	HL	-0.038477	13
- H03	HL	-0.022263	13
-; Total charge of +0.240
+ C0	CL!	 0.408	13
+ H01	HL	-0.046	13
+ H02	HL	-0.06 	13
+ H03	HL	-0.035	13
+; Total charge of 0.267
  
 
 ; Right sidechain 
- Caa	CL!	 0.407717	14
- Ha1	HL	-0.014449	14
- Ha2	HL	-0.081739	14
- Ha3	HL	-0.048227	14
-; Total charge of 0.251
+ Caa	CL!	 0.408	14
+ Ha1	HL	-0.046	14
+ Ha2	HL	-0.06 	14
+ Ha3	HL	-0.035	14
+; Total charge of 0.267
 
 
 

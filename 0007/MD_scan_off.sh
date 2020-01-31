@@ -5,7 +5,7 @@ rm MD_scan_off.txt
 
 # turn off potential in the forcefield
 sed -i '' '73s/.*/ OT     CBB     CBB     1       126.11  0/g' OBT.ff/ffOBT.itp
-sed -i '' '74s/.*/ CA     CBB     OT      1       119.60  0/g' OBT.ff/ffOBT.itp
+sed -i '' '74s/.*/ CAA    CBB     OT      1       119.60  0/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
 for i in $(seq 119.45 0.25 125.7)

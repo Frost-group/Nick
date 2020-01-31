@@ -52,8 +52,12 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 
 0007 = O-angle scan files.  Gaussian scan performed by Drew P. 
 
-0008 = inner-dihedral scan optimisation
+0008 = inner-dihedral scan optimisation using RB function
 
-0009 = outer-dihedral scan optimisation
+0009 = innder-dihedral scan optimisation using periodic function
 
-0010 = forcefield with optimised parameters
+0010 = outer-dihedral scan optimisation
+
+0011 = forcefield with optimised parameters
+
+0012 = Files containing information on crystal structures of monomers of OBT with either Br or Sn(Me)3 terminal groups

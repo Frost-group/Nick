@@ -1,13 +1,13 @@
 library('tidyverse')
 
-Harmonic <- function(theta0,k,Angle){
-	V <- (1/2) * k * (theta0 - Angle)^2
+Harmonic <- function(theta0,k,v0,Angle){
+	V <- (1/2) * k * (theta0 - Angle)^2 + v0
 	return(V)
 }
 
 Harmonic_fit <- function(D) {
-	nls(Energy~Harmonic(theta0,k,Angle), 
-		start=list(theta0=119,k=1), 
+	nls(Energy~Harmonic(theta0,k,v0,Angle), 
+		start=list(theta0=110,k=1,v0=0), 
 		data=D) 
 }
 
@@ -27,60 +27,65 @@ bin <- function(D,n){
 gaussian_b3lyp <- read.table("b3lyp_data.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>% 
 	mutate(Method="B3LYP") %>%
-	mutate(Energy= Energy*27211.4) %>%
-	mutate(Energy = Energy - min(Energy))
+	mutate(Energy= Energy*27211.4/10.36) %>%
+	mutate(Energy = Energy - min(Energy)) %>%
+	mutate(fit = predict(Harmonic_fit(.))) %>%
+	mutate(Energy = Energy - min(fit), fit = fit-min(fit))
 
 gaussian_w <- read.table("w_data.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Method="WB97XD") %>%
-	mutate(Energy= Energy*27211.4) %>%
-	mutate(Energy = Energy - min(Energy))
+	mutate(Energy= Energy*27211.4/10.36) %>%
+	mutate(Energy = Energy - min(Energy)) %>%
+	mutate(fit = predict(Harmonic_fit(.))) %>%
+	mutate(Energy = Energy - min(fit), fit = fit-min(fit))
 
-MD_energy_min <- read.table("MD_scan_off.txt") %>%
+MD_scan_off <- read.table("MD_scan_off.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Method="MD_scan_potential_off") %>%
 	mutate(Energy = Energy - min(Energy)) %>%
-	mutate(Energy = Energy * 10.36) 
+	mutate(fit = predict(Harmonic_fit(.))) %>%
+	mutate(Energy = Energy - min(fit), fit = fit-min(fit))
 
-MD_energy_min_p <- read.table("MD_scan_on.txt") %>%
+MD_scan_on <- read.table("MD_scan_on.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Method="MD_scan_potential_on") %>%
 	mutate(Energy = Energy - min(Energy)) %>%
-	mutate(Energy = Energy * 10.36) 
+	mutate(fit = predict(Harmonic_fit(.))) %>%
+	mutate(Energy = Energy - min(fit), fit = fit-min(fit))
+
+Difference <- as_tibble(data.frame(matrix(ncol=3,nrow=26))) %>%
+	rename(Angle=X1, Energy=X2) %>%
+	mutate(Method = "B2LYP-MD") %>%
+	mutate(Angle = MD_scan_on$Angle) %>%
+	mutate(Energy = gaussian_b3lyp$Energy - MD_scan_off$Energy) %>%
+	mutate(fit = predict(Harmonic_fit(.)))
 	
-data <- bind_rows(gaussian_b3lyp, gaussian_w, MD_energy_min,MD_energy_min_p) %>%
-#	group_by(Method) %>%
-#	nest() %>%
-#	mutate(
-#		model = map(data, Harmonic_fit),
-#		fit = map(model,predict)
-#		)  %>%
-#	unnest(c(data,fit)) %>%
+data <- bind_rows(gaussian_b3lyp, MD_scan_off,MD_scan_on, Difference) %>% 
 	ggplot(aes(x=Angle, y=Energy, color=Method)) + 
 		geom_point() + 
-		geom_line() + 
-		labs(y="Energy, meV", x="Angle, degrees", subtitle="Fitted with harmonic potentials") +
+		geom_line(aes(y=fit)) + 
+		labs(y="Energy, KJ/mol", x="Angle, degrees", subtitle="Fitted with harmonic potentials") +
 		theme_classic()
 		ggsave("Energy_scans.pdf") 
 
-MD_NVT <- read.table("MD_NVT_data.txt",skip=1000) %>%
-	rename(Time=V1,Energy=V2, Angle=V3) %>%
-	mutate(Method="MD_scan_potential_on") %>%
-	mutate(Energy = Energy * 10.36) %>%
-	arrange(Angle) %>%
-	select(Energy,Angle) %>% 
-	bin(22) %>% 
-	mutate(Energy = Energy-min(Energy)) %>%
-	mutate(Mode="Potential_off") %>%
-	mutate(fit = predict(nls(Energy~Harmonic(theta0,k,Angle), 
-			start=list(theta0=130,k=1), 
-			data=.))) %>%
-	ggplot(aes(x=Angle,y=Energy,color=Mode)) +
-		geom_point() +
-		geom_line(aes(y=fit)) + 
-		theme_classic() + 
-		labs(x="Angle", y="Energy Kjmol-1", subtitle="C-C-O Angle PES in NVT")
-	ggsave("MD_NVT_PES.pdf")
+Difference %>% Harmonic_fit(.) %>% print()
+
+#MD_NVT_off <- read.table("MD_NVT_off.txt",skip=1000) %>%
+#	rename(Time=V1,Energy=V2, Angle=V3) %>%
+#	mutate(Method="MD_scan_potential_on") %>%
+#	mutate(Energy = Energy * 10.36) %>%
+#	arrange(Angle) %>%
+#	select(Energy,Angle) %>% 
+#	bin(22) %>% 
+#	mutate(Energy = Energy-min(Energy)) %>%
+#	mutate(Mode="Potential_off") %>%
+#	ggplot(aes(x=Angle,y=Energy,color=Mode)) +
+#		geom_point() +
+#		geom_line() + 
+#		theme_classic() + 
+#		labs(x="Angle", y="Energy Kjmol-1", subtitle="C-C-O Angle PES in NVT")
+#	ggsave("MD_NVT_PES.pdf")
 
 
 

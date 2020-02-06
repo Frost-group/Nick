@@ -70,8 +70,8 @@
  CAA	CAA	CBB	1	129.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  HT	CBB	CAA	1	123.50	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CAA	CAA	1	119.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
- OT     CBB     CBB     1       126.11  0
- CAA    CBB     OT      1       119.60  0
+ OT     CBB     CBB     1       129.3  560
+ CAA    CBB     OT      1       117.8  560
  CBB	CAA	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
  ST	CAA	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
  CBB	CAA	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC

@@ -29,7 +29,7 @@ do
 	
 	[ angle_restraints ]
 	; i j k l            type    theta0     fc             mult
-	 1 2 2 6            1       $b         20000  1
+	 1 2 2 6            1       $b         5000  1
 	EOF
 	) > topol.top
 	

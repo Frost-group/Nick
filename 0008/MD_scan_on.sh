@@ -4,14 +4,12 @@ source ~/.zshrc
 rm MD_scan_on.txt
 
 # turn off potential in the forcefield
-sed -i '' '162s/.*/ ST     CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
-sed -i '' '163s/.*/ CAA    ST      CAA     CAA     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
-sed -i '' '164s/.*/ CBB    CAA     CAA     CBB     3 8.98 -24.1 -49.8 47.9 47.4 -77.4/g' OBT.ff/ffOBT.itp
-#sed -i '' '164s/.*/ CBB   CAA     CAA     CBB    3 97 282 -577 -772 664 1175/g' OBT.ff/ffOBT.itp
-sed -i '' '165s/.*/ CAA    ST      CAA     CAA     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
+sed -i '' '163s/.*/ ST     CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
+#sed -i '' '164s/.*/ CBB    CAA     CAA     CBB     3  7.939  -44.607  -90.511   98.860   88.246 -151.632 /g' OBT.ff/ffOBT.itp
+sed -i '' '164s/.*/ CBB    CAA     CAA     CBB     3 9.44 -22.3 -48.1  49.2  46.3 -80.5 /g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
-for i in $(seq -140 10 140)
+for i in $(seq -180 10 180)
 do	
 	gmx editconf -f mon.pdb -o mon.gro -box 5 5 5
 	echo "1" | gmx pdb2gmx -f mon.gro
@@ -30,12 +28,14 @@ do
 	
 	[ dihedral_restraints ]
 	; ai   aj    ak    al   type  phi  dphi  kfac
-	5 1 9 10 1 $i 0 50000
+	2 1 9 13 1 $i 0 2000
 	EOF
 	) > topol.top
 		
-	gmx grompp -f EM.mdp -c mon.gro -p topol.top -o EM.tpr -maxwarn 1
+	gmx grompp -f EM.mdp -r mon.gro -p topol.top -o EM.tpr -maxwarn 1
 	gmx mdrun -s EM.tpr -deffnm EM		
+
+
 
 	a=$(grep "Potential Energy" EM.log | awk '{print $4}')
 	echo "$i     $a" >> MD_scan_on.txt	

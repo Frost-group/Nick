@@ -3,19 +3,21 @@ source ~/.zshrc
 # remove existing data file
 rm MD_scan_on.txt
 
-# turn off potential in the forcefield
-sed -i '' '73s/.*/ OT     CBB     CBB     1       129.3  435/g' OBT.ff/ffOBT.itp
-sed -i '' '74s/.*/ CAA    CBB     OT      1       117.1  435/g' OBT.ff/ffOBT.itp
+# turn on potential in the forcefield
+sed -i '' '73s/.*/ OT     CBB     CBB     1       129.3  560/g' OBT.ff/ffOBT.itp
+sed -i '' '74s/.*/ CAA    CBB     OT      1       117.8  560/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
 for i in $(seq 119.45 0.25 125.7)
 do
 
+	# correct angle to take 180-angle
 	b=$(echo "scale=3; 180-$i" | bc)
 	
 	gmx editconf -f mon.pdb -o mon.gro -box 5 5 5
 	echo "1" | gmx pdb2gmx -f mon.gro
 	
+	# generate top file with angle restraint (20,000 Kj/mol)
 	(
 	cat <<- EOF 
 	#include "./OBT.ff/forcefield.itp"
@@ -29,16 +31,17 @@ do
 	
 	[ angle_restraints ]
 	; i j k l            type    theta0     fc             mult
-	 1 2 2 6            1       $b         20000  1
+	 1 2 2 6            1       $b         5000  1
 	EOF
 	) > topol.top
 	
 	rm posre.itp
-	
+
+	# perform EM
 	gmx grompp -f EM.mdp -c mon.gro -p topol.top -o EM.tpr -maxwarn 1
 	gmx mdrun -s EM.tpr -deffnm EM	
 
-
+	# take out parameters and record in data file
 	a=$(grep "Potential Energy" EM.log | awk '{print $4}')
 	echo "$i     $a" >> MD_scan_on.txt	
 	rm \#*

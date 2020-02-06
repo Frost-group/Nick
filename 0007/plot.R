@@ -56,7 +56,7 @@ MD_scan_on <- read.table("MD_scan_on.txt") %>%
 
 Difference <- as_tibble(data.frame(matrix(ncol=3,nrow=26))) %>%
 	rename(Angle=X1, Energy=X2) %>%
-	mutate(Method = "B2LYP-MD") %>%
+	mutate(Method = "B3LYP-MD") %>%
 	mutate(Angle = MD_scan_on$Angle) %>%
 	mutate(Energy = gaussian_b3lyp$Energy - MD_scan_off$Energy) %>%
 	mutate(fit = predict(Harmonic_fit(.)))
@@ -64,28 +64,39 @@ Difference <- as_tibble(data.frame(matrix(ncol=3,nrow=26))) %>%
 data <- bind_rows(gaussian_b3lyp, MD_scan_off,MD_scan_on, Difference) %>% 
 	ggplot(aes(x=Angle, y=Energy, color=Method)) + 
 		geom_point() + 
-		geom_line(aes(y=fit)) + 
-		labs(y="Energy, KJ/mol", x="Angle, degrees", subtitle="Fitted with harmonic potentials") +
+		geom_line() + 
+		labs(y="Energy, KJ/mol", x="Angle, degrees") +
 		theme_classic()
 		ggsave("Energy_scans.pdf") 
 
 Difference %>% Harmonic_fit(.) %>% print()
 
-#MD_NVT_off <- read.table("MD_NVT_off.txt",skip=1000) %>%
-#	rename(Time=V1,Energy=V2, Angle=V3) %>%
-#	mutate(Method="MD_scan_potential_on") %>%
-#	mutate(Energy = Energy * 10.36) %>%
-#	arrange(Angle) %>%
-#	select(Energy,Angle) %>% 
-#	bin(22) %>% 
-#	mutate(Energy = Energy-min(Energy)) %>%
-#	mutate(Mode="Potential_off") %>%
-#	ggplot(aes(x=Angle,y=Energy,color=Mode)) +
-#		geom_point() +
-#		geom_line() + 
-#		theme_classic() + 
-#		labs(x="Angle", y="Energy Kjmol-1", subtitle="C-C-O Angle PES in NVT")
-#	ggsave("MD_NVT_PES.pdf")
+MD_NVT_on <- read.table("MD_NVT_on.txt",skip=1000) %>%
+	rename(Time=V1,Energy=V2, Angle=V3) %>%
+	arrange(Angle) %>%
+	select(Energy,Angle) %>% 
+	bin(14) %>% 
+	mutate(Energy = Energy-min(Energy)) %>%
+	select(Angle, Energy) %>%
+ 	mutate(Method="MD_scan_potential_on")  
+
+MD_NVT_off <- read.table("MD_NVT_off.txt",skip=1000) %>%
+	rename(Time=V1,Energy=V2, Angle=V3) %>%
+	arrange(Angle) %>%
+	select(Energy,Angle) %>% 
+	bin(10) %>% 
+	mutate(Energy = Energy-min(Energy)) %>%
+	select(Angle,Energy) %>%
+	mutate(Method="MD_scan_potential_off") 
+
+data <- bind_rows(MD_NVT_on, MD_NVT_off) 
+ 
+data %>% ggplot(aes(x=Angle,y=Energy,color=Method)) +
+		geom_point() +
+		geom_line() + 
+		theme_classic() + 
+		labs(x="Angle", y="Energy Kj/mol", subtitle="C-C-O Angle PES in NVT")
+	ggsave("MD_NVT_PES.pdf")
 
 
 

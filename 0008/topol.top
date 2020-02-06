@@ -9,4 +9,4 @@ mon	1
 
 [ dihedral_restraints ]
 ; ai   aj    ak    al   type  phi  dphi  kfac
-5 1 9 10 1 140 0 50000
+2 1 9 13 1 180 0 2000

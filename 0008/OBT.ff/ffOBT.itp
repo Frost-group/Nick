@@ -144,6 +144,7 @@
  CBB	CAA	SnT	CSn	3	1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
  CAA	SnT	CSn	HSn	3	1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
  CBB	CBB	CAA	CAA	3	316.2894  485.3440     178.5689   -6.3931   -15.9565    0.000   ; Bhatta J Phys Chem
+ CAA    ST      CAA     CAA     3 	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
 	
 ; thiophene - glycol sidechain
  CBB	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem
@@ -160,9 +161,8 @@
 
 ; thiophene - thiophene
  ST     CAA     CAA     CBB     3 0 0 0 0 0 0
- CAA    ST      CAA     CAA     3 0 0 0 0 0 0
- CBB    CAA     CAA     CBB     3 8.98 -24.1 -49.8 47.9 47.4 -77.4
- CAA    ST      CAA     CAA     3 0 0 0 0 0 0
+ CBB    CAA     CAA     CBB     3 9.44 -22.3 -48.1  49.2  46.3 -80.5 
+
 
 ; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew

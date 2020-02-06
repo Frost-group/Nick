@@ -1,0 +1,30 @@
+TITLE     OBT_2m_opt_freq.gjf
+REMARK    THIS IS A SIMULATION BOX
+CRYST1  100.000  100.000  100.000  90.00  90.00  90.00 P 1           1
+MODEL        1
+HETATM    1  CS1  Mo A   1      47.275  48.306  50.000  1.00  0.00           C
+HETATM    2  CS2  Mo A   1      46.981  49.645  50.000  1.00  0.00           C
+HETATM    3  CS3  Mo A   1      48.145  50.470  50.000  1.00  0.00           C
+HETATM    4  CS4  Mo A   1      49.320  49.752  50.000  1.00  0.00           C
+HETATM    5  SS   Mo A   1      48.985  48.036  50.000  1.00  0.00           S
+HETATM    6  OS   Mo A   1      45.689  50.068  50.000  1.00  0.00           O
+HETATM    7  HS   Mo A   1      48.124  51.550  50.000  1.00  0.00           H
+HETATM    8  HS2  Mo A   1      46.581  47.482  50.000  1.00  0.00           H
+HETATM    9  CD1  Mo A   1      52.725  51.694  50.000  1.00  0.00           C
+HETATM   10  CD2  Mo A   1      53.019  50.355  50.000  1.00  0.00           C
+HETATM   11  CD3  Mo A   1      51.855  49.530  50.000  1.00  0.00           C
+HETATM   12  CD4  Mo A   1      50.680  50.248  50.000  1.00  0.00           C
+HETATM   13  SD   Mo A   1      51.015  51.964  50.000  1.00  0.00           S
+HETATM   14  OD   Mo A   1      54.311  49.932  50.000  1.00  0.00           O
+HETATM   15  HD   Mo A   1      51.876  48.450  50.000  1.00  0.00           H
+HETATM   16  HD2  Mo A   1      53.419  52.518  50.000  1.00  0.00           H
+HETATM   17  C0   Mo A   1      45.457  51.471  50.000  1.00  0.00           C
+HETATM   18  H01  Mo A   1      45.873  51.947  49.105  1.00  0.00           H
+HETATM   19  H02  Mo A   1      45.873  51.947  50.895  1.00  0.00           H
+HETATM   20  H03  Mo A   1      44.375  51.595  50.000  1.00  0.00           H
+HETATM   21  Caa  Mo A   1      54.543  48.529  50.000  1.00  0.00           C
+HETATM   22  Ha1  Mo A   1      55.625  48.405  50.000  1.00  0.00           H
+HETATM   23  Ha2  Mo A   1      54.127  48.053  50.895  1.00  0.00           H
+HETATM   24  Ha3  Mo A   1      54.127  48.053  49.105  1.00  0.00           H
+TER
+ENDMDL

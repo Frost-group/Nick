@@ -5,7 +5,7 @@ define			= -DPOSRES
 ; Run control
 integrator		= md
 dt			= 0.001
-nsteps			= 10000 
+nsteps			= 1000 
 comm_mode		= linear
 nstcomm			= 10
 comm_grps		=

@@ -55,8 +55,9 @@
  OT	CG!	1	0.14100 267776.0	; opls CT to OS 
  OT	CL!	1	0.14100 267776.0	; opls CT to OS
 
-
-
+; Oxygen-Sulfur
+ OT	ST	1	2.86	000	;	30	1000
+ ST	OT	1	2.86	000	;	30	1000
 
 [ angletypes ]
 ;  i    j    k  func    theta0      ktheta
@@ -70,8 +71,8 @@
  CAA	CAA	CBB	1	129.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  HT	CBB	CAA	1	123.50	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CAA	CAA	1	119.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
- OT     CBB     CBB     1       129.3   435	;   From QCC Optimisation
- CA     CBB     OT      1       117.1   435     ;   From QCC Optimisation
+ OT     CBB     CBB     1       129.3   560	;   From QCC Optimisation
+ CA     CBB     OT      1       117.1   560     ;   From QCC Optimisation
  CBB	CAA	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
  ST	CAA	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
  CBB	CAA	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC
@@ -113,7 +114,11 @@
  CBB	OT	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
  OT	CL!	HL	1	109.500 292.880 ; from Drew P
 
-
+; Oxygen - Sulfur
+ CBB	OT	ST	1	0 0 
+ CAA	ST	OT	1	0 0	
+ ST	OT	CL!	1	0 0
+ ST	OT	CBB	1	0 0
 
 [ dihedraltypes ]
 ; Improper dihedrals
@@ -160,9 +165,7 @@
  OT	CL!	CL	CL	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
 ; thiophene - thiophene
- ST     CAA     CAA     CBB     3 0 0 0 0 0 0
  CBB    CAA     CAA     CBB     3 0 0 0 0 0 0
-
 
 ; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew
@@ -178,4 +181,10 @@
  HL	CL	CL	HL	3	0.6276  1.88280 0.000   -2.5104 0.0     0.0     ; opls_140 - opls_139 - opls_139 - opls_140
  CL!	CL	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_139
  HL	CL!	CL	HL	3       0.6276  1.88280 0.000   -2.5104 0.0     0.0     ; opls_140 - opls_139 - opls_139 - opls_140
- CL	CL!	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_139
+ CL	CL!	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_13
+
+; Oxygen to sulfur
+ CBB	CBB	OT	ST	3	0 0 0 0 0 0
+ CBB	OT	ST	CAA	3	0 0 0 0 0 0
+ CAA	CBB	OT	ST	3	0 0 0 0 0 0
+ ST	OT	CL!	HL	3	0 0 0 0 0 0	

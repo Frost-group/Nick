@@ -135,7 +135,6 @@
 ; X    j    k    X func      C0       C1       C2       C3       C4       C5
 
 ; thiophene
- ST	CAA	CAA	ST	3	12.3566      0.6573     -17.7091    1.6648    7.8889    0.000 	; Bhatta J Phys Chem
  CBB	CAA	ST	CAA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
  CAA	ST	CAA	CBB	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
  CAA	CBB	CBB	CAA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
@@ -160,9 +159,7 @@
  OT	CL!	CL	CL	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
 ; thiophene - thiophene
- ST	CAA	CAA	CBB	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000    ; QCC optimisation
  CBB	CAA	CAA	CBB	3	8.98	   -24.1       -49.8      47.9       47.4     -77.4  				 ; QCC optimisation
-
 
 ; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew

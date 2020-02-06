@@ -70,8 +70,8 @@
  CAA	CAA	CBB	1	129.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  HT	CBB	CAA	1	123.50	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CAA	CAA	1	119.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
- OT     CBB     CBB     1       129.3   435	;   From QCC Optimisation
- CA     CBB     OT      1       117.1   435     ;   From QCC Optimisation
+ OT     CBB     CBB     1       129.3   560	;   From QCC Optimisation
+ CA     CBB     OT      1       117.1   560     ;   From QCC Optimisation
  CBB	CAA	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
  ST	CAA	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
  CBB	CAA	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC
@@ -160,9 +160,7 @@
  OT	CL!	CL	CL	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
 ; thiophene - thiophene
- ST     CAA     CAA     CBB     3 0 0 0 0 0 0
  CBB    CAA     CAA     CBB     3 9.44 -22.3 -48.1  49.2  46.3 -80.5 
-
 
 ; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew

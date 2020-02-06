@@ -1,3 +1,0 @@
-[ angle_restraints ]
-; i j k l            type    theta0     fc             mult
-1 2 2 6 1 130 100000 1

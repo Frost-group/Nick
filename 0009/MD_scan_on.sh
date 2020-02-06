@@ -4,9 +4,7 @@ source ~/.zshrc
 rm MD_scan_on.txt
 
 # turn off potential in the forcefield
-sed -i '' '163s/.*/ ST     CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
-#sed -i '' '164s/.*/ CBB    CAA     CAA     CBB     3 9.56  -14.97  -57.22  -37.26  238.81 -185.41 /g' OBT.ff/ffOBT.itp
-sed -i '' '164s/.*/ CBB    CAA     CAA     CBB     3 9.44 -22.3 -48.1  49.2  46.3 -80.5 /g' OBT.ff/ffOBT.itp
+sed -i '' '168s/.*/ CBB    CAA     CAA     CBB     3 8.98 -24.1 -49.8 47.9 40.4 -85.4 /g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
 for i in $(seq -180 10 180)
@@ -28,12 +26,14 @@ do
 	
 	[ dihedral_restraints ]
 	; ai   aj    ak    al   type  phi  dphi  kfac
-	2 1 9 13 1 $i 0 2000
+	2 1 9 13 1 $i 0 20000
 	EOF
 	) > topol.top
 		
-	gmx grompp -f EM.mdp -c mon.gro -p topol.top -o EM.tpr -maxwarn 1
+	gmx grompp -f EM.mdp -r mon.gro -p topol.top -o EM.tpr -maxwarn 1
 	gmx mdrun -s EM.tpr -deffnm EM		
+
+
 
 	a=$(grep "Potential Energy" EM.log | awk '{print $4}')
 	echo "$i     $a" >> MD_scan_on.txt	

@@ -40,24 +40,18 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 		AS = tin-terminated monomer (Sn Me3 terminated) with alkylated sidechains
 		AB = Bromine terminated monomer with alkylated sidecahins
 
-
 0003 = Calculation of partial charges for different arrangements of oligomers of OBT, using ChelpG 
-
 0004 = population calculations using the heavy atom terminations, for which we have the crystal structures
 	_Sn = terminated with SN-(CH3)3 , _Br = terminated with Br atoms
-
 0005 = Information on the forcefield contained in 0002.  Naming schemes and rules etc
-
 0006 = rerun calculations in 0001 and 0003 but using the wB97XD functional to include dispersion correction (Jarv recommend).
-
 0007 = O-angle scan files.  Gaussian scan performed by Drew P. 
-
 0008 = inner-dihedral scan optimisation using RB function
-
-0009 = innder-dihedral scan optimisation using periodic function
-
+0009 = innder-dihedral scan optimsation with Morse-potential bond between oxygen and sulfur
 0010 = outer-dihedral scan optimisation
-
 0011 = forcefield with optimised parameters
-
 0012 = Files containing information on crystal structures of monomers of OBT with either Br or Sn(Me)3 terminal groups
+0013 = innder-dihedral optimised without the methyl groups
+0014 = some results for inner-dihedral scans, looking at the effect of the methyl group
+0015 = inner-dihedral scan, with individual files and calculations
+0016 = inner dihedral angle optimisation, changing the LG parameters

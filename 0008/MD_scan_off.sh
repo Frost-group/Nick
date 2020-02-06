@@ -4,8 +4,7 @@ source ~/.zshrc
 rm MD_scan_off.txt
 
 # turn off potential in the forcefield
-sed -i '' '163s/.*/ ST     CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
-sed -i '' '164s/.*/ CBB    CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
+sed -i '' '163s/.*/ CBB    CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
 for i in $(seq -180 10 180)
@@ -28,7 +27,7 @@ do
 	
 	[ dihedral_restraints ]
 	; ai   aj    ak    al   type  phi  dphi  kfac
-	2 1 9 13 1 $i 0 2000
+	2 1 9 13 1 $i 0 20000
 
 	EOF
 	) > topol.top

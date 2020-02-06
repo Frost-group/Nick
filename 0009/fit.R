@@ -15,6 +15,7 @@ RB_fit <- function(D) {
 	nls(Energy~RB(C0,C1,C2,C3,C4,C5,Angle), 
 		start=list(C0=0,C1=300,C2=-30,C3=0,C4=10,C5=10), 
 		data=D,
+		weights=(1/abs(Angle+0.01)),
 		nls.control(maxiter=1000)) 
 }
 
@@ -27,6 +28,11 @@ bin <- function(D,n){
 		binned[i,2] = mean(D[j:j+bin_size,2])
 	}
 	return(binned)
+}
+
+bias <- function(Angle,FL){
+  S <- ((1/(pi)) * ( FL / (FL^2 + Angle^2)))
+  return(S)
 }
 
 
@@ -69,7 +75,7 @@ Data <- bind_rows(gaussian_b3lyp, MD_scan_off, MD_scan_on) %>%
 
 
 
-range <- 130
+range <- 170
 on_range <- Data %>% 
 	filter(Method=="MD_potential_on") %>%
 	select(Method, Angle, Energy) %>%
@@ -89,7 +95,27 @@ QCC_range <- Data %>%
 First_Difference <- QCC_range %>% ungroup() %>%
 	mutate(Method="First Difference") %>%
 	mutate(Energy= QCC_range$Energy - off_range$Energy) %>%
-	RB_fit(.) %>% print()
+	filter(Energy > -200) 
 
+bias <- First_Difference %>% ungroup() %>%
+	mutate(Method="Bias") %>%
+	mutate(Energy = -bias(Angle=Angle,FL=1)*0) 
 
- 
+Difference_with_bias <- First_Difference %>% ungroup() %>%
+	mutate(Energy = First_Difference$Energy + bias$Energy) %>%
+	mutate(Method = "with_bias") 
+
+bind_rows(First_Difference, Difference_with_bias) %>%
+	group_by(Method) %>% 
+	nest() %>%
+	mutate(
+		model = map(data, RB_fit),
+		fit = map(model, predict)
+	) %>% 
+	unnest(c(data, fit)) %>%
+	ggplot(aes(x=Angle,y=Energy, color=Method)) + 
+		geom_point() + 
+		geom_line(aes(y=fit))
+	ggsave("Difference.pdf")
+
+Difference_with_bias %>% RB_fit(.) %>% print() 

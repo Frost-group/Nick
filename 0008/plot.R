@@ -40,7 +40,7 @@ Data %>% filter(Energy < 100 & Energy > -100) %>%
 
 
 QCCdata <- bind_rows(gaussian_b3lyp,gaussian_w) %>%
-	filter(Energy < 60) %>%
+	filter(Energy < 100) %>%
 	ggplot(aes(x=Angle, y=Energy, color=Method)) + 
 		geom_point() +
 		geom_line(linetype="dashed") +   

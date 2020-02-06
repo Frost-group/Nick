@@ -87,15 +87,15 @@ CD4	HD2
 
 ; thiophene-thiophene
  CS1	CD1
+ OS	SD
+ SS	OD
 
-; Left Sidechain
- C0	C1
+; Left Sidechains
  C0	H01
  C0	H02
  C0	H03
    
 ; Right Sidechain
- Caa	Cb
  Caa	Ha1
  Caa	Ha2
  Caa	Ha3

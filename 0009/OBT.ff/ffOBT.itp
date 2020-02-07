@@ -56,8 +56,7 @@
  OT	CL!	1	0.14100 267776.0	; opls CT to OS
 
 ; Oxygen-Sulfur
- OT	ST	1	2.86	000	;	30	1000
- ST	OT	1	2.86	000	;	30	1000
+ OT	ST	1	2.86 0  
 
 [ angletypes ]
 ;  i    j    k  func    theta0      ktheta
@@ -165,7 +164,7 @@
  OT	CL!	CL	CL	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
 ; thiophene - thiophene
- CBB    CAA     CAA     CBB     3 0 0 0 0 0 0
+ CBB    CAA     CAA     CBB     3   4.4231   8.6335 -10.9332   0.2353   0.2168  -2.5744 
 
 ; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew

@@ -13,22 +13,12 @@ RB <- function(C0,C1,C2,C3,C4,C5,Angle){
 
 RB_fit <- function(D) {
 	nls(Energy~RB(C0,C1,C2,C3,C4,C5,Angle), 
-		start=list(C0=0,C1=300,C2=-30,C3=0,C4=10,C5=10), 
+		start=list(C0=10,C1=-20,C2=-72,C3=50,C4=10,C5=10), 
 		data=D,
 		weights=(1/abs(Angle+0.01)),
 		nls.control(maxiter=1000)) 
 }
 
-bin <- function(D,n){
-	binned <- data.frame(Angle=0, Energy=0)	
-	bin_size <- as.integer(nrow(D)/n)
-	for (i in 0:n){
-		j <- i * bin_size
-		binned[i,1] = mean(D[j:j+bin_size,1])
-		binned[i,2] = mean(D[j:j+bin_size,2])
-	}
-	return(binned)
-}
 
 bias <- function(Angle,FL){
   S <- ((1/(pi)) * ( FL / (FL^2 + Angle^2)))
@@ -44,15 +34,6 @@ gaussian_b3lyp <- read.table("b3lyp_data.txt") %>%
 	mutate(Energy = Energy - min(Energy)) %>%
 	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
 	arrange(Angle)  
-
-gaussian_w <- read.table("w_data.txt") %>% 
-	rename(Angle=V1, Energy=V2) %>%
-	mutate(Angle = round(Angle)) %>% 
-	mutate(Method="WB97XD") %>%
-	mutate(Energy= Energy*27211.4/10.36) %>%
-	mutate(Energy = Energy - min(Energy)) %>%
-	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
-	arrange(Angle)
 
 MD_scan_off <- read.table("MD_scan_off.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%

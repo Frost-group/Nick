@@ -1,0 +1,16 @@
+#!/bin/sh
+#PBS -l walltime=72:00:00
+#PBS -l select=1:ncpus=8:mem=50gb:avx=true
+#PBS -J 1-4
+
+source /rds/general/user/ns5018/home/.bash_profile
+
+file[1]="b3lyp_no_methyl"
+file[2]="b3lyp_with_methyl"
+file[3]="wb97xd_no_methyl"
+file[4]="wb97xd_with_methyl"
+
+cp $PBS_O_WORKDIR/${file[$PBS_ARRAY_INDEX]}.gjf $TMPDIR
+g16 ${file[$PBS_ARRAY_INDEX]]}.gjf
+cp $TMPDIR/${file[$PBS_ARRAY_INDEX]]}.log $PBS_O_WORKDIR
+

@@ -45,17 +45,17 @@
 
 ; Left sidechain 
  C0	CL!	 0.408	13
- H01	HL	-0.046	13
- H02	HL	-0.06 	13
- H03	HL	-0.035	13
+ H01	HL	-0.047	13
+ H02	HL	-0.047 	13
+ H03	HL	-0.047	13
 ; Total charge of 0.267
  
 
 ; Right sidechain 
  Caa	CL!	 0.408	14
- Ha1	HL	-0.046	14
- Ha2	HL	-0.06 	14
- Ha3	HL	-0.035	14
+ Ha1	HL	-0.047	14
+ Ha2	HL	-0.047 	14
+ Ha3	HL	-0.047	14
 ; Total charge of 0.267
 
 
@@ -87,8 +87,10 @@ CD4	HD2
 
 ; thiophene-thiophene
  CS1	CD1
+ OS	SD
+ SS	OD
 
-; Left Sidechain
+; Left Sidechains
  C0	H01
  C0	H02
  C0	H03

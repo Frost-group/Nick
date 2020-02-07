@@ -29,7 +29,7 @@ bin <- function(D,n){
 	return(binned)
 }
 
-gaussian_b3lyp <- read.table("b3lyp_data.txt") %>% 
+gaussian_b3lyp <- read.table("../0014/b3lyp_no_methyl.txt.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
 	mutate(Method="B3LYP") %>%
@@ -38,7 +38,7 @@ gaussian_b3lyp <- read.table("b3lyp_data.txt") %>%
 	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
 	arrange(Angle)  
 
-gaussian_w <- read.table("w_data.txt") %>% 
+gaussian_w <- read.table("../0014/wb97xd_no_methyl.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
 	mutate(Method="WB97XD") %>%

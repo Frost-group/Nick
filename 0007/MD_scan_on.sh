@@ -4,8 +4,8 @@ source ~/.zshrc
 rm MD_scan_on.txt
 
 # turn on potential in the forcefield
-sed -i '' '73s/.*/ OT     CBB     CBB     1       129.3  560/g' OBT.ff/ffOBT.itp
-sed -i '' '74s/.*/ CAA    CBB     OT      1       117.8  560/g' OBT.ff/ffOBT.itp
+sed -i '' '73s/.*/ OT     CBB     CBB     1       127.3  850/g' OBT.ff/ffOBT.itp
+sed -i '' '74s/.*/ CAA    CBB     OT      1       119.2  850/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
 for i in $(seq 119.45 0.25 125.7)

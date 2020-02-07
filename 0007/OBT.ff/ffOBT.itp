@@ -55,8 +55,8 @@
  OT	CG!	1	0.14100 267776.0	; opls CT to OS 
  OT	CL!	1	0.14100 267776.0	; opls CT to OS
 
-
-
+; Oxygen-Sulfur
+ OT	ST	1	2.86 0  
 
 [ angletypes ]
 ;  i    j    k  func    theta0      ktheta
@@ -70,8 +70,8 @@
  CAA	CAA	CBB	1	129.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  HT	CBB	CAA	1	123.50	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CAA	CAA	1	119.00	502.08	;   Marcon J Phys Chem B 2010, 114, 4, 1591-1602
- OT     CBB     CBB     1       129.3  560
- CAA    CBB     OT      1       117.8  560
+ OT     CBB     CBB     1       127.3  850
+ CAA    CBB     OT      1       119.2  850
  CBB	CAA	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
  ST	CAA	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
  CBB	CAA	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC
@@ -106,14 +106,17 @@
  
 ; thiophene - glycol sidechain
  CBB	OT	CG!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
-
  OT	CG!	HG	1	109.500 292.880 ; from Drew P
 
 ; thiophene - alkyl sidechain
  CBB	OT	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
  OT	CL!	HL	1	109.500 292.880 ; from Drew P
 
-
+; Oxygen - Sulfur
+ CBB	OT	ST	1	0 0 
+ CAA	ST	OT	1	0 0	
+ ST	OT	CL!	1	0 0
+ ST	OT	CBB	1	0 0
 
 [ dihedraltypes ]
 ; Improper dihedrals
@@ -136,15 +139,15 @@
 ; X    j    k    X func      C0       C1       C2       C3       C4       C5
 
 ; thiophene
- ST	CAA	CAA	ST	3	12.3566      0.6573     -17.7091    1.6648    7.8889    0.000 	; Bhatta J Phys Chem
  CBB	CAA	ST	CAA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
  CAA	ST	CAA	CBB	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000	; Bhatta J Phys Chem
  CAA	CBB	CBB	CAA	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
- CBB	CAA	CAA	CBB	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
  CBB	CBB	CAA	ST	3	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
  OT 	CBB	CBB	CAA	3	492.2476   996.87984    861.7366  471.9970  114.9219    0.000   ; Bhatta J Phys Chem
- CBB	CAA	SnT	CSn	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
- CAA	SnT	CSn	HSn	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
+ CBB	CAA	SnT	CSn	3	1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
+ CAA	SnT	CSn	HSn	3	1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Just here to see if works - need to change
+ CBB	CBB	CAA	CAA	3	316.2894  485.3440     178.5689   -6.3931   -15.9565    0.000   ; Bhatta J Phys Chem
+ CAA    ST      CAA     CAA     3 	528.5228  -459.4450     -82.5837 -105.8677  119.3695    0.000   ; Bhatta J Phys Chem
 	
 ; thiophene - glycol sidechain
  CBB	CBB	OT	CG!	3	 1.3284	    4.7153      59.1743  -93.2906    28.1114	0.000   ; Bhatta J Phys Chem
@@ -160,9 +163,7 @@
  OT	CL!	CL	CL	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
 ; thiophene - thiophene
- ST	CAA	CAA	CBB	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; Bhatta J Phys Chem
- CAA	ST	CAA	CAA	3	12.3566    -0.6573     -17.7091   -1.6648     7.8889    0.000   ; CHECK THIS - RANDOMLY ADDED
- CBB	CBB	CAA	CAA	3	316.2894  485.3440     178.5689   -6.3931   -15.9565    0.000   ; Bhatta J Phys Chem
+ CBB    CAA     CAA     CBB     3   4.4231   8.6335 -10.9332   0.2353   0.2168  -2.5744 
 
 ; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew
@@ -178,4 +179,10 @@
  HL	CL	CL	HL	3	0.6276  1.88280 0.000   -2.5104 0.0     0.0     ; opls_140 - opls_139 - opls_139 - opls_140
  CL!	CL	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_139
  HL	CL!	CL	HL	3       0.6276  1.88280 0.000   -2.5104 0.0     0.0     ; opls_140 - opls_139 - opls_139 - opls_140
- CL	CL!	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_139
+ CL	CL!	CL	CL	3	2.9288  -1.4644 0.209   -1.6736 0.0     0.0     ; opls_139 - opls_139 - opls_139 - opls_13
+
+; Oxygen to sulfur
+ CBB	CBB	OT	ST	3	0 0 0 0 0 0
+ CBB	OT	ST	CAA	3	0 0 0 0 0 0
+ CAA	CBB	OT	ST	3	0 0 0 0 0 0
+ ST	OT	CL!	HL	3	0 0 0 0 0 0	

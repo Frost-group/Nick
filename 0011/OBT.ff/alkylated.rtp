@@ -22,7 +22,7 @@
  CS1	CAA	-0.078	1
  CS2 	CBB	 0.317 	2
  CS3	CBB	-0.289	3
- CS4	CAA	-0.152	4
+ CS4	CE	-0.152	4
  SS	ST	-0.034	5
  OS	OT	-0.268	6
  HS	HT	 0.141 	3 
@@ -33,7 +33,7 @@
  CD1	CAA	-0.017	7
  CD2	CBB	 0.288 	8
  CD3	CBB	-0.323	9
- CD4	CAA	 0.08  	10
+ CD4	CE	 0.08  	10
  SD	ST      -0.145	11
  OD	OT	-0.319 	12
  HD	HT	 0.182 	9
@@ -134,6 +134,8 @@ CD3	HD
 
 ; thiophene-thiophene
  CS1	CD1
+ OS	SD
+ OD	SS
 
 ; Left Sidechain
  C0	C1
@@ -248,7 +250,7 @@ CD3	HD
  CS1	CAA	 0.009 	1
  CS2 	CBB	 0.232 	2
  CS3	CBB	-0.355	3
- CS4	CAA	 0.117 	4
+ CS4	CE	 0.117 	4
  SS	ST	-0.204	5
  OS	OT	-0.208	6
  HS	HT	 0.228 	3 
@@ -258,7 +260,7 @@ CD3	HD
  CD1	CAA	 0.009 	7
  CD2	CBB	 0.232 	8
  CD3	CBB	-0.355	9
- CD4	CAA	 0.117 	10
+ CD4	CE	 0.117 	10
  SD	ST      -0.204	11
  OD	OT	-0.208 	12
  HD	HT	 0.228 	9
@@ -361,6 +363,8 @@ CD3	HD
 
 ; thiophene-thiophene
  CS1	CD1
+ OS	SD
+ OD	SS
 
 ; Left Sidechain
  C0	C1
@@ -473,7 +477,7 @@ CD3	HD
  CS1	CAA	-0.017	1
  CS2 	CBB	 0.288	2
  CS3	CBB	-0.323	3
- CS4	CAA	 0.08 	4
+ CS4	CE	 0.08 	4
  SS	ST 	-0.145	5
  OS	OT 	-0.319	6
  HS	HT 	 0.182	3 
@@ -483,7 +487,7 @@ CD3	HD
  CD1	CAA	-0.078 	7
  CD2	CBB	 0.317 	8
  CD3	CBB	-0.289	9
- CD4	CAA	-0.152	10
+ CD4	CE	-0.152	10
  SD	ST 	-0.034	11
  OD	OT 	-0.268 	12
  HD	HT 	 0.141	9
@@ -590,7 +594,8 @@ CD3	HD
 
 ; thiophene-thiophene
  CS1	CD1
-
+ OS	SD
+ OD	SS
 
 ; Left Sidechain
  C0	C1

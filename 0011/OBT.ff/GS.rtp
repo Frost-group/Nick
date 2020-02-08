@@ -21,7 +21,7 @@
  CS1	CAA	-0.082	1
  CS2 	CBB	 0.631 	2
  CS3	CBB	-0.535	3
- CS4	CAA	-0.217	4
+ CS4	CE	-0.217	4
  SS	ST	-0.111	5
  OS	OT	-0.563	6
  HS	HT	 0.203 	3
@@ -44,7 +44,7 @@
  CD1	CAA	-0.082	9
  CD2	CBB	 0.631 	10
  CD3	CBB	-0.535	11
- CD4	CAA	-0.217	12
+ CD4	CE	-0.217	12
  SD	ST      -0.111	13
  OD	OT	-0.563 	14
  HD	HT	 0.203 	11
@@ -171,6 +171,8 @@
 
 ; thiophene-thiophene
  CS1	CD1
+ OS	SD
+ OD	SS
 
 ; Left Sidechain
  C0	C1

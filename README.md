@@ -45,9 +45,9 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 	_Sn = terminated with SN-(CH3)3 , _Br = terminated with Br atoms
 0005 = Information on the forcefield contained in 0002.  Naming schemes and rules etc
 0006 = rerun calculations in 0001 and 0003 but using the wB97XD functional to include dispersion correction (Jarv recommend).
-0007 = O-angle scan files.  Gaussian scan performed by Drew P. 
+0007 = O-angle scan files optimised
 0008 = inner-dihedral scan optimisation using RB function
-0009 = inner-dihedral scan optimsation with Morse-potential bond between oxygen and sulfur
+0009 = inner-dihedral scan optimsation with non-bond between oxygen and sulfur
 0010 = outer-dihedral scan optimisation
 0011 = forcefield with optimised parameters
 0012 = Files containing information on crystal structures of monomers of OBT with either Br or Sn(Me)3 terminal groups

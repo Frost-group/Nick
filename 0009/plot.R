@@ -25,5 +25,6 @@ Data %>% filter(Energy < 100 & Energy > -100) %>%
 	ggplot(aes(x=Angle, color=Method)) +
 		geom_point(aes(y=Energy)) +
 		geom_line(aes(y=Energy), linetype="dashed") + 
-		theme_classic() 
+		theme_classic() +
+		labs(x="Angle, Degrees", y="Energy, KJ/mol") 
 	ggsave("Energy_MD.pdf") 

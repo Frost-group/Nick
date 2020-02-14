@@ -19,35 +19,14 @@ RB_fit <- function(D) {
 		nls.control(maxiter=1000)) 
 }
 
-bin <- function(D,n){
-	binned <- data.frame(Angle=0, Energy=0)	
-	bin_size <- as.integer(nrow(D)/n)
-	for (i in 0:n){
-		j <- i * bin_size
-		binned[i,1] = mean(D[j:j+bin_size,1])
-		binned[i,2] = mean(D[j:j+bin_size,2])
-	}
-	return(binned)
-}
-
-
-gaussian_b3lyp <- read.table("b3lyp_data.txt") %>% 
+gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
-	mutate(Method="B3LYP") %>%
+	mutate(Method="wb97xd") %>%
 	mutate(Energy= Energy*27211.4/10.36) %>%
 	mutate(Energy = Energy - min(Energy)) %>%
 	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
-	arrange(Angle)  
-
-#gaussian_w <- read.table("w_data.txt") %>% 
-#	rename(Angle=V1, Energy=V2) %>%
-#	mutate(Angle = round(Angle)) %>% 
-#	mutate(Method="WB97XD") %>%
-#	mutate(Energy= Energy*27211.4/10.36) %>%
-#	mutate(Energy = Energy - min(Energy)) %>%
-#	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
-#	arrange(Angle)
+	arrange(Angle) 
 
 MD_scan_off <- read.table("MD_scan_off.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
@@ -59,7 +38,7 @@ MD_scan_on <- read.table("MD_scan_on.txt") %>%
 	mutate(Method="MD_potential_on") %>%
 	mutate(Energy = Energy - min(Energy)) 
 
-Data <- bind_rows(gaussian_b3lyp, MD_scan_off, MD_scan_on) %>%
+Data <- bind_rows(gaussian, MD_scan_off, MD_scan_on) %>%
 	group_by(Method) %>% 
 	nest() %>%
 	mutate(
@@ -67,8 +46,6 @@ Data <- bind_rows(gaussian_b3lyp, MD_scan_off, MD_scan_on) %>%
 		fit = map(model, predict)
 	) %>% 
 	unnest(c(data, fit))
-
-
 
 range=90
 on_range <- Data %>% 
@@ -82,12 +59,12 @@ off_range <- Data %>%
 	filter(Angle<=range & Angle>=-range) 
 
 QCC_range <- Data %>%
-	filter(Method=="B3LYP") %>%
+	filter(Method=="wb97xd") %>%
 	select(Method, Angle, Energy) %>%
 	filter(Angle<=range & Angle>=-range) 
 
 Difference <- QCC_range %>% ungroup() %>%
 	mutate(Method="Difference") %>%
-	mutate(Energy= QCC_range$Energy - 3.5*off_range$Energy) %>%
+	mutate(Energy= QCC_range$Energy - off_range$Energy) %>%
 	RB_fit(.) %>% print()
 

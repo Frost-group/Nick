@@ -1,0 +1,65 @@
+# This file was created Mon Feb 10 07:41:45 2020
+# Created by:
+#                   :-) GROMACS - gmx angle, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx angle -n angle.ndx -f ../NPT.xtc -od angle.xvg
+# gmx angle is part of G R O M A C S:
+#
+# Green Red Orange Magenta Azure Cyan Skyblue
+#
+@    title "Angle Distribution: CS3_OS_C0"
+@    xaxis  label "Degrees"
+@    yaxis  label ""
+@TYPE xy
+@    subtitle "average angle: 95.2059\So\N"
+        80    0.000000
+        81    0.000002
+        82    0.000003
+        83    0.000020
+        84    0.000120
+        85    0.000429
+        86    0.001467
+        87    0.003918
+        88    0.009404
+        89    0.019688
+        90    0.036712
+        91    0.058444
+        92    0.082938
+        93    0.105479
+        94    0.119670
+        95    0.122998
+        96    0.113930
+        97    0.095868
+        98    0.074828
+        99    0.053405
+       100    0.036328
+       101    0.023349
+       102    0.014638
+       103    0.008881
+       104    0.005503
+       105    0.003486
+       106    0.002431
+       107    0.001720
+       108    0.001265
+       109    0.000834
+       110    0.000667
+       111    0.000498
+       112    0.000344
+       113    0.000238
+       114    0.000171
+       115    0.000111
+       116    0.000081
+       117    0.000054
+       118    0.000034
+       119    0.000015
+       120    0.000014
+       121    0.000004
+       122    0.000005
+       123    0.000001
+       124    0.000003
+       125    0.000000
+       126    0.000001
+       127    0.000000

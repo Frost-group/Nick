@@ -4,9 +4,15 @@ source ~/.zshrc
 rm MD_scan_on.txt
 
 # turn off potential in the forcefield
-sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 -4.822  -71.983  169.925 -267.807  139.650   -8 /g' OBT.ff/ffOBT.itp
 
+sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 4.224 -17.732  -6.897  47.022 -97.060  57.245 /g' OBT.ff/ffOBT.itp
+#this set is from the fit fn
 
+#sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 4.224 -17.732  -6.897  47.022 -95.060  57.245 /g' OBT.ff/ffOBT.itp
+#this set best reproduces the flip barrier
+
+#sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 4.224 -17.732  -6.897  49.022 -92.060  48.245 /g' OBT.ff/ffOBT.itp
+# reproduces the walls best
 
 # Loop over the different angle restraints
 for i in $(seq -180 10 180)

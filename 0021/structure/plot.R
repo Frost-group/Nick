@@ -17,6 +17,8 @@ supercell <- read_gro("../super_cell_rot.gro", time=-1) %>%
 	rename(Element0=Element,ResName0=ResName, AtomName0=AtomName, AtomNumber0=AtomNumber, Part0=Part, x0=x, y0=y, z0=z) %>%
 	nest(super_cell_data=c(Element0,ResName0, AtomName0, AtomNumber0, Part0, x0, y0, z0))  
 
+ran <- 15
+
 data <- enframe(files, name=NULL) %>%  
 	rename(FileName=value) %>% 
 	mutate(gro = map(FileName, read_gro)) %>%
@@ -28,7 +30,7 @@ data <- enframe(files, name=NULL) %>%
 	select(Element,Part,AtomName, x,y,z,x0,y0,z0) %>% 
 	mutate(dx=(x-x0), dy=(y-y0), dz=(z-z0)) %>% 
 	mutate(dr = sqrt(dx**2 + dy**2 + dz**2)) %>%
-	mutate(dx=if_else((dx>5 | dx< -5),NaN,dx),dy=if_else((dy>5 | dy< -5),NaN,dy),dz=if_else((dz>5 | dz< -5),NaN,dz),dr=if_else(dr>5,NaN,dr)) %>%
+	mutate(dx=if_else((dx>ran|dx< -ran),NaN,dx),dy=if_else((dy>ran| dy< -ran),NaN,dy),dz=if_else((dz>ran|dz< -ran),NaN,dz),dr=if_else(dr>ran,NaN,dr)) %>%
 	select(Element,Part,AtomName, dr, dx, dy, dz) %>% 
 	group_by(Element,AtomName, Part) %>% 
 	mutate(dxm = mean(dx,na.rm=TRUE),dym = mean(dy,na.rm=TRUE),dzm = mean(dz,na.rm=TRUE),drm = mean(dr,na.rm=TRUE)) %>%
@@ -47,23 +49,23 @@ coords <- read_gro2("../AB_cryst_rot.gro", time=-1) %>%
 data <- bind_cols(data, coords) %>%
 	filter(!(Element=="H")) %>% 
 	ggplot(aes(x=cordx, y=cordy, color=Element)) + 
-	geom_segment(aes(xend=(cordx+dxm), yend=(cordy+dym)), size=0.2) +
+	geom_segment(aes(xend=(cordx+dxm), yend=(cordy+dym)), size=0.2,arrow = arrow(length = unit(0.01, "npc"))) +
 	geom_point(aes(x=(cordx+dxm),y=(cordy+dym),size=(2*sd)),alpha=0.5) +   
 	coord_fixed() +
-	theme_classic() + 
-	scale_x_continuous(expand=c(0.8,0.8)) +
+	theme_classic(base_size=15) + 
+	xlim(-6,7.5) +
 	scale_color_manual(values=c("Purple","black","blue","orange")) +
-	scale_radius(limits=c(0,0.7), range=c(0,10)) +
+	scale_radius(limits=c(0,3.5), range=c(0,8)) +
 	labs(x="x, A", y="y, A", size="Radius of Space Occupied by \n Atom 95% of the time , A") + 
 	theme(
-#		axis.title.x=element_blank(),
-#		axis.title.y=element_blank(),
-#		axis.text.x=element_blank(),
-#		axis.text.y=element_blank(),
-#		axis.line.x=element_blank(),
-#		axis.line.y=element_blank(),
-#		axis.ticks.x=element_blank(),
-#		axis.ticks.y=element_blank()
+		axis.title.x=element_blank(),
+		axis.title.y=element_blank(),
+		axis.text.x=element_blank(),
+		axis.text.y=element_blank(),
+		axis.line.x=element_blank(),
+		axis.line.y=element_blank(),
+		axis.ticks.x=element_blank(),
+		axis.ticks.y=element_blank()
 	)  
 	ggsave("Average_Displacement.pdf")
 

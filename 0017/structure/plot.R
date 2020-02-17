@@ -47,23 +47,23 @@ coords <- read_gro2("../AB_cryst_rot.gro", time=-1) %>%
 data <- bind_cols(data, coords) %>%
 	filter(!(Element=="H")) %>% 
 	ggplot(aes(x=cordx, y=cordy, color=Element)) + 
-	geom_segment(aes(xend=(cordx+dxm), yend=(cordy+dym)), size=0.2) +
+	geom_segment(aes(xend=(cordx+dxm), yend=(cordy+dym)), size=0.2,arrow = arrow(length = unit(0.01, "npc"))) +
 	geom_point(aes(x=(cordx+dxm),y=(cordy+dym),size=(2*sd)),alpha=0.5) +   
 	coord_fixed() +
-	theme_classic() + 
-	scale_x_continuous(expand=c(0.8,0.8)) +
+	theme_classic(base_size=15) + 
+	xlim(-6,7.5) +
 	scale_color_manual(values=c("Purple","black","blue","orange")) +
-	scale_radius(limits=c(0,0.7), range=c(0,10)) +
+#	scale_radius(limits=c(0,0.7), range=c(1,5)) +
 	labs(x="x, A", y="y, A", size="Radius of Space Occupied by \n Atom 95% of the time , A") + 
 	theme(
-#		axis.title.x=element_blank(),
-#		axis.title.y=element_blank(),
-#		axis.text.x=element_blank(),
-#		axis.text.y=element_blank(),
-#		axis.line.x=element_blank(),
-#		axis.line.y=element_blank(),
-#		axis.ticks.x=element_blank(),
-#		axis.ticks.y=element_blank()
+		axis.title.x=element_blank(),
+		axis.title.y=element_blank(),
+		axis.text.x=element_blank(),
+		axis.text.y=element_blank(),
+		axis.line.x=element_blank(),
+		axis.line.y=element_blank(),
+		axis.ticks.x=element_blank(),
+		axis.ticks.y=element_blank()
 	)  
 	ggsave("Average_Displacement.pdf")
 

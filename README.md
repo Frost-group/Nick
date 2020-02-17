@@ -46,6 +46,6 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0016 = C-C-O angle scan, different functionals and different sidechains
 0017 = Testing crystal structure stability for AB residue.  Initial test. 
 0018 = Testing crystal structure stability for GS residue.  Initial test.
-0019 = outer-dihedral scan. different functionals and different sidechains 
+0019 = outer-dihedral scan. different functionals, different sidechains and either two-monomers, or two-half-monomers
 0020 = Testing crystal structure stability for GS residue.  Second test, using different ES params
 0021 = Testing crystal structure stability for AB residue.  Anneal at 400K.

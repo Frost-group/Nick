@@ -2,13 +2,11 @@ source ~/.zshrc
 
 rm structure/NPT*gro
 
-for i in $(seq 1500 10 2000)
+for i in $(seq 10000 500 15000)
 do
-	echo "0" | gmx trjconv -f NPT.xtc -s NPT.tpr -dump $i -o structure/NPT_${i}ps.gro
+	echo "0" | gmx trjconv -f NPT.xtc -s NPT.tpr -dump $i -o structure/NPT_${i}ps.gro -pbc whole
 
-	gmx editconf -f structure/NPT_${i}ps.gro  -o structure/NPT_${i}ps_rot.gro -rotate 0 -40 -65 -n odd.ndx 
-
-	gmx editconf -f structure/NPT_${i}ps_rot.gro -o structure/NPT_${i}ps_rot.gro -c
+	gmx editconf -f structure/NPT_${i}ps.gro  -o structure/NPT_${i}ps_rot.gro -rotate 0 -40 -65 -n odd.ndx -c
 
 	rm ./structure/\#*
 done

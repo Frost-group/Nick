@@ -17,7 +17,7 @@ supercell <- read_gro2("../super_cell_rot.gro", time=-1) %>%
 	rename(Element0=Element,ResName0=ResName, AtomName0=AtomName, AtomNumber0=AtomNumber, Part0=Part, x0=x, y0=y, z0=z) %>% 
 	nest(super_cell_data=c(Element0,ResName0, AtomName0, AtomNumber0, Part0, x0, y0, z0)) %>% print() 
 
-ran=10
+ran=100
 
 data <- enframe(files, name=NULL) %>%  
 	rename(FileName=value) %>% 
@@ -54,19 +54,19 @@ data <- bind_cols(data, coords) %>%
 	coord_fixed() +
 	theme_classic() +	
 	scale_color_manual(values=c("black","blue","orange","Purple")) +
-	scale_radius(limits=c(0,3), range=c(0,46)) +
-	xlim(-8,8) +
-	ylim(-7,7) + 
+	scale_radius(range=c(0,12)) +
+	xlim(-8,8) + 
+	ylim(-8,8) + 
 	labs(x="x, A", y="y, A", size="Radius of Space Occupied by \n Atom 95% of the time , A") + 
 	theme(
-#		axis.title.x=element_blank(),
-#		axis.title.y=element_blank(),
-#		axis.text.x=element_blank(),
-#		axis.text.y=element_blank(),
-#		axis.line.x=element_blank(),
-#		axis.line.y=element_blank(),
-#		axis.ticks.x=element_blank(),
-#		axis.ticks.y=element_blank()
+		axis.title.x=element_blank(),
+		axis.title.y=element_blank(),
+		axis.text.x=element_blank(),
+		axis.text.y=element_blank(),
+		axis.line.x=element_blank(),
+		axis.line.y=element_blank(),
+		axis.ticks.x=element_blank(),
+		axis.ticks.y=element_blank()
 	)  
 	ggsave("Average_Displacement.pdf")
 

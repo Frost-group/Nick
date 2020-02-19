@@ -15,11 +15,10 @@ RB_fit <- function(D) {
 	nls(Energy~RB(C0,C1,C2,C3,C4,C5,Angle), 
 		start=list(C0=0,C1=300,C2=-30,C3=0,C4=10,C5=10), 
 		data=D,
-		weights=(1/abs(Angle+0.001)),
 		nls.control(maxiter=1000)) 
 }
 
-gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl.txt") %>% 
+gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl_two_mon.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
 	mutate(Method="wb97xd") %>%
@@ -45,26 +44,41 @@ Data <- bind_rows(gaussian, MD_scan_off, MD_scan_on) %>%
 		model = map(data, RB_fit),
 		fit = map(model, predict)
 	) %>% 
-	unnest(c(data, fit))
+	unnest(c(data, fit)) %>%
+	ungroup()
 
-range=90
-on_range <- Data %>% 
-	filter(Method=="MD_potential_on") %>%
-	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range) 
+range=80
 
 off_range <- Data %>% 
 	filter(Method=="MD_potential_off") %>%
 	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range) 
+	filter(Angle<=range & Angle>=-range) %>% 
+	mutate(Energy_MD_off=Energy) %>%
+	select(Angle, Energy_MD_off) 
 
 QCC_range <- Data %>%
 	filter(Method=="wb97xd") %>%
 	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range) 
+	filter(Angle<=range & Angle>=-range) %>% 
+	mutate(Energy_QCC=Energy) %>%
+	select(Energy_QCC) 
 
-Difference <- QCC_range %>% ungroup() %>%
-	mutate(Method="Difference") %>%
-	mutate(Energy= QCC_range$Energy - off_range$Energy) %>%
+bind_cols(off_range, QCC_range) %>% 
+	mutate(Energy= Energy_QCC - Energy_MD_off) %>% 
 	RB_fit(.) %>% print()
+
+bind_cols(off_range, QCC_range) %>% 
+	mutate(Energy= Energy_QCC - Energy_MD_off) %>% 
+	ggplot(aes(x=Angle, y=Energy)) + 
+		geom_line() + 
+		theme_classic() + 
+		labs(x="Angle, Degrees", y="Energy, Kj/mol") 
+	ggsave("Difference.pdf")
+	
+
+
+
+
+
+
 

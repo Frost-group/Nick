@@ -8,7 +8,7 @@ sed -i '' '73s/.*/ OT     CBB     CBB     1       126.11  0/g' OBT.ff/ffOBT.itp
 sed -i '' '74s/.*/ CAA    CBB     OT      1       119.60  0/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
-for i in $(seq 119.45 0.25 125.7)
+for i in $(seq 113 0.25 125.5)
 do
 
 	b=$(echo "scale=3; 180-$i" | bc)
@@ -29,7 +29,7 @@ do
 	
 	[ angle_restraints ]
 	; i j k l            type    theta0     fc             mult
-	 1 2 2 6            1       $b         5000  1
+	 1 2 2 6            1       $b         3500  1
 	EOF
 	) > topol.top
 	

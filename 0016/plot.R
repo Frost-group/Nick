@@ -1,6 +1,6 @@
 library("tidyverse")
 
-b3lyp_no_methyl <- read.table("b3lyp_no_methyl.txt") %>%
+b3lyp_no_methyl <- read.table("b3lyp_no_methyl_hd.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Functional="B3LYP") %>%
 	mutate(Sidechain="None") %>%
@@ -8,7 +8,7 @@ b3lyp_no_methyl <- read.table("b3lyp_no_methyl.txt") %>%
 	mutate(Energy = Energy - min(Energy)) %>%
 	arrange(Angle)
 
-xb97xdp_no_methyl <- read.table("wb97xd_no_methyl.txt") %>%
+xb97xdp_no_methyl <- read.table("wb97xd_no_methyl_hd.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Functional="wb97xd") %>%
 	mutate(Sidechain="None") %>%
@@ -16,7 +16,7 @@ xb97xdp_no_methyl <- read.table("wb97xd_no_methyl.txt") %>%
 	mutate(Energy = Energy - min(Energy)) %>%
 	arrange(Angle)
 
-b3lyp_with_methyl <- read.table("b3lyp_with_methyl.txt") %>%
+b3lyp_with_methyl <- read.table("b3lyp_with_methyl_hd.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Functional="B3LYP") %>%
 	mutate(Sidechain="Methyl") %>%
@@ -24,7 +24,7 @@ b3lyp_with_methyl <- read.table("b3lyp_with_methyl.txt") %>%
 	mutate(Energy = Energy - min(Energy)) %>%
 	arrange(Angle)
 
-wb97xd_with_methyl <- read.table("wb97xd_with_methyl.txt") %>%
+wb97xd_with_methyl <- read.table("wb97xd_with_methyl_hd.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Functional="wb97xd") %>%
 	mutate(Sidechain="Methyl") %>%

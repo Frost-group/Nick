@@ -1,4 +1,6 @@
 library("tidyverse")
+library("ggpubr")
+library("nortest")
 
 atom_number <- 19584
 
@@ -10,13 +12,16 @@ source("~/Dropbox/library/R_functions.R")
 ########################################################################################
 ########################################################################################
 
+
 files <- dir(pattern="*rot.gro")
- 
+
+# Get initial coordinates of super cell
 supercell <- read_gro("../super_cell_rot.gro", time=-1) %>% 
 	select(Time, Element, ResName, AtomName, AtomNumber, Part, x, y, z) %>%
 	rename(Element0=Element,ResName0=ResName, AtomName0=AtomName, AtomNumber0=AtomNumber, Part0=Part, x0=x, y0=y, z0=z) %>%
 	nest(super_cell_data=c(Element0,ResName0, AtomName0, AtomNumber0, Part0, x0, y0, z0))  
 
+# Get the time resolved coordinates of super cell and calculate the relevant parameters
 data <- enframe(files, name=NULL) %>%  
 	rename(FileName=value) %>% 
 	mutate(gro = map(FileName, read_gro)) %>%
@@ -37,14 +42,25 @@ data <- enframe(files, name=NULL) %>%
 	group_by(Element,AtomName,Part,sd,drm,dxm, dym, dzm) %>%
 	nest()  
 
-atom_number <- 102
+# plot a density plot
+data %>% unnest(cols = c(data)) %>% 
+	ggplot(aes(x=dx)) +
+		geom_density() +
+		theme_classic() + 
+		labs(x="Magnitude of Atomic Displacement Vectors, A") 
+	ggsave("dr_histogram.pdf")
 
+# Normality test on the data
+data %>% unnest(cols = c(data)) %>% ungroup() %>% drop_na() %>% pull(dx) %>% ad.test() %>% print()
+
+
+atom_number <- 102
 coords <- read_gro2("../AB_cryst_rot.gro", time=-1) %>% 
 	select(x,y,z) %>%
 	mutate(y=y+12, x=x+7) %>%
 	rename(cordx=x, cordy=y,cordz=z) 
 
-data <- bind_cols(data, coords) %>%
+bind_cols(data, coords) %>%
 	filter(!(Element=="H")) %>% 
 	ggplot(aes(x=cordx, y=cordy, color=Element)) + 
 	geom_segment(aes(xend=(cordx+dxm), yend=(cordy+dym)), size=0.2,arrow = arrow(length = unit(0.01, "npc"))) +
@@ -53,7 +69,6 @@ data <- bind_cols(data, coords) %>%
 	theme_classic(base_size=15) + 
 	xlim(-6,7.5) +
 	scale_color_manual(values=c("Purple","black","blue","orange")) +
-#	scale_radius(limits=c(0,0.7), range=c(1,5)) +
 	labs(x="x, A", y="y, A", size="Radius of Space Occupied by \n Atom 95% of the time , A") + 
 	theme(
 		axis.title.x=element_blank(),

@@ -9,4 +9,4 @@ mon	1
 
 [ angle_restraints ]
 ; i j k l            type    theta0     fc             mult
- 1 2 2 6            1       54.3         5000  1
+ 1 2 2 6            1       54.5         3000  1

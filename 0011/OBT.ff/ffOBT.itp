@@ -82,8 +82,8 @@
  HT	CBB	CE	1	123.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CAA	CAA	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CE	CE	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
- OT     CBB     CBB     1       129.3   850.00	;   QCC optimised , see file 0007
- CAA    CBB     OT      1       117.8   850.00	;   QCC optimised , see file 0007
+ OT     CBB     CBB     1       127.4   860.00	;   QCC optimised , see file 0007
+ CAA    CBB     OT      1       119.1   860.00	;   QCC optimised , see file 0007
  CBB	CE	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
  ST	CE	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
  CBB	CE	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC

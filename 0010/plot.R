@@ -1,7 +1,7 @@
 library('tidyverse')
 
 
-gaussian_w <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl.txt") %>% 
+gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl_two_mon.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
 	mutate(Method="wb97xd") %>%
@@ -9,20 +9,11 @@ gaussian_w <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl.txt") %>%
 	mutate(Energy = Energy - min(Energy)) %>%
 	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
 	arrange(Angle)  
-	
-gaussian_b <- read.table("~/Dropbox/OBT/0019/b3lyp_with_methyl.txt") %>% 
-	rename(Angle=V1, Energy=V2) %>%
-	mutate(Angle = round(Angle)) %>% 
-	mutate(Method="b3lyp") %>%
-	mutate(Energy= Energy*27211.4/10.36) %>%
-	mutate(Energy = Energy - min(Energy)) %>%
-	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
-	arrange(Angle) 
 
 MD_scan_off <- read.table("MD_scan_off.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Method="MD_potential_off") %>%
-	filter(Angle>-150, Angle<150) %>%
+	filter(Angle>=-70, Angle<=70) %>%
 	mutate(Energy = Energy - min(Energy)) 
 
 MD_scan_on <- read.table("MD_scan_on.txt") %>%
@@ -31,7 +22,7 @@ MD_scan_on <- read.table("MD_scan_on.txt") %>%
 	mutate(Method="MD_potential_on") %>%
 	mutate(Energy = Energy - min(Energy)) 
 
-Data <- bind_rows(gaussian_w, MD_scan_on, gaussian_b)
+Data <- bind_rows(gaussian, MD_scan_on, MD_scan_off)
 
 Data %>% filter(Energy < 160 & Energy > -100 & Angle<100 & Angle>-100) %>%  
 	ggplot(aes(x=Angle, color=Method)) +

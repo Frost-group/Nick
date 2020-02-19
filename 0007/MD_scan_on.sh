@@ -4,11 +4,11 @@ source ~/.zshrc
 rm MD_scan_on.txt
 
 # turn on potential in the forcefield
-sed -i '' '73s/.*/ OT     CBB     CBB     1       127.3  850/g' OBT.ff/ffOBT.itp
-sed -i '' '74s/.*/ CAA    CBB     OT      1       119.2  850/g' OBT.ff/ffOBT.itp
+sed -i '' '73s/.*/ OT     CBB     CBB     1       127.4  860/g' OBT.ff/ffOBT.itp
+sed -i '' '74s/.*/ CAA    CBB     OT      1       119.1  860/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
-for i in $(seq 119.45 0.25 125.7)
+for i in $(seq 113 0.25 125.5)
 do
 
 	# correct angle to take 180-angle
@@ -31,7 +31,7 @@ do
 	
 	[ angle_restraints ]
 	; i j k l            type    theta0     fc             mult
-	 1 2 2 6            1       $b         5000  1
+	 1 2 2 6            1       $b         4400  1
 	EOF
 	) > topol.top
 	

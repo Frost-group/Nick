@@ -7,7 +7,7 @@ rm MD_scan_off.txt
 sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
-for i in $(seq -180 10 180)
+for i in $(seq -100 4 100)
 do
 	
 	gmx editconf -f mon.pdb -o mon.gro -box 5 5 5
@@ -27,7 +27,7 @@ do
 	
 	[ dihedral_restraints ]
 	; ai   aj    ak    al   type  phi  dphi  kfac
-	3 4 11 12 1 $i 0 5000
+	3 4 12 13 1 $i 0 500
 
 	EOF
 	) > topol.top

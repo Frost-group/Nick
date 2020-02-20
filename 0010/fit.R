@@ -15,70 +15,55 @@ RB_fit <- function(D) {
 	nls(Energy~RB(C0,C1,C2,C3,C4,C5,Angle), 
 		start=list(C0=0,C1=300,C2=-30,C3=0,C4=10,C5=10), 
 		data=D,
+		weights=abs((1/(Angle^(2)+0.0001))),
 		nls.control(maxiter=1000)) 
 }
 
-gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl_two_mon.txt") %>% 
+range <- 100
+
+gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_no_methyl_two_half_mon_hd.txt") %>% 
+	as_tibble() %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
 	mutate(Method="wb97xd") %>%
 	mutate(Energy= Energy*27211.4/10.36) %>%
 	mutate(Energy = Energy - min(Energy)) %>%
-	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
-	arrange(Angle) 
+	arrange(Angle) %>%
+	rename(Energy_w = Energy) %>%
+	arrange(Angle) %>% 
+	filter(Angle >= -range, Angle <= range)
 
 MD_scan_off <- read.table("MD_scan_off.txt") %>%
+	as_tibble() %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Method="MD_potential_off") %>%
-	mutate(Energy = Energy - min(Energy)) 
+	mutate(Energy = Energy - min(Energy)) %>%
+	rename(Energy_MD_off = Energy) %>%
+	arrange(Angle) %>%
+	filter(Angle >= -range, Angle <= range)
+
 
 MD_scan_on <- read.table("MD_scan_on.txt") %>%
+	as_tibble() %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Method="MD_potential_on") %>%
-	mutate(Energy = Energy - min(Energy)) 
+	mutate(Energy = Energy - min(Energy)) %>%
+	rename(Energy_MD_on = Energy) %>% 
+	arrange(Angle) %>%
+	filter(Angle >= -range, Angle <= range)
 
-Data <- bind_rows(gaussian, MD_scan_off, MD_scan_on) %>%
-	group_by(Method) %>% 
-	nest() %>%
-	mutate(
-		model = map(data, RB_fit),
-		fit = map(model, predict)
-	) %>% 
-	unnest(c(data, fit)) %>%
-	ungroup()
-
-range=80
-
-off_range <- Data %>% 
-	filter(Method=="MD_potential_off") %>%
-	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range) %>% 
-	mutate(Energy_MD_off=Energy) %>%
-	select(Angle, Energy_MD_off) 
-
-QCC_range <- Data %>%
-	filter(Method=="wb97xd") %>%
-	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range) %>% 
-	mutate(Energy_QCC=Energy) %>%
-	select(Energy_QCC) 
-
-bind_cols(off_range, QCC_range) %>% 
-	mutate(Energy= Energy_QCC - Energy_MD_off) %>% 
-	RB_fit(.) %>% print()
-
-bind_cols(off_range, QCC_range) %>% 
-	mutate(Energy= Energy_QCC - Energy_MD_off) %>% 
-	ggplot(aes(x=Angle, y=Energy)) + 
-		geom_line() + 
-		theme_classic() + 
-		labs(x="Angle, Degrees", y="Energy, Kj/mol") 
+MD_scan_off %>%
+	mutate(Energy_w = gaussian$Energy_w) %>%
+	mutate(Energy = Energy_w - Energy_MD_off ) %>%
+	mutate(fit = predict(RB_fit(.))) %>% 
+	ggplot(aes(x=Angle , y=Energy)) + 
+		geom_point() + 
+		geom_line(aes(y=fit)) +
+		theme_classic()
 	ggsave("Difference.pdf")
-	
 
-
-
-
-
-
-
+MD_scan_off %>%
+	mutate(Energy_w = gaussian$Energy_w) %>%
+	mutate(Energy = Energy_w - Energy_MD_off ) %>%
+	select(Angle, Energy) %>%	
+	RB_fit(.)	

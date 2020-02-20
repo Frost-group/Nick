@@ -1,13 +1,12 @@
 library('tidyverse')
 
 
-gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_with_methyl_two_mon.txt") %>% 
+gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_no_methyl_two_half_mon_hd.txt") %>% 
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
 	mutate(Method="wb97xd") %>%
 	mutate(Energy= Energy*27211.4/10.36) %>%
 	mutate(Energy = Energy - min(Energy)) %>%
-	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
 	arrange(Angle)  
 
 MD_scan_off <- read.table("MD_scan_off.txt") %>%
@@ -20,7 +19,8 @@ MD_scan_on <- read.table("MD_scan_on.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%	
 	filter(Angle>-150, Angle<150) %>%
 	mutate(Method="MD_potential_on") %>%
-	mutate(Energy = Energy - min(Energy)) 
+	mutate(Energy = Energy - min(Energy)) %>%
+	filter(Angle < 76 , Angle > -76) 
 
 Data <- bind_rows(gaussian, MD_scan_on, MD_scan_off)
 

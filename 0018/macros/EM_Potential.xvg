@@ -1,4 +1,4 @@
-# This file was created Wed Feb 19 08:26:42 2020
+# This file was created Wed Feb 19 16:24:37 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../EM.edr -o EM_Potential.xvg
 # gmx energy is part of G R O M A C S:
 #
-# Green Red Orange Magenta Azure Cyan Skyblue
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

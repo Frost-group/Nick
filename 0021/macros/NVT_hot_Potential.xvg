@@ -1,4 +1,4 @@
-# This file was created Sat Feb 15 12:03:10 2020
+# This file was created Thu Feb 20 09:22:47 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../NVT_hot.edr -o NVT_hot_Potential.xvg
 # gmx energy is part of G R O M A C S:
 #
-# GRoups of Organic Molecules in ACtion for Science
+# Great Red Oystrich Makes All Chemists Sane
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

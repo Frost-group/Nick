@@ -5,20 +5,10 @@ rm MD_scan_on.txt
 
 # turn off potential in the forcefield
 
-#sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 4.224 -17.732  -6.897  47.022 -97.060  57.245 /g' OBT.ff/ffOBT.itp
-#this set is from the fit fn
-
-#sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 4.224 -17.732  -6.897  47.022 -95.060  57.245 /g' OBT.ff/ffOBT.itp
-#this set best reproduces the flip barrier
-
-#sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 4.224 -17.732  -6.897  49.022 -92.060  48.245 /g' OBT.ff/ffOBT.itp
-# reproduces the walls best
-
-
-sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 -0.6664   37.2462 -220.7564  421.7323 -400.5349  153.7185 /g' OBT.ff/ffOBT.itp
+sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 7.32  -15.01  -71.15  185.10 -191.54   76.52 /g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
-for i in $(seq -180 10 180)
+for i in $(seq -100 4 100)
 do	
 	gmx editconf -f mon.pdb -o mon.gro -box 5 5 5
 	echo "1" | gmx pdb2gmx -f mon.gro
@@ -37,7 +27,7 @@ do
 	
 	[ dihedral_restraints ]
 	; ai   aj    ak    al   type  phi  dphi  kfac
-	3 4 11 12 1 $i 0 5000
+	3 4 12 13 1 $i 0 500
 	EOF
 	) > topol.top
 		

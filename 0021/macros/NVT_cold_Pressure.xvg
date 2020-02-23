@@ -1,4 +1,4 @@
-# This file was created Thu Feb 20 09:22:47 2020
+# This file was created Sun Feb 23 15:34:22 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../NVT_cold.edr -o NVT_cold_Pressure.xvg
 # gmx energy is part of G R O M A C S:
 #
-# Glycine aRginine prOline Methionine Alanine Cystine Serine
+# Getting the Right Output Means no Artefacts in Calculating Stuff
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

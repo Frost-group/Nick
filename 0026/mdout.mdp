@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: nicholassiemons (501)
 ;	On host: dyn204-81.ph.ic.ac.uk
-;	At date: Thu Feb 20 12:33:06 2020
+;	At date: Fri Feb 21 12:25:57 2020
 
 ;
 
@@ -18,7 +18,7 @@ integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 30000
+nsteps                   = 10000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -52,13 +52,13 @@ rtpi                     = 0.05
 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
-nstxout                  = 200
-nstvout                  = 200
+nstxout                  = 2000
+nstvout                  = 2000
 nstfout                  = 0
 ; Output frequency for energies to log file and energy file
-nstlog                   = 200
+nstlog                   = 2000
 nstcalcenergy            = 100
-nstenergy                = 200
+nstenergy                = 2000
 ; Output frequency and precision for .xtc file
 nstxout-compressed       = 0
 compressed-x-precision   = 1000
@@ -73,7 +73,7 @@ energygrps               =
 ; cut-off scheme (Verlet: particle based cut-offs, group: using charge groups)
 cutoff-scheme            = Verlet
 ; nblist update frequency
-nstlist                  = 10
+nstlist                  = 100
 ; ns algorithm (simple or grid)
 ns_type                  = grid
 ; Periodic boundary conditions: xyz, no, xy
@@ -83,7 +83,7 @@ periodic-molecules       = no
 ; a value of -1 means: use rlist
 verlet-buffer-tolerance  = 0.005
 ; nblist cut-off        
-rlist                    = 1.0
+rlist                    = 1
 ; long-range cut-off for switched potentials
 rlistlong                = -1
 nstcalclr                = -1
@@ -93,7 +93,7 @@ nstcalclr                = -1
 coulombtype              = PME
 coulomb-modifier         = Potential-shift-Verlet
 rcoulomb-switch          = 0
-rcoulomb                 = 1.0
+rcoulomb                 = 1.2
 ; Relative dielectric constant for the medium and the reaction field
 epsilon_r                = 1
 epsilon-rf               = 0
@@ -102,11 +102,11 @@ vdwtype                  = PME
 vdw-modifier             = Potential-shift-Verlet
 ; cut-off lengths       
 rvdw-switch              = 0
-rvdw                     = 1.0
+rvdw                     = 1.2
 ; Apply long range dispersion corrections for Energy and Pressure
-DispCorr                 = No
+DispCorr                 = no
 ; Extension of the potential lookup tables beyond the cut-off
-table-extension          = 10
+table-extension          = 1
 ; Separate tables between energy group pairs
 energygrp-table          = 
 ; Spacing for the PME/PPPM FFT grid
@@ -120,7 +120,7 @@ pme_order                = 4
 ewald_rtol               = 1e-05
 ewald-rtol-lj            = 0.001
 lj-pme-comb-rule         = Geometric
-ewald_geometry           = 3d
+ewald-geometry           = 3d
 epsilon_surface          = 0
 
 ; IMPLICIT SOLVENT ALGORITHM
@@ -158,17 +158,17 @@ print-nose-hoover-chain-variables = no
 tc_grps                  = system
 ; Time constant (ps) and reference temperature (K)
 tau_t                    = 0.1
-ref_t                    = 350
+ref_t                    = 298
 ; pressure coupling     
-pcoupl                   = no
-pcoupltype               = Isotropic
+pcoupl                   = Berendsen
+pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau-p                    = 1
-compressibility          = 
-ref-p                    = 
+tau_p                    = 5
+compressibility          = 4.5e-5
+ref_p                    = 1
 ; Scaling of reference coordinates, No, All or COM
-refcoord-scaling         = No
+refcoord_scaling         = com
 
 ; OPTIONS FOR QMMM calculations
 QMMM                     = no
@@ -210,7 +210,7 @@ annealing-temp           =
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = yes
-gen_temp                 = 350
+gen_temp                 = 298
 gen_seed                 = -1
 
 ; OPTIONS FOR BONDS    

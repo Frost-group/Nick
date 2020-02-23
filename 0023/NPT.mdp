@@ -5,7 +5,7 @@ define			=
 ; Run control
 integrator		= md
 dt			= 0.002
-nsteps		=	15000000
+nsteps		=	10000000 
 comm_mode		= linear
 nstcomm			= 100
 comm_grps		=

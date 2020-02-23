@@ -1,4 +1,4 @@
-# This file was created Sat Feb 15 12:43:14 2020
+# This file was created Fri Feb 21 09:31:19 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../NVT.edr -o NVT_Pressure.xvg
 # gmx energy is part of G R O M A C S:
 #
-# Great Red Oystrich Makes All Chemists Sane
+# Green Red Orange Magenta Azure Cyan Skyblue
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

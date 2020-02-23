@@ -1,0 +1,27 @@
+Run time 		= 20ns
+Equlibration time 	= 0ns
+
+Cell Params Before - 
+	a 		= 4.165
+	b 		= 9.298
+	c 		= 23.806
+	alpha		= 91.86 
+	beta 		= 91.48
+	gamma 		= 96.45
+
+Cell Params After - 	
+	a 		= 4.23
+	b 		= 9.46 
+	c 		= 24.23
+	alpha		= 92.90
+	beta 		= 89.81
+	gamma 		= 96.24
+
+pi-stacking distance
+	before		= 3.58	
+	after		= 3.69
+
+atomic isplacement vectors - 
+	dx		=  0.216 +/- 2.54  
+	dy 		=  0.478 +/- 1.58
+	dz		=  0.908 +/- 0.87

@@ -1,0 +1,13 @@
+library("tidyverse")
+library("Rpdb")
+source("~/Dropbox/library/R_functions.R")
+
+NPT <- read_pdb2("../super_cell.pdb") %>%
+	filter( ResNum==1 | ResNum==161 | ResNum==7 | ResNum==25 ) %>% 
+	select(ResNum, AtomName, Part, x, y, z) %>%
+	group_by(ResNum) %>%
+	mutate(
+		com_x = mean(x),
+		com_y = mean(y),
+		com_z = mean(z)
+	) %>% print()

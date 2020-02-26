@@ -1,0 +1,11 @@
+snum {
+  hkl {
+    hkl_stat_file = 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.hkl'
+  }
+  solution {
+    current_atomic_volume = '21.8'
+  }
+  refinement {
+    original_formula = 'C54 H89 Br3 O3 S3'
+  }
+}

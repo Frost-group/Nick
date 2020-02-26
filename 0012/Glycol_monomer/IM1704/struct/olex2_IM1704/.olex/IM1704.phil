@@ -1,0 +1,28 @@
+snum {
+  current_process_diagnostics = 'refinement'
+  hkl {
+    hkl_stat_file = 'D:/X-Ray Data/New/IM1704/struct/olex2_IM1704/IM1704.hkl'
+  }
+  solution {
+    current_atomic_volume = '21.9'
+  }
+  refinement {
+    max_shift_site = '0'
+    max_shift_site_atom = '0'
+    max_shift_u = '0'
+    max_shift_u_atom = '0'
+    max_peak = '0'
+    max_hole = '0'
+    last_R1 = '0.052'
+    program = ShelXL_ifc XL XH ShelXH XLMP *ShelXL ShelXL-2012 ShelXLMP-2012 \
+              'olex2.refine' Unknown
+    method = '*Least Squares' CGLS 'Gauss-Newton' 'Levenberg-Marquardt' \
+             'Full Matrix' Unknown
+    update_weight = true
+    suggested_weight = '0.0865 0'
+    original_formula = 'C14 H24 O4 S1 Sn1'
+  }
+  history {
+    current_node = '87d2214b7b9a63e82f6dcf14b2d12cab'
+  }
+}

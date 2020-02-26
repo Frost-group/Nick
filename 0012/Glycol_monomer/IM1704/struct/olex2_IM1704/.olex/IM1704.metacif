@@ -1,0 +1,27 @@
+data_IM1704
+_audit_creation_method            
+;
+  Olex2 1.2-ac2
+  (compiled Nov  7 2012 10:32:32, GUI svn.r4372)
+;
+
+_audit_creation_date              2017-04-26
+_computing_molecular_graphics     
+;
+O. V. Dolomanov, L. J. Bourhis, R. J. Gildea, J. A. K. Howard and H. Puschmann,
+OLEX2: a complete structure solution, refinement and analysis program.
+J. Appl. Cryst. (2009). 42, 339-341.
+;
+
+_computing_publication_material   
+;
+O. V. Dolomanov, L. J. Bourhis, R. J. Gildea, J. A. K. Howard and H. Puschmann,
+OLEX2: a complete structure solution, refinement and analysis program.
+J. Appl. Cryst. (2009). 42, 339-341.
+;
+
+_publ_contact_author_email        ?
+_publ_contact_author_phone        ?
+_publ_contact_author_address      ?
+_publ_contact_author_name         ''
+

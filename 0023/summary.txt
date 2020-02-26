@@ -25,3 +25,8 @@ atomic isplacement vectors -
 	dx		= 0.461 +/- 2.30 
 	dy 		= 0.501 +/- 1.90
 	dz		= 0.871 +/- 1.91
+
+Xray peaks that are well reproduced - 
+(002)
+(111)
+(023) (031) (004)

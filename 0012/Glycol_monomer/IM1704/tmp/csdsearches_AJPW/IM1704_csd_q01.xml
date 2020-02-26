@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<query name="reduced_cell_search" version="1.0" originator="crysalispro">
+    <lattice_centring>P</lattice_centring>
+    <a>6.9970</a>
+    <b>14.0782</b>
+    <c>18.0058</c>
+    <alpha>90.0906</alpha>
+    <beta>97.7181</beta>
+    <gamma>90.0473</gamma>
+    <settings>
+        <dimension_tolerance>1.5000</dimension_tolerance>
+        <angle_tolerance>2.0000</angle_tolerance>
+        <maximum_hits>200</maximum_hits>
+    </settings>
+</query>

@@ -1,0 +1,10 @@
+DC PROFFIT INFO: Meta algorithm started
+DELETE INFO: Deleting rpi files... (D:\X-Ray Data\New\IM1706\tmp\IM1706_proffitpea*.rpi)
+DELETE INFO: Deleting tab files... (D:\X-Ray Data\New\IM1706\tmp\IM1706_proffitpea*.tab)
+DELETE INFO: Deleting tabbin files... (D:\X-Ray Data\New\IM1706\tmp\IM1706_proffitpea*.tabbin)
+DELETE INFO: Deleting rrpprof files... (D:\X-Ray Data\New\IM1706\tmp\IM1706*.rrpprof)
+DELETE INFO: Deleting rrpprofinfo files... (D:\X-Ray Data\New\IM1706\tmp\IM1706*.rrpprofinfo)
+DELETE INFO: Deleting bbm files... (D:\X-Ray Data\New\IM1706\tmp\IM1706*.bbm)
+DELETE INFO: Deleting pcorr files... (D:\X-Ray Data\New\IM1706\tmp\IM1706*.pcorr)
+DELETE INFO: Deleting dat files... (D:\X-Ray Data\New\IM1706\tmp\IM1706*.dat)
+DELETE INFO: Deleting ppc2 files... (D:\X-Ray Data\New\IM1706\tmp\IM1706*.ppc2)

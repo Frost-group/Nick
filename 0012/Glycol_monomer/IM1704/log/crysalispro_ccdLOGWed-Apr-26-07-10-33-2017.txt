@@ -1,0 +1,424 @@
+DC S command at Wed Apr 26 07:10:33 2017 (38.43 (release 21-03-2016),compiled Mar 21 2016,16:53:17)
+DC INFO: Park option in use (0.00, 0.00, 0.00, 0.00, 53.00)
+DC INFO: Current KM4 collision model (Atlas (Ultra), rail: Standard)
+DC3DEVICES: Cryojet device OK (no locking)
+DC3DEVICES: CCSCAM  (Ver. 2.1.16.248)  device OK (no locking)
+DC INFO: Cryojet settings 173.0K 21.800% 10.400% at Wed Apr 26 07:10:33 2017
+DC INFO: Spellman settings  49.97kV  39.96mA at Wed Apr 26 07:10:34 2017
+Camera settings: 
+CCD
+   chip name  "KAF-4320E"
+   channels 4
+   height 2088
+   width 2096
+   active area     height 2088
+     width 2096
+     x 0
+     y 0
+HW
+   ang brd pressent 1
+   ang config loaded
+   dsp firmware ok 1
+   fpga firmware ok 1
+   temperature ready 1
+   ang brd type 1
+MISC
+   expander 221
+   free space 206172
+PICTURE
+   param
+     autoupload 1
+     correction raw
+     format raw
+     ref type median
+     analog channel 1
+     binning 1
+     originx 18
+     originy 18
+   state ref0 1548
+   state ref1 1226
+   state ref2 1399
+   state ref3 1491
+VOLTAGES
+   dac_ref1 62 mV
+   dac_ref2 100 mV
+   dac_ref3 70 mV
+   dac_ref4 85 mV
+   h1 amplitude 10000 mV
+   h1 offset 0 mV
+   h1l amplitude 10000 mV
+   h1l amplitude -3000 mV
+   h2 amplitude 10000 mV
+   h2 offset -3000 mV
+   reset amplitude 12000 mV
+   reset offset 2000 mV
+   v1 amplitude 8000 mV
+   v1 offset -8000 mV
+   v2 amplitude 8000 mV
+   v2 offset -8000 mV
+TIMINGS 1X1
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 60 ns
+   h last 0 ns
+   h width 600 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 2X2
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 320 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 4X4
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 300 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+System uptime: 1d 21h 43m 2s
+
+Network connection information (Wed Apr 26 07:10:35 2017)
+Connected to ROOT\CIMV2 WMI namespace
+Adapter : Intel(R) 82579LM Gigabit Network Connection
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:90:B1:1C:70:D5:25
+  Status:    90:B1:1C:70:D5:25
+Adapter : RAS Async Adapter
+  Unknown device status
+Adapter : Intel(R) Gigabit CT Desktop Adapter
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:68:05:CA:0F:FC:DF
+  Status:    68:05:CA:0F:FC:DF
+Adapter : Intel(R) Gigabit CT Desktop Adapter #2
+  Media disconnected
+EXPECTED FINISH TIME:  (0,531,end:Wed Apr 26 07:59:36 2017)
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 1 frame 1 started at Wed Apr 26 07:10:35 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to -32.00000 41.85679 -38.00000 0.00000 53.00000
+Run 1 started at Wed Apr 26 07:10:53 2017
+Omega scan:  -32.000 to   56.000 (   88 frames,   1.000s) at t:  41.857,k: -38.000,p:   0.000,dd:  53.000
+DC3DEVICES ERROR: CCDchiller init failed (NOTFOUND)!
+CCDchiller device connection shutdown OK. Not inited (iInitAndLockDeviceDC3DEVICES).
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 1 frame 51 started at Wed Apr 26 07:15:11 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 18.00000 41.85679 -38.00000 0.00000 53.00000
+Run 1 ended
+
+EXPECTED FINISH TIME:  (88,531,end:Wed Apr 26 08:00:29 2017)
+Going to 37.00000 106.37629 -77.00000 -90.00000 53.00000
+Run 2 started at Wed Apr 26 07:18:49 2017
+Omega scan:   37.000 to  133.000 (   96 frames,   1.000s) at t: 106.376,k: -77.000,p: -90.000,dd:  53.000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 2 frame 13 started at Wed Apr 26 07:20:07 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 49.00000 106.37629 -77.00000 -90.00000 53.00000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 2 frame 63 started at Wed Apr 26 07:25:02 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 99.00000 106.37629 -77.00000 -90.00000 53.00000
+Run 2 ended
+
+EXPECTED FINISH TIME:  (184,531,end:Wed Apr 26 08:01:25 2017)
+Going to 132.00000 106.37629 45.00000 -90.00000 53.00000
+Run 3 started at Wed Apr 26 07:28:35 2017
+Omega scan:  132.000 to  171.000 (   39 frames,   1.000s) at t: 106.376,k:  45.000,p: -90.000,dd:  53.000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 3 frame 17 started at Wed Apr 26 07:30:19 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 148.00000 106.37629 45.00000 -90.00000 53.00000
+Run 3 ended
+
+EXPECTED FINISH TIME:  (223,531,end:Wed Apr 26 08:01:56 2017)
+Going to 91.00000 106.37629 45.00000 60.00000 53.00000
+Run 4 started at Wed Apr 26 07:33:02 2017
+Omega scan:   91.000 to  132.000 (   41 frames,   1.000s) at t: 106.376,k:  45.000,p:  60.000,dd:  53.000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 4 frame 28 started at Wed Apr 26 07:35:37 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 118.00000 106.37629 45.00000 60.00000 53.00000
+Run 4 ended
+
+EXPECTED FINISH TIME:  (264,531,end:Wed Apr 26 08:02:20 2017)
+Going to 77.00000 106.37629 77.00000 0.00000 53.00000
+Run 5 started at Wed Apr 26 07:37:26 2017
+Omega scan:   77.000 to  178.000 (  101 frames,   1.000s) at t: 106.376,k:  77.000,p:   0.000,dd:  53.000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 5 frame 37 started at Wed Apr 26 07:40:45 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 113.00000 106.37629 77.00000 0.00000 53.00000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 5 frame 87 started at Wed Apr 26 07:45:50 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 163.00000 106.37629 77.00000 0.00000 53.00000
+Run 5 ended
+
+EXPECTED FINISH TIME:  (365,531,end:Wed Apr 26 08:03:18 2017)
+Going to 30.00000 106.37629 -95.00000 150.00000 53.00000
+Run 6 started at Wed Apr 26 07:48:06 2017
+Omega scan:   30.000 to  103.000 (   73 frames,   1.000s) at t: 106.376,k: -95.000,p: 150.000,dd:  53.000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 6 frame 36 started at Wed Apr 26 07:51:19 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to 65.00000 106.37629 -95.00000 150.00000 53.00000
+Run 6 ended
+
+EXPECTED FINISH TIME:  (438,531,end:Wed Apr 26 08:03:53 2017)
+Going to -113.00000 -41.85679 -57.00000 -60.00000 53.00000
+Run 7 started at Wed Apr 26 07:55:33 2017
+Omega scan: -113.000 to  -20.000 (   93 frames,   1.000s) at t: -41.857,k: -57.000,p: -60.000,dd:  53.000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 7 frame 13 started at Wed Apr 26 07:56:50 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to -101.00000 -41.85679 -57.00000 -60.00000 53.00000
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 7 frame 63 started at Wed Apr 26 08:01:37 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Going to -51.00000 -41.85679 -57.00000 -60.00000 53.00000
+Run 7 ended
+
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+Reference run 1 at DC run 7 frame 93 started at Wed Apr 26 08:04:40 2017
+Omega scan:    0.000 to    2.000 (    2 frames,   1.000s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Camera settings: 
+CCD
+   chip name  "KAF-4320E"
+   channels 4
+   height 2088
+   width 2096
+   active area     height 2088
+     width 2096
+     x 0
+     y 0
+HW
+   ang brd pressent 1
+   ang config loaded
+   dsp firmware ok 1
+   fpga firmware ok 1
+   temperature ready 1
+   ang brd type 1
+MISC
+   expander 221
+   free space 206172
+PICTURE
+   param
+     autoupload 1
+     correction raw
+     format raw
+     ref type median
+     analog channel 1
+     binning 1
+     originx 18
+     originy 18
+   state ref0 1548
+   state ref1 1225
+   state ref2 1399
+   state ref3 1492
+VOLTAGES
+   dac_ref1 62 mV
+   dac_ref2 100 mV
+   dac_ref3 70 mV
+   dac_ref4 85 mV
+   h1 amplitude 10000 mV
+   h1 offset 0 mV
+   h1l amplitude 10000 mV
+   h1l amplitude -3000 mV
+   h2 amplitude 10000 mV
+   h2 offset -3000 mV
+   reset amplitude 12000 mV
+   reset offset 2000 mV
+   v1 amplitude 8000 mV
+   v1 offset -8000 mV
+   v2 amplitude 8000 mV
+   v2 offset -8000 mV
+TIMINGS 1X1
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 60 ns
+   h last 0 ns
+   h width 600 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 2X2
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 320 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 4X4
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 300 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+
+Network connection information (Wed Apr 26 08:04:51 2017)
+Connected to ROOT\CIMV2 WMI namespace
+Adapter : Intel(R) 82579LM Gigabit Network Connection
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:90:B1:1C:70:D5:25
+  Status:    90:B1:1C:70:D5:25
+Adapter : RAS Async Adapter
+  Unknown device status
+Adapter : Intel(R) Gigabit CT Desktop Adapter
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:68:05:CA:0F:FC:DF
+  Status:    68:05:CA:0F:FC:DF
+Adapter : Intel(R) Gigabit CT Desktop Adapter #2
+  Media disconnected
+Data collection successfully finished at Wed Apr 26 08:04:51 2017
+DC3DEVICES DEVICE INFO: Shutting down log devices...
+DC3DEVICES DEVICE INFO: Shutting down Peltier device (CCSCAM) ...
+CCSCAM device connection shutdown OK (pUnLockAndShutdownDC3DEVICES).
+DC3DEVICES DEVICE INFO: Stopped Peltier device (CCSCAM) ...
+DC3DEVICES DEVICE INFO: Shutting down cryo device (Cryojet) ...
+Cryojet device connection shutdown OK. GUI is still active (pUnLockAndShutdownDC3DEVICES). 
+DC3DEVICES DEVICE INFO: Stopped cryo device (Cryojet) ...
+DC3 INFO: Waiting for end of data reduction...
+
+Process information (Wed Apr 26 08:05:16 2017)
+ID: 5712; threads 30; handles 799; mem 579952.00 (1228576.00)kB; time: 1d 1h 9m 17s
+
+MEMORY INFO: Memory PF:116.0, Ph:665.0, V:1199.0; pDataCollectionHParentDistConcurrentDC3 25
+MEMORY INFO: Process info - Handles: 800, Memory: PF:566.5,peak PF: 773.0, WS: 515.2, peak WS: 630.3
+MEMORY INFO: CCD G:3.1,H:33.5 (#1009),V:137.6
+Parking goniometer at requested position...
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+CCD PAR INFO: Mode kept - Atlas 2x2 binning 1024x1024 pixels
+DC PRE ACTION: destroy preexp4 structures (iwDestroyPreExp4PREEXP4)
+DC PRE ACTION: pcleandatapreexp4 finally block started
+DC PRE ACTION: pcleandatapreexp4 finally block ended
+PRO INFO: start new pre-experiment
+DC PRE ACTION: destroy preexp4 structures (iwDestroyPreExp4PREEXP4)
+DC PRE ACTION: initialize preexp4 structures (iwInitializePreExp4PREEXP4)
+DC PRE4 DELLAST
+Collision check at 53.0mm
+Collision test: OK
+Collision check at 52.1mm
+Collision test: OK
+DC PRE4 DELLAST
+DELETE INFO: Deleting files in log directory... (D:\X-Ray Data\New\screenings_AJPW\log\*.txt)
+DC PRE ACTION: Button F12 was pressed
+REFERENCE MODEL INFO: New distance=112.32; x=1047.15; y=1029.94; d1=0.032; d2=-0.129; t0=0.101
+Video thread started
+ABS GRAB INFO: Saving C:\Xcalibur\CrysalisPro171.38.43\Tmp\snap.jpg
+Video thread finished
+DELETE INFO: Deleting files in log directory... (D:\X-Ray Data\New\screenings_AJPW\log\*.txt)
+Collision check at 52.1mm
+Collision test: OK
+Collision check at 52.1mm
+Collision test: OK
+DC PRE ACTION: Fast screening was started from screen options dialog.
+DC PRE ACTION: Fast screening was started from main dialog.
+DC PRE4 SCREEN
+DC PRE ACTION: enter istartpreexperimentpreexp
+DC S "D:\X-Ray Data\New\screenings_AJPW\scr_exp_141"
+DC PRE ACTION: after WM_ODM_PRO_PROCCD_CHANGES_DATACOLLECTIONSETUP
+DC INFO: DC settings kept unchanged (ini file not found)
+Collision check at 52.1mm
+Collision test: OK
+DC S INFO: User selected DC with skipped correlation! This may yield data with spikes/zingers!
+DC S INFO: User selected DC with skipped correlation in remeasured frames! This may yield data with spikes/zingers!
+DC S INFO: Return while readout used!
+DC S INFO: Write during acquire of next image used!
+DC S INFO: Check beamstop and Lorentz area used!
+System parameters: gain=40.0 (double-correlated-divide-by-2 gain)
+DC INFO: data collection with overflow remeasure off!
+DELETE INFO: Deleting experimental images... (D:\X-Ray Data\New\screenings_AJPW\frames\scr_exp_141*.img)
+DELETE INFO: Deleting bgfiles in tmp directory... (D:\X-Ray Data\New\screenings_AJPW\tmp\scr_exp_141*.*)
+Going to -57.00000 -35.00000 134.00000 284.00000 52.10953
+- Proper dark current map loaded from file    30.00 sec
+REFERENCE MODEL INFO: New distance=52.11; x=1044.56; y=1040.64; d1=0.043; d2=-0.237; t0=0.095
+DC R/S INFO: Preparing flood for detector distance 52.110mm
+DYNAMIC FLOOD INFO: Reloading infinity flood C:\Xcalibur\corrections\a_124\floodcu_a_124_calib_050116.ffiinffit
+DYNAMIC FLOOD INFO: Application of incidence correction with the following parameters:
+DYNAMIC FLOOD INFO: Poly5:  1.000E+000  0.000E+000 -3.680E-005  0.000E+000  0.000E+000 dist=52.110 offset=0.000 x=  992 y= 1024
+Incidence correction min=1.00000 max=1.12100
+DELETE INFO: Deleting data red ini... (D:\X-Ray Data\New\screenings_AJPW\expinfo\scr_exp_141_datared.ini)
+DELETE INFO: Deleting crystal ini... (D:\X-Ray Data\New\screenings_AJPW\expinfo\scr_exp_141_crystal.ini)
+DELETE INFO: Deleting rrp ini... (D:\X-Ray Data\New\screenings_AJPW\expinfo\scr_exp_141_rrp.ini)
+DELETE INFO: Deleting sample ini... (D:\X-Ray Data\New\screenings_AJPW\expinfo\scr_exp_141_sample.ini)
+DELETE INFO: Deleting data collection ini... (D:\X-Ray Data\New\screenings_AJPW\expinfo\scr_exp_141_datacoll.ini)
+DC INFO: Dark trigger time: 120 mins (keep darks=1)
+Run list: D:\X-Ray Data\New\screenings_AJPW\scr_exp_141
+Frames folder: D:\X-Ray Data\New\screenings_AJPW\frames

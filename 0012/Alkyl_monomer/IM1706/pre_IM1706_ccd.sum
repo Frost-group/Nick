@@ -1,0 +1,48 @@
+DC S INFO: User selected DC with skipped correlation in remeasured frames! This may yield data with spikes/zingers!
+DC S INFO: Return while readout used!
+DC S INFO: Write during acquire of next image used!
+DC S INFO: Check beamstop and Lorentz area used!
+System parameters: gain=40.0 (double-correlated-divide-by-2 gain)
+Run list: D:\X-Ray Data\New\IM1706\pre_IM1706
+Frames folder: D:\X-Ray Data\New\IM1706\frames
+DC S command at Tue May 09 08:23:09 2017 (38.43 (release 21-03-2016),compiled Mar 21 2016,16:53:17)
+DC INFO: Cryojet settings 173.0K 21.700% 10.500% at Tue May 09 08:23:11 2017
+DC INFO: Spellman settings  49.97kV  40.04mA at Tue May 09 08:23:12 2017
+System uptime: 1d 1h 28m 2s
+EXPECTED FINISH TIME:  (0,30,end:Tue May 09 09:17:46 2017)
+MEMORY INFO: Memory PF:0.0, Ph:438.0, V:981.0; 
+MEMORY INFO: Process info - Handles: 702, Memory: PF:466.6,peak PF: 581.8, WS: 427.0, peak WS: 478.2
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+Run 1 started at Tue May 09 08:24:30 2017
+Omega scan:  -37.000 to  -32.000 (    5 frames,  20.000s) at t: -41.857,k: 134.000,p: 284.000,dd:  53.000
+EXPECTED FINISH TIME:  (5,30,end:Tue May 09 09:17:25 2017)
+MEMORY INFO: Memory PF:0.0, Ph:430.0, V:981.0; 
+MEMORY INFO: Process info - Handles: 702, Memory: PF:467.6,peak PF: 590.1, WS: 428.4, peak WS: 478.2
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+Run 2 started at Tue May 09 08:28:29 2017
+Omega scan:  -24.000 to  -19.000 (    5 frames,  20.000s) at t: -41.857,k:  70.000,p:   0.000,dd:  53.000
+EXPECTED FINISH TIME:  (10,30,end:Tue May 09 09:17:28 2017)
+MEMORY INFO: Memory PF:0.0, Ph:437.0, V:1125.0; 
+MEMORY INFO: Process info - Handles: 700, Memory: PF:472.6,peak PF: 653.0, WS: 434.1, peak WS: 614.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+Run 3 started at Tue May 09 08:32:21 2017
+Omega scan:   28.000 to   33.000 (    5 frames,  20.000s) at t:  41.857,k: -70.000,p:  90.000,dd:  53.000
+EXPECTED FINISH TIME:  (15,30,end:Tue May 09 09:17:31 2017)
+MEMORY INFO: Memory PF:0.0, Ph:441.0, V:1122.0; 
+MEMORY INFO: Process info - Handles: 693, Memory: PF:477.0,peak PF: 653.0, WS: 437.7, peak WS: 614.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+Run 4 started at Tue May 09 08:36:07 2017
+Omega scan:   81.000 to   86.000 (    5 frames,  80.000s) at t: 106.376,k: -70.000,p:  90.000,dd:  53.000
+EXPECTED FINISH TIME:  (20,30,end:Tue May 09 09:22:44 2017)
+MEMORY INFO: Memory PF:0.0, Ph:436.0, V:1122.0; 
+MEMORY INFO: Process info - Handles: 694, Memory: PF:478.9,peak PF: 653.0, WS: 439.8, peak WS: 614.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+Run 5 started at Tue May 09 08:55:10 2017
+Omega scan:  123.000 to  128.000 (    5 frames,  80.000s) at t: 106.376,k:  70.000,p:  90.000,dd:  53.000
+EXPECTED FINISH TIME:  (25,30,end:Tue May 09 09:22:47 2017)
+MEMORY INFO: Memory PF:0.0, Ph:440.0, V:1122.0; 
+MEMORY INFO: Process info - Handles: 694, Memory: PF:480.3,peak PF: 653.0, WS: 441.0, peak WS: 614.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+Run 6 started at Tue May 09 09:08:53 2017
+Omega scan:  123.000 to  128.000 (    5 frames,  80.000s) at t: 106.376,k:  70.000,p:   0.000,dd:  53.000
+Data collection successfully finished at Tue May 09 09:22:30 2017

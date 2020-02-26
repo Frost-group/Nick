@@ -1,0 +1,162 @@
+DELETE INFO: Deleting dark image... (C:\Xcalibur\CrysalisPro171.38.43\AJPW_darkimages\dc_dark_2048_2048_2_2_28140.dar)
+- Acquisition of proper dark current map   28.140 sec
+Video thread started
+MOVIE INFO: Movie function entered!
+MOVIE INFO: itypeofframegrabber=UTIL_FRAMEGRABBERTYPE_VFW!
+MOVIE INFO: dgeminiomegaandthetaoffsetindeg=0.00!
+MOVIE INFO: Call iinitdrivingforwardthreadabsthread
+MOVIE INFO: Path/file name D:\X-Ray Data\New\IM1706\movie\IM1706.jpr
+MOVIE INFO: inumofimageslower=60;dphistartdeg=-180.0;dphienddeg=180.0;om=-57.0;th=-30.0;ka=134.0
+REFERENCE MODEL INFO: New distance=85.41; x=1045.99; y=1034.72; d1=0.037; d2=-0.177; t0=0.098
+REFERENCE MODEL INFO: New distance=112.32; x=1047.15; y=1029.94; d1=0.032; d2=-0.129; t0=0.101
+MOVIE INFO: image=  1;O:-57.0 T:-30.0 K:134.0 P:-180.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17061.jpg
+MOVIE INFO: image=  2;O:-57.0 T:-30.0 K:134.0 P:-174.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17062.jpg
+MOVIE INFO: image=  3;O:-57.0 T:-30.0 K:134.0 P:-168.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17063.jpg
+MOVIE INFO: image=  4;O:-57.0 T:-30.0 K:134.0 P:-162.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17064.jpg
+MOVIE INFO: image=  5;O:-57.0 T:-30.0 K:134.0 P:-156.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17065.jpg
+MOVIE INFO: image=  6;O:-57.0 T:-30.0 K:134.0 P:-150.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17066.jpg
+MOVIE INFO: image=  7;O:-57.0 T:-30.0 K:134.0 P:-144.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17067.jpg
+MOVIE INFO: image=  8;O:-57.0 T:-30.0 K:134.0 P:-138.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17068.jpg
+MOVIE INFO: image=  9;O:-57.0 T:-30.0 K:134.0 P:-132.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM17069.jpg
+MOVIE INFO: image= 10;O:-57.0 T:-30.0 K:134.0 P:-126.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170610.jpg
+MOVIE INFO: image= 11;O:-57.0 T:-30.0 K:134.0 P:-120.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170611.jpg
+MOVIE INFO: image= 12;O:-57.0 T:-30.0 K:134.0 P:-114.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170612.jpg
+MOVIE INFO: image= 13;O:-57.0 T:-30.0 K:134.0 P:-108.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170613.jpg
+MOVIE INFO: image= 14;O:-57.0 T:-30.0 K:134.0 P:-102.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170614.jpg
+MOVIE INFO: image= 15;O:-57.0 T:-30.0 K:134.0 P:-96.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170615.jpg
+MOVIE INFO: image= 16;O:-57.0 T:-30.0 K:134.0 P:-90.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170616.jpg
+MOVIE INFO: image= 17;O:-57.0 T:-30.0 K:134.0 P:-84.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170617.jpg
+MOVIE INFO: image= 18;O:-57.0 T:-30.0 K:134.0 P:-78.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170618.jpg
+MOVIE INFO: image= 19;O:-57.0 T:-30.0 K:134.0 P:-72.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170619.jpg
+MOVIE INFO: image= 20;O:-57.0 T:-30.0 K:134.0 P:-66.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170620.jpg
+MOVIE INFO: image= 21;O:-57.0 T:-30.0 K:134.0 P:-60.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170621.jpg
+MOVIE INFO: image= 22;O:-57.0 T:-30.0 K:134.0 P:-54.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170622.jpg
+MOVIE INFO: image= 23;O:-57.0 T:-30.0 K:134.0 P:-48.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170623.jpg
+MOVIE INFO: image= 24;O:-57.0 T:-30.0 K:134.0 P:-42.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170624.jpg
+MOVIE INFO: image= 25;O:-57.0 T:-30.0 K:134.0 P:-36.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170625.jpg
+MOVIE INFO: image= 26;O:-57.0 T:-30.0 K:134.0 P:-30.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170626.jpg
+MOVIE INFO: image= 27;O:-57.0 T:-30.0 K:134.0 P:-24.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170627.jpg
+MOVIE INFO: image= 28;O:-57.0 T:-30.0 K:134.0 P:-18.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170628.jpg
+MOVIE INFO: image= 29;O:-57.0 T:-30.0 K:134.0 P:-12.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170629.jpg
+MOVIE INFO: image= 30;O:-57.0 T:-30.0 K:134.0 P:-6.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170630.jpg
+MOVIE INFO: image= 31;O:-57.0 T:-30.0 K:134.0 P:0.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170631.jpg
+MOVIE INFO: image= 32;O:-57.0 T:-30.0 K:134.0 P:6.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170632.jpg
+MOVIE INFO: image= 33;O:-57.0 T:-30.0 K:134.0 P:12.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170633.jpg
+MOVIE INFO: image= 34;O:-57.0 T:-30.0 K:134.0 P:18.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170634.jpg
+MOVIE INFO: image= 35;O:-57.0 T:-30.0 K:134.0 P:24.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170635.jpg
+MOVIE INFO: image= 36;O:-57.0 T:-30.0 K:134.0 P:30.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170636.jpg
+MOVIE INFO: image= 37;O:-57.0 T:-30.0 K:134.0 P:36.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170637.jpg
+MOVIE INFO: image= 38;O:-57.0 T:-30.0 K:134.0 P:42.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170638.jpg
+MOVIE INFO: image= 39;O:-57.0 T:-30.0 K:134.0 P:48.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170639.jpg
+MOVIE INFO: image= 40;O:-57.0 T:-30.0 K:134.0 P:54.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170640.jpg
+MOVIE INFO: image= 41;O:-57.0 T:-30.0 K:134.0 P:60.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170641.jpg
+MOVIE INFO: image= 42;O:-57.0 T:-30.0 K:134.0 P:66.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170642.jpg
+MOVIE INFO: image= 43;O:-57.0 T:-30.0 K:134.0 P:72.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170643.jpg
+MOVIE INFO: image= 44;O:-57.0 T:-30.0 K:134.0 P:78.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170644.jpg
+MOVIE INFO: image= 45;O:-57.0 T:-30.0 K:134.0 P:84.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170645.jpg
+MOVIE INFO: image= 46;O:-57.0 T:-30.0 K:134.0 P:90.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170646.jpg
+MOVIE INFO: image= 47;O:-57.0 T:-30.0 K:134.0 P:96.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170647.jpg
+MOVIE INFO: image= 48;O:-57.0 T:-30.0 K:134.0 P:102.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170648.jpg
+MOVIE INFO: image= 49;O:-57.0 T:-30.0 K:134.0 P:108.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170649.jpg
+MOVIE INFO: image= 50;O:-57.0 T:-30.0 K:134.0 P:114.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170650.jpg
+MOVIE INFO: image= 51;O:-57.0 T:-30.0 K:134.0 P:120.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170651.jpg
+MOVIE INFO: image= 52;O:-57.0 T:-30.0 K:134.0 P:126.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170652.jpg
+MOVIE INFO: image= 53;O:-57.0 T:-30.0 K:134.0 P:132.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170653.jpg
+MOVIE INFO: image= 54;O:-57.0 T:-30.0 K:134.0 P:138.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170654.jpg
+MOVIE INFO: image= 55;O:-57.0 T:-30.0 K:134.0 P:144.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170655.jpg
+MOVIE INFO: image= 56;O:-57.0 T:-30.0 K:134.0 P:150.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170656.jpg
+MOVIE INFO: image= 57;O:-57.0 T:-30.0 K:134.0 P:156.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170657.jpg
+MOVIE INFO: image= 58;O:-57.0 T:-30.0 K:134.0 P:162.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170658.jpg
+MOVIE INFO: image= 59;O:-57.0 T:-30.0 K:134.0 P:168.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170659.jpg
+MOVIE INFO: image= 60;O:-57.0 T:-30.0 K:134.0 P:174.0; D=112.3
+Saving D:\X-Ray Data\New\IM1706\movie\IM170660.jpg
+Video thread finished
+DC S "D:\X-Ray Data\New\IM1706\IM1706"
+Waiting for the end of dark current map acquisition
+CCD INFO: Dark C:\Xcalibur\CrysalisPro171.38.43\AJPW_darkimages\dc_dark_2048_2048_2_2_28140.dar written at Tue May 09 12:07:21 2017
+DC INFO: Automatic DC settings (binning: 2x2, correlation:ON)
+Collision check at 53.0mm
+Spellman device initialized...
+Collision test: OK
+DC S INFO: User selected DC with skipped correlation in remeasured frames! This may yield data with spikes/zingers!
+DC S INFO: Return while readout used!
+DC S INFO: Write during acquire of next image used!
+DC S INFO: Check beamstop and Lorentz area used!
+System parameters: gain=40.0 (double-correlated-divide-by-2 gain)
+DELETE INFO: Deleting experimental images... (D:\X-Ray Data\New\IM1706\frames\IM1706*.img)
+DELETE INFO: Deleting bgfiles in tmp directory... (D:\X-Ray Data\New\IM1706\tmp\IM1706*.*)
+Going to 0.00000 0.00000 0.00000 0.00000 53.00000
+RAMP: Spellman device locked OK. (Tue May 09 12:07:23 2017)
+Spellman device ramping to: kV=50.00,mA=40.00,ON
+Spellman device write OK: kV=50.00,mA=40.00,ON
+RAMP: Spellman device unlock OK (Tue May 09 12:07:26 2017)
+RAMP: Spellman device connection shutdown OK. GUI is still active. (Tue May 09 12:07:26 2017)
+REFERENCE MODEL INFO: New distance=53.00; x=1044.60; y=1040.49; d1=0.042; d2=-0.236; t0=0.095
+WD P/CAL INFO: D:\X-Ray Data\New\IM1706\bup\IM1706Tue-May-09-12-07-50-2017.bup written
+WD P/CAL INFO: D:\X-Ray Data\New\IM1706\IM1706.par written
+DC R/S INFO: Flood for detector distance 53.000mm=53.000mm saved as D:\X-Ray Data\New\IM1706\53000_Tue-May-09-12-07-50-2017_floodcu_a_124_calib_050116.ffi
+DELETE INFO: Deleting data red ini... (D:\X-Ray Data\New\IM1706\expinfo\IM1706_datared.ini)
+DELETE INFO: Deleting rrp ini... (D:\X-Ray Data\New\IM1706\expinfo\IM1706_rrp.ini)
+DELETE INFO: Deleting data collection ini... (D:\X-Ray Data\New\IM1706\expinfo\IM1706_datacoll.ini)
+DC INFO: Dark trigger time: 120 mins (keep darks=0)
+Run list: D:\X-Ray Data\New\IM1706\IM1706
+Frames folder: D:\X-Ray Data\New\IM1706\frames

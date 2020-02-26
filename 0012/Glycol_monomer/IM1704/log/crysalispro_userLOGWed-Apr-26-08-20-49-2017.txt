@@ -1,0 +1,13 @@
+Your current setup file is: D:\X-Ray Data\New\IM1704\IM1704.par
+ 
+Goniometer type: KM4 (km4gonio.xdll)
+Your current setup file is: D:\X-Ray Data\New\IM1704\IM1704.par
+
+WINDOWS INFORMATION: (38.43 (release 21-03-2016))
+System version:Windows7,Service Pack 1 (Build 7601)
+
+Screen resolution:1600x1200; Fonts: 120; Color: 32 bits
+
+Switching to new KM4 collision model (Atlas (Ultra), rail: Standard,1.1.20.)...
+ 
+CAMCCS CCD INTERFACE

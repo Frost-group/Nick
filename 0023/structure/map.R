@@ -1,5 +1,4 @@
 library("tidyverse")
-#library("ggpubr")
 library("nortest")
 library("Rpdb")
 
@@ -24,15 +23,15 @@ data <- dir(pattern="*.pdb") %>%
 	mutate(pdb = map(FileName, read_pdb2)) %>% 
 	mutate(t0 = supercell$data) %>% 
 	unnest(c(pdb, t0)) %>% 
-	select(-c(FileName, AtomNumber, alpha, beta, gamma, ResNum, ResName)) %>% 
+	select(-c(FileName, AtomNumber, alpha, beta, gamma, ResName)) %>% 
 	mutate( dx = x-x0 , dy = y-y0 , dz = z-z0 , dr = sqrt( dx^2 + dy^2 + dz^2 ) ) %>%
 	group_by(AtomName) %>%
 	mutate( mean_x = mean(dx) , mean_y = mean(dy) , mean_z = mean(dz) ) %>% 
-	mutate( sd_x = sd(dx) , sd_y = sd(dy) , sd_z = sd(dz) ) 
+	mutate( sd_x = sd(dx) , sd_y = sd(dy) , sd_z = sd(dz) )  %>% print()
 
 
 # Get coordinates for image
-coords <- read_pdb("../AB_cryst.pdb") %>% 
+coords <- read_pdb("../coords.pdb") %>% 
 	select(x,y,z) %>%
 	mutate(cmx = mean(x) , cmy = mean(y) , cmz = mean(z)) %>%
 	mutate(cordx=x-cmx, cordy=y-cmy,cordz=z-cmz)  %>%
@@ -40,18 +39,20 @@ coords <- read_pdb("../AB_cryst.pdb") %>%
 
 
 # rotations for viewing
-xtheta = 2.3
-ytheta = -0.6
-ztheta = -0.9
+xtheta = 0.2
+ytheta = 0
+ztheta = 0
 
 # Plot average Displacement and Average Standard Deviation
-data %>% ungroup() %>%
+data %>% ungroup() %>% 
 	select(-c("recname","a","b","c")) %>%
-	nest(data=c(x,y,z,dx,dy,dz,dr,x0,y0,z0)) %>% 
+	filter(ResNum%%2==1) %>%
+	nest(data=c(x,y,z,dx,dy,dz,dr,x0,y0,z0, ResNum)) %>% 
 	bind_cols(coords) %>% 
 	mutate(sd = (sd_x + sd_y + sd_z)/3 ) %>%
+	filter(Part=="Sidechain") %>%
 	select(AtomName, Element, mean_x, mean_y, mean_z, sd, cordx, cordy, cordz) %>% 
-	filter(!(Element=="H")) %>%
+	filter(!(Element=="H")) %>% 
 	group_by(AtomName) %>% 
 	mutate( 
 		mean_x = rotatex(mean_x,mean_y,mean_z,xtheta)[1],
@@ -78,7 +79,7 @@ data %>% ungroup() %>%
 		geom_point(aes(x=(cordx+mean_x),y=(cordy+mean_y),size=(2*sd)), alpha=0.5) +
 		coord_fixed() +
 		theme_classic(base_size=15) +
- 		scale_color_manual(values=c("Purple","black","blue","orange")) +
+ 		scale_color_manual(values=c("black","blue","orange","purple")) +
  		labs(x="x, A", y="y, A", size="Radius of Space Occupied by \n Atom 95% of the time , A") + 
  		theme(
  			axis.title.x=element_blank(),
@@ -90,7 +91,7 @@ data %>% ungroup() %>%
  			axis.ticks.x=element_blank(),
  			axis.ticks.y=element_blank()
  		)  
- 	ggsave("Average_Displacement.pdf")
+ 	ggsave("map.pdf")
 
 
 

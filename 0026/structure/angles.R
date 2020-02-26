@@ -15,7 +15,7 @@ angle <- function(x1,y1,z1,x2,y2,z2){
 	return(theta)
 }
 
-data <- read_pdb2("NPT_30000ps.pdb") %>% 
+data <- read_pdb2("NPT_48000ps.pdb") %>% 
 	select(-c("alpha", "beta", "gamma", "recname","a","b","c","Part", "ResName")) %>%
 	filter(
 		( ResNum==4 | ResNum==1 | ResNum==21 | ResNum==169 )   

@@ -1,0 +1,671 @@
+Your current setup file is: D:\X-Ray Data\New\IM1704\IM1704.par
+ 
+Goniometer type: KM4 (km4gonio.xdll)
+Your current setup file is: D:\X-Ray Data\New\IM1704\IM1704.par
+
+WINDOWS INFORMATION: (38.43 (release 21-03-2016))
+System version:Windows7,Service Pack 1 (Build 7601)
+
+Screen resolution:1600x1200; Fonts: 120; Color: 32 bits
+
+Switching to new KM4 collision model (Atlas (Ultra), rail: Standard,1.1.20.)...
+Collision model: Xcalibur2, ultra collimator, CCS camera Atlas, Beamstop standard
+ 
+CAMCCS CCD INTERFACE
+************************************************** WARNING: **************************************************
+StructureExplorer program is not installed in the system or is not associated with current version of CryslisPro
+Install the StructureExplorer program (minimum version 1.15.0) and associate with the CryslisPro
+by choosing directory path for StructureExplorer in RED Program Options in Programs tab.
+**************************************************************************************************************
+Reading tabbin file: "D:\X-Ray Data\New\IM1704\IM1704_peakhunt"
+   No constraint
+   UB - matrix:
+       0.119982    0.088327    0.027011   (  0.000034    0.000015    0.000012 )
+       0.089786   -0.055248    0.069954   (  0.000035    0.000015    0.000013 )
+       0.163241   -0.034560   -0.042585   (  0.000033    0.000014    0.000012 )
+   M - matrix:
+       0.049105   -0.000004    0.002570   (  0.000015    0.000005    0.000004 )
+      -0.000004    0.012048   -0.000007   (  0.000005    0.000003    0.000002 )
+       0.002570   -0.000007    0.007437   (  0.000004    0.000002    0.000002 )
+   Constraint
+   UB - matrix:
+       0.119982    0.088327    0.027011   (  0.000034    0.000015    0.000012 )
+       0.089786   -0.055248    0.069954   (  0.000035    0.000015    0.000013 )
+       0.163241   -0.034560   -0.042585   (  0.000033    0.000014    0.000012 )
+   M - matrix:
+       0.049125    0.000000    0.002562   (  0.000014    0.000000    0.000004 )
+       0.000000    0.012053    0.000000   (  0.000000    0.000002    0.000000 )
+       0.002562    0.000000    0.007424   (  0.000004    0.000000    0.000002 )
+UB fit with 1367 obs out of 1448 (total:1449,skipped:1) (94.41%)
+    unit cell:
+       7.0158(10) 14.035(2)  18.028(3)        
+      89.957(12)  97.729(12) 89.995(12) 
+      V = 1759.1(4) 
+    unit cell:
+       7.0132(10) 14.0306(15) 18.040(2)       
+      90.0        97.708(12)  90.0      
+      V = 1759.1(4) 
+Video thread started
+WD P/CAL INFO: D:\X-Ray Data\New\IM1704\shape.par written
+ABS INFO: Face list exported to D:\X-Ray Data\New\IM1704\shape.par
+Video thread finished
+Start settings for finalizer2, chemical formula from:
+D:\X-Ray Data\New\IM1704\expinfo\IM1704_sample.ini
+C28 H50 O8 S2 Sn2
+INPUT: D:\X-Ray Data\New\IM1704\IM1704.rrpprof
+OUTPUT: D:\X-Ray Data\New\IM1704\IM1704
+Laue class: 2/m (b-unique) - Friedel mate is equivalent
+Lattice type: P-lattice (extinction condition applied)
+Machine error default setting:   0.0000
+Rejection parameter default setting: KKM   0.5000 Blessing   6.0000
+Negative intensity sigma limit:  -3.0
+Scan speed scaling applied!
+Automatic use of scale3 abspack active!
+SCALE3 ABSPACK PARS: Laue:2; Friedel:1;
+cycles:5; Levenberg-Marq.:0.00000; Sig-cutoff:7.00000
+scale restraint esd:0.20000; detector xy correction restraint esd:0.20000; frames in group:4
+Detector xy correction grid 4, image size 1024
+Is frame scaling 1; Is detector xy correction 0;
+Spherical harmonics order: even:4; odd:0
+Numeric absorption correction active!
+Chemical formula: C28 H50 O8 S2 Sn2
+Absorption coefficient (mm-1): 12.74665
+Type: Analytical numeric absorption correction using a multifaceted crystal (model based on expressions derived by R.C. Clark & J.S. Reid. (Clark, R. C. & Reid, J. S. (1995). Acta Cryst. A51, 887-897))
+DELETE INFO: Deleting cif file... (D:\X-Ray Data\New\IM1704\IM1704.cif)
+DELETE INFO: Deleting cif_od file... (D:\X-Ray Data\New\IM1704\IM1704.cif_od)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_absscale.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_absscaleint.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_absscaleintcorr.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_absscaleres.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_absscalerescorr.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_bfactor.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_afactor.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_cover.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_hklplot.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_resolutionstats.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_rint.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_chi2bm.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_chi2am.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_stickabsorption.dat)
+DELETE INFO: Deleting dat file... (D:\X-Ray Data\New\IM1704\plots_red\IM1704_incidence.dat)
+DELETE INFO: Deleting grl file... (D:\X-Ray Data\New\IM1704\IM1704.grl)
+DELETE INFO: Deleting ins file... (D:\X-Ray Data\New\IM1704\IM1704.ins)
+DELETE INFO: Deleting eqv file... (D:\X-Ray Data\New\IM1704\IM1704.eqv)
+DELETE INFO: Deleting hkl file... (D:\X-Ray Data\New\IM1704\IM1704.hkl)
+DELETE INFO: Deleting hklgral file... (D:\X-Ray Data\New\IM1704\IM1704.hklgral)
+DELETE INFO: Deleting p4p file... (D:\X-Ray Data\New\IM1704\IM1704.p4p)
+DELETE INFO: Deleting p4pgral file... (D:\X-Ray Data\New\IM1704\IM1704.p4pgral)
+DELETE INFO: Deleting rint file... (D:\X-Ray Data\New\IM1704\IM1704.rint)
+DELETE INFO: Deleting rint_redun file... (D:\X-Ray Data\New\IM1704\IM1704.rint_redun)
+DELETE INFO: Deleting errmod file... (D:\X-Ray Data\New\IM1704\IM1704.errmod)
+Run 1 Omega scan: (-32.000 - 56.000,88 frames, 1.000 sec) at th=41.857, ka=-38.000,ph=0.000
+Transmission factors (analytical): min=   0.12567 ; max=   0.21815
+t-bar                            : min=   0.08140 ; max=   0.13056
+Run 2 Omega scan: (37.000 - 133.000,96 frames, 1.000 sec) at th=106.376, ka=-77.000,ph=-90.000
+Transmission factors (analytical): min=   0.10143 ; max=   0.22132
+t-bar                            : min=   0.06920 ; max=   0.12903
+Run 3 Omega scan: (132.000 - 171.000,39 frames, 1.000 sec) at th=106.376, ka=45.000,ph=-90.000
+Transmission factors (analytical): min=   0.15740 ; max=   0.26129
+t-bar                            : min=   0.06847 ; max=   0.11117
+Run 4 Omega scan: (91.000 - 132.000,41 frames, 1.000 sec) at th=106.376, ka=45.000,ph=60.000
+Transmission factors (analytical): min=   0.12549 ; max=   0.21988
+t-bar                            : min=   0.06908 ; max=   0.11900
+Run 5 Omega scan: (77.000 - 178.000,101 frames, 1.000 sec) at th=106.376, ka=77.000,ph=0.000
+Transmission factors (analytical): min=   0.11026 ; max=   0.26028
+t-bar                            : min=   0.06534 ; max=   0.11648
+Run 6 Omega scan: (30.000 - 103.000,73 frames, 1.000 sec) at th=106.376, ka=-95.000,ph=150.000
+Transmission factors (analytical): min=   0.14801 ; max=   0.28297
+t-bar                            : min=   0.06487 ; max=   0.11734
+Run 7 Omega scan: (-113.000 - -20.000,93 frames, 1.000 sec) at th=-41.857, ka=-57.000,ph=-60.000
+Transmission factors (analytical): min=   0.05687 ; max=   0.20155
+t-bar                            : min=   0.07787 ; max=   0.16462
+PROFFIT INFO: signal sum: min=-380.0000 max=1393038.0000
+PROFFIT INFO: signal sum lp corr: min=-531.2929 max=211250.5521
+PROFFIT INFO: background sum: min=-511.0000 max=1062.0000
+PROFFIT INFO: background sum sig2: min=691.0000 max=5853.0000
+PROFFIT INFO: num of signal pixels: min=92 max=518
+PROFFIT INFO: Inet (including numeric abs.): min=-52722.8477 max=17185918.0000
+PROFFIT INFO: sig(Inet) (including numeric abs.): min=1310.9629 max=181989.0469
+PROFFIT INFO: Inet/sig(Inet): min=-1.84 max=272.14
+ 
+I/Sigma    <   0       1       2       3       4       8      16      32      64     128     max
+N(Refl)      264     776    1122    1366    1536    2102    3360    5069    5832    5976    5997
+Percent      4.4    12.9    18.7    22.8    25.6    35.1    56.0    84.5    97.2    99.6   100.0 
+ 
+Overlap statistics (higher percentage means higher overlapping)
+Percent    frequency    relative
+  0- 10         5997    100.00 (completely separated)
+ 10- 20            0      0.00
+ 20- 30            0      0.00
+ 30- 40            0      0.00
+ 40- 50            0      0.00
+ 50- 60            0      0.00
+ 60- 70            0      0.00
+ 70- 80            0      0.00
+ 80- 90            0      0.00
+ 90-100            0      0.00 (completely overlapped)
+Overall         5997    100.00%
+Overall                   0.00% overlapped pixels
+ 
+All reflections intensity statistics
+ 
+                                             mean            mean          %
+       intensity               #              F2           F2/sig(F2)  >3*F2/sig(F2)
+------------------------------------------------------------------------------------
+  17185918-   2624683           599       4834828.17          57.49     100.00
+   2624012-   1538579           599       2015827.32          32.62     100.00
+   1538072-    985300           599       1238548.21          25.67     100.00
+    984199-    596410           599        768152.29          20.38     100.00
+    596328-    376496           599        483655.35          16.27     100.00
+    375408-    209493           599        286639.46          12.07     100.00
+    209432-     99427           599        150281.41           8.47      99.83
+     99407-     38545           599         67120.10           4.22      67.45
+     38504-     10915           599         22988.63           1.52       5.84
+     10856-    -52723           606          -774.90           0.02       0.00
+------------------------------------------------------------------------------------
+  17185918-    -52723          5997        985573.94          17.85      77.22
+ 
+ 
+All reflections resolution statistics
+ 
+                                             mean            mean          %
+       resolution              #              F2           F2/sig(F2)  >3*F2/sig(F2)
+------------------------------------------------------------------------------------
+     11.02-      1.74           599       2625453.27          43.81       88.98
+      1.74-      1.39           599       1681091.53          23.61       86.64
+      1.39-      1.27           599       1173491.19          17.88       82.64
+      1.27-      1.18           599        978151.05          15.35       79.97
+      1.18-      1.10           599        914995.86          14.45       73.29
+      1.10-      1.02           599        737211.13          13.40       75.29
+      1.02-      0.96           599        595928.64          12.42       73.96
+      0.96-      0.90           599        494814.44          12.24       70.95
+      0.90-      0.86           599        359393.66          11.97       68.78
+      0.86-      0.80           606        303183.18          13.44       71.78
+------------------------------------------------------------------------------------
+     11.02-      0.80          5997        985573.94          17.85       77.22
+ 
+SCALE3 ABSPACK - A Rigaku Oxford Diffraction program (1.0.11,gui:1.0.7)
+(C) 2005-2015 Rigaku Oxford Diffraction
+Output file (*.dat):D:\X-Ray Data\New\IM1704\plots_red\IM1704_absscale.dat
+Started at Wed Apr 26 08:25:03 2017
+Sorting 5997 observations
+1181 unique observations with >     7.00 F2/sig(F2)
+5997 observations in 7 runs
+Run #  start #  end #  total #
+    1       0      87      88
+    2       0      95     184
+    3       0      37     222
+    4       0      40     263
+    5       0     100     364
+    6       0      72     437
+    7       0      92     530
+Total number of frames 530
+Maximum number of 1000 frame scales suggested for reliable scaling
+Glued frame scales: 1 frame = 1 scale
+5997 observations in 7 runs
+Run #  start #  end #  total #
+    1       0      87      88
+    2       0      95     184
+    3       0      37     222
+    4       0      40     263
+    5       0     100     364
+    6       0      72     437
+    7       0      92     530
+Total number of frames 530
+4042 observations >     7.00 F2/sig(F2)
+4042 observations in 7 runs
+Run #  start #  end #  total #
+    1       0      87      88
+    2       0      95     184
+    3       0      37     222
+    4       0      40     263
+    5       0     100     364
+    6       0      72     437
+    7       0      92     530
+Total number of frames 530
+Removing 'redundancy=1' reflections
+Average redundancy: 2.4 (Out of 4042 removed 1182 = 2860, unique = 1177)
+SCALE3 ABSPACK SYMMETRY INFORMATION
+Using point Laue symmetry!
+Flags: friedel mate:1; friedel mate on for non-centro:0
+Laue group (Hermann Mauguin): 2/m (b)
+ 
+2860 observations in 7 runs
+Run #  start #  end #  total #
+    1       0      87      88
+    2       0      95     184
+    3       0      37     222
+    4       0      40     263
+    5       0     100     364
+    6       0      72     437
+    7       0      92     530
+Total number of frames 530
+Frame #286 of 530 skipped from refinement
+Frame #472 of 530 skipped from refinement
+Frame #493 of 530 skipped from refinement
+3 frames need to be skipped from refinement, because of missing redundant and/or observable data
+1177 unique data precomputed (should be 1177)
+1177 unique data with 2860 observations
+
+Determining an optimal absorption correction model
+Removing 'redundancy=1' reflections
+Average redundancy: 2.4 (Out of 2425 removed 0 = 2425, unique = 1000)
+1000 unique data precomputed (should be 1000)
+1000 unique data with 2425 observations
+RMS deviation of equivalent data = 0.08591
+Rint = 0.07596
+0 observations identified as outliers and rejected
+1952 observations used for refinement and 473 observations used for validation
+ Test data:	Rint=   0.07913,  wR=   0.13057
+Trying model 1 (ne=2, no=0)...
+ Results:   Rint=   0.05617,  wR=   0.06278,  Acormin=0.821,  Acormax=1.123, Acor_av=0.976
+ Test data:	Rint=   0.06067,  wR=   0.09619
+ F test:    Probability=1.000, F=     1.670
+Trying model 2 (ne=2, no=1)...
+ Results:   Rint=   0.04503,  wR=   0.05065,  Acormin=0.805,  Acormax=1.159, Acor_av=0.990
+ Test data:	Rint=   0.04703,  wR=   0.08630
+ F test:    Probability=1.000, F=     1.646
+Trying model 3 (ne=4, no=0)...
+ Results:   Rint=   0.05187,  wR=   0.05741,  Acormin=0.822,  Acormax=1.175, Acor_av=0.984
+ Test data:	Rint=   0.05596,  wR=   0.09557
+ F test:    Probability=0.000, F=     0.690
+Trying model 4 (ne=4, no=1)...
+ Results:   Rint=   0.04246,  wR=   0.04702,  Acormin=0.805,  Acormax=1.170, Acor_av=0.991
+ Test data:	Rint=   0.04499,  wR=   0.09113
+ F test:    Probability=0.669, F=     1.056
+Trying model 5 (ne=4, no=3)...
+ Results:   Rint=   0.03795,  wR=   0.04211,  Acormin=0.767,  Acormax=1.185, Acor_av=0.986
+ Test data:	Rint=   0.04200,  wR=   0.08007
+ F test:    Probability=0.905, F=     1.178
+Trying model 6 (ne=6, no=0)...
+ Results:   Rint=   0.04875,  wR=   0.05331,  Acormin=0.780,  Acormax=1.218, Acor_av=0.978
+ Test data:	Rint=   0.05504,  wR=   0.09185
+ F test:    Probability=0.000, F=     0.678
+Trying model 7 (ne=6, no=1)...
+ Results:   Rint=   0.04054,  wR=   0.04481,  Acormin=0.789,  Acormax=1.210, Acor_av=0.988
+ Test data:	Rint=   0.04563,  wR=   0.09240
+ F test:    Probability=0.000, F=     0.974
+Trying model 8 (ne=6, no=3)...
+ Results:   Rint=   0.03688,  wR=   0.04086,  Acormin=0.748,  Acormax=1.211, Acor_av=0.986
+ Test data:	Rint=   0.04210,  wR=   0.08553
+ F test:    Probability=0.797, F=     1.111
+Trying model 9 (ne=6, no=5)...
+ Results:   Rint=   0.03538,  wR=   0.03962,  Acormin=0.720,  Acormax=1.204, Acor_av=0.984
+ Test data:	Rint=   0.04090,  wR=   0.08597
+ F test:    Probability=0.815, F=     1.122
+Trying model 10 (ne=8, no=0)...
+ Results:   Rint=   0.04535,  wR=   0.04970,  Acormin=0.772,  Acormax=1.200, Acor_av=0.992
+ Test data:	Rint=   0.05135,  wR=   0.08706
+ F test:    Probability=0.000, F=     0.725
+Trying model 11 (ne=8, no=1)...
+ Results:   Rint=   0.03923,  wR=   0.04348,  Acormin=0.773,  Acormax=1.197, Acor_av=0.986
+ Test data:	Rint=   0.04563,  wR=   0.09231
+ F test:    Probability=0.000, F=     0.906
+Trying model 12 (ne=8, no=3)...
+ Results:   Rint=   0.03610,  wR=   0.04022,  Acormin=0.739,  Acormax=1.197, Acor_av=0.984
+ Test data:	Rint=   0.04176,  wR=   0.08483
+ F test:    Probability=0.641, F=     1.048
+Trying model 13 (ne=8, no=5)...
+ Results:   Rint=   0.03493,  wR=   0.03922,  Acormin=0.722,  Acormax=1.214, Acor_av=0.984
+ Test data:	Rint=   0.04077,  wR=   0.08485
+ F test:    Probability=0.628, F=     1.045
+Trying model 14 (ne=8, no=7)...
+ Results:   Rint=   0.03429,  wR=   0.03862,  Acormin=0.728,  Acormax=1.218, Acor_av=0.985
+ Test data:	Rint=   0.04175,  wR=   0.08907
+ F test:    Probability=0.000, F=     0.924
+
+Final absorption model (ne=2, no=1):
+   Rint=   0.04703, Acormin=0.805, Acormax=1.159, Acor_av=0.990
+
+Combined refinement in use
+Rint:    0.07982
+There are 527 active scales (one needs to be fixed)
+Refinement control: frame scale #76 fixed
+Refinement control: frame scale esd restraint = 0.20000
+Absorption correction model - max even order: 2, max odd order: 1 (8 parameters)
+Refinement control: 534 pars with 142845 matrix size
+Enough LS memory for 4 threads!
+Cycle 1
+wR=   0.08899
+Using Levenberg-Marquardt:    0.00010
+New wR=   0.03853
+There are 3 clusters with unrefined scales (size 1-1)
+Rint for refined data:    0.07721 with corrections    0.03190
+Rint for all data:        0.07982 with corrections    0.03506
+0 observations identified as outliers and rejected
+Cycle 2
+wR=   0.03853
+Using Levenberg-Marquardt:    0.00001
+Matrix singular! Adjusting LS parameters...
+Using Levenberg-Marquardt:    0.00010
+Matrix singular! Adjusting LS parameters...
+Using Levenberg-Marquardt:    0.00100
+New wR=   0.03827
+There are 3 clusters with unrefined scales (size 1-1)
+Rint for refined data:    0.07721 with corrections    0.03194
+Rint for all data:        0.07982 with corrections    0.03510
+0 observations identified as outliers and rejected
+Cycle 3
+wR=   0.03827
+Using Levenberg-Marquardt:    0.00010
+Matrix singular! Adjusting LS parameters...
+Using Levenberg-Marquardt:    0.00100
+New wR=   0.03846
+Using Levenberg-Marquardt:    0.01000
+New wR=   0.03820
+There are 3 clusters with unrefined scales (size 1-1)
+Rint for refined data:    0.07721 with corrections    0.03191
+Rint for all data:        0.07982 with corrections    0.03508
+0 observations identified as outliers and rejected
+Cycle 4
+wR=   0.03820
+Using Levenberg-Marquardt:    0.00100
+New wR=   0.03831
+Using Levenberg-Marquardt:    0.01000
+New wR=   0.03819
+There are 3 clusters with unrefined scales (size 1-1)
+Rint for refined data:    0.07721 with corrections    0.03191
+Rint for all data:        0.07982 with corrections    0.03507
+Final wR=   0.03819
+Final frame scales: Min=  0.7961 Max=  1.1778
+Final absorption correction factors: Amin=  0.8690 Amax=  1.0843
+PROFFIT INFO: Inet (after scale3 abspack): min=-55487.1797 max=14061608.0000
+PROFFIT INFO: sig(Inet) (after scale3 abspack): min=1501.5929 max=156497.2969
+
+******************************************************************************
+*                 E R R O R   M O D E L   C A L C U L A T I O N              *
+******************************************************************************
+
+Input file: D:\X-Ray Data\New\IM1704\IM1704.tmp
+Laue: 2, Friedel: 1
+Min/max for: run:1/7 frame:1/101
+5997 reflections read from tmp file
+1826 reflections are rejected (48 as outliers, 1778 as groups of 1 refl)
+
+Redundancy:             1      2      3      4      5      6+
+Number of groups:       0   1211    385    112     28      1
+
+Initial Chi^2=   1.09685
+Negative value encountered! Resetting parameters to initial values...
+Cycle 1, Chi^2=   0.73779
+Current error model SIG(F2)^2 =  66.20*I_RAW +  37.40*I_BACK+(0.00000*<F2>)^2
+Cycle 2, Chi^2=   0.97085
+Current error model SIG(F2)^2 =  42.17*I_RAW +  59.93*I_BACK+(0.00000*<F2>)^2
+Cycle 3, Chi^2=   0.99456
+Current error model SIG(F2)^2 =  38.10*I_RAW +  76.98*I_BACK+(0.00000*<F2>)^2
+Cycle 4, Chi^2=   0.99921
+Current error model SIG(F2)^2 =  37.22*I_RAW +  81.71*I_BACK+(0.00000*<F2>)^2
+Cycle 5, Chi^2=   0.99988
+Current error model SIG(F2)^2 =  37.07*I_RAW +  82.59*I_BACK+(0.00000*<F2>)^2
+Cycle 6, Chi^2=   0.99998
+Current error model SIG(F2)^2 =  37.04*I_RAW +  82.73*I_BACK+(0.00000*<F2>)^2
+Final Chi^2=   0.99998
+Final error model SIG(F2)^2 =  37.04*I_RAW +  82.73*I_BACK+(0.00000*<F2>)^2
+*************************************************
+All reflections intensity statistics
+ 
+                                             mean            mean          %
+       intensity               #              F2           F2/sig(F2)  >3*F2/sig(F2)
+------------------------------------------------------------------------------------
+  14061608-   2620599           599       4568018.68          39.91     100.00
+   2619582-   1521953           599       1989000.42          23.11     100.00
+   1521289-    979010           599       1236330.57          17.77     100.00
+    978725-    598471           599        771772.88          14.27     100.00
+    598346-    376438           599        480832.27          11.23     100.00
+    376390-    209676           599        286260.14           8.47     100.00
+    208153-    100871           599        150348.11           5.99     100.00
+    100796-     39266           599         67296.13           3.66      62.10
+     39069-     10971           599         23040.62           1.76       7.68
+     10891-    -55487           606          -820.89           0.02       0.00
+------------------------------------------------------------------------------------
+  14061608-    -55487          5997        956089.63          12.61      76.89
+ 
+ 
+All reflections resolution statistics
+ 
+                                             mean            mean          %
+       resolution              #              F2           F2/sig(F2)  >3*F2/sig(F2)
+------------------------------------------------------------------------------------
+     11.02-      1.74           599       2430190.67          30.86       88.31
+      1.74-      1.39           599       1573147.62          16.52       85.98
+      1.39-      1.27           599       1137769.77          12.40       82.64
+      1.27-      1.18           599        957602.55          10.70       78.46
+      1.18-      1.10           599        909292.09          10.18       73.79
+      1.10-      1.02           599        753705.16           9.57       73.79
+      1.02-      0.96           599        610151.43           8.87       72.62
+      0.96-      0.90           599        507418.56           8.83       71.29
+      0.90-      0.86           599        373613.52           8.60       69.45
+      0.86-      0.80           606        315491.11           9.57       72.61
+------------------------------------------------------------------------------------
+     11.02-      0.80          5997        956089.63          12.61       76.89
+ 
+ 
+All reflections cumulative resolution statistics
+ 
+                                             mean            mean          %
+       resolution              #              F2           F2/sig(F2)  >3*F2/sig(F2)
+------------------------------------------------------------------------------------
+     11.02-      1.74           599       2430190.67          30.86       88.31
+     11.02-      1.39          1198       2001669.15          23.69       87.15
+     11.02-      1.27          1797       1713702.69          19.92       85.64
+     11.02-      1.18          2396       1524677.65          17.62       83.85
+     11.02-      1.10          2995       1401600.54          16.13       81.84
+     11.02-      1.02          3594       1293617.98          15.04       80.50
+     11.02-      0.96          4193       1195979.90          14.16       79.37
+     11.02-      0.90          4792       1109909.73          13.49       78.36
+     11.02-      0.86          5391       1028099.04          12.95       77.37
+     11.02-      0.80          5997        956089.63          12.61       76.89
+------------------------------------------------------------------------------------
+     11.02-      0.80          5997        956089.63          12.61       76.89
+ 
+ABS INFO: Face list exported to D:\X-Ray Data\New\IM1704\IM1704.p4p
+Scale applied to data: s=0.071116 (maximum obs:14061608.000,used system gain:40.0,electrons/ADU:2.10)!
+
+Without outlier rejection...
+Rint      0.035; Rsigma      0.051:  data 5997  -> merged 3522
+With outlier rejection...
+Rint      0.034; Rsigma      0.052:  data 5973  -> merged 3522
+Rejected total: 24, method kkm 24, method Blessing 0
+
+Completeness
+direct cell (a, b, c) = (7.006, 14.025, 18.016), (alpha, beta, gamma) = (90.000, 97.711, 90.000)
+wavelength: 1.540562
+dmin, dmax value (Ang): 0.803293, 11.028913
+
+
+completeness table (Laue group: P2/m (b-unique), Friedel couples are equivalent)
+
+   range              data     theory  redun    '%'       total
+  18.00 -    1.84      323      325     1.62    99.38      522
+   1.84 -    1.45      309      325     1.41    95.08      437
+   1.45 -    1.27      324      325     2.73    99.69      884
+   1.27 -    1.15      324      325     2.59    99.69      838
+   1.15 -    1.06      317      325     1.81    97.54      575
+   1.06 -    1.00      317      325     1.66    97.54      526
+   1.00 -    0.95      321      325     1.61    98.77      516
+   0.95 -    0.91      313      325     1.49    96.31      465
+   0.91 -    0.87      321      325     1.35    98.77      434
+   0.87 -    0.84      323      327     1.25    98.78      404
+ ---------------------------------------------------------------
+  18.00 -    0.84     3192     3252     1.75    98.15     5601
+DELETE INFO: Deleting .hklgral file... (D:\X-Ray Data\New\IM1704\IM1704.hklgral)
+DELETE INFO: Deleting .p4pgral file... (D:\X-Ray Data\New\IM1704\IM1704.p4pgral)
+		******************************************************************
+		* GRAL PLUGIN          	 started at Wed Apr 26 08:25:07 2017     *
+		*          version 2.3. 3                                        *
+		******************************************************************
+
+
+		38.43 (release 21-03-2016),compiled Mar 21 2016,16:53:23
+
+
+Original cell in Angstroms and degrees: 
+
+   7.007645  14.020845  18.017454  90.0163  97.7258  89.9881 
+
+    5973 Reflections read from file IM1704.hkl; mean (I/sigma) =   12.55
+
+
+
+Lattice exceptions:  P      A      B      C      I      F     Obv    Rev    All
+          
+
+N (total) =           0   2986   2986   3002   2983   4487   4000   3975   5973
+
+N (int>3sigma) =      0   2292   2280   2278   2255   3425   3056   3068   4591
+
+Mean intensity =    0.0   66.7   65.4   65.9   66.0   66.0   68.1   67.7   67.5
+
+Mean int/sigma =    0.0   12.6   12.2   12.4   12.2   12.4   12.7   12.6   12.5
+
+Lattice type: P chosen          Volume:      1754.20
+
+-------------------------------------------------------------------------------
+
+DETERMINATION OF REDUCED (NIGGLI) CELL
+
+Transformation from original cell (HKLF-matrix):
+   -1.0000  0.0000  0.0000    0.0000 -1.0000  0.0000    0.0000  0.0000  1.0000
+
+Unitcell:       7.008   14.021   18.017   89.98   82.27   89.99 
+
+Niggli form:     a.a =    49.107      b.b =   196.584      c.c =   324.629
+                 b.c =     0.072      a.c =    16.973      a.b =     0.020 
+
+-------------------------------------------------------------------------------
+
+SEARCH FOR HIGHER METRIC SYMMETRY
+
+------------------------------------------------------------------------------
+Option: [33]  err=   0.075    MONOCLINIC P-lattice R(int) = 0.034 [  2451] Vol =   1754.2
+Cell:    7.008  14.021  18.017   89.98   97.73   90.01    Volume:      1754.20
+Matrix:-1.0000  0.0000  0.0000  0.0000  1.0000  0.0000  0.0000  0.0000 -1.0000
+------------------------------------------------------------------------------
+Option: [31]  err=   0.000     TRICLINIC P-lattice R(int) = 0.034 [   969] Vol =   1754.2
+Cell:    7.008  14.021  18.017   89.98   82.27   89.99    Volume:      1754.20
+Matrix:-1.0000  0.0000  0.0000  0.0000 -1.0000  0.0000  0.0000  0.0000  1.0000
+
+Option [33] selected
+
+-------------------------------------------------------------------------------
+
+SPACE GROUP DETERMINATION
+
+
+Lattice exceptions:  P      A      B      C      I      F     Obv    Rev    All
+          
+
+N (total) =           0   2986   2986   3002   2983   4487   3999   3986   5973
+
+N (int>3sigma) =      0   2292   2280   2278   2255   3425   3067   3074   4591
+
+Mean intensity =    0.0   66.7   65.4   65.9   66.0   66.0   68.5   68.1   67.5
+
+Mean int/sigma =    0.0   12.6   12.2   12.4   12.2   12.4   12.7   12.6   12.5
+
+
+Crystal system MONOCLINIC and Lattice type P selected
+
+Mean |E*E-1| = 0.928 [expected .968 centrosym and .736 non-centrosym]
+
+ Systematic absence exceptions:
+        21--   b--   c--   n--  -21-   -a-   -c-   -n-  --21   --a   --b   --n
+
+ N         5   209   211   208     6   171   174   173    13   106    99    97
+ N I>3s    0   169   171   158     0    75    75     0     0    79    85    64
+ <I>    -0.3  87.6  98.2 101.6   0.1  77.1  75.8   0.1  -0.0  77.5  77.0  78.5
+ <I/s>  -0.2  17.3  17.0  17.8   0.2  12.9  12.7   0.1   0.6  14.6  14.6  13.4
+
+
+  Space Group           No.   C/A   En.   O.A.  Pie.  Pyr.   CCDC    ICSD    R(int)   N(eq)
+
+       P2(1)/n (be=98)    14     C     N     N     N     N    82146    4760    0.034     2416
+      P2(1)/a (be=160)    14     C     N     N     N     N    82146    4760    0.034     2413
+      P2(1)/c (be=118)    14     C     N     N     N     N    82146    4760    0.034     2418
+
+ P2(1)/n		 2/m		 Monoclinic
+
+  (1)  x, y, z                            (2) -x+1/2, y+1/2,-z+1/2 
+  (3) -x,-y,-z                            (4)  x+1/2,-y+1/2, z+1/2 
+   
+Chemical formula: C28 H50 O8 S2 Sn2; Z=2.0 (Cu-wavelength)
+   
+EXPORTING .INS FILE
+
+TITL IM1704 in P2(1)/n 
+REM P2(1)/n (#14 in standard setting)
+CELL 1.54184   7.007645  14.020845  18.017454  89.9837  97.7258  90.0119
+ZERR    2.00   0.000358   0.000754   0.001046   0.0045   0.0045   0.0043
+LATT  1
+SYMM -x+1/2, y+1/2,-z+1/2 
+SFAC C H O S Sn
+UNIT 56.00 100.00 16.00 4.00 4.00
+TREF
+HKLF 4
+END
+ 
+Note: The Rint, Rsigma and RsigmaB values are computed for redundant data only!
+	Mean F2 and F2/sig(F2) are given for all measured values!
+Note: The RsigmaA values are computed for all measured values!
+
+Help: For more information about computations of rint and rsigma please look into Crysalis help: 
+ file:__#HELP_DTheoryAlgorithm_DataReductionOutput.html
+ 
+
+Statistics vs intensity - point group symmetry: P2/m (b-unique)
+                       #        #        #      average    mean      mean        
+          intensity measured   kept    unique  redundancy   F2     F2/sig(F2)   Rint   Rsigma
+---------------------------------------------------------------------------------------------
+  14061608-  2514010      641      629      352    1.8   4431411.06    38.89    0.024    0.025
+   2512802-  1413883      648      645      352    1.8   1879653.14    22.32    0.029    0.030
+   1413669-   891318      620      619      352    1.8   1148626.67    17.15    0.033    0.033
+    890432-   544470      605      605      352    1.7    701378.16    13.74    0.045    0.046
+    543950-   331189      617      616      352    1.8    436378.45    10.64    0.052    0.053
+    330345-   177584      612      610      352    1.7    248917.90     7.87    0.069    0.070
+    177583-    82202      583      583      352    1.7    125627.05     5.44    0.111    0.112
+     82002-    30503      578      577      352    1.6     54759.92     3.15    0.197    0.204
+     30332-     9675      569      565      352    1.6     18184.48     1.41    0.468    0.496
+      9455-   -38608      524      524      354    1.5       -30.41     0.06    0.820    1.468
+-------------------------------------------------------------------------------------------
+  14061608-   -38608     5997     5973     3522    1.7    949407.65    12.55    0.034    0.034
+ 
+
+Statistics vs resolution - point group symmetry: P2/m (b-unique)
+resolu-      #        #        #               average    mean      mean          
+tion(A)   measured   kept    unique           redundancy   F2     F2/sig(F2)   Rint   Rsigma   RsigmaA
+------------------------------------------------------------------------------------------------------
+ inf-1.78      569      564      352             1.6   2416723.75    30.97    0.026    0.026     0.023
+1.78-1.40      567      564      352             1.6   1677124.03    17.45    0.026    0.026     0.039
+1.40-1.22      994      987      352             2.8   1055315.85    11.68    0.037    0.038     0.058
+1.22-1.11      820      813      352             2.3    924554.72    10.37    0.038    0.039     0.065
+1.11-1.03      602      601      352             1.7    746069.37     9.49    0.036    0.036     0.073
+1.03-0.97      575      575      352             1.6    661271.23     9.26    0.041    0.041     0.073
+0.97-0.92      533      533      352             1.5    487869.34     8.40    0.040    0.041     0.078
+0.92-0.87      488      487      352             1.4    417769.05     8.71    0.039    0.038     0.075
+0.87-0.84      447      447      352             1.3    346410.84     9.02    0.061    0.062     0.074
+0.84-0.80      402      402      354             1.1    302661.35     9.70    0.050    0.050     0.066
+------------------------------------------------------------------------------------------------------
+ inf-0.80     5997     5973     3522             1.7    949407.65    12.55    0.034    0.034     0.052
+ inf-0.84     5625     5601     3192             1.8    992680.35    12.74    0.034    0.034     0.051
+ 
+
+Statistics vs resolution (taking redundancy into account) - point group symmetry: P2/m (b-unique)
+resolu-      #        #        #       %       average    mean      mean          
+tion(A)    kept     theory   unique complete  redundancy   F2     F2/sig(F2)   Rint  RsigmaB
+--------------------------------------------------------------------------------------------
+ inf-1.78      564      354      352   99.4      1.6   2416723.75    40.54    0.026    0.016
+1.78-1.40      564      369      352   95.4      1.6   1677124.03    23.34    0.026    0.027
+1.40-1.22      987      352      352  100.0      2.8   1055315.85    20.35    0.037    0.035
+1.22-1.11      813      355      352   99.2      2.3    924554.72    16.64    0.038    0.041
+1.11-1.03      601      361      352   97.5      1.7    746069.37    13.10    0.036    0.049
+1.03-0.97      575      361      352   97.5      1.6    661271.23    12.49    0.041    0.051
+0.97-0.92      533      361      352   97.5      1.5    487869.34    10.91    0.040    0.055
+0.92-0.87      487      357      352   98.6      1.4    417769.05    10.74    0.039    0.054
+0.87-0.84      447      357      352   98.6      1.3    346410.84    10.43    0.061    0.065
+0.84-0.80      402      481      354   73.6      1.1    302661.35    10.62    0.050    0.050
+--------------------------------------------------------------------------------------------
+ inf-0.80     5973     3708     3522   95.0      1.7    949407.65    17.52    0.034    0.034
+ inf-0.84     5601     3252     3192   98.2      1.8    992680.35    17.99    0.034    0.034
+Reading tabbin file: "D:\X-Ray Data\New\IM1704\IM1704_proffitpeak"
+System 'CLOSE MESSAGE' intercepted at Wed Apr 26 08:25:18 2017
+WD P/CAL INFO: D:\X-Ray Data\New\IM1704\IM1704_cracker.par written

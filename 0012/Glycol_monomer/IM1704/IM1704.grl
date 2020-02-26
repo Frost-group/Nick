@@ -1,0 +1,113 @@
+		******************************************************************
+		* GRAL PLUGIN          	 started at Wed Apr 26 08:25:07 2017     *
+		*          version 2.3. 3                                        *
+		******************************************************************
+
+
+		38.43 (release 21-03-2016),compiled Mar 21 2016,16:53:23
+
+
+Original cell in Angstroms and degrees: 
+
+   7.007645  14.020845  18.017454  90.0163  97.7258  89.9881 
+
+    5973 Reflections read from file IM1704.hkl; mean (I/sigma) =   12.55
+
+
+
+Lattice exceptions:  P      A      B      C      I      F     Obv    Rev    All
+          
+
+N (total) =           0   2986   2986   3002   2983   4487   4000   3975   5973
+
+N (int>3sigma) =      0   2292   2280   2278   2255   3425   3056   3068   4591
+
+Mean intensity =    0.0   66.7   65.4   65.9   66.0   66.0   68.1   67.7   67.5
+
+Mean int/sigma =    0.0   12.6   12.2   12.4   12.2   12.4   12.7   12.6   12.5
+
+Lattice type: P chosen          Volume:      1754.20
+
+-------------------------------------------------------------------------------
+
+DETERMINATION OF REDUCED (NIGGLI) CELL
+
+Transformation from original cell (HKLF-matrix):
+   -1.0000  0.0000  0.0000    0.0000 -1.0000  0.0000    0.0000  0.0000  1.0000
+
+Unitcell:       7.008   14.021   18.017   89.98   82.27   89.99 
+
+Niggli form:     a.a =    49.107      b.b =   196.584      c.c =   324.629
+                 b.c =     0.072      a.c =    16.973      a.b =     0.020 
+
+-------------------------------------------------------------------------------
+
+SEARCH FOR HIGHER METRIC SYMMETRY
+
+------------------------------------------------------------------------------
+Option: [33]  err=   0.075    MONOCLINIC P-lattice R(int) = 0.034 [  2451] Vol =   1754.2
+Cell:    7.008  14.021  18.017   89.98   97.73   90.01    Volume:      1754.20
+Matrix:-1.0000  0.0000  0.0000  0.0000  1.0000  0.0000  0.0000  0.0000 -1.0000
+------------------------------------------------------------------------------
+Option: [31]  err=   0.000     TRICLINIC P-lattice R(int) = 0.034 [   969] Vol =   1754.2
+Cell:    7.008  14.021  18.017   89.98   82.27   89.99    Volume:      1754.20
+Matrix:-1.0000  0.0000  0.0000  0.0000 -1.0000  0.0000  0.0000  0.0000  1.0000
+
+Option [33] selected
+
+-------------------------------------------------------------------------------
+
+SPACE GROUP DETERMINATION
+
+
+Lattice exceptions:  P      A      B      C      I      F     Obv    Rev    All
+          
+
+N (total) =           0   2986   2986   3002   2983   4487   3999   3986   5973
+
+N (int>3sigma) =      0   2292   2280   2278   2255   3425   3067   3074   4591
+
+Mean intensity =    0.0   66.7   65.4   65.9   66.0   66.0   68.5   68.1   67.5
+
+Mean int/sigma =    0.0   12.6   12.2   12.4   12.2   12.4   12.7   12.6   12.5
+
+
+Crystal system MONOCLINIC and Lattice type P selected
+
+Mean |E*E-1| = 0.928 [expected .968 centrosym and .736 non-centrosym]
+
+ Systematic absence exceptions:
+        21--   b--   c--   n--  -21-   -a-   -c-   -n-  --21   --a   --b   --n
+
+ N         5   209   211   208     6   171   174   173    13   106    99    97
+ N I>3s    0   169   171   158     0    75    75     0     0    79    85    64
+ <I>    -0.3  87.6  98.2 101.6   0.1  77.1  75.8   0.1  -0.0  77.5  77.0  78.5
+ <I/s>  -0.2  17.3  17.0  17.8   0.2  12.9  12.7   0.1   0.6  14.6  14.6  13.4
+
+
+  Space Group           No.   C/A   En.   O.A.  Pie.  Pyr.   CCDC    ICSD    R(int)   N(eq)
+
+       P2(1)/n (be=98)    14     C     N     N     N     N    82146    4760    0.034     2416
+      P2(1)/a (be=160)    14     C     N     N     N     N    82146    4760    0.034     2413
+      P2(1)/c (be=118)    14     C     N     N     N     N    82146    4760    0.034     2418
+
+ P2(1)/n		 2/m		 Monoclinic
+
+  (1)  x, y, z                            (2) -x+1/2, y+1/2,-z+1/2 
+  (3) -x,-y,-z                            (4)  x+1/2,-y+1/2, z+1/2 
+   
+Chemical formula: C28 H50 O8 S2 Sn2; Z=2.0 (Cu-wavelength)
+   
+EXPORTING .INS FILE
+
+TITL IM1704 in P2(1)/n 
+REM P2(1)/n (#14 in standard setting)
+CELL 1.54184   7.007645  14.020845  18.017454  89.9837  97.7258  90.0119
+ZERR    2.00   0.000358   0.000754   0.001046   0.0045   0.0045   0.0043
+LATT  1
+SYMM -x+1/2, y+1/2,-z+1/2 
+SFAC C H O S Sn
+UNIT 56.00 100.00 16.00 4.00 4.00
+TREF
+HKLF 4
+END

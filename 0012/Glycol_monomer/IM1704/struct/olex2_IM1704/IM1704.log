@@ -1,0 +1,104 @@
+Merging summary:
+Total reflections: 5965
+Unique reflections: 3378
+Systematic Absences: 0 removed
+Inconsistent equivalents: 5
+R(int): 0.036946
+R(sigma): 0.048936
+R-linear = sum(abs(data - mean(data))) / sum(abs(data))
+R-square = sum((data - mean(data))**2) / sum(data**2)
+In these sums single measurements are excluded.
+                             Redundancy       Mean      Mean
+                           Min  Max   Mean  R-linear  R-square
+unused:         - 11.0299
+bin  1: 11.0299 -  1.7286    1    4  1.615    0.0649    0.0153
+bin  2:  1.7286 -  1.3729    1    5  1.790    0.3473    0.0514
+bin  3:  1.3729 -  1.1996    1    5  2.827    0.3648    0.0605
+bin  4:  1.1996 -  1.0900    1    5  2.134    0.1313    0.0918
+bin  5:  1.0900 -  1.0120    1    4  1.722    0.1251    0.0564
+bin  6:  1.0120 -  0.9523    1    4  1.629    0.1167    0.0756
+bin  7:  0.9523 -  0.9047    1    4  1.499    0.1593    0.0959
+bin  8:  0.9047 -  0.8653    1    3  1.368    0.0921    0.0872
+bin  9:  0.8653 -  0.8320    1    3  1.232    0.1238    0.1172
+bin 10:  0.8320 -  0.8033    1    2  1.105    0.4740    0.1898
+unused:  0.8033 -
+d min: 0.770920
+n reflections filtered by resolution: 0
+n reflections filtered by hkl: 0
+wR2 = 0.1598 for 3378 data and 184 parameters
+GooF = 1.0967
+Max shift site: 0.0106 A for H17
+Max dU: 0.0023 for C16
+Sorted site shifts in Angstrom:
+shift scatterer
+0.011 H17
+0.002 H20c
+0.001 H18b
+0.001 H20b
+0.001 H18c
+0.001 H16a
+0.001 H18a
+0.001 H20a
+0.001 H16b
+0.001 H5
+... (remaining 34 not shown)
+Sorted adp shift norms:
+dU scatterer
+0.002 C16
+0.002 H16a
+0.002 H16b
+0.001 C4
+0.001 H17
+0.001 O17
+0.001 H19c
+0.001 H19b
+0.001 H19a
+0.001 C19
+... (remaining 34 not shown)
+wR2 = 0.1597 for 3378 data and 184 parameters
+GooF = 1.0922
+Max shift site: 0.0049 A for H17
+Max dU: 0.0004 for C16
+Sorted site shifts in Angstrom:
+shift scatterer
+0.005 H17
+0.000 H19c
+... (remaining 42 not shown)
+Sorted adp shift norms:
+dU scatterer
+0.000 C16
+... (remaining 43 not shown)
+wR2 = 0.1597 for 3378 data and 184 parameters
+GooF = 1.0944
+Max shift site: 0.0029 A for H17
+Max dU: 0.0001 for O17
+Sorted site shifts in Angstrom:
+shift scatterer
+0.003 H17
+0.000 H19c
+... (remaining 42 not shown)
+Sorted adp shift norms:
+dU scatterer
+0.000 O17
+... (remaining 43 not shown)
+wR2 = 0.1597 for 3378 data and 184 parameters
+GooF = 1.0944
+Max shift site: 0.0014 A for H17
+Max dU: 0.0000 for O17
+Sorted site shifts in Angstrom:
+shift scatterer
+0.001 H17
+0.000 H19b
+... (remaining 42 not shown)
+Sorted adp shift norms:
+dU scatterer
+0.000 O17
+... (remaining 43 not shown)
+pure Gauss-Newton with damping and shift scaling
+Summary after 4 cycles:
+R1 (all data): 0.0643 for 3378 reflections
+R1: 0.0570 for 2891 reflections I >= 2u(I)
+wR2 = 0.1597, GooF: 1.0944
+Difference map: max=1.18, min=-3.00
+
+Disagreeable reflections:

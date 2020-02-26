@@ -1,0 +1,194 @@
+
+-----------------------STRATEGY: used parameters----------------------------------
+CrysAlis 38.43 (release 21-03-2016)
+(compiled Mar 21 2016,16:53:25)
+Res: 0.840, Laue group: 1, Friedel couples equivalent: TRUE,absence type: P
+DD: 53.00, strategy mode: Complete data (default mode), wanted redundancy: 0.00,
+ wanted total time (min) 0
+phi scan: FALSE,phi scan only: FALSE, kappa ranges: no constraint
+Use axes: no axes,executing mode: AUTO, compl limit 98.50, cover limit 0.00, beam stop used: TRUE, refl radius: 5
+scan width: 1.00, exposure time (sec): 10.00
+e1: 1.33, e2: 1.05, e3: 1.76, scaled UB: FALSE
+Minimal scan range 25.0, scan gap 5.0,
+Several seed TRUE, #seeds: 10 , new shrink alg: TRUE
+Strategy3D: TRUE, #seed: 10, combination instead of seed algorithm FALSE
+Strategy4: FALSE, with multithreading: TRUE
+----------------------------------------------------------------------------------
+
+
+"strategy, constraint" mat UB
+ -0.139994 -0.075705  0.005186 
+ -0.021097 -0.028483 -0.064633 
+  0.088785 -0.097435 -0.002048 
+
+UM S -1.3999418E-001 -7.5705000E-002 5.1855303E-003 -2.1096925E-002 -2.8483485E-002 -6.4633219E-002 8.8784770E-002 -9.7435084E-002 -2.0484328E-003
+"strategy, constraint" direct lattice  (a, b, c) = (9.288, 12.500, 24.244), (alpha, beta, gamma) = (101.370, 91.054, 96.570)
+dd: 53.00
+
+detector rims:
+for theta  41.86:(16,16) (256,16) (512,16) (768,16) (1007,17) (1007,512) (1007,1007) (768,1008) (512,1008) (256,1008) (18,1008) (10,512) 
+for theta -41.86:(17,17) (256,16) (512,16) (768,16) (1008,16) (1014,512) (1008,1008) (768,1008) (512,1008) (256,1008) (19,1007) (17,512) 
+for theta 106.38:(16,16) (256,16) (512,17) (768,17) (993,31) (993,512) (993,993) (768,1007) (512,1007) (256,1008) (18,1008) (16,512) 
+for theta -90.00:(24,24) (256,17) (512,17) (768,16) (1008,16) (1008,512) (1008,1008) (768,1008) (512,1007) (256,1007) (26,1000) (29,512) 
+
+SETTING GENERATION MODULE (access):
+number of settings from "axis first" algorithm: 24
+number of fixed omega settings: 468
+number of fixed phi settings: 0
+number of appended settings: 0
+number of generated settings: 492
+
+RIGAKU OXFORD DIFFRACTION: STRATEGY3D - Fast strategy module - 2008-2015 (version: 3.1)
+
+# accessible uniques  9659/9660, possible completeness: 99.99%
+Kappa constraint seeds are not available because kappa constraint runs do not cover all accessible uniques
+# seeds in decision tree: 492
+# kappa constr seeds in decision tree: 0
+# axis seeds in decision tree: 24
+
+DECISION TREE:
+run  stype  omega   theta     kappa    phi    sstart     send  	  range   axis    exp time
+  1   O     0.00   106.38   -77.00   -60.00    30.00   139.00   109.00     ---       10.00
+  2   O     0.00   106.38   -30.00    90.00    30.00   135.00   105.00     ---       10.00
+  3   O     0.00   106.38    45.00   -90.00    81.00   178.00    97.00     ---       10.00
+  4   O     0.00   106.38   -95.00   120.00    24.00   109.00    85.00     ---       10.00
+  5   O     0.00   -41.86    57.00     0.00   -70.00    31.00   101.00     ---       10.00
+  6   O     0.00   -41.86   -57.00  -150.00  -115.00   -14.00   101.00     ---       10.00
+  7   O     0.00   106.38   -30.00   -90.00    30.00   135.00   105.00     ---       10.00
+  8   O     0.00   106.38   -95.00  -120.00    24.00   109.00    85.00     ---       10.00
+  9   O     0.00    41.86   -99.00   120.00   -20.00    83.00   103.00     ---       10.00
+ 10   O     0.00   106.38    61.00    60.00    77.00   178.00   101.00     ---       10.00
+ 11   O     0.00   106.38  -125.00   120.00    33.00   121.00    88.00     ---       10.00
+ 12   O     0.00   106.38   125.00   -60.00    73.00   178.00   105.00     ---       10.00
+ 13   O     0.00   -41.86  -139.00    64.00  -114.00   -65.00    49.00   0  0  1     10.00
+ 14   O     0.00   106.38    77.00    30.00    74.00   178.00   104.00     ---       10.00
+ 15   O     0.00   -41.86    77.00    90.00   -74.00    34.00   108.00     ---       10.00
+ 16   O     0.00   106.38    45.00   -60.00    81.00   178.00    97.00     ---       10.00
+ 17   O     0.00   106.38   -95.00   150.00    24.00   109.00    85.00     ---       10.00
+
+17 runs, 1628.00 deg
+
+IMPROVED DECISION TREE: (runs after optimization shrink)
+run  stype  omega   theta     kappa    phi    sstart     send  	  range   axis    exp time
+  1   O     0.00   -41.86    57.00     0.00   -66.00    24.00    90.00     ---       10.00
+  2   O     0.00   -41.86   -57.00  -150.00  -112.00   -17.00    95.00     ---       10.00
+  3   O     0.00    41.86   -99.00   120.00   -20.00    82.00   102.00     ---       10.00
+  4   O     0.00   106.38    45.00   -90.00    82.00   109.00    27.00     ---       10.00
+  5   O     0.00   106.38   -95.00   120.00    24.00   109.00    85.00     ---       10.00
+  6   O     0.00   106.38   -30.00   -90.00    30.00   133.00   103.00     ---       10.00
+  7   O     0.00   106.38    45.00   -90.00   127.00   175.00    48.00     ---       10.00
+  8   O     0.00   106.38   -95.00  -120.00    36.00   109.00    73.00     ---       10.00
+  9   O     0.00   106.38   -30.00    90.00    40.00   134.00    94.00     ---       10.00
+ 10   O     0.00   106.38    61.00    60.00    94.00   177.00    83.00     ---       10.00
+ 11   O     0.00   106.38   -77.00   -60.00    30.00   139.00   109.00     ---       10.00
+
+11 runs, 909.00 deg
+
+-----------------------COVERAGE: used parameters-------------------------------------
+CrysAlis 38.43 (release 21-03-2016)
+(compiled Mar 21 2016,16:53:25)
+Res: 0.840, Laue group: 1, Friedel couples equivalent: TRUE, absence type: P
+only completeness: FALSE, DD: 53.00, exp time: 10.00, scan width: 1.00, skip correlation: FALSE
+executing mode: AUTO, plateau alg: TRUE, beam stop used: TRUE, refl radius: 5
+UB factor: 1.000 mat UB:
+ -0.139994 -0.075705  0.005186 
+ -0.021097 -0.028483 -0.064633 
+  0.088785 -0.097435 -0.002048
+direct lattice  (a, b, c) = (9.288, 12.500, 24.244), (alpha, beta, gamma) = (101.370, 91.054, 96.570)
+-------------------------------------------------------------------------------------
+
+RIGAKU OXFORD DIFFRACTION COVERAGE - STATISTICS MODULE (coverage, completeness, redundancy) - 2005-2015 (version: 1.30)
+
+
+Runs sorted by |theta|
+run  stype  omega   theta     kappa    phi    sstart    send     range    axis
+  1   O     0.00   -41.86    57.00     0.00   -66.00    24.00    90.00     ---  
+  2   O     0.00    41.86   -99.00   120.00   -20.00    82.00   102.00     ---  
+  3   O     0.00   106.38   -95.00   120.00    24.00   109.00    85.00     ---  
+  4   O     0.00   106.38   -30.00    90.00    40.00   134.00    94.00     ---  
+  5   O     0.00   106.38    61.00    60.00    94.00   177.00    83.00     ---  
+  6   O     0.00   106.38    45.00   -90.00   127.00   175.00    48.00     ---  
+  7   O     0.00   106.38    45.00   -90.00    82.00   109.00    27.00     ---  
+  8   O     0.00   106.38   -30.00   -90.00    30.00   133.00   103.00     ---  
+  9   O     0.00   106.38   -95.00  -120.00    36.00   109.00    73.00     ---  
+ 10   O     0.00   106.38   -77.00   -60.00    30.00   139.00   109.00     ---  
+ 11   O     0.00   -41.86   -57.00  -150.00  -112.00   -17.00    95.00     ---  
+
+Runs after optimization:
+run  stype  omega   theta     kappa    phi    sstart    send     range    axis
+  1   O     0.00   -41.86    57.00     0.00   -66.00    24.00    90.00     ---  
+  2   O     0.00    41.86   -99.00   120.00   -20.00    82.00   102.00     ---  
+  3   O     0.00   106.38   -95.00   120.00    24.00   109.00    85.00     ---  
+  4   O     0.00   106.38   -30.00    90.00    40.00   134.00    94.00     ---  
+  5   O     0.00   106.38    61.00    60.00    94.00   177.00    83.00     ---  
+  6   O     0.00   106.38    45.00   -90.00   127.00   175.00    48.00     ---  
+  7   O     0.00   106.38    45.00   -90.00    82.00   109.00    27.00     ---  
+  8   O     0.00   106.38   -30.00   -90.00    30.00   133.00   103.00     ---  
+  9   O     0.00   106.38   -95.00  -120.00    36.00   109.00    73.00     ---  
+ 10   O     0.00   106.38   -77.00   -60.00    30.00   139.00   109.00     ---  
+ 11   O     0.00   -41.86   -57.00  -150.00  -112.00   -17.00    95.00     ---  
+
+
+Total range before optimization: 909.00 deg, now: 909.00 deg.
+
+
+TIME PREDICTION INFO:
+Time prediction based on reflections generated by planned run list and intensity analysis done in pre-exp.
+Avg exp time: 262.39, I/sigma target:  12.00, merged I/sigma:  15.05
+theta	time	I/sigma	m. I/sigma
+  1	111.99	 14.11	 15.09
+  2	447.97	 11.26	 13.52
+total I/sigma:	 12.00	 15.05
+
+-----------------------COVERAGE: used parameters-------------------------------------
+CrysAlis 38.43 (release 21-03-2016)
+(compiled Mar 21 2016,16:53:25)
+Res: 0.840, Laue group: 1, Friedel couples equivalent: TRUE, absence type: P
+only completeness: FALSE, DD: 53.00, exp time: 10.00, scan width: 1.00, skip correlation: FALSE
+executing mode: AUTO, plateau alg: FALSE, beam stop used: TRUE, refl radius: 5
+UB factor: 1.000 mat UB:
+ -0.139994 -0.075705  0.005186 
+ -0.021097 -0.028483 -0.064633 
+  0.088785 -0.097435 -0.002048
+direct lattice  (a, b, c) = (9.288, 12.500, 24.244), (alpha, beta, gamma) = (101.370, 91.054, 96.570)
+-------------------------------------------------------------------------------------
+
+RIGAKU OXFORD DIFFRACTION COVERAGE - STATISTICS MODULE (coverage, completeness, redundancy) - 2005-2015 (version: 1.30)
+
+
+hklmax 11 14 28
+
+completeness table (Laue group: P1, Friedel couples are equivalent)
+
+   range              data     theory  redun    '%'       total
+  24.24 -    1.81      959      966     1.38    99.28     1325
+   1.81 -    1.44      949      966     1.14    98.24     1083
+   1.44 -    1.26      966      966     2.43   100.00     2350
+   1.26 -    1.14      963      966     2.29    99.69     2209
+   1.14 -    1.06      965      966     1.56    99.90     1508
+   1.06 -    1.00      966      966     1.48   100.00     1434
+   1.00 -    0.95      966      966     1.40   100.00     1349
+   0.95 -    0.91      957      966     1.31    99.07     1254
+   0.91 -    0.87      940      966     1.23    97.31     1159
+   0.87 -    0.84      906      966     1.18    93.79     1073
+ ---------------------------------------------------------------
+  24.24 -    0.84     9537     9660     1.55    98.73    14744
+
+coverage table (Laue group: P1, Friedel couples are not equivalent)
+
+   range              data     theory  redun    '%'       total
+  24.24 -    1.81     1151     1932     1.15    59.58     1325
+   1.81 -    1.44     1019     1932     1.06    52.74     1083
+   1.44 -    1.26     1361     1932     1.73    70.45     2350
+   1.26 -    1.14     1311     1932     1.68    67.86     2209
+   1.14 -    1.06     1130     1932     1.33    58.49     1508
+   1.06 -    1.00     1116     1932     1.28    57.76     1434
+   1.00 -    0.95     1102     1932     1.22    57.04     1349
+   0.95 -    0.91     1071     1932     1.17    55.43     1254
+   0.91 -    0.87     1036     1932     1.12    53.62     1159
+   0.87 -    0.84      986     1932     1.09    51.04     1073
+ ---------------------------------------------------------------
+  24.24 -    0.84    11283    19320     1.31    58.40    14744
+
+STRATEGY DETAILS:
+theta settings: 3, abs minimum theta: 41.86, abs maximum theta: 106.38, max resolution: 0.800

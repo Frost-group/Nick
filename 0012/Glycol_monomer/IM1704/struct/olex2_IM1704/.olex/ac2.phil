@@ -1,0 +1,12 @@
+# +++ AUTOCHEM SETTINGS FILE (made by CrysAlisPro)+++
+#
+autochem2.revert_to_original=True
+autochem2.solution.program=Auto
+autochem2.solution.method=Auto
+autochem2.solution.max_attempts=5
+autochem2.refinement.program=Auto
+autochem2.refinement.method=Auto
+autochem2.keep_formula=True
+autochem2.report.make_pdf=False
+autochem2.report.show_htm=False
+autochem2.report.show_pdf=False

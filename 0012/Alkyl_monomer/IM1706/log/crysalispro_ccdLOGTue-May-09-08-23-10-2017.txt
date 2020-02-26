@@ -1,0 +1,335 @@
+Waiting for the end of generator ramping
+Spellman device write OK: kV=50.00,mA=40.00,ON
+RAMP: Spellman device unlock OK (Tue May 09 08:23:11 2017)
+RAMP: Spellman device connection shutdown OK. GUI is still active. (Tue May 09 08:23:11 2017)
+DC3DEVICES: Cryojet device OK (no locking)
+DC3DEVICES: CCSCAM  (Ver. 2.1.16.248)  device OK (no locking)
+Waiting for the end of dark current map acquisition
+DC INFO: Cryojet settings 173.0K 21.700% 10.500% at Tue May 09 08:23:11 2017
+DC INFO: Spellman settings  49.97kV  40.04mA at Tue May 09 08:23:12 2017
+DC3DEVICES ERROR: CCDchiller init failed (NOTFOUND)!
+CCDchiller device connection shutdown OK. Not inited (iInitAndLockDeviceDC3DEVICES).
+CCD INFO: Dark C:\Xcalibur\CrysalisPro171.38.43\AJPW_darkimages\dc_dark_2048_2048_2_2_20000.dar written at Tue May 09 08:24:28 2017
+Camera settings: 
+CCD
+   chip name  "KAF-4320E"
+   channels 4
+   height 2088
+   width 2096
+   active area     height 2088
+     width 2096
+     x 0
+     y 0
+HW
+   ang brd pressent 1
+   ang config loaded
+   dsp firmware ok 1
+   fpga firmware ok 1
+   temperature ready 1
+   ang brd type 1
+MISC
+   expander 221
+   free space 206172
+PICTURE
+   param
+     autoupload 1
+     correction raw
+     format raw
+     ref type median
+     analog channel 1
+     binning 1
+     originx 18
+     originy 18
+   state ref0 1547
+   state ref1 1219
+   state ref2 1395
+   state ref3 1479
+VOLTAGES
+   dac_ref1 62 mV
+   dac_ref2 100 mV
+   dac_ref3 70 mV
+   dac_ref4 85 mV
+   h1 amplitude 10000 mV
+   h1 offset 0 mV
+   h1l amplitude 10000 mV
+   h1l amplitude -3000 mV
+   h2 amplitude 10000 mV
+   h2 offset -3000 mV
+   reset amplitude 12000 mV
+   reset offset 2000 mV
+   v1 amplitude 8000 mV
+   v1 offset -8000 mV
+   v2 amplitude 8000 mV
+   v2 offset -8000 mV
+TIMINGS 1X1
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 60 ns
+   h last 0 ns
+   h width 600 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 2X2
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 320 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 4X4
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 300 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+System uptime: 1d 1h 28m 2s
+
+Network connection information (Tue May 09 08:24:30 2017)
+Connected to ROOT\CIMV2 WMI namespace
+Adapter : Intel(R) 82579LM Gigabit Network Connection
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:90:B1:1C:70:D5:25
+  Status:    90:B1:1C:70:D5:25
+Adapter : RAS Async Adapter
+  Unknown device status
+Adapter : Intel(R) Gigabit CT Desktop Adapter
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:68:05:CA:0F:FC:DF
+  Status:    68:05:CA:0F:FC:DF
+Adapter : Intel(R) Gigabit CT Desktop Adapter #2
+  Media disconnected
+EXPECTED FINISH TIME:  (0,30,end:Tue May 09 09:17:46 2017)
+Going to -37.00000 -41.85679 134.00000 284.00000 53.00000
+Run 1 started at Tue May 09 08:24:30 2017
+Omega scan:  -37.000 to  -32.000 (    5 frames,  20.000s) at t: -41.857,k: 134.000,p: 284.000,dd:  53.000
+Run 1 ended
+
+EXPECTED FINISH TIME:  (5,30,end:Tue May 09 09:17:25 2017)
+Going to -24.00000 -41.85679 70.00000 0.00000 53.00000
+Run 2 started at Tue May 09 08:28:29 2017
+Omega scan:  -24.000 to  -19.000 (    5 frames,  20.000s) at t: -41.857,k:  70.000,p:   0.000,dd:  53.000
+Run 2 ended
+
+EXPECTED FINISH TIME:  (10,30,end:Tue May 09 09:17:28 2017)
+Going to 28.00000 41.85679 -70.00000 90.00000 53.00000
+Run 3 started at Tue May 09 08:32:21 2017
+Omega scan:   28.000 to   33.000 (    5 frames,  20.000s) at t:  41.857,k: -70.000,p:  90.000,dd:  53.000
+Run 3 ended
+
+EXPECTED FINISH TIME:  (15,30,end:Tue May 09 09:17:31 2017)
+Going to 81.00000 106.37629 -70.00000 90.00000 53.00000
+DELETE INFO: Deleting dark image... (C:\Xcalibur\CrysalisPro171.38.43\AJPW_darkimages\dc_dark_2048_2048_2_2_80000.dar)
+- Acquisition of proper dark current map   80.000 sec
+Run 4 started at Tue May 09 08:36:07 2017
+Omega scan:   81.000 to   86.000 (    5 frames,  80.000s) at t: 106.376,k: -70.000,p:  90.000,dd:  53.000
+Waiting for the end of dark current map acquisition
+CCD INFO: Dark C:\Xcalibur\CrysalisPro171.38.43\AJPW_darkimages\dc_dark_2048_2048_2_2_80000.dar written at Tue May 09 08:41:18 2017
+Run 4 ended
+
+EXPECTED FINISH TIME:  (20,30,end:Tue May 09 09:22:44 2017)
+Going to 123.00000 106.37629 70.00000 90.00000 53.00000
+Run 5 started at Tue May 09 08:55:10 2017
+Omega scan:  123.000 to  128.000 (    5 frames,  80.000s) at t: 106.376,k:  70.000,p:  90.000,dd:  53.000
+Run 5 ended
+
+EXPECTED FINISH TIME:  (25,30,end:Tue May 09 09:22:47 2017)
+Going to 123.00000 106.37629 70.00000 0.00000 53.00000
+Run 6 started at Tue May 09 09:08:53 2017
+Omega scan:  123.000 to  128.000 (    5 frames,  80.000s) at t: 106.376,k:  70.000,p:   0.000,dd:  53.000
+Run 6 ended
+
+Camera settings: 
+CCD
+   chip name  "KAF-4320E"
+   channels 4
+   height 2088
+   width 2096
+   active area     height 2088
+     width 2096
+     x 0
+     y 0
+HW
+   ang brd pressent 1
+   ang config loaded
+   dsp firmware ok 1
+   fpga firmware ok 1
+   temperature ready 1
+   ang brd type 1
+MISC
+   expander 221
+   free space 206172
+PICTURE
+   param
+     autoupload 1
+     correction raw
+     format raw
+     ref type median
+     analog channel 1
+     binning 1
+     originx 18
+     originy 18
+   state ref0 1545
+   state ref1 1217
+   state ref2 1393
+   state ref3 1475
+VOLTAGES
+   dac_ref1 62 mV
+   dac_ref2 100 mV
+   dac_ref3 70 mV
+   dac_ref4 85 mV
+   h1 amplitude 10000 mV
+   h1 offset 0 mV
+   h1l amplitude 10000 mV
+   h1l amplitude -3000 mV
+   h2 amplitude 10000 mV
+   h2 offset -3000 mV
+   reset amplitude 12000 mV
+   reset offset 2000 mV
+   v1 amplitude 8000 mV
+   v1 offset -8000 mV
+   v2 amplitude 8000 mV
+   v2 offset -8000 mV
+TIMINGS 1X1
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 60 ns
+   h last 0 ns
+   h width 600 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 2X2
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 320 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+TIMINGS 4X4
+   adc sample delay -80 ns
+   adc sample width 40 ns
+   amp time off 4000 ms
+   amp time on 3000 ms
+   h setup time 50000 ns
+   h first 300 ns
+   h last 220 ns
+   h width 180 ns
+   reset delay 0 ns
+   reset width 80 ns
+   sh delay -280 ns
+   sh width 220 ns
+   v1 middle width 40000 ns
+   v1 negative width 40000 ns
+   v1 positive width 40000 ns
+   v2 delay 40000 ns
+   v2 negative width 40000 ns
+   v2 pulse width 40000 ns
+
+Network connection information (Tue May 09 09:22:30 2017)
+Connected to ROOT\CIMV2 WMI namespace
+Adapter : Intel(R) 82579LM Gigabit Network Connection
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:90:B1:1C:70:D5:25
+  Status:    90:B1:1C:70:D5:25
+Adapter : RAS Async Adapter
+  Unknown device status
+Adapter : Intel(R) Gigabit CT Desktop Adapter
+  Speed:     1000000000
+  MaxSpeed:  1000000000
+  MACAddress:68:05:CA:0F:FC:DF
+  Status:    68:05:CA:0F:FC:DF
+Adapter : Intel(R) Gigabit CT Desktop Adapter #2
+  Media disconnected
+Data collection successfully finished at Tue May 09 09:22:30 2017
+DC3DEVICES DEVICE INFO: Shutting down log devices...
+DC3DEVICES DEVICE INFO: Shutting down Peltier device (CCSCAM) ...
+CCSCAM device connection shutdown OK (pUnLockAndShutdownDC3DEVICES).
+DC3DEVICES DEVICE INFO: Stopped Peltier device (CCSCAM) ...
+DC3DEVICES DEVICE INFO: Shutting down cryo device (Cryojet) ...
+Cryojet device connection shutdown OK. GUI is still active (pUnLockAndShutdownDC3DEVICES). 
+DC3DEVICES DEVICE INFO: Stopped cryo device (Cryojet) ...
+DC3 INFO: Waiting for end of pre-experiment analysis...
+Reading tabbin file: "D:\X-Ray Data\New\IM1706\pre_IM1706_peakhunt"
+   UB - matrix:
+      -0.139994   -0.075705    0.005186   (  0.000142    0.000145    0.000120 )
+      -0.021097   -0.028483   -0.064633   (  0.000153    0.000156    0.000129 )
+       0.088785   -0.097435   -0.002048   (  0.000097    0.000099    0.000082 )
+   M - matrix:
+       0.027926    0.002548    0.000456   (  0.000044    0.000027    0.000021 )
+       0.002548    0.016036    0.001648   (  0.000027    0.000031    0.000016 )
+       0.000456    0.001648    0.004209   (  0.000021    0.000016    0.000017 )
+UB fit with 47 obs out of 60 (total:60,skipped:0) (78.33%)
+    unit cell:
+        9.288(9) 12.500(11) 24.24(5)       
+      101.37(11) 91.05(11)  96.57(8) 
+      V = 2739(6) 
+
+Process information (Tue May 09 12:05:26 2017)
+ID: 792; threads 27; handles 692; mem 479556.00 (1167508.00)kB; time:  5h 13m 53s
+
+MEMORY INFO: Memory PF:0.0, Ph:448.0, V:1141.0; pDataCollectionHParentDistConcurrentDC3 25
+MEMORY INFO: Process info - Handles: 693, Memory: PF:468.5,peak PF: 653.0, WS: 429.6, peak WS: 614.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+CCD PAR INFO: Correction kept - Dark subtraction: on; Flood correction: on (in CCD)
+DC INFO: Automatic DC settings (binning: 2x2, correlation:ON)

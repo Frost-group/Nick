@@ -1,0 +1,176 @@
+DC S INFO: User selected DC with skipped correlation in remeasured frames! This may yield data with spikes/zingers!
+DC S INFO: Return while readout used!
+DC S INFO: Write during acquire of next image used!
+DC S INFO: Check beamstop and Lorentz area used!
+System parameters: gain=40.0 (double-correlated-divide-by-2 gain)
+Run list: D:\X-Ray Data\New\IM1706\IM1706
+Frames folder: D:\X-Ray Data\New\IM1706\frames
+DC S command at Tue May 09 12:07:50 2017 (38.43 (release 21-03-2016),compiled Mar 21 2016,16:53:17)
+DC INFO: Cryojet settings 173.0K 22.000% 10.600% at Tue May 09 12:07:50 2017
+DC INFO: Spellman settings  49.97kV  40.04mA at Tue May 09 12:07:51 2017
+System uptime: 1d 5h 11m 24s
+EXPECTED FINISH TIME:  (0,909,end:Wed May 10 17:29:44 2017)
+MEMORY INFO: Memory PF:0.0, Ph:460.0, V:1158.0; 
+MEMORY INFO: Process info - Handles: 743, Memory: PF:483.7,peak PF: 653.0, WS: 444.6, peak WS: 614.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:136.6
+Reference run 1 at DC run 1 frame 1 started at Tue May 09 12:07:52 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+Run 1 started at Tue May 09 12:10:03 2017
+Omega scan:  -66.000 to   24.000 (   90 frames,  28.140s) at t: -41.857,k:  57.000,p:   0.000,dd:  53.000
+Reference run 1 at DC run 1 frame 51 started at Tue May 09 12:59:35 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 13:08:37 2017):    -9.00   -41.86    57.00     0.00    53.00
+DC INFO: Deice move ended at (Tue May 09 13:09:58 2017)
+Warning: Frame 81 of run 1 remeasured with exposure time    7.035s due to overflow!
+EXPECTED FINISH TIME:  (90,909,end:Wed May 10 17:31:40 2017)
+MEMORY INFO: Memory PF:36.0, Ph:538.0, V:1243.0; 
+MEMORY INFO: Process info - Handles: 739, Memory: PF:563.9,peak PF: 763.9, WS: 508.1, peak WS: 614.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 2 started at Tue May 09 13:43:33 2017
+Omega scan:  -20.000 to   82.000 (  102 frames,  28.140s) at t:  41.857,k: -99.000,p: 120.000,dd:  53.000
+Reference run 1 at DC run 2 frame 11 started at Tue May 09 13:53:38 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 14:10:36 2017):     3.00    41.86   -99.00   120.00    53.00
+DC INFO: Deice move ended at (Tue May 09 14:12:07 2017)
+Reference run 1 at DC run 2 frame 61 started at Tue May 09 14:48:52 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 15:10:48 2017):    60.00    41.86   -99.00   120.00    53.00
+DC INFO: Deice move ended at (Tue May 09 15:12:19 2017)
+EXPECTED FINISH TIME:  (192,909,end:Wed May 10 17:33:41 2017)
+MEMORY INFO: Memory PF:53.0, Ph:564.0, V:1263.0; 
+MEMORY INFO: Process info - Handles: 752, Memory: PF:573.4,peak PF: 775.9, WS: 519.2, peak WS: 621.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 3 started at Tue May 09 15:34:14 2017
+Omega scan:   24.000 to  109.000 (   85 frames,  63.635s) at t: 106.376,k: -95.000,p: 120.000,dd:  53.000
+Reference run 1 at DC run 3 frame 9 started at Tue May 09 15:56:06 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 16:11:24 2017):    38.00   106.38   -95.00   120.00    53.00
+DC INFO: Deice move ended at (Tue May 09 16:12:54 2017)
+DC INFO: Deice move started at (Tue May 09 17:11:30 2017):    65.00   106.38   -95.00   120.00    53.00
+DC INFO: Deice move ended at (Tue May 09 17:13:01 2017)
+Reference run 1 at DC run 3 frame 59 started at Tue May 09 17:54:30 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 18:13:35 2017):    89.00   106.38   -95.00   120.00    53.00
+DC INFO: Deice move ended at (Tue May 09 18:15:05 2017)
+EXPECTED FINISH TIME:  (277,909,end:Wed May 10 17:37:30 2017)
+MEMORY INFO: Memory PF:31.0, Ph:546.0, V:1257.0; 
+MEMORY INFO: Process info - Handles: 741, Memory: PF:574.0,peak PF: 775.9, WS: 520.5, peak WS: 623.4
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 4 started at Tue May 09 18:58:42 2017
+Omega scan:   40.000 to  134.000 (   94 frames,  63.635s) at t: 106.376,k: -30.000,p:  90.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 19:13:54 2017):    47.00   106.38   -30.00    90.00    53.00
+DC INFO: Deice move ended at (Tue May 09 19:15:16 2017)
+Reference run 1 at DC run 4 frame 24 started at Tue May 09 19:54:34 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 20:14:13 2017):    71.00   106.38   -30.00    90.00    53.00
+DC INFO: Deice move ended at (Tue May 09 20:15:34 2017)
+DC INFO: Deice move started at (Tue May 09 21:16:21 2017):    99.00   106.38   -30.00    90.00    53.00
+DC INFO: Deice move ended at (Tue May 09 21:17:48 2017)
+Reference run 1 at DC run 4 frame 74 started at Tue May 09 21:48:31 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 22:18:23 2017):   123.00   106.38   -30.00    90.00    53.00
+DC INFO: Deice move ended at (Tue May 09 22:20:01 2017)
+EXPECTED FINISH TIME:  (371,909,end:Wed May 10 17:41:44 2017)
+MEMORY INFO: Memory PF:29.0, Ph:554.0, V:1257.0; 
+MEMORY INFO: Process info - Handles: 739, Memory: PF:575.0,peak PF: 775.9, WS: 521.8, peak WS: 624.5
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 5 started at Tue May 09 22:44:05 2017
+Omega scan:   94.000 to  177.000 (   83 frames,  63.635s) at t: 106.376,k:  61.000,p:  60.000,dd:  53.000
+DC INFO: Deice move started at (Tue May 09 23:18:49 2017):   110.00   106.38    61.00    60.00    53.00
+DC INFO: Deice move ended at (Tue May 09 23:20:08 2017)
+Reference run 1 at DC run 5 frame 30 started at Tue May 09 23:48:42 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 00:18:55 2017):   133.00   106.38    61.00    60.00    53.00
+DC INFO: Deice move ended at (Wed May 10 00:20:17 2017)
+DC INFO: Deice move started at (Wed May 10 01:21:04 2017):   161.00   106.38    61.00    60.00    53.00
+DC INFO: Deice move ended at (Wed May 10 01:22:26 2017)
+Reference run 1 at DC run 5 frame 80 started at Wed May 10 01:48:57 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+EXPECTED FINISH TIME:  (454,909,end:Wed May 10 17:47:26 2017)
+MEMORY INFO: Memory PF:39.0, Ph:565.0, V:1260.0; 
+MEMORY INFO: Process info - Handles: 741, Memory: PF:578.7,peak PF: 775.9, WS: 525.1, peak WS: 625.3
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 6 started at Wed May 10 02:00:19 2017
+Omega scan:  127.000 to  175.000 (   48 frames,  63.635s) at t: 106.376,k:  45.000,p: -90.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 02:21:57 2017):   135.00   106.38    45.00   -90.00    53.00
+DC INFO: Deice move ended at (Wed May 10 02:23:16 2017)
+DC INFO: Deice move started at (Wed May 10 03:24:03 2017):   163.00   106.38    45.00   -90.00    53.00
+DC INFO: Deice move ended at (Wed May 10 03:25:21 2017)
+Reference run 1 at DC run 6 frame 47 started at Wed May 10 03:47:32 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+EXPECTED FINISH TIME:  (502,909,end:Wed May 10 17:49:56 2017)
+MEMORY INFO: Memory PF:32.0, Ph:500.0, V:1257.0; 
+MEMORY INFO: Process info - Handles: 739, Memory: PF:577.0,peak PF: 775.9, WS: 493.6, peak WS: 627.6
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 7 started at Wed May 10 03:56:02 2017
+Omega scan:   82.000 to  109.000 (   27 frames,  63.635s) at t: 106.376,k:  45.000,p: -90.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 04:24:12 2017):    93.00   106.38    45.00   -90.00    53.00
+DC INFO: Deice move ended at (Wed May 10 04:25:27 2017)
+EXPECTED FINISH TIME:  (529,909,end:Wed May 10 17:48:28 2017)
+MEMORY INFO: Memory PF:282.0, Ph:1023.0, V:1283.0; 
+MEMORY INFO: Process info - Handles: 751, Memory: PF:580.8,peak PF: 775.9, WS: 506.0, peak WS: 627.6
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 8 started at Wed May 10 05:00:25 2017
+Omega scan:   30.000 to  133.000 (  103 frames,  63.635s) at t: 106.376,k: -30.000,p: -90.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 05:24:17 2017):    41.00   106.38   -30.00   -90.00    53.00
+DC INFO: Deice move ended at (Wed May 10 05:25:42 2017)
+Reference run 1 at DC run 8 frame 22 started at Wed May 10 05:47:43 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 06:24:25 2017):    64.00   106.38   -30.00   -90.00    53.00
+DC INFO: Deice move ended at (Wed May 10 06:25:46 2017)
+DC INFO: Deice move started at (Wed May 10 07:26:33 2017):    92.00   106.38   -30.00   -90.00    53.00
+DC INFO: Deice move ended at (Wed May 10 07:27:59 2017)
+Reference run 1 at DC run 8 frame 72 started at Wed May 10 07:47:49 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 08:26:56 2017):   116.00   106.38   -30.00   -90.00    53.00
+DC INFO: Deice move ended at (Wed May 10 08:28:32 2017)
+EXPECTED FINISH TIME:  (632,909,end:Wed May 10 17:53:07 2017)
+MEMORY INFO: Memory PF:123.0, Ph:687.0, V:1259.0; 
+MEMORY INFO: Process info - Handles: 746, Memory: PF:581.2,peak PF: 775.9, WS: 507.5, peak WS: 627.6
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 9 started at Wed May 10 09:05:42 2017
+Omega scan:   36.000 to  109.000 (   73 frames,  63.635s) at t: 106.376,k: -95.000,p:-120.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 09:27:24 2017):    46.00   106.38   -95.00  -120.00    53.00
+DC INFO: Deice move ended at (Wed May 10 09:28:54 2017)
+Reference run 1 at DC run 9 frame 19 started at Wed May 10 09:46:35 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 10:33:50 2017):    72.00   106.38   -95.00  -120.00    53.00
+DC INFO: Deice move ended at (Wed May 10 10:35:20 2017)
+DC INFO: Deice move started at (Wed May 10 11:33:56 2017):    99.00   106.38   -95.00  -120.00    53.00
+DC INFO: Deice move ended at (Wed May 10 11:35:26 2017)
+Reference run 1 at DC run 9 frame 69 started at Wed May 10 11:46:35 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+EXPECTED FINISH TIME:  (705,909,end:Wed May 10 17:58:53 2017)
+MEMORY INFO: Memory PF:94.0, Ph:648.0, V:1257.0; 
+MEMORY INFO: Process info - Handles: 741, Memory: PF:580.9,peak PF: 775.9, WS: 507.8, peak WS: 627.6
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 10 started at Wed May 10 11:59:57 2017
+Omega scan:   30.000 to  139.000 (  109 frames,  63.635s) at t: 106.376,k: -77.000,p: -60.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 12:38:58 2017):    46.00   106.38   -77.00   -60.00    53.00
+DC INFO: Deice move ended at (Wed May 10 12:40:24 2017)
+DC INFO: Deice move started at (Wed May 10 13:39:00 2017):    73.00   106.38   -77.00   -60.00    53.00
+DC INFO: Deice move ended at (Wed May 10 13:40:26 2017)
+Reference run 1 at DC run 10 frame 46 started at Wed May 10 13:45:05 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 14:45:20 2017):    99.00   106.38   -77.00   -60.00    53.00
+DC INFO: Deice move ended at (Wed May 10 14:46:49 2017)
+Reference run 1 at DC run 10 frame 96 started at Wed May 10 15:43:36 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 15:48:05 2017):   126.00   106.38   -77.00   -60.00    53.00
+DC INFO: Deice move ended at (Wed May 10 15:49:42 2017)
+EXPECTED FINISH TIME:  (814,909,end:Wed May 10 18:01:28 2017)
+MEMORY INFO: Memory PF:90.0, Ph:656.0, V:1257.0; 
+MEMORY INFO: Process info - Handles: 741, Memory: PF:586.0,peak PF: 775.9, WS: 513.2, peak WS: 627.6
+MEMORY INFO: CCD G:3.1,H:33.5 (#1006),V:137.6
+Run 11 started at Wed May 10 16:18:41 2017
+Omega scan: -112.000 to  -17.000 (   95 frames,  28.140s) at t: -41.857,k: -57.000,p:-150.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 16:48:28 2017):   -83.00   -41.86   -57.00  -150.00    53.00
+DC INFO: Deice move ended at (Wed May 10 16:49:50 2017)
+Reference run 1 at DC run 11 frame 37 started at Wed May 10 16:56:58 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+DC INFO: Deice move started at (Wed May 10 17:48:32 2017):   -26.00   -41.86   -57.00  -150.00    53.00
+DC INFO: Deice move ended at (Wed May 10 17:49:51 2017)
+Reference run 1 at DC run 11 frame 87 started at Wed May 10 17:50:04 2017
+Omega scan:    0.000 to    2.000 (    2 frames,  28.140s) at t:   0.000,k:   0.000,p:   0.000,dd:  53.000
+  1.07- 1.03  |        13    |    1.448 ( 0.306)   |    0.944 ( 0.098)   
+  1.02- 0.96  |        13    |    1.623 ( 0.299)   |    1.093 ( 0.105)   |    1.362 ( 0.681)   |Data collection successfully finished at Wed May 10 18:03:23 2017

@@ -1,0 +1,11 @@
+Welcome to the CrysAlisPro system (RED 38.43 (release 21-03-2016))
+(compiled Mar 21 2016,16:53:23)
+
+Image format 1: sapphire.xdll loaded
+Image format 2: dectris.xdll loaded
+Image format 3: pilatus.xdll loaded
+Image format 4: esperanto.xdll loaded
+Image format 5: marip.xdll loaded
+Image format 6: saxi.xdll loaded
+Image format 7: dtrek.xdll loaded
+Image format 8: rod.xdll loaded

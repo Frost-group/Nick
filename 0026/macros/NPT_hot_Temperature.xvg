@@ -1,4 +1,4 @@
-# This file was created Sat Feb 22 10:59:26 2020
+# This file was created Wed Feb 26 07:38:42 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../NPT_hot.edr -o NPT_hot_Temperature.xvg
 # gmx energy is part of G R O M A C S:
 #
-# Giant Rising Ordinary Mutants for A Clerical Setup
+# God Rules Over Mankind, Animals, Cosmos and Such
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

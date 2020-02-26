@@ -1,0 +1,20 @@
++++++++ Starting AC2 ++++++++++++++++++++ IM1704<br>
+<br><b>SOLUTION STAGE</b>  
+<br>--> ShelXS, Patterson Method (0.42 s);<a href=spy.revert_history(db77661519835e248b011f9c5d790cbf)>>html.Update>VSS = 17, VATA = 68</a>;<br><br><b>REFINEMENT STAGE</b>  
+<br>--> Iteration 0 <b>R1 = <font color='#00b400'>12.88%</font></b>;<a href=spy.revert_history(e546100f72ae55a5e4b593a6e74130da)>>html.Update> ATA = 75</a> 
+<br>--> Iteration 1 <b>R1 = <font color='#ff8f00'>14.39%</font></b>;<a href=spy.revert_history(9bd9defbd29889bb0a1e692a770a0454)>>html.Update> ATA = 40</a> 
+<br>	 <b><i>Revert Check: </i></b>R1(14.39) * 0.9 > previous R1 (12.88): <b><font color='#ff8f00'>REVERT</font></b> 
+<br><b><i>Continue?</i></b>  const(0.0) + rint(3.7)*3 + ios(14.2)*0 ==> <b>14.6</b> (14.4): <font color='#00b400'><b>Yes</b></font><br>
+<br><b>SECONDARY REFINEMENT STAGE</b><br>
+<b><i>Anisotropic Sensible?</i></b> <b>R1 = <font color='#00b400'>6.14%</font></b>; 0.95 < r1_diff(2.34364820847) < 1.05:
+<br><font color='#00b400'><b>YES</b></font> 
+<br>--> Iteration f1 <b>R1 = <font color='#00b400'>6.06%</font></b>;<a href=spy.revert_history(76cbddf018984a1b975627a0403defbd)>>html.Update> ATA = 75</a> 
+<br>--> Iteration f2 <b>R1 = <font color='#ff8f00'>14.01%</font></b>;<a href=spy.revert_history(a071d2fc7669f50cb78e63e69e0a0375)>>html.Update> ATA = 45</a> 
+<br>	 <b><i>Revert Check: </i></b>R1(14.01) * 0.9 > previous R1 (6.06): <b><font color='#ff8f00'>REVERT</font></b> 
+<br>--> Iteration f3 <b>R1 = <font color='#00b400'>5.86%</font></b>;<br><br><b>POLISHING STRUCTURE</b> 
+<br>--> Iteration ff1 <b>R1 = <font color='#00b400'>5.83%</font></b>;
+<br>--> Iteration ff2 <b>R1 = <font color='#00b400'>5.78%</font></b>;
+<br>--> Iteration ff3 <b>R1 = <font color='#ff8f00'>5.79%</font></b>;
+<br>--> Iteration ff4 <b>R1 = <font color='#00b400'>5.78%</font></b>;
+<br>--> Iteration ff5 <b>R1 = <font color='#00b400'>5.78%</font></b>;
+<br><b>Finished with ATA = 45 and R1 = 5.78 **** (14.0 s)</b><br><br>

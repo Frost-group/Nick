@@ -1,0 +1,1720 @@
+﻿onstartup
+Clear 
++ Starting AC2 ++++++++++++++++++++++++++++++++++
+ODAC for Olex2 v.1.2-ac2
+AutoChem 2.0, 27 March 2012
+InitAta 
+AutoChem loaded OK
+Welcome to Olex2
+
+We are grateful to our users for testing and supporting Olex2
+Please find the link to credits in the About box
+
+
+Dolomanov, O.V.; Bourhis, L.J.; Gildea, R.J.; Howard, J.A.K.; Puschmann, H.,
+OLEX2: A complete structure solution, refinement and analysis program (2009).
+J. Appl. Cryst., 42, 339-341.
+echo Compilation information:  GetCompilationInfo(full)
+Compilation information: Nov  7 2012 10:32:32 MSC:150030729 on WIN32_SSE2 for Agilent 
+start_autochem 'D:\X-Ray Data\New\IM1706\struct\olex2_IM1706\IM1706'
+@reap "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins"
+Reverted to the original file D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/originals/IM1706.ins
+Stop listen 
+Reset PATT -c='C36 H60 O2 S2 Br2' -s='P-1'  
+@reap 'D:\X-Ray Data\New\IM1706\struct\olex2_IM1706\IM1706.ins'
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX solution with Patterson Method
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxs.exe 'im1706' 
+EXEC: shelxs.exe im1706 
+WaitFor process 
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXS      CRYSTAL STRUCTURE SOLUTION     Version 2013/1  +
+ +  Copyright(C) George M. Sheldrick 1986-2013                 +
+ +  im1706                 started at 09:08:23 on 10 May 2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Read instructions and process reflection data
+ Data:    8408 unique,   2736 observed     R(int) = 0.0339  R(sigma) = 0.0743
+ Systematic absence violations:    0    Bad equivalents:    3
+
+ ESEL  Emin  1.000    Emax  5.000    DelU 0.005    renorm 0.700    axis 0
+ OMIT  s  4.00    2theta(lim)  180.0
+ PATT  nv   1   dmin   1.80   resl  0.80   Nsup  207   Zmin  7.00   maxat 12
+ FMAP  code  6
+ PLAN  npeaks    80    del1 0.500    del2 1.500
+ MORE  verbosity  1
+ TIME  t    9999999.
+
+ Patterson and peaksearch
+ Patt. sup. on vector 1     0.0006  0.3337  0.0002   Height 704.   Length  4.17
+ PATFOM = 99.9   Corr. Coeff. = 71.6   SYMFOM = 63.7  for   6 heavy atoms
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706            finished at 09:08:23   Total CPU time:       0.1 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxs.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+UpdateWght 0.1 
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+DelIns TREF 
+AddIns texp 3 3 1.5 
+Stop listen 
+Reset TREF 500 -c='C36 H60 O2 S2 Br2' -s='P-1'  
+@reap 'D:\X-Ray Data\New\IM1706\struct\olex2_IM1706\IM1706.ins'
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX solution with Direct Methods
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxs.exe 'im1706' 
+EXEC: shelxs.exe im1706 
+WaitFor process 
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXS      CRYSTAL STRUCTURE SOLUTION     Version 2013/1  +
+ +  Copyright(C) George M. Sheldrick 1986-2013                 +
+ +  im1706                 started at 09:08:23 on 10 May 2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Read instructions and process reflection data
+ Data:    8408 unique,   2736 observed     R(int) = 0.0339  R(sigma) = 0.0743
+ Systematic absence violations:    0    Bad equivalents:    3
+
+ ESEL  Emin  1.000    Emax  5.000    DelU 0.005    renorm 0.700    axis 0
+ OMIT  s  4.00    2theta(lim)  180.0
+ INIT  nn   20    nf    8    s+  0.800    s-  0.200    wr  0.200
+ PHAN  steps   10   cool 0.900   Boltz 0.400   ns  358   mtpr   40   mnqr  10
+ TREF  np      500.    nE   656    kapscal -0.900    ntan   2    wn -0.950
+ FMAP  code  8
+ PLAN  npeaks  -101    del1 0.500    del2 1.500
+ MORE  verbosity  1
+ TIME  t    9999999.
+
+     358 Reflections and   6418. unique TPR for phase annealing
+     656 Phases refined using   29475. unique TPR
+    1000 Reflections and   58987. unique TPR for R(alpha)
+    1881 Unique negative quartets found,  1881 used for phase refinement
+      11 Unique NQR employed in phase annealing
+     125 Parallel refinements,  highest memory =    7810 /  192743
+
+   Try    Ralpha Nqual Sigma-1 M(abs) CFOM   Seminvariants
+  153695. 0.033 -0.968  0.810  1.170  0.033* ++--+ ---+- ---++ +--++ +---+
+ Freq: 0 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 4 1 0 0 0 0 0 0 / 125
+ 1273635. 0.033 -0.968  0.810  1.170  0.033  ++--+ ---+- ---++ +--++ +---+
+ Freq: 0 137 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 8 2 0 0 0 0 0 0 / 250
+ 1988319. 0.033 -0.968  0.810  1.170  0.033  ++--+ ---+- ---++ +--++ +---+
+ Freq: 0 196 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 2 0 0 0 0 9 2 0 1 1 0 0 0 / 375
+ 1757731. 0.033 -0.968  0.810  1.170  0.033  ++--+ ---+- ---++ +--++ +---+
+ Freq: 0 262 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 2 0 0 0 0 14 2 1 2 1 0 0 0 / 500
+
+      500. Phase sets refined - best is code   153695.  with CFOM =  0.0332
+
+ Fourier and peaksearch
+ RE = 0.209 for  58 atoms and  1816 E-values
+ Fourier and peaksearch
+ RE = 0.172 for  64 atoms and  1816 E-values
+ Fourier and peaksearch
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706            finished at 09:08:24   Total CPU time:       0.7 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxs.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+UpdateWght 0.1 
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+DelIns TREF 
+0.033 -0.968 0.033
+DelIns texp 
+compaq -a
+refine 3 85
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:24 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.7754 before cycle   1 for    8408 data and     25 /     25 parameters
+ GooF = S =     0.963;     Restrained GooF =      0.963 for       0 restraints
+ Mean shift/esd =   1.811  Maximum =    37.236 for  OSF            at 09:08:24
+ Max. shift = 0.121 A for S5      Max. dU =-0.031 for S4                      
+ wR2 = 0.7094 before cycle   2 for    8408 data and     25 /     25 parameters
+ GooF = S =     2.779;     Restrained GooF =      2.779 for       0 restraints
+ Mean shift/esd =   1.924  Maximum =     7.948 for  OSF            at 09:08:24
+ Max. shift = 0.034 A for S5      Max. dU =-0.008 for S6                      
+ wR2 = 0.6902 before cycle   3 for    8408 data and     25 /     25 parameters
+ GooF = S =     3.178;     Restrained GooF =      3.178 for       0 restraints
+ Mean shift/esd =   1.381  Maximum =     2.913 for   z  S5         at 09:08:24
+ Max. shift = 0.047 A for S5      Max. dU = 0.003 for S4                      
+ wR2 = 0.6835 before cycle   4 for    8408 data and     25 /     25 parameters
+ GooF = S =     3.172;     Restrained GooF =      3.172 for       0 restraints
+ Mean shift/esd =   0.372  Maximum =     0.940 for  U11 Br2        at 09:08:24
+ Max. shift = 0.012 A for S4      Max. dU =-0.002 for S5                      
+ wR2 = 0.6829 before cycle   5 for    8408 data and      0 /     25 parameters
+ GooF = S =     3.196;     Restrained GooF =      3.196 for       0 restraints
+ R1 =  0.3230 for    2607 Fo > 4sig(Fo)  and  0.4068 for all    8408 data
+ wR2 =  0.6829,  GooF = S =   3.196,  Restrained GooF =    3.196  for all data
+     0  atoms may be split and     0  atoms NPD
+ R1 =  0.4063 for   8408 unique reflections after merging for Fourier
+ Highest peak   10.95  at  0.4550  0.9618  0.1018  [  0.09 A from BR2 ]
+ Deepest hole   -2.71  at  0.3815  0.9825  0.1028  [  0.76 A from BR2 ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:24   Total elapsed time:      0.16 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+Clean -npd 
+Average QPeak: 6.158
+QPeak steps:
+8.233333
+6.414444
+5.328333
+2.195
+QPeak threshold:4.6185
+Q1 -> C
+Q2 -> C
+Q3 -> C
+Q4 -> C
+Q5 -> C
+Q6 -> C
+Q7 -> C
+Q8 -> C
+Q9 -> C
+Q10 -> C
+Q11 -> C
+Q12 -> C
+Q13 -> C
+Q14 -> C
+Q15 -> C
+Q16 -> C
+Q17 -> C
+Q18 -> C
+fuse
+compaq -a
+refine 1 67
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:25 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.5804 before cycle   1 for    8408 data and     97 /     97 parameters
+ GooF = S =     2.336;     Restrained GooF =      2.336 for       0 restraints
+ Mean shift/esd =   0.588  Maximum =     8.247 for  OSF            at 09:08:25
+ Max. shift = 0.076 A for C8AA      Max. dU = 0.018 for C2BA                  
+ wR2 = 0.5740 before cycle   2 for    8408 data and     97 /     97 parameters
+ GooF = S =     2.496;     Restrained GooF =      2.496 for       0 restraints
+ Mean shift/esd =   0.326  Maximum =     1.951 for  OSF            at 09:08:25
+ Max. shift = 0.059 A for C7AA      Max. dU = 0.017 for C4BA                  
+ wR2 = 0.5729 before cycle   3 for    8408 data and     97 /     97 parameters
+ GooF = S =     2.511;     Restrained GooF =      2.511 for       0 restraints
+ Mean shift/esd =   0.234  Maximum =    -0.803 for   y  C3AA       at 09:08:25
+ Max. shift = 0.047 A for C7AA      Max. dU = 0.011 for C4BA                  
+ wR2 = 0.5726 before cycle   4 for    8408 data and     97 /     97 parameters
+ GooF = S =     2.505;     Restrained GooF =      2.505 for       0 restraints
+ Mean shift/esd =   0.206  Maximum =     0.888 for   z  C7AA       at 09:08:25
+ Max. shift = 0.049 A for C7AA      Max. dU = 0.010 for C4BA                  
+ wR2 = 0.5724 before cycle   5 for    8408 data and      0 /     97 parameters
+ GooF = S =     2.502;     Restrained GooF =      2.502 for       0 restraints
+ R1 =  0.2320 for    2607 Fo > 4sig(Fo)  and  0.3204 for all    8408 data
+ wR2 =  0.5724,  GooF = S =   2.502,  Restrained GooF =    2.502  for all data
+     0  atoms may be split and     0  atoms NPD
+ R1 =  0.3186 for   8408 unique reflections after merging for Fourier
+ Highest peak    6.24  at  0.4626  0.6368  0.0985  [  0.26 A from BR0A ]
+ Deepest hole   -2.83  at  0.3842  0.6423  0.0993  [  0.70 A from BR0A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:25   Total elapsed time:      0.19 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+clean -npd -d
+Average QPeak: 4.1105
+QPeak steps:
+5.66
+3.836316
+QPeak threshold:3.082875
+Q2 -> C
+Q3 -> C
+Q4 -> C
+Q5 -> C
+Q6 -> C
+Q7 -> C
+Q8 -> C
+Q9 -> C
+Q10 -> C
+Q11 -> C
+Q12 -> C
+Q13 -> C
+Q14 -> C
+Q15 -> C
+Q16 -> C
+Q17 -> C
+Q18 -> C
+Q19 -> C
+Q20 -> C
+fuse
+Could not locate confident atom types
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Could not locate confident atom types
+
+
+
+
+
+
+
+
+Mean Uiso for confident atom types is 0.019
+C(794.01)
+C(794.01)
+O(875.92),C(765.34)
+Mean Uiso for confident atom types is 0.019
+Searching element lighter for C4BA
+C 
+C 
+C(817.37)
+SN[0] assignment O to O
+Mean Uiso for confident atom types is 0.022
+C 
+C(699.87)
+O(513.77)
+Mean Uiso for confident atom types is 0.019
+C 
+C 
+C(890.25)
+SN[0] assignment O to O
+Elapsed time 32 ms
+fuse
+clean -d
+fuse
+compaq -a
+compaq -a
+refine 4 48
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:26 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.5999 before cycle   1 for    8408 data and    173 /    173 parameters
+ GooF = S =     2.861;     Restrained GooF =      2.861 for       0 restraints
+ Mean shift/esd =   1.023  Maximum =    -6.237 for  OSF            at 09:08:26
+ Max. shift = 0.097 A for C7      Max. dU =-0.035 for C4BA                    
+ wR2 = 0.5512 before cycle   2 for    8408 data and    173 /    173 parameters
+ GooF = S =     2.420;     Restrained GooF =      2.420 for       0 restraints
+ Mean shift/esd =   0.656  Maximum =     4.038 for  U11 O          at 09:08:26
+ Max. shift = 0.061 A for O4      Max. dU = 0.028 for O                       
+ wR2 = 0.5359 before cycle   3 for    8408 data and    173 /    173 parameters
+ GooF = S =     2.310;     Restrained GooF =      2.310 for       0 restraints
+ Mean shift/esd =   0.420  Maximum =     2.126 for  U11 O5         at 09:08:26
+ Max. shift = 0.051 A for O5      Max. dU = 0.019 for O5                      
+ wR2 = 0.5329 before cycle   4 for    8408 data and    173 /    173 parameters
+ GooF = S =     2.300;     Restrained GooF =      2.300 for       0 restraints
+ Mean shift/esd =   0.241  Maximum =     1.280 for  U11 O5         at 09:08:26
+ Max. shift = 0.038 A for O5      Max. dU = 0.014 for O5                      
+ wR2 = 0.5320 before cycle   5 for    8408 data and      0 /    173 parameters
+ GooF = S =     2.290;     Restrained GooF =      2.290 for       0 restraints
+ R1 =  0.2159 for    2607 Fo > 4sig(Fo)  and  0.3096 for all    8408 data
+ wR2 =  0.5320,  GooF = S =   2.290,  Restrained GooF =    2.290  for all data
+     0  atoms may be split and     0  atoms NPD
+ R1 =  0.3081 for   8408 unique reflections after merging for Fourier
+ Highest peak    5.99  at  0.7962  0.8805  0.4713  [  2.56 A from O3 ]
+ Deepest hole   -2.90  at  0.3856  0.6404  0.1037  [  0.67 A from BR0A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:26   Total elapsed time:      0.22 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+compaq -a
+clean -npd -d
+Average QPeak: 5.554
+QPeak steps:
+5.306
+QPeak threshold:4.1655
+Q1 -> C
+Q2 -> C
+Q3 -> C
+Q4 -> C
+Q5 -> C
+Q6 -> C
+Q7 -> C
+Q8 -> C
+Q9 -> C
+Q10 -> C
+Q11 -> C
+Q12 -> C
+Q13 -> C
+Q14 -> C
+Q15 -> C
+Q20 -> C
+fuse
+Mean Uiso for confident atom types is 0.024
+Br(371.43)
+C(433.92)
+C(433.92)
+C(433.92)
+C(433.92)
+C(433.92)
+C(433.92)
+O(523.35)
+O(523.35)
+O(523.35)
+C(711.28)
+C(711.28)
+C(711.28)
+C(711.28)
+C(582.57)
+Br(719.02)
+Br(719.02)
+Br(719.02)
+Br(719.02)
+Searching element lighter for O
+O 
+Br(719.02)
+Searching element lighter for O5
+O5 
+Br(719.02)
+Br(719.02)
+Br(719.02)
+Br(719.02)
+Mean Uiso for confident atom types is 0.023
+Br(384.70)
+C(439.30)
+C(439.30)
+C(439.30)
+C(439.30)
+C(439.30)
+C(439.30)
+C(439.30)
+C(439.30)
+Searching element lighter for O8
+O8 
+C(439.30)
+C(439.30)
+C(439.30)
+Mean Uiso for confident atom types is 0.019
+C 
+C 
+C(896.61)
+Searching element lighter for O9
+O9 
+C(896.61)
+C(896.61)
+C(896.61)
+Could not locate confident atom types
+
+
+
+Could not locate confident atom types
+
+
+
+Could not locate confident atom types
+
+
+
+Could not locate confident atom types
+
+
+
+Could not locate confident atom types
+
+
+
+Elapsed time 31 ms
+fuse
+clean -d
+fuse
+compaq -a
+compaq -a
+refine 4 32
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:27 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.4225 before cycle   1 for    8408 data and    237 /    237 parameters
+ GooF = S =     1.713;     Restrained GooF =      1.713 for       0 restraints
+ Mean shift/esd =   1.096  Maximum =     6.722 for  U11 O          at 09:08:27
+ Max. shift = 0.086 A for C7      Max. dU = 0.024 for C1D                     
+ wR2 = 0.3910 before cycle   2 for    8408 data and    237 /    237 parameters
+ GooF = S =     1.599;     Restrained GooF =      1.599 for       0 restraints
+ Mean shift/esd =   0.536  Maximum =     2.696 for  U11 O          at 09:08:27
+ Max. shift = 0.057 A for C1D      Max. dU = 0.012 for C1D                    
+ wR2 = 0.3861 before cycle   3 for    8408 data and    237 /    237 parameters
+ GooF = S =     1.575;     Restrained GooF =      1.575 for       0 restraints
+ Mean shift/esd =   0.147  Maximum =    -0.966 for  U11 O4         at 09:08:27
+ Max. shift = 0.013 A for C1D      Max. dU =-0.005 for O4                     
+ wR2 = 0.3857 before cycle   4 for    8408 data and    237 /    237 parameters
+ GooF = S =     1.573;     Restrained GooF =      1.573 for       0 restraints
+ Mean shift/esd =   0.060  Maximum =    -0.304 for  U11 O6         at 09:08:27
+ Max. shift = 0.006 A for C19      Max. dU =-0.001 for O1                     
+ wR2 = 0.3856 before cycle   5 for    8408 data and      0 /    237 parameters
+ GooF = S =     1.573;     Restrained GooF =      1.573 for       0 restraints
+ R1 =  0.1340 for    2607 Fo > 4sig(Fo)  and  0.2409 for all    8408 data
+ wR2 =  0.3856,  GooF = S =   1.573,  Restrained GooF =    1.573  for all data
+     0  atoms may be split and     0  atoms NPD
+ R1 =  0.2403 for   8408 unique reflections after merging for Fourier
+ Highest peak    4.49  at  0.4680  0.3203  0.0978  [  0.45 A from BR2A ]
+ Deepest hole   -2.74  at  0.3869  0.3043  0.1011  [  0.65 A from BR2A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:27   Total elapsed time:      0.31 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+compaq -a
+clean -npd -d
+Average QPeak: 2.8385
+QPeak steps:
+4.38
+3.2725
+2.183333
+1.733333
+1.0625
+QPeak threshold:2.128875
+Q7 -> C
+Q8 -> C
+Q9 -> C
+Q10 -> C
+fuse
+Mean Uiso for confident atom types is 0.029
+C1H 
+C1H 
+C1H 
+C1H 
+C1H 
+C1H 
+C1H 
+C1H 
+C1H 
+C1H 
+C(629.08)
+C(629.08)
+Searching element heavier for C0AA
+C0AA O(700.986)0.000255,N(568.290)0.00076
+O(796.80),N(568.29)
+O(796.80),N(568.29)
+O(796.80),N(568.29)
+O(796.80),N(568.29)
+C(316.48)
+C(757.58)
+C(455.20)
+C(786.07)
+C(489.58)
+C(905.11)
+C(711.28)
+C(514.42)
+C(659.15),N(399.66)
+C(416.03)
+C(704.32)
+C(380.76)
+C(659.37)
+C(348.81)
+C(584.74),N(303.60)
+C(378.58)
+C(913.90),N(588.45)
+C(368.01)
+C(368.01)
+Searching element heavier for C11
+C11 C(301.620)0.001763
+C(361.89)
+C(361.89)
+C(447.52)
+C(447.52)
+Searching element heavier for C1H
+C1H C(539.586)0.000322
+C(756.68)
+Mean Uiso for confident atom types is 0.029
+Br(404.25)
+C(486.29)
+C(486.29)
+C(486.29)
+C(486.29)
+C(486.29)
+Searching element heavier for C1AA
+C1AA O(792.127)0.000262
+O(792.13)
+C(872.93)
+C(854.06)
+C(791.69)
+C(742.37)
+C(571.80)
+C(789.04)
+C(839.71)
+C(409.08)
+C(918.64),N(708.20)
+C(574.24)
+C(574.24)
+C(574.24)
+Searching element lighter for O4
+O4 
+C(574.24)
+C(960.33),N(720.77)
+SN[0] assignment C to C
+Elapsed time 47 ms
+fuse
+compaq -a
+compaq -a
+refine 4 28
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:28 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.3584 before cycle   1 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.444;     Restrained GooF =      1.444 for       0 restraints
+ Mean shift/esd =   0.705  Maximum =     7.661 for  OSF            at 09:08:28
+ Max. shift = 0.069 A for C1H      Max. dU =-0.034 for C8                     
+ wR2 = 0.3292 before cycle   2 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.319;     Restrained GooF =      1.319 for       0 restraints
+ Mean shift/esd =   0.452  Maximum =     5.823 for  U11 O5         at 09:08:28
+ Max. shift = 0.043 A for C1N      Max. dU = 0.026 for O5                     
+ wR2 = 0.3249 before cycle   3 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.300;     Restrained GooF =      1.300 for       0 restraints
+ Mean shift/esd =   0.255  Maximum =     2.939 for  U11 O5         at 09:08:28
+ Max. shift = 0.029 A for O5      Max. dU = 0.018 for O5                      
+ wR2 = 0.3241 before cycle   4 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.296;     Restrained GooF =      1.296 for       0 restraints
+ Mean shift/esd =   0.187  Maximum =     1.992 for  U11 O5         at 09:08:28
+ Max. shift = 0.024 A for O5      Max. dU = 0.015 for O5                      
+ wR2 = 0.3237 before cycle   5 for    8408 data and      0 /    253 parameters
+ GooF = S =     1.294;     Restrained GooF =      1.294 for       0 restraints
+ R1 =  0.1102 for    2607 Fo > 4sig(Fo)  and  0.2040 for all    8408 data
+ wR2 =  0.3237,  GooF = S =   1.294,  Restrained GooF =    1.294  for all data
+     0  atoms may be split and     0  atoms NPD
+ R1 =  0.2029 for   8408 unique reflections after merging for Fourier
+ Highest peak    3.61  at  0.4310  0.9192  0.1093  [  0.52 A from BR1A ]
+ Deepest hole   -2.98  at  0.3904  0.3022  0.1014  [  0.61 A from BR2A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:28   Total elapsed time:      0.34 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+compaq -a
+clean -npd -d
+Average QPeak: 1.998
+QPeak steps:
+3.533333
+1.713333
+1.293333
+0.5
+QPeak threshold:2
+fuse
+Mean Uiso for confident atom types is 0.038
+C1O 
+C1O 
+C1O 
+C1O 
+C1O 
+C1O 
+C1O 
+C1O 
+C1O 
+C1O 
+C(763.53)
+C(763.53)
+C(763.53)
+C(763.53)
+C(406.81)
+Br(807.39)
+C(510.52)
+C(545.63)
+C(545.63)
+C(675.78),N(385.65)
+C(567.65)
+C(613.41)
+C(606.47)
+C(505.91)
+C(844.03),N(480.07)
+C(593.37)
+C(264.01)
+C(516.05)
+C(746.87)
+C(567.93),N(339.34)
+C(786.15)
+C(675.81)
+C(498.53)
+C(563.94)
+C(574.96)
+C(432.20)
+C(894.75)
+C(462.79)
+C(841.55),N(492.27)
+C(590.27),N(524.23)
+Searching element lighter for O3
+O3 C(316.590)0.000685
+C(593.55)
+C(797.78)
+Mean Uiso for confident atom types is 0.030
+Br(539.92)
+C(613.81)
+C(613.81)
+C(613.81)
+C(613.81)
+C(613.81)
+O(618.23)
+C(810.54)
+C(840.53)
+C(782.56)
+C(404.13)
+C(814.01)
+C(374.99)
+C(636.75)
+C(670.69),N(297.86)
+C(701.99)
+C(614.20)
+C(545.71),N(369.38)
+C(364.69)
+C(634.02)
+C(839.04),N(630.77)
+Elapsed time 62 ms
+fuse
+compaq -a
+compaq -a
+refine 4 28
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:29 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.3248 before cycle   1 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.299;     Restrained GooF =      1.299 for       0 restraints
+ Mean shift/esd =   0.348  Maximum =    -4.488 for  U11 C14        at 09:08:29
+ Max. shift = 0.028 A for C18      Max. dU =-0.049 for C14                    
+ wR2 = 0.3201 before cycle   2 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.279;     Restrained GooF =      1.279 for       0 restraints
+ Mean shift/esd =   0.266  Maximum =    -1.706 for  U11 C1O        at 09:08:29
+ Max. shift = 0.040 A for C1O      Max. dU =-0.016 for C1O                    
+ wR2 = 0.3192 before cycle   3 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.275;     Restrained GooF =      1.275 for       0 restraints
+ Mean shift/esd =   0.192  Maximum =    -0.973 for   y  C16        at 09:08:29
+ Max. shift = 0.022 A for C14      Max. dU =-0.004 for C1O                    
+ wR2 = 0.3188 before cycle   4 for    8408 data and    253 /    253 parameters
+ GooF = S =     1.273;     Restrained GooF =      1.273 for       0 restraints
+ Mean shift/esd =   0.156  Maximum =    -0.682 for  U11 C1O        at 09:08:29
+ Max. shift = 0.018 A for C16      Max. dU =-0.004 for C1O                    
+ wR2 = 0.3186 before cycle   5 for    8408 data and      0 /    253 parameters
+ GooF = S =     1.272;     Restrained GooF =      1.272 for       0 restraints
+ R1 =  0.1092 for    2607 Fo > 4sig(Fo)  and  0.2004 for all    8408 data
+ wR2 =  0.3186,  GooF = S =   1.272,  Restrained GooF =    1.272  for all data
+     0  atoms may be split and     0  atoms NPD
+ R1 =  0.1992 for   8408 unique reflections after merging for Fourier
+ Highest peak    3.51  at  0.4698  0.6588  0.0971  [  0.53 A from BR0A ]
+ Deepest hole   -3.01  at  0.3907  0.3020  0.1014  [  0.61 A from BR2A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:29   Total elapsed time:      0.33 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+compaq -a
+clean -npd -d
+Average QPeak: 1.9445
+QPeak steps:
+3.44
+1.643333
+1.265556
+0.49
+QPeak threshold:2
+fuse
+Mean Uiso for confident atom types is 0.032
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+O(647.71)
+O(647.71)
+O(647.71)
+C(358.72)
+C(358.72)
+C(358.72)
+C(358.72)
+C(423.44)
+Br(824.03)
+Br(824.03)
+C(547.24)
+C(547.24)
+C(599.74)
+C(599.74)
+C(434.25)
+C(830.98)
+C(410.76)
+C(515.57)
+C(458.73)
+C(501.48)
+C(449.92)
+C(780.59)
+C(535.41)
+C(643.12)
+C(558.44)
+C(558.44)
+C(462.38)
+C(462.38)
+C(367.36)
+C(657.19)
+C(393.93)
+C(696.85)
+C(534.63),N(458.77)
+C(534.63),N(458.77)
+C(936.81)
+Mean Uiso for confident atom types is 0.032
+Br(449.12)
+C(538.01)
+C(538.01)
+C(538.01)
+C(538.01)
+C(538.01)
+C(538.01)
+C(572.28)
+C(636.16)
+C(783.45)
+C(484.43)
+C(461.16)
+C(525.01)
+C(484.33)
+C(618.93),N(421.08)
+C(557.03)
+C(517.39)
+C(504.14)
+C(586.43)
+C(718.74)
+C(856.65)
+Elapsed time 46 ms
+fuse
+compaq -a
+UpdateWght
+anis
+refine 2
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+UpdateWght 0.2 0.0 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:29 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.4009 before cycle   1 for    8408 data and    568 /    568 parameters
+ GooF = S =     1.039;     Restrained GooF =      1.039 for       0 restraints
+ Mean shift/esd =   0.653  Maximum =    -7.915 for  U11 Br0A       at 09:08:30
+ Max. shift = 0.032 A for C1S      Max. dU =-0.004 for C2BA                   
+ wR2 = 0.3474 before cycle   2 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.889;     Restrained GooF =      0.889 for       0 restraints
+ Mean shift/esd =   0.423  Maximum =     3.807 for  U22 Br0A       at 09:08:30
+ Max. shift = 0.025 A for C1N      Max. dU = 0.005 for C9                     
+ wR2 = 0.3386 before cycle   3 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.855;     Restrained GooF =      0.855 for       0 restraints
+ Mean shift/esd =   0.261  Maximum =     1.393 for  U22 Br1A       at 09:08:30
+ Max. shift = 0.022 A for C1O      Max. dU = 0.004 for C1S                    
+ wR2 = 0.3380 before cycle   4 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.856;     Restrained GooF =      0.856 for       0 restraints
+ Mean shift/esd =   0.213  Maximum =     0.870 for   x  C0BA       at 09:08:30
+ Max. shift = 0.018 A for C9      Max. dU =-0.002 for C6                      
+ wR2 = 0.3370 before cycle   5 for    8408 data and      0 /    568 parameters
+ GooF = S =     0.852;     Restrained GooF =      0.852 for       0 restraints
+ R1 =  0.0645 for    2607 Fo > 4sig(Fo)  and  0.1560 for all    8408 data
+ wR2 =  0.3370,  GooF = S =   0.852,  Restrained GooF =    0.852  for all data
+ ** Warning:     0  atoms may be split and     1  atoms NPD **
+ R1 =  0.1547 for   8408 unique reflections after merging for Fourier
+ Highest peak    1.15  at  0.4525  0.9794  0.1419  [  0.94 A from BR1A ]
+ Deepest hole   -0.74  at  0.3775  0.9593  0.1225  [  0.84 A from BR1A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:30   Total elapsed time:      0.64 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+Not positevely defined: C9AA
+refine 4 28
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+UpdateWght 0.1184 0.0 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:30 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.2594 before cycle   1 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.933;     Restrained GooF =      0.933 for       0 restraints
+ Mean shift/esd =   0.186  Maximum =     1.565 for  OSF            at 09:08:31
+ Max. shift = 0.014 A for C1R      Max. dU = 0.002 for C1F                    
+ wR2 = 0.2592 before cycle   2 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.935;     Restrained GooF =      0.935 for       0 restraints
+ Mean shift/esd =   0.160  Maximum =     0.729 for  U22 Br0A       at 09:08:31
+ Max. shift = 0.009 A for C9      Max. dU = 0.003 for C1O                     
+ wR2 = 0.2589 before cycle   3 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.933;     Restrained GooF =      0.933 for       0 restraints
+ Mean shift/esd =   0.140  Maximum =     0.687 for   y  C1R        at 09:08:31
+ Max. shift = 0.013 A for C1R      Max. dU = 0.001 for C1                     
+ wR2 = 0.2587 before cycle   4 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.933;     Restrained GooF =      0.933 for       0 restraints
+ Mean shift/esd =   0.119  Maximum =    -0.722 for  U12 C1O        at 09:08:31
+ Max. shift = 0.008 A for C1S      Max. dU = 0.003 for C1O                    
+ wR2 = 0.2585 before cycle   5 for    8408 data and      0 /    568 parameters
+ GooF = S =     0.932;     Restrained GooF =      0.932 for       0 restraints
+ R1 =  0.0630 for    2607 Fo > 4sig(Fo)  and  0.1543 for all    8408 data
+ wR2 =  0.2585,  GooF = S =   0.932,  Restrained GooF =    0.932  for all data
+ ** Warning:     0  atoms may be split and     1  atoms NPD **
+ R1 =  0.1530 for   8408 unique reflections after merging for Fourier
+ Highest peak    1.14  at  0.4521  0.9796  0.1419  [  0.94 A from BR1A ]
+ Deepest hole   -0.75  at  0.3792  0.9590  0.1217  [  0.82 A from BR1A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:31   Total elapsed time:      0.67 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+Not positevely defined: C9AA
+compaq -a
+Clean 
+Average QPeak: 0.7395
+QPeak steps:
+1.083333
+0.552143
+QPeak threshold:2
+fuse
+clean -npd -d
+fuse
+Mean Uiso for confident atom types is 0.035
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C1S 
+C(699.89)
+C(699.89)
+C(699.89)
+C(699.89)
+C(317.15)
+Br(859.22)
+Br(859.22)
+C(433.00)
+C(433.00)
+C(634.15),N(408.71)
+C(634.15),N(408.71)
+C(538.65)
+C(664.62)
+C(440.10)
+C(904.32)
+C(462.99)
+C(354.28)
+C(411.29)
+C(280.67)
+C(460.52)
+C(397.84)
+C(505.77)
+C(476.60)
+C(440.96)
+C(444.90)
+C(416.59)
+C(450.77)
+C(508.36)
+C(501.34)
+C(655.13)
+C(721.11)
+C(847.19),N(703.81)
+Mean Uiso for confident atom types is 0.034
+Br(767.23)
+Br(767.23)
+Br(767.23)
+Br(767.23)
+Br(767.23)
+Br(767.23)
+Br(767.23)
+C(512.56)
+C(787.78)
+C(369.43)
+C(428.70)
+C(464.06)
+C(464.96)
+C(356.92)
+C(467.03)
+C(554.75),N(389.97)
+C(542.36),N(473.07)
+C(578.26)
+C(577.70)
+C(610.75)
+C(764.98)
+SN[0] assignment C to C
+Elapsed time 63 ms
+fuse
+compaq -a
+C could be O changing...
+refine 4 28
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+UpdateWght 0.1143 0.0 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with CGLS
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:32 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.2566 before cycle   1 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.946;     Restrained GooF =      0.946 for       0 restraints
+ Mean shift/esd =   0.179  Maximum =    -4.845 for  U11 C9AA       at 09:08:32
+ Max. shift = 0.015 A for C9AA      Max. dU =-0.009 for C9AA                  
+ wR2 = 0.2546 before cycle   2 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.939;     Restrained GooF =      0.939 for       0 restraints
+ Mean shift/esd =   0.178  Maximum =    -0.775 for  U11 C5AA       at 09:08:32
+ Max. shift = 0.011 A for C1S      Max. dU = 0.002 for C1O                    
+ wR2 = 0.2542 before cycle   3 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.938;     Restrained GooF =      0.938 for       0 restraints
+ Mean shift/esd =   0.117  Maximum =    -0.494 for  U13 C1G        at 09:08:32
+ Max. shift = 0.009 A for C1R      Max. dU = 0.001 for C1R                    
+ wR2 = 0.2540 before cycle   4 for    8408 data and    568 /    568 parameters
+ GooF = S =     0.937;     Restrained GooF =      0.937 for       0 restraints
+ Mean shift/esd =   0.084  Maximum =     0.512 for  U33 C1S        at 09:08:32
+ Max. shift = 0.007 A for C1S      Max. dU = 0.002 for C1O                    
+ wR2 = 0.2540 before cycle   5 for    8408 data and      0 /    568 parameters
+ GooF = S =     0.936;     Restrained GooF =      0.936 for       0 restraints
+ R1 =  0.0628 for    2607 Fo > 4sig(Fo)  and  0.1535 for all    8408 data
+ wR2 =  0.2540,  GooF = S =   0.936,  Restrained GooF =    0.936  for all data
+     0  atoms may be split and     0  atoms NPD
+ R1 =  0.1524 for   8408 unique reflections after merging for Fourier
+ Highest peak    1.14  at  0.4520  0.9795  0.1419  [  0.94 A from BR1A ]
+ Deepest hole   -0.75  at  0.3793  0.9590  0.1216  [  0.82 A from BR1A ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:32   Total elapsed time:      0.62 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+compaq -a
+clean -npd -d
+Average QPeak: 0.738
+QPeak steps:
+1.08
+0.551429
+QPeak threshold:2
+fuse
+Mean Uiso for confident atom types is 0.035
+Br(407.56)
+C(454.28)
+C(454.28)
+C(454.28)
+C(454.28)
+C(454.28)
+C(454.28)
+C(454.28)
+C(454.28)
+C(454.28)
+C(551.63)
+C(551.63)
+C(551.63)
+C(551.63)
+C(525.79)
+Br(890.15)
+Br(890.15)
+C(885.12)
+C(885.12)
+C(550.23)
+C(550.23)
+C(591.56)
+C(542.51)
+C(512.10)
+C(950.23)
+C(501.10)
+C(725.51)
+C(466.93)
+C(352.68)
+C(469.70)
+C(452.80)
+C(477.54)
+C(509.25)
+C(492.34)
+C(466.88)
+C(429.20)
+C(411.87)
+C(538.82)
+C(610.00)
+C(659.27),N(456.84)
+C(673.02)
+N(865.87),C(798.56)
+Mean Uiso for confident atom types is 0.035
+C1R 
+C1R 
+C1R 
+C1R 
+C1R 
+C1R 
+C1R 
+C(719.09)
+C(767.16)
+C(435.80)
+C(490.22)
+C(419.57)
+C(476.98)
+C(446.95)
+C(451.50)
+C(616.96),N(279.27)
+C(663.99),N(458.45)
+C(497.35)
+C(664.45)
+C(721.76)
+C(816.70)
+Elapsed time 78 ms
+fuse
+compaq -a
+DelIns L.S. 
+AddIns L.S. 4 
+DelIns plan 
+AddIns plan 20 
+DelIns fmap 
+AddIns fmap 2 
+AddIns acta 
+name -1
+class esdl::TInvalidArgumentException ring C8AAC8AAC4AA at [E:\svn\olex2\branches\1.2\xlib\analysis.cpp(xlib::olx_analysis::fragments::fragment::ring_sorter):893]
+hadd
+C4: X(Y=C)H
+C9: X(Y=C)H
+C45: X(Y=C)H
+C30: XYCH2
+C51: XYCH2
+C14: XYCH2
+C16: XYCH2
+C53: XYCH2
+C32: XYCH2
+C29: X(Y=C)H
+C13: XYCH2
+C50: XYCH2
+C41: XYCH2
+C25: XYCH2
+C55: XYCH2
+C34: XYCH2
+C62: XYCH2
+C15: XYCH2
+C31: XYCH2
+C18: XYCH2
+C23: XYCH2
+C52: XYCH2
+C39: XYCH2
+C60: XYCH2
+C40: XYCH2
+C36: XYCH2
+C20: XYCH2
+C21: XYCH2
+C57: XYCH2
+C37: XYCH2
+C58: XYCH2
+C19: XYCH2
+C56: XYCH2
+C35: XYCH2
+C17: XYCH2
+C33: XYCH2
+C38: XYCH2
+C22: XYCH2
+C54: XYCH2
+C59: XYCH2
+C42: XCH3
+C61: XYCH2
+C24: XYCH2
+C63: XCH3
+C26: XCH3
+fixunit
+New content is: C54 H89 Br3 O3 S3
+refine 4 28
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+UpdateWght 0.1139 0.0 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with Least Squares
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:33 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.2400 before cycle   1 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.881;     Restrained GooF =      0.881 for       0 restraints
+ Mean shift/esd =   0.298  Maximum =     2.841 for  OSF            at 09:08:33
+ Max. shift = 0.368 A for H42B      Max. dU =-0.004 for C42                   
+ wR2 = 0.2371 before cycle   2 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.873;     Restrained GooF =      0.873 for       0 restraints
+ Mean shift/esd =   0.156  Maximum =     2.187 for tors H26A       at 09:08:33
+ Max. shift = 0.238 A for H63B      Max. dU =-0.002 for C26                   
+ wR2 = 0.2366 before cycle   3 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.871;     Restrained GooF =      0.871 for       0 restraints
+ Mean shift/esd =   0.116  Maximum =     0.972 for tors H63A       at 09:08:33
+ Max. shift = 0.110 A for H63C      Max. dU =-0.002 for C60                   
+ wR2 = 0.2364 before cycle   4 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.870;     Restrained GooF =      0.870 for       0 restraints
+ Mean shift/esd =   0.083  Maximum =     0.361 for  U33 C24        at 09:08:34
+ Max. shift = 0.026 A for H63A      Max. dU = 0.001 for C60                   
+ wR2 = 0.2364 before cycle   5 for    8408 data and      0 /    571 parameters
+ GooF = S =     0.870;     Restrained GooF =      0.870 for       0 restraints
+ R1 =  0.0524 for    2607 Fo > 4sig(Fo)  and  0.1436 for all    8408 data
+ wR2 =  0.2364,  GooF = S =   0.870,  Restrained GooF =    0.870  for all data
+ ** Warning:     0  atoms may be split and     1  atoms NPD **
+ R1 =  0.1426 for   8408 unique reflections after merging for Fourier
+ Highest peak    1.18  at  0.4507  0.9791  0.1425  [  0.96 A from BR48 ]
+ Deepest hole   -0.66  at  0.3799  0.9578  0.1206  [  0.80 A from BR48 ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:34   Total elapsed time:      0.82 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+Not positevely defined: C3
+hadd
+compaq -a
+Clean 
+Average QPeak: 0.7275
+QPeak steps:
+1.105
+0.530714
+QPeak threshold:2
+fuse
+anis
+refine 4 28
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+UpdateWght 0.0766 0.0 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with Least Squares
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:34 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.1990 before cycle   1 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.922;     Restrained GooF =      0.922 for       0 restraints
+ Mean shift/esd =   0.127  Maximum =     2.568 for  U12 C3         at 09:08:35
+ Max. shift = 0.032 A for H26A      Max. dU =-0.001 for C3                    
+ wR2 = 0.1983 before cycle   2 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.920;     Restrained GooF =      0.920 for       0 restraints
+ Mean shift/esd =   0.102  Maximum =     0.424 for  U12 C46        at 09:08:35
+ Max. shift = 0.015 A for H63A      Max. dU = 0.001 for C22                   
+ wR2 = 0.1982 before cycle   3 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.919;     Restrained GooF =      0.919 for       0 restraints
+ Mean shift/esd =   0.068  Maximum =     0.397 for  U23 C3         at 09:08:35
+ Max. shift = 0.012 A for H26B      Max. dU =-0.001 for C60                   
+ wR2 = 0.1982 before cycle   4 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.919;     Restrained GooF =      0.919 for       0 restraints
+ Mean shift/esd =   0.059  Maximum =    -0.246 for  U13 C3         at 09:08:35
+ Max. shift = 0.012 A for H42A      Max. dU = 0.001 for C8                    
+ wR2 = 0.1981 before cycle   5 for    8408 data and      0 /    571 parameters
+ GooF = S =     0.919;     Restrained GooF =      0.919 for       0 restraints
+ R1 =  0.0519 for    2607 Fo > 4sig(Fo)  and  0.1433 for all    8408 data
+ wR2 =  0.1981,  GooF = S =   0.919,  Restrained GooF =    0.919  for all data
+ ** Warning:     0  atoms may be split and     1  atoms NPD **
+ R1 =  0.1424 for   8408 unique reflections after merging for Fourier
+ Highest peak    1.16  at  0.4503  0.9791  0.1426  [  0.96 A from BR48 ]
+ Deepest hole   -0.67  at  0.3808  0.9575  0.1203  [  0.79 A from BR48 ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:35   Total elapsed time:      0.80 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+Not positevely defined: C3
+hadd
+compaq -a
+anis
+refine 4 28
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+UpdateWght 0.0747 0.0 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with Least Squares
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:35 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.1962 before cycle   1 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.922;     Restrained GooF =      0.922 for       0 restraints
+ Mean shift/esd =   0.052  Maximum =    -0.219 for  U33 C32        at 09:08:36
+ Max. shift = 0.008 A for H42C      Max. dU =-0.001 for C42                   
+ wR2 = 0.1962 before cycle   2 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.922;     Restrained GooF =      0.922 for       0 restraints
+ Mean shift/esd =   0.061  Maximum =    -0.332 for  U11 C3         at 09:08:36
+ Max. shift = 0.010 A for H42C      Max. dU =-0.001 for C3                    
+ wR2 = 0.1961 before cycle   3 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ Mean shift/esd =   0.054  Maximum =    -0.449 for  U11 C3         at 09:08:36
+ Max. shift = 0.008 A for H42C      Max. dU =-0.001 for C3                    
+ wR2 = 0.1961 before cycle   4 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ Mean shift/esd =   0.052  Maximum =    -0.478 for  U11 C3         at 09:08:36
+ Max. shift = 0.006 A for H42C      Max. dU =-0.001 for C3                    
+ wR2 = 0.1961 before cycle   5 for    8408 data and      0 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ R1 =  0.0519 for    2607 Fo > 4sig(Fo)  and  0.1433 for all    8408 data
+ wR2 =  0.1961,  GooF = S =   0.921,  Restrained GooF =    0.921  for all data
+ ** Warning:     0  atoms may be split and     1  atoms NPD **
+ R1 =  0.1422 for   8408 unique reflections after merging for Fourier
+ Highest peak    1.15  at  0.4503  0.9791  0.1425  [  0.96 A from BR48 ]
+ Deepest hole   -0.67  at  0.3790  0.6235  0.1198  [  0.79 A from BR27 ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:36   Total elapsed time:      0.78 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+Not positevely defined: C3
+hadd
+compaq -a
+refine
+Stop listen 
+File "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.ins" 
+UpdateWght 0.0746 0.0 
+FixHL 
+File 
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706' 
+STARTING SHELX refinement with Least Squares
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/.olex/temp' 
+Exec shelxl.exe 'im1706' 
+EXEC: shelxl.exe im1706 
+WaitFor process 
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  SHELXL -  CRYSTAL STRUCTURE REFINEMENT  -   MULTI-CPU VERSION  +
+ +  Copyright(C) George M. Sheldrick 1993-2013     Version 2013/4  +
+ +  im1706                     started at 09:08:37 on 10-May-2017  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Command line parameters: im1706 -a50000 -b3000 -c624 -t4
+
+ -a sets the approximate maximum number of atoms including hydrogens.
+ -b sets the maximum number of full-matrix parameters (leave unchanged for
+ CGLS). For example -b9000 allows refinement of 1000 anisotropic atoms or
+ 3000 with BLOC 1. For a 32-bit version, -b times the square root of the
+ number of threads should not exceed about 65500. -c sets the reflection
+ buffer size. This depends on the CPU cache size but will rarely need
+ changing. -t sets the number of threads, otherwise the multi-CPU version
+ sets this equal to the number of available CPUs. For optimal performance
+ on systems with hyperthreading, usually the hyperthreading should be
+ switched off or -t used to halve the number of threads; e.g. -t4 rather
+ than -t8 for an Intel i7 processor.
+
+ Running  4 threads on  4 processors
+
+ Read instructions and data
+ Data:    8408 unique,      0 suppressed   R(int) = 0.0394   R(sigma) = 0.0763
+ Systematic absence violations:    0    Bad equivalents:    4
+ wR2 = 0.1960 before cycle   1 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ Mean shift/esd =   0.049  Maximum =    -0.415 for  U11 C3         at 09:08:37
+ Max. shift = 0.007 A for H42C      Max. dU =-0.001 for C3                    
+ wR2 = 0.1960 before cycle   2 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ Mean shift/esd =   0.058  Maximum =    -0.565 for  U11 C3         at 09:08:37
+ Max. shift = 0.010 A for H42C      Max. dU =-0.001 for C3                    
+ wR2 = 0.1959 before cycle   3 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ Mean shift/esd =   0.053  Maximum =    -0.593 for  U11 C3         at 09:08:37
+ Max. shift = 0.006 A for H42C      Max. dU =-0.001 for C3                    
+ wR2 = 0.1959 before cycle   4 for    8408 data and    571 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ Mean shift/esd =   0.050  Maximum =    -0.567 for  U11 C3         at 09:08:37
+ Max. shift = 0.008 A for H42C      Max. dU =-0.001 for C3                    
+ wR2 = 0.1959 before cycle   5 for    8408 data and      0 /    571 parameters
+ GooF = S =     0.921;     Restrained GooF =      0.921 for       0 restraints
+ R1 =  0.0518 for    2607 Fo > 4sig(Fo)  and  0.1433 for all    8408 data
+ wR2 =  0.1959,  GooF = S =   0.921,  Restrained GooF =    0.921  for all data
+ ** Warning:     0  atoms may be split and     1  atoms NPD **
+ R1 =  0.1424 for   8408 unique reflections after merging for Fourier
+ Highest peak    1.15  at  0.4503  0.9791  0.1425  [  0.96 A from BR48 ]
+ Deepest hole   -0.67  at  0.3789  0.6235  0.1198  [  0.79 A from BR27 ]
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +  im1706        finished at 09:08:37   Total elapsed time:      0.83 secs  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The process 'shelxl.exe im1706 ' has been terminated...
+User 'D:/X-Ray Data/New/IM1706/struct/olex2_IM1706'
+atreap_no_fader -b "D:/X-Ray Data/New/IM1706/struct/olex2_IM1706/IM1706.res"
+Not positevely defined: C3
+compaq -a
+100 21.59 13.4 11.02 10.92 6.45 6.3 6.28 5.24 5.19 5.19onexit
+Good Bye 
+

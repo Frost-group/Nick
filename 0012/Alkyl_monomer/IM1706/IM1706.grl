@@ -1,0 +1,101 @@
+		******************************************************************
+		* GRAL PLUGIN          	 started at Thu May 11 06:54:53 2017     *
+		*          version 2.3. 3                                        *
+		******************************************************************
+
+
+		38.43 (release 21-03-2016),compiled Mar 21 2016,16:53:23
+
+
+Original cell in Angstroms and degrees: 
+
+   9.298106  12.489986  24.284328 101.3656  90.6876  96.4161 
+
+   15675 Reflections read from file IM1706.hkl
+
+   15333 Reflections used for space-group determination (up to diffraction limit of 0.82A); mean (I/sigma) =    2.99
+
+
+Lattice exceptions:  P      A      B      C      I      F     Obv    Rev    All
+          
+
+N (total) =           0   7689   7649   7660   7652  11499  10243  10270  15333
+
+N (int>3sigma) =      0   2025   2045   2108   2085   3089   2768   2767   4164
+
+Mean intensity =    0.0   26.4   26.9   25.7   27.6   26.3   26.9   26.9   26.9
+
+Mean int/sigma =    0.0    2.9    3.0    3.0    3.0    3.0    3.0    3.0    3.0
+
+Lattice type: P chosen          Volume:      2745.92
+
+-------------------------------------------------------------------------------
+
+DETERMINATION OF REDUCED (NIGGLI) CELL
+
+Transformation from original cell (HKLF-matrix):
+    1.0000  0.0000  0.0000    0.0000  1.0000  0.0000    0.0000  0.0000  1.0000
+
+Unitcell:       9.298   12.490   24.284  101.37   90.69   96.42 
+
+Niggli form:     a.a =    86.455      b.b =   156.000      c.c =   589.729
+                 b.c =   -59.773      a.c =    -2.710      a.b =   -12.978 
+
+-------------------------------------------------------------------------------
+
+SEARCH FOR HIGHER METRIC SYMMETRY
+
+------------------------------------------------------------------------------
+Option: [44]  err=   0.000     TRICLINIC P-lattice R(int) = 0.044 [  5200] Vol =   2745.9
+Cell:    9.298  12.490  24.284  101.37   90.69   96.42    Volume:      2745.92
+Matrix: 1.0000  0.0000  0.0000  0.0000  1.0000  0.0000  0.0000  0.0000  1.0000
+
+Option [44] selected
+
+-------------------------------------------------------------------------------
+
+SPACE GROUP DETERMINATION
+
+
+Lattice exceptions:  P      A      B      C      I      F     Obv    Rev    All
+          
+
+N (total) =           0   7689   7649   7660   7652  11499  10243  10270  15333
+
+N (int>3sigma) =      0   2025   2045   2108   2085   3089   2768   2767   4164
+
+Mean intensity =    0.0   26.4   26.9   25.7   27.6   26.3   26.9   26.9   26.9
+
+Mean int/sigma =    0.0    2.9    3.0    3.0    3.0    3.0    3.0    3.0    3.0
+
+
+Crystal system TRICLINIC and Lattice type P selected
+
+Mean |E*E-1| = 1.441 [expected .968 centrosym and .736 non-centrosym]
+
+ Systematic absences not required for triclinic
+
+
+  Space Group           No.   C/A   En.   O.A.  Pie.  Pyr.   CCDC    ICSD    R(int)   N(eq)
+
+             P1 1 1     1     A     Y     Y     Y     Y     2112     239    0.047     3445
+            P-1 1 1     2     C     N     N     N     N    47868    2604    0.044     5200
+
+ P-1		 -1		 Triclinic
+
+  (1)  x, y, z                            (2) -x,-y,-z 
+   
+Chemical formula: C36 H60 Br2 O2 S2; Z=3.0 (Cu-wavelength)
+   
+EXPORTING .INS FILE
+
+TITL IM1706 in P-1 
+REM P-1 (#2 in standard setting)
+CELL 1.54184   9.298106  12.489986  24.284328 101.3656  90.6876  96.4161
+ZERR    3.00   0.000454   0.000629   0.001588   0.0049   0.0047   0.0041
+LATT  1
+SFAC C H O S Br
+UNIT 108.00 180.00 6.00 6.00 6.00
+TREF
+HKLF 4
+END

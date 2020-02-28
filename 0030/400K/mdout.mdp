@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: nicholassiemons (501)
 ;	On host: dyn1149-142.insecure.ic.ac.uk
-;	At date: Thu Feb 27 13:43:05 2020
+;	At date: Fri Feb 28 07:23:00 2020
 
 ;
 
@@ -18,7 +18,7 @@ integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 7000000
+nsteps                   = 6000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -158,7 +158,7 @@ print-nose-hoover-chain-variables = no
 tc_grps                  = system
 ; Time constant (ps) and reference temperature (K)
 tau_t                    = 0.1
-ref_t                    = 400
+ref_t                    = 350
 ; pressure coupling     
 pcoupl                   = Berendsen
 pcoupltype               = isotropic

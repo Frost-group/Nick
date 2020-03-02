@@ -166,7 +166,7 @@ mon       3
 
 [ dihedrals ]
 ;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
-    2     1     9    10     3 
+    2     1     9    13     3 
     1     2     6    13     3 
     1     5    14    10     3 
     2     6    13     9     3 

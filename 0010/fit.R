@@ -3,11 +3,11 @@ library('tidyverse')
 
 RB <- function(C0,C1,C2,C3,C4,C5,Angle){
 	V <-    C0*cos(Angle*0.0174533)^0 + 
-		C1*cos(Angle*0.0174533)^1 + 
+		-C1*cos(Angle*0.0174533)^1 + 
 		C2*cos(Angle*0.0174533)^2 + 
-		C3*cos(Angle*0.0174533)^3 + 
+		-C3*cos(Angle*0.0174533)^3 + 
 		C4*cos(Angle*0.0174533)^4 + 
-		C5*cos(Angle*0.0174533)^5
+		-C5*cos(Angle*0.0174533)^5
 	return(V)
 }
 
@@ -15,13 +15,13 @@ RB_fit <- function(D) {
 	nls(Energy~RB(C0,C1,C2,C3,C4,C5,Angle), 
 		start=list(C0=0,C1=300,C2=-30,C3=0,C4=10,C5=10), 
 		data=D,
-		weights=abs((1/(Angle^(2)+0.0001))),
+	#	weights=abs((1/(Angle^(2)+0.0001))),
 		nls.control(maxiter=1000)) 
 }
 
-range <- 100
+range <- 75
 
-gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_no_methyl_two_half_mon_hd.txt") %>% 
+gaussian <- read.table("~/Dropbox/OBT/0019/wb97xd_no_methyl_two_mon_hd.txt") %>% 
 	as_tibble() %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 

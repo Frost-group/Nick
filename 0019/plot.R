@@ -78,6 +78,16 @@ MP2_no_methyl_half <- read.table("../0024/MP2_no_methyl.txt") %>%
 	arrange(Angle)
 
 
+MP2_no_methyl_half <- read.table("../0024/MP2_methyl.txt") %>%
+	rename(Angle=V1, Energy=V2) %>%
+	mutate(Angle = round(Angle)) %>%
+	mutate(Functional="MP2") %>%
+	mutate(Sidechain="None") %>%
+	mutate(Monomers="Two Half") %>%
+	mutate(Energy= Energy*27211.4/10.36) %>%
+	mutate(Energy = Energy - min(Energy)) %>%
+	arrange(Angle)
+
 b3lyp_with_methyl_half <- read.table("b3lyp_with_methyl_two_half_mon.txt") %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>%
@@ -124,7 +134,14 @@ data %>% filter(Sidechain=="None") %>%
 	ggsave("Functional_effect.pdf")
 
 
-
+data %>% filter(Sidechain=="None") %>%
+	filter(Monomers=="Two Half") %>%
+	filter(abs(Angle) < 100) %>%
+	ggplot(aes(x=Angle, y=Energy, color=Functional)) + 
+		geom_point() +
+		geom_line() +
+		theme_classic() +
+	ggsave("Functional_effect2.pdf")
 
 
 

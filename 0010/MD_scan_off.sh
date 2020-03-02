@@ -4,10 +4,10 @@ source ~/.zshrc
 rm MD_scan_off.txt
 
 # turn off potential in the forcefield
-sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
+sed -i '' '167s/.*/ CBB    CAA     CAA     ST     3 0 0 0 0 0 0/g' OBT.ff/ffOBT.itp
 
 # Loop over the different angle restraints
-for i in $(seq -100 4 100)
+for i in $(seq -75 3 75)
 do
 	
 	gmx editconf -f mon.pdb -o mon.gro -box 5 5 5

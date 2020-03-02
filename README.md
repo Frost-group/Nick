@@ -56,5 +56,5 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0026 = Testing crystal structure stability for AB residue.  Anneal at 350K. MD.
 0027 = Alkylated and glycolated polymers. Literature.
 0028 = Charging dynamics in ionic liquids. Literature.
-0029 = Summary slides on 0022 , 0021 , 0026 (alkylated) and 0020
+0029 = Testing Glycolated Crystal Structures with Different EP Parameters. QCC. MD.
 0030 = Re-do annealing of alkylated crystal structure with bigger box. Temperature of 300, 350, 400. MD.

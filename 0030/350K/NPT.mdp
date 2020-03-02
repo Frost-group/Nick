@@ -204,7 +204,7 @@ annealing                = single
 ; Number of time points to use for specifying annealing in each group
 annealing-npoints        = 6
 ; List of times at the annealing points for each group
-annealing-time           = 0 1 2 3 4 5
+annealing-time           = 0 1000 2000 3000 4000 5000
 ; Temp. at each annealing point, for each group.
 annealing-temp           = 350 340 330 320 310 300
 

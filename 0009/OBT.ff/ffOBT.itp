@@ -164,7 +164,7 @@
  OT	CL!	CL	CL	3	-1.151	1.151   0.000  -0.000  -0.000   0.000
 
 ; thiophene - thiophene
- CBB    CAA     CAA     CBB     3 0 0 0 0 0 0
+ CBB    CAA     CAA     ST     3   4.472  -8.089 -11.827  -3.357   1.898   6.234 
 
 ; glycol sidechain 
  CG	CG	OG	CG	3	1.715	2.845   1.046  -5.607  -0.000   0.000	; from Drew

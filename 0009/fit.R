@@ -3,100 +3,59 @@ library('tidyverse')
 
 RB <- function(C0,C1,C2,C3,C4,C5,Angle){
 	V <-    C0*cos(Angle*0.0174533)^0 + 
-		C1*cos(Angle*0.0174533)^1 + 
+		-C1*cos(Angle*0.0174533)^1 + 
 		C2*cos(Angle*0.0174533)^2 + 
-		C3*cos(Angle*0.0174533)^3 + 
+		-C3*cos(Angle*0.0174533)^3 + 
 		C4*cos(Angle*0.0174533)^4 + 
-		C5*cos(Angle*0.0174533)^5
+		-C5*cos(Angle*0.0174533)^5
 	return(V)
 }
 
 RB_fit <- function(D) {
 	nls(Energy~RB(C0,C1,C2,C3,C4,C5,Angle), 
-		start=list(C0=10,C1=-20,C2=-72,C3=50,C4=10,C5=10), 
+		start=list(C0=0,C1=300,C2=-30,C3=0,C4=10,C5=10), 
 		data=D,
-		weights=(1/abs(Angle+0.01)),
+		#weights=abs((1/(Angle^(2)+0.0001))),
 		nls.control(maxiter=1000)) 
 }
 
+range <- 140
 
-bias <- function(Angle,FL){
-  S <- ((1/(pi)) * ( FL / (FL^2 + Angle^2)))
-  return(S)
-}
-
-
-gaussian_b3lyp <- read.table("b3lyp_data.txt") %>% 
+gaussian <- read.table("~/Dropbox/OBT/0014/b3lyp_with_methyl.txt") %>% 
+	as_tibble() %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Angle = round(Angle)) %>% 
-	mutate(Method="B3LYP") %>%
+	mutate(Method="b3lyp") %>%
 	mutate(Energy= Energy*27211.4/10.36) %>%
 	mutate(Energy = Energy - min(Energy)) %>%
-	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>%
-	arrange(Angle)  
+	arrange(Angle) %>%
+	rename(Energy_w = Energy) %>%
+	arrange(Angle) %>% as_tibble() %>%
+	mutate(Angle = ifelse((Angle>180 & Angle<=360),Angle-360,Angle)) %>% 
+	filter(abs(Angle) <= range) %>% 
+	arrange(Angle) %>% as_tibble()   %>% print()
 
 MD_scan_off <- read.table("MD_scan_off.txt") %>%
+	as_tibble() %>%
 	rename(Angle=V1, Energy=V2) %>%
 	mutate(Method="MD_potential_off") %>%
-	mutate(Energy = Energy - min(Energy)) 
+	mutate(Energy = Energy - min(Energy)) %>%
+	rename(Energy_MD_off = Energy) %>%
+	arrange(Angle) %>%
+	filter(Angle >= -range, Angle <= range) %>% as_tibble() %>% print()
 
-MD_scan_on <- read.table("MD_scan_on.txt") %>%
-	rename(Angle=V1, Energy=V2) %>%
-	mutate(Method="MD_potential_on") %>%
-	mutate(Energy = Energy - min(Energy)) 
-
-Data <- bind_rows(gaussian_b3lyp, MD_scan_off, MD_scan_on) %>%
-	group_by(Method) %>% 
-	nest() %>%
-	mutate(
-		model = map(data, RB_fit),
-		fit = map(model, predict)
-	) %>% 
-	unnest(c(data, fit))
-
-
-
-range <- 170
-on_range <- Data %>% 
-	filter(Method=="MD_potential_on") %>%
-	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range) 
-
-off_range <- Data %>% 
-	filter(Method=="MD_potential_off") %>%
-	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range)
-
-QCC_range <- Data %>%
-	filter(Method=="B3LYP") %>%
-	select(Method, Angle, Energy) %>%
-	filter(Angle<=range & Angle>=-range) %>%
-	filter(Energy>0) 
-
-First_Difference <- QCC_range %>% ungroup() %>%
-	mutate(Method="First Difference") %>%
-	mutate(Energy= QCC_range$Energy - off_range$Energy) %>%
-	filter(Energy > -200) 
-
-bias <- First_Difference %>% ungroup() %>%
-	mutate(Method="Bias") %>%
-	mutate(Energy = -bias(Angle=Angle,FL=1)*0) 
-
-Difference_with_bias <- First_Difference %>% ungroup() %>%
-	mutate(Energy = First_Difference$Energy + bias$Energy) %>%
-	mutate(Method = "with_bias") 
-
-bind_rows(First_Difference, Difference_with_bias) %>%
-	group_by(Method) %>% 
-	nest() %>%
-	mutate(
-		model = map(data, RB_fit),
-		fit = map(model, predict)
-	) %>% 
-	unnest(c(data, fit)) %>%
-	ggplot(aes(x=Angle,y=Energy, color=Method)) + 
+MD_scan_off %>%
+	mutate(Energy_w = gaussian$Energy_w) %>%
+	mutate(Energy = Energy_w - Energy_MD_off ) %>%
+	mutate(fit = predict(RB_fit(.))) %>% 
+	ggplot(aes(x=Angle , y=Energy)) + 
 		geom_point() + 
-		geom_line(aes(y=fit))
+		geom_line(aes(y=fit)) +
+		theme_classic()
 	ggsave("Difference.pdf")
 
-Difference_with_bias %>% RB_fit(.) %>% print() 
+MD_scan_off %>%
+	mutate(Energy_w = gaussian$Energy_w) %>%
+	mutate(Energy = Energy_w - Energy_MD_off ) %>%
+	select(Angle, Energy) %>%	
+	RB_fit(.)	

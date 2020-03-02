@@ -4,7 +4,8 @@ source ~/.zshrc
 rm MD_scan_on.txt
 
 # turn off potential in the forcefield
-sed -i '' '167s/.*/ CBB    CAA     CAA     CBB     3   4.4231   8.6335 -10.9332   0.2353   0.2168  -2.5744 /g' OBT.ff/ffOBT.itp
+#sed -i '' '167s/.*/ CBB    CAA     CAA     ST     3   4.4231   8.6335 -10.9332   0.2353   0.2168  -2.5744 /g' OBT.ff/ffOBT.itp
+sed -i '' '167s/.*/ CBB    CAA     CAA     ST     3   4.472  -8.089 -11.827  -3.357   1.898   6.234 /g' OBT.ff/ffOBT.itp
 
 
 # Loop over the different angle restraints

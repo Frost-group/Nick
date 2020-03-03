@@ -5,16 +5,16 @@ define			=
 ; Run control
 integrator		= md
 dt			= 0.001
-nsteps			= 10000 
+nsteps			= 20000 
 comm_mode		= linear
 nstcomm			= 10
 comm_grps		=
 
 ; Output control
-nstxout         = 10
-nstvout         = 10
-nstenergy       = 10
-nstlog          = 10
+nstxout         = 30
+nstvout         = 30
+nstenergy       = 30
+nstlog          = 30
 
 ; Bonds
 constraints         = none

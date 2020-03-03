@@ -30,5 +30,6 @@ data <- dir(path="../frames/",pattern="*.pdb") %>%
 	mutate( mean_x = mean(dx) , mean_y = mean(dy) , mean_z = mean(dz), mean_r = mean(dr) ) %>% 
 	mutate( sd_x = sd(dx) , sd_y = sd(dy) , sd_z = sd(dz),  sd_r = sd(dr) ) %>%
 	group_by(mean_x,mean_y,mean_z,mean_r,sd_x,sd_y,sd_z,sd_r) %>%
-	nest()  %>% print()
+	nest()  %>% 
+	write_delim("displacements.tsv")
 

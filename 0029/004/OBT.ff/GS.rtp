@@ -25,19 +25,6 @@
  SS	ST	-1.318	5
  OS	OT	-0.434	6
  HS	HT	0.155  	3
- SnS    SnT	0.145  	7
- Cx1	CSn	-0.439	8
- Hx1	HSn	0.183  	8
- Hx2	HSn	0.167  	8
- Hx3	HSn	0.175  	8
- Cx2	CSn	-0.423	8
- Hx4	HSn	0.181  	8
- Hx5	HSn	0.188  	8
- Hx6	HSn	0.174  	8
- Cx3	CSn	-0.439	8
- Hx7	HSn	0.168  	8
- Hx8	HSn	0.175  	8
- Hx9	HSn	0.182  	8
 ; Total charge of -0.31 
 
 ; Right thiophene unit (Dextrose) 
@@ -48,19 +35,6 @@
  SD	ST      -1.318	13
  OD	OT	-0.434 	14
  HD	HT	0.155  	11
- SnD    SnT	0.145  	15
- Cy1	CSn	-0.439	16
- Hy1	HSn	0.183  	16
- Hy2	HSn	0.167  	16
- Hy3	HSn	0.175  	16
- Cy2	CSn	-0.423	16
- Hy4	HSn	0.181  	16
- Hy5	HSn	0.188  	16
- Hy6	HSn	0.174  	16
- Cy3	CSn	-0.439	16
- Hy7	HSn	0.168  	16
- Hy8	HSn	0.175  	16
- Hy9	HSn	0.182  	16
 ; Total charge of -0.31 
 
 ; Left sidechain 
@@ -120,6 +94,39 @@
  Hj3	HG	0.149  	36
 ; total charge of +0.31
 
+; Left Terminal
+ SnS    SnT	0.145  	7
+ Cx1	CSn	-0.439	8
+ Hx1	HSn	0.183  	8
+ Hx2	HSn	0.167  	8
+ Hx3	HSn	0.175  	8
+ Cx2	CSn	-0.423	8
+ Hx4	HSn	0.181  	8
+ Hx5	HSn	0.188  	8
+ Hx6	HSn	0.174  	8
+ Cx3	CSn	-0.439	8
+ Hx7	HSn	0.168  	8
+ Hx8	HSn	0.175  	8
+ Hx9	HSn	0.182  	8
+
+; Right Terminal
+ SnD    SnT	0.145  	15
+ Cy1	CSn	-0.439	16
+ Hy1	HSn	0.183  	16
+ Hy2	HSn	0.167  	16
+ Hy3	HSn	0.175  	16
+ Cy2	CSn	-0.423	16
+ Hy4	HSn	0.181  	16
+ Hy5	HSn	0.188  	16
+ Hy6	HSn	0.174  	16
+ Cy3	CSn	-0.439	16
+ Hy7	HSn	0.168  	16
+ Hy8	HSn	0.175  	16
+ Hy9	HSn	0.182  	16
+
+
+
+
 [ bonds ]
 ; Left Thiophene
  CS1	CS2
@@ -130,18 +137,6 @@
  CS2	OS
  CS3	HS
  SnS	CS4
- SnS	Cx1
- Cx1	Hx1
- Cx1	Hx2
- Cx1	Hx3
- SnS	Cx2
- Cx2	Hx4
- Cx2	Hx5
- Cx2	Hx6
- SnS	Cx3	
- Cx3	Hx7
- Cx3	Hx8
- Cx3	Hx9
 
 ; Right Thiophene
  CD1	CD2
@@ -152,18 +147,7 @@
  CD2	OD
  CD3	HD
  SnD	CD4
- SnD	Cy1
- Cy1	Hy1
- Cy1	Hy2
- Cy1	Hy3
- SnD	Cy2
- Cy2	Hy4
- Cy2	Hy5
- Cy2	Hy6
- SnD	Cy3	
- Cy3	Hy7
- Cy3	Hy8
- Cy3	Hy9
+
 
 ; Bonds to sidechains
  OS	C0
@@ -226,6 +210,33 @@
  Cj	Hj2
  Cj	Hj3
 
+; Right Terminal
+ SnS	Cx1
+ Cx1	Hx1
+ Cx1	Hx2
+ Cx1	Hx3
+ SnS	Cx2
+ Cx2	Hx4
+ Cx2	Hx5
+ Cx2	Hx6
+ SnS	Cx3	
+ Cx3	Hx7
+ Cx3	Hx8
+ Cx3	Hx9
+
+; Left Terminal
+ SnD	Cy1
+ Cy1	Hy1
+ Cy1	Hy2
+ Cy1	Hy3
+ SnD	Cy2
+ Cy2	Hy4
+ Cy2	Hy5
+ Cy2	Hy6
+ SnD	Cy3	
+ Cy3	Hy7
+ Cy3	Hy8
+ Cy3	Hy9
 
 
 

@@ -35,7 +35,7 @@ do
 	gmx grompp -f EM.mdp -r mon.gro -p topol.top -o EM.tpr -maxwarn 1
 	gmx mdrun -s EM.tpr -deffnm EM		
 
-
+	mv EM.gro EM_$i.gro
 
 	a=$(grep "Potential Energy" EM.log | awk '{print $4}')
 	echo "$i     $a" >> MD_scan_on.txt	

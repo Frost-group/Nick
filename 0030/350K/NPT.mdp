@@ -150,15 +150,15 @@ sa-surface-tension       = -1
 
 ; OPTIONS FOR WEAK COUPLING ALGORITHMS
 ; Temperature coupling  
-tcoupl                   = v-rescale
+tcoupl                   = berendsen
 nsttcouple               = -1
 nh-chain-length          = 10
 print-nose-hoover-chain-variables = no
 ; Groups to couple separately
 tc_grps                  = system
 ; Time constant (ps) and reference temperature (K)
-tau_t                    = 0.1
-ref_t                    = 350
+tau_t                    = 1
+ref_t                    = 300
 ; pressure coupling     
 pcoupl                   = Berendsen
 pcoupltype               = isotropic
@@ -202,15 +202,15 @@ bTS                      =
 ; Type of annealing for each temperature group (no/single/periodic)
 annealing                = single
 ; Number of time points to use for specifying annealing in each group
-annealing-npoints        = 6
+annealing-npoints        = 7
 ; List of times at the annealing points for each group
-annealing-time           = 0 1000 2000 3000 4000 5000
+annealing-time           = 0 1000 2000 3000 4000 5000 6000
 ; Temp. at each annealing point, for each group.
-annealing-temp           = 350 340 330 320 310 300
+annealing-temp           = 300 350 340 330 320 310 300
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = yes
-gen_temp                 = 350
+gen_temp                 = 300
 gen_seed                 = -1
 
 ; OPTIONS FOR BONDS    

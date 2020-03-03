@@ -25,7 +25,6 @@
  SS	ST	 0.051 	5
  OS	OT	-0.378	6
  HS	HT	 0.170 	3
- BrS    BT	-0.007	7
 
 ; Right thiophene unit (Dextrose) 
  CD1	CAA	-0.123	8
@@ -35,7 +34,7 @@
  SD	ST       0.051 	12
  OD	OT	-0.378 	13
  HD	HT	 0.170 	10
- BrD    BT	-0.007	14
+
 
 ; Left sidechain 
  C0	CL!	 0.271 	15
@@ -129,6 +128,12 @@
  Hn2	HL	 0.062	42
  Hn3	HL	 0.062	42
 ; total charge of 
+
+; terminals
+ BrS    BT	-0.007	7
+ BrD    BT	-0.007	14
+
+
 
 [ bonds ]
 ; Left Thiophene

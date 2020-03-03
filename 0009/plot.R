@@ -21,7 +21,7 @@ MD_scan_on <- read.table("MD_scan_on.txt") %>%
 
 Data <- bind_rows(gaussian_b3lyp, MD_scan_off, MD_scan_on)
 
-Data %>% filter(Energy < 100 & Energy > -100) %>%  
+Data %>% filter(Energy < 220 & Energy > -220) %>%  
 	ggplot(aes(x=Angle, color=Method)) +
 		geom_point(aes(y=Energy)) +
 		geom_line(aes(y=Energy), linetype="dashed") + 

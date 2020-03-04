@@ -1,4 +1,4 @@
-# This file was created Mon Mar  2 07:03:47 2020
+# This file was created Tue Mar  3 11:18:41 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../NVT.edr -o NVT_Temperature.xvg
 # gmx energy is part of G R O M A C S:
 #
-# Georgetown Riga Oslo Madrid Amsterdam Chisinau Stockholm
+# GROup of MAchos and Cynical Suckers
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

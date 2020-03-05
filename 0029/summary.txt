@@ -1,4 +1,3 @@
-000 = Same as 0023, but with same box size etc
 001 = Same as alkylated, and opls parameters for sidechains
 002 = Gaussian using 'pop=MKUFF b3lyp/lanl2dz' and optimised structure
 003 = Cheminformatics, QTPIE

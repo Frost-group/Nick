@@ -58,3 +58,5 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0028 = Charging dynamics in ionic liquids. Literature.
 0029 = Testing Glycolated Crystal Structures with Different EP Parameters. QCC. MD.
 0030 = Re-do annealing of alkylated crystal structure with bigger box. Temperature of 300, 350, 400. MD.
+0031 = Trial crystal structure for alkylated polymer. MD.
+0032 = Trial crystal structure for glycolated polymer. MD.

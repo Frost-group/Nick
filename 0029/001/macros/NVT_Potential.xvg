@@ -1,4 +1,4 @@
-# This file was created Tue Mar  3 11:18:41 2020
+# This file was created Thu Mar  5 06:54:37 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../NVT.edr -o NVT_Potential.xvg
 # gmx energy is part of G R O M A C S:
 #
-# GROwing Monsters And Cloning Shrimps
+# Great Red Owns Many ACres of Sand 
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

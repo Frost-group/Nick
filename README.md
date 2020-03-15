@@ -57,6 +57,21 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0027 = Alkylated and glycolated polymers. Literature.
 0028 = Charging dynamics in ionic liquids. Literature.
 0029 = Testing Glycolated Crystal Structures with Different EP Parameters. QCC. MD.
+	0029/001 = Same as alkylated, and opls parameters for sidechains. MD.
+	0029/002 = Gaussian using 'pop=MKUFF b3lyp/lanl2dz' and optimised structure. MD.
+	0029/003 = Cheminformatics, QTPIE. MD.
+	0029/004 = Cheminformatics, EEM. MD.
+	0029/005 = Gaussian using 'pop=MKUFF b3lyp/lanl2dz', averaged over dihedral using boltzmann inversion for weightings. MD.
 0030 = Re-do annealing of alkylated crystal structure with bigger box. Temperature of 300, 350, 400. MD.
-0031 = Trial crystal structure for alkylated polymer. MD.
-0032 = Trial crystal structure for glycolated polymer. MD.
+0031 = Crystal structure for alkylated polymer. MD.
+	0031/001 = Initial trial structure, flat with lattice spacings from xray.  Angles to keep pi stack seen in monomer crystal. MD.
+	0031/002 = Take the structure that 001 relaxes into, create super cell and re-run.  MD.
+0032 = Crystal structure for glycolated polymer. MD.
+	0032/001 = Crystal structure, intiated flat with lattice parameters base on the xray, and angles to maintain same pi stacking as 0031. MD.
+	0032/002 = Crystal structure.  All angles 90 degrees.  Sidechains curled, like in monomer crystal structure. MD.
+	0032/003 =  
+0034 = Second trial structure for glycolated polymer. Sidechain structure based off of monomer crystal. Backbones off of saxs. MD. 
+
+
+
+

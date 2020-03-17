@@ -69,9 +69,4 @@ Temp_files = Folder containing any small unecessary intermediate files. Can be c
 0032 = Crystal structure for glycolated polymer. MD.
 	0032/001 = Crystal structure, intiated flat with lattice parameters base on the xray, and angles to maintain same pi stacking as 0031. MD.
 	0032/002 = Crystal structure.  All angles 90 degrees.  Sidechains curled, like in monomer crystal structure. MD.
-	0032/003 =  
-0034 = Second trial structure for glycolated polymer. Sidechain structure based off of monomer crystal. Backbones off of saxs. MD. 
-
-
-
-
+0033 = Alkylated and Glycolated polymers in vacuum to check energies in NVT

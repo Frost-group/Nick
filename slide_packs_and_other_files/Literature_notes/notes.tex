@@ -1,0 +1,121 @@
+\documentclass{article}
+\hfuzz=1.5pt
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{{\it Nicholas Siemons, University College London}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.7pt}
+\parindent=0pt
+\parskip=1mm
+\headheight=-5pt
+\headsep=0pt
+\oddsidemargin=-15pt
+\evensidemargin=20pt
+\textheight=620pt
+\textwidth=500pt
+\footskip=20pt
+\mathsurround=2pt
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{chronology}
+\usepackage{authblk}
+\usepackage{caption}
+\usepackage[version=3]{mhchem}
+\usepackage{color}
+\usepackage[titles]{tocloft}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `basename #1 .tif`.png}
+
+
+
+\begin{document}
+
+\section*{Literature Notes}
+
+{\bf \cite{Gladisch2019}}  
+
+ Looking predominantly at volume changes of polymers.  For reversible systems they say its about 40\%, and for irreversible its 100\%.  Needs to be higher.  High amounts of swelling can occur when you switch from a solid state to a gel reversibly.  Need to maintain percolation.  Causes of expansion include inclusion of water, ions and polymer rearrangement. 
+
+Briefly discuss polypyrrole which is so far the best swelling conjugated polymer \cite{carpi2009biomedical} (40\% swelling). Good due to porous structure. However backbone is hydrophobic, which isn't ideal.   
+
+Hydrogels - see \cite[Ionov, 2014]{Ionov2014} about hydrogels (typically non-conjugated). 
+
+They look at volumetric switching of p(gT2).  Carbon electrode coated in p(gT2).  
+
+In voltage range of +/- 0.8V - First cycle gets 12,000\% expansion at +0.8V.   Seems to go from solid state to gel.   When -0.8V applied, contracts inhomogeneously.  They suggest application in single-switch electro-valve applications. 
+
+In voltage range of +/- 0.5V - perhaps reversible ('safe electrochemical window').  Initial expansion of 1400\%.  In subsequent cycles typically it has 300\% expansion. Up to 300 cycles in range +0.5 to -0.2V. 
+
+MD - Little/no explanation of where their forcefield comes from.  They show swelling but admit that the limitations of the MD mean it does not give agreement with experiments.  They do however show that the pi-stack is maintained which is quite nice.  
+
+\vspace{1cm}
+{\bf \cite{Ionov2014}}
+
+Looking at using polymers to do work on micro scale.  Stimuli responsive hydrogel actuators.  Look at different stimuli and different deformations. Different types of movement etc. 
+
+Hydrogels can be 99\% water by mass. Can swell and shrink by 10x volume. Stimuli can be light, pH, ionic strength and applied voltage.  Swelling controlled by the free-energy for the network expansion. This depends on cross-linking density and molar free energy of mixing. That depends on interactions between polymer and solvent as well as mixing entropy.  (Flory-Rehner Theory) - worth looking into. 
+
+Actuation can be done using a Belousov-Zhabotinsky redox reaction - look into.  See \cite{Suzuki2012,Maeda2010}.  
+
+Types of Deformation.  Typically uniform deformation. Bending and twisting etc due to inhomogeneous expansion.  Can apply inhomogeneous field to achieve.  Or can use inhomogeneous hydrogel, eg layered. 
+
+Shape of hydrogel - rods or layers.  Rods - bending of rods can be achieved with bilayers. Always bends in direction of non-swollen side (makes sense).
+ 
+ \vspace{1cm}
+{\bf \cite{Giovannitti2016}}
+
+Motivation partly to develop OECT in the accumulation mode (when voltage is zero, no charge flows). Propose that the glycol side chains help with hydration and ion penetration.  
+
+OECTs - electrolyte can be solid, gel or liquid as long as ions can rearrange when the gate voltage is applied.   
+
+They use p(a2T-TT) and p(g2T-TT), as they say that the optoelectronic proeprties do not change much with different sidechains.  They say the oxy group has planarising effect, and cite the paper \cite{Guo2013}.  Worth checking this out. 
+
+p(g2T-TT) has slightly lower ionisation potential.  They have similar absorption, also shown in DFT. Roughness and Surface morphology shown to be similar (AFM).  
+
+Material swelling correlated to device performance, see \cite{Inal2016} and \cite{Stavrinidou2013}.  p(g2T-TT) shows 10\% swelling when exposed to water, and further 10\% with Cl- ions under voltage. 
+
+ \vspace{1cm}
+{\bf \cite{Giovannitti2018}}
+
+Looking at n-type polymers.  Look at polymers with different percentage of alkyl or glycol side chains.   They discuss a little bit the effect of changing the alkyl for glycol on the dominant forces acting inter and intra monomer. alkyl is predominantly dispersion,  glycol is electrostatic.
+
+Glycol can decrease pi-pi stacking distance and increase dielectric constant. 
+
+See \cite{Chen2016} and \cite{Meng2015} which suggests glycol reduces pi pi stacking (different polymer series).  
+
+See \cite{Strakosas2015} and \cite{Rivnay2018} to see about OECTs in biological events.  
+
+Read about PEDOT:PSS depletion mode OECT.  \cite{Khodagholy2013}, \cite{Khodagholy2013a} and \\\cite{Campana2014}.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+% \nocite{*}
+\bibliographystyle{apalike}
+  \bibliography{notes}
+\end{document}
+
+
+
+

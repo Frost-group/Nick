@@ -26,7 +26,7 @@
  SS	ST	-0.051	5
  OS	OT	-0.233	6
  HS	HT	+0.136	3
-; Total			
+	
 
 ; Right thiophene unit (Dextrose) 			
  CD1	CAA	+0.014	7
@@ -36,7 +36,7 @@
  SD	ST	-0.203	11
  OD	OT	-0.284	12
  HD	HT	+0.222	9
-; Total			
+		
 
 ; Left sidechain 			
  C0	CL!	+0.038	15
@@ -82,7 +82,7 @@
  Ht1 	HL	+0.020	28
  Ht2	HL	+0.020	28
  Ht3	HL	+0.020	28
-; Total			
+		
  			
 			
 ; Right sidechain 			
@@ -129,12 +129,12 @@
  Hn1 	HL	+0.020	42
  Hn2	HL	+0.020	42
  Hn3	HL	+0.020	42
-; Total			
+		
 			
 			
 ; Terminal			
  HTe	HT	+0.177	4
-; Total			
+		
 			
 [ bonds ]			
 ; Left Thiophene			
@@ -363,7 +363,7 @@ CD3	HD
  Ht1 	HL	+0.021	28
  Ht2	HL	+0.021	28
  Ht3	HL	+0.021	28
-; Total charge of 			
+			
  			
 			
 ; Right sidechain 			
@@ -410,7 +410,7 @@ CD3	HD
  Hn1 	HL	+0.021	42
  Hn2	HL	+0.021	42
  Hn3	HL	+0.021	42
-; total charge of 			
+			
 			
 			
 			

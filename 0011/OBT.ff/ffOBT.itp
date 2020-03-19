@@ -45,7 +45,7 @@
  CE	SnT	1	0.21300	230120.0	; opls CA to I, bond length from gaussian
  CSn	SnT	1	0.21420	230120.0	; opls CA to I, bond length from gaussian
  CSn	HSn	1	0.10900	284512.0	; opls CT to HC 
- OT	ST	1	2.86000 0.000000	; non-bond put in to make scans work
+ OT	ST	1	0.28600 0.000000	; non-bond put in to make scans work
 
 ; glycol sidechain
  CG!	CG	1	0.15290 224262.4	; from Drew P , CT to CT
@@ -82,8 +82,8 @@
  HT	CBB	CE	1	123.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CAA	CAA	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CE	CE	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
- OT     CBB     CBB     1       127.5  870
- CAA    CBB     OT      1       119  850
+ OT     CBB     CBB     1       127.5   870     ;   QCC optimised, see 0007
+ CAA    CBB     OT      1       119     850     ;   QCC optimised, see 0007
  CBB	CE	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
  ST	CE	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
  CBB	CE	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC

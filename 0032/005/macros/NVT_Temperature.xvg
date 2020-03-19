@@ -1,4 +1,4 @@
-# This file was created Fri Mar 13 18:20:51 2020
+# This file was created Thu Mar 19 08:21:36 2020
 # Created by:
 #                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx energy -f ../NVT.edr -o NVT_Temperature.xvg
 # gmx energy is part of G R O M A C S:
 #
-# Gyas ROwers Mature At Cryogenic Speed
+# God Rules Over Mankind, Animals, Cosmos and Such
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

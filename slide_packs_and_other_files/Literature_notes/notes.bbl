@@ -1,5 +1,30 @@
 \begin{thebibliography}{}
 
+\bibitem[Basiric{\`o} et~al., 2011]{basirico2011inkjet}
+Basiric{\`o}, L., Cosseddu, P., Fraboni, B., and Bonfiglio, A. (2011).
+\newblock Inkjet printing of transparent, flexible, organic transistors.
+\newblock {\em Thin Solid Films}, 520(4):1291--1294.
+
+\bibitem[Basiric{\`o} et~al., 2012]{basirico2012electrical}
+Basiric{\`o}, L., Cosseddu, P., Scid{\`a}, A., Fraboni, B., Malliaras, G., and
+  Bonfiglio, A. (2012).
+\newblock Electrical characteristics of ink-jet printed, all-polymer
+  electrochemical transistors.
+\newblock {\em Organic Electronics}, 13(2):244--248.
+
+\bibitem[Bernards and Malliaras, 2007]{Bernards2007}
+Bernards, D.~A. and Malliaras, G.~G. (2007).
+\newblock {Steady-state and transient behavior of organic electrochemical
+  transistors}.
+\newblock {\em Advanced Functional Materials}, 17(17):3538--3544.
+
+\bibitem[Blaudeck et~al., 2012]{blaudeck2012simplified}
+Blaudeck, T., Ersman, P.~A., Sandberg, M., Heinz, S., Laiho, A., Liu, J.,
+  Engquist, I., Berggren, M., and Baumann, R.~R. (2012).
+\newblock Simplified large-area manufacturing of organic electrochemical
+  transistors combining printing and a self-aligning laser ablation step.
+\newblock {\em Advanced Functional Materials}, 22(14):2939--2948.
+
 \bibitem[Campana et~al., 2014]{Campana2014}
 Campana, A., Cramer, T., Simon, D.~T., Berggren, M., and Biscarini, F. (2014).
 \newblock {Electrocardiographic recording with conformable organic
@@ -16,6 +41,20 @@ Chen, X., Zhang, Z., Ding, Z., Liu, J., and Wang, L. (2016).
 \newblock {Diketopyrrolopyrrole-based Conjugated Polymers Bearing Branched
   Oligo(Ethylene Glycol) Side Chains for Photovoltaic Devices}.
 \newblock {\em Angewandte Chemie - International Edition}, 55(35):10376--10380.
+
+\bibitem[Flagg et~al., 2019]{Flagg2019}
+Flagg, L.~Q., Bischak, C.~G., Onorato, J.~W., Rashid, R.~B., Luscombe, C.~K.,
+  and Ginger, D.~S. (2019).
+\newblock {Polymer Crystallinity Controls Water Uptake in Glycol Side-Chain
+  Polymer Organic Electrochemical Transistors}.
+\newblock {\em Journal of the American Chemical Society}, 141(10):4345--4354.
+
+\bibitem[Fraser et~al., 2011]{fraser2011electrochemical}
+Fraser, K.~J., Yang, S.~Y., Cicoira, F., Curto, V.~F., Byrne, R., Benito-Lopez,
+  F., Khodagholy, D., Owens, R.~M., Malliaras, G.~G., and Diamond, D. (2011).
+\newblock Electrochemical transistors with ionic liquids for enzymatic sensing.
+\newblock In {\em Organic Semiconductors in Sensors and Bioelectronics IV},
+  volume 8118, page 81180U. International Society for Optics and Photonics.
 
 \bibitem[Giovannitti et~al., 2018]{Giovannitti2018}
 Giovannitti, A., Maria, I.~P., Hanifi, D., Donahue, M.~J., Bryant, D., Barth,
@@ -35,12 +74,34 @@ Giovannitti, A., Sbircea, D.~T., Inal, S., Nielsen, C.~B., Bandiello, E.,
 \newblock {\em Proceedings of the National Academy of Sciences of the United
   States of America}, 113(43):12017--12022.
 
+\bibitem[Giridharagopal et~al., 2017a]{giridharagopal2017electrochemical}
+Giridharagopal, R., Flagg, L., Harrison, J., Ziffer, M., Onorato, J., Luscombe,
+  C., and Ginger, D. (2017a).
+\newblock Electrochemical strain microscopy probes morphology-induced
+  variations in ion uptake and performance in organic electrochemical
+  transistors.
+\newblock {\em Nature materials}, 16(7):737--742.
+
+\bibitem[Giridharagopal et~al., 2017b]{Giridharagopal2017}
+Giridharagopal, R., Flagg, L.~Q., Harrison, J.~S., Ziffer, M.~E., Onorato, J.,
+  Luscombe, C.~K., and Ginger, D.~S. (2017b).
+\newblock {Electrochemical strain microscopy probes morphology-induced
+  variations in ion uptake and performance in organic electrochemical
+  transistors}.
+\newblock {\em Nature Materials}, 16(7):1--6.
+
 \bibitem[Gladisch et~al., 2019]{Gladisch2019}
 Gladisch, J., Stavrinidou, E., Ghosh, S., Giovannitti, A., Moser, M.,
   Zozoulenko, I., McCulloch, I., and Berggren, M. (2019).
 \newblock {Reversible Electronic Solid–Gel Switching of a Conjugated
   Polymer}.
 \newblock {\em Advanced Science}, 1901144.
+
+\bibitem[Guardado and Salleo, 2017]{guardado2017structural}
+Guardado, J.~O. and Salleo, A. (2017).
+\newblock Structural effects of gating poly (3-hexylthiophene) through an ionic
+  liquid.
+\newblock {\em Advanced Functional Materials}, 27(32):1701791.
 
 \bibitem[Guo et~al., 2013]{Guo2013}
 Guo, X., Quinn, J., Chen, Z., Usta, H., Zheng, Y., Xia, Y., Hennek, J.~W.,
@@ -49,18 +110,47 @@ Guo, X., Quinn, J., Chen, Z., Usta, H., Zheng, Y., Xia, Y., Hennek, J.~W.,
   semiconductors}.
 \newblock {\em Journal of the American Chemical Society}, 135(5):1986--1996.
 
-\bibitem[Inal et~al., 2016]{Inal2016}
+\bibitem[Hamedi et~al., 2007]{hamedi2007towards}
+Hamedi, M., Forchheimer, R., and Ingan{\"a}s, O. (2007).
+\newblock Towards woven logic from organic electronic fibres.
+\newblock {\em Nature materials}, 6(5):357--362.
+
+\bibitem[Inal et~al., 2016a]{inal2016optical}
+Inal, S., Malliaras, G.~G., and Rivnay, J. (2016a).
+\newblock Optical study of electrochromic moving fronts for the investigation
+  of ion transport in conducting polymers.
+\newblock {\em Journal of Materials Chemistry C}, 4(18):3942--3947.
+
+\bibitem[Inal et~al., 2017]{Inal2017}
+Inal, S., Malliaras, G.~G., and Rivnay, J. (2017).
+\newblock {Benchmarking organic mixed conductors for transistors}.
+\newblock {\em Nature Communications}, 8(1):1--6.
+
+\bibitem[Inal et~al., 2016b]{Inal2016}
 Inal, S., Rivnay, J., Hofmann, A.~I., Uguz, I., Mumtaz, M., Katsigiannopoulos,
-  D., Brochon, C., Cloutet, E., Hadziioannou, G., and Malliaras, G.~G. (2016).
+  D., Brochon, C., Cloutet, E., Hadziioannou, G., and Malliaras, G.~G. (2016b).
 \newblock {Organic electrochemical transistors based on PEDOT with different
   anionic polyelectrolyte dopants}.
 \newblock {\em Journal of Polymer Science, Part B: Polymer Physics},
   54(2):147--151.
 
+\bibitem[Inal et~al., 2014]{Inal2014}
+Inal, S., Rivnay, J., Leleux, P., Ferro, M., Ramuz, M., Brendel, J.~C.,
+  Schmidt, M.~M., Thelakkat, M., and Malliaras, G.~G. (2014).
+\newblock {A high transconductance accumulation mode electrochemical
+  transistor}.
+\newblock {\em Advanced Materials}, 26(44):7450--7455.
+
 \bibitem[Ionov, 2014]{Ionov2014}
 Ionov, L. (2014).
 \newblock {Hydrogel-based actuators: Possibilities and limitations}.
 \newblock {\em Materials Today}, 17(10):494--503.
+
+\bibitem[Kawahara et~al., 2013]{kawahara2013fast}
+Kawahara, J., Ersman, P.~A., Katoh, K., and Berggren, M. (2013).
+\newblock Fast-switching printed organic electrochemical transistors including
+  electronic vias through plastic and paper substrates.
+\newblock {\em IEEE transactions on electron devices}, 60(6):2052--2056.
 
 \bibitem[Khodagholy et~al., 2013a]{Khodagholy2013a}
 Khodagholy, D., Doublet, T., Quilichini, P., Gurfinkel, M., Leleux, P.,
@@ -76,10 +166,38 @@ Khodagholy, D., Rivnay, J., Sessolo, M., Gurfinkel, M., Leleux, P., Jimison,
 \newblock {High transconductance organic electrochemical transistors}.
 \newblock {\em Nature Communications}, 4:1--6.
 
+\bibitem[Laiho et~al., 2011]{Laiho2011}
+Laiho, A., Herlogsson, L., Forchheimer, R., Crispin, X., and Berggren, M.
+  (2011).
+\newblock {Controlling the dimensionality of charge transport in organic
+  thin-film transistors}.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 108(37):15069--15073.
+
+\bibitem[Leleux et~al., 2011]{leleux2011highly}
+Leleux, P., Quilichini, P.~P., Malliaras, G.~G., Ismailova, E., Doublet, T.,
+  Sanaur, S., Bernard, C., Gurfinkel, M., Khodagholy, D., and
+  Od{\'e}houri-Koudou, T.~H. (2011).
+\newblock Highly conformable conducting polymer electrodes for in vivo
+  recordings.
+\newblock {\em Advanced Materials (Deerfield Beach, Fla.)}.
+
+\bibitem[Mabeck et~al., 2005]{mabeck2005microfluidic}
+Mabeck, J.~T., DeFranco, J.~A., Bernards, D.~A., Malliaras, G.~G., Hocd{\'e},
+  S., and Chase, C.~J. (2005).
+\newblock Microfluidic gating of an organic electrochemical transistor.
+\newblock {\em Applied Physics Letters}, 87(1):013503.
+
 \bibitem[Maeda et~al., 2010]{Maeda2010}
 Maeda, S., Hara, Y., Yoshida, R., and Hashimoto, S. (2010).
 \newblock {Active polymer gel actuators}.
 \newblock {\em International Journal of Molecular Sciences}, 11(1):52--66.
+
+\bibitem[Mattana et~al., 2011]{mattana2011organic}
+Mattana, G., Cosseddu, P., Fraboni, B., Malliaras, G.~G., Hinestroza, J.~P.,
+  and Bonfiglio, A. (2011).
+\newblock Organic electronics on natural cotton fibres.
+\newblock {\em Organic electronics}, 12(12):2033--2039.
 
 \bibitem[Meng et~al., 2015]{Meng2015}
 Meng, B., Song, H., Chen, X., Xie, Z., Liu, J., and Wang, L. (2015).
@@ -87,11 +205,88 @@ Meng, B., Song, H., Chen, X., Xie, Z., Liu, J., and Wang, L. (2015).
   Conjugated Polymers for Close $\pi$-$\pi$ Stacking}.
 \newblock {\em Macromolecules}, 48(13):4357--4363.
 
+\bibitem[M{\"u}ller et~al., 2011]{muller2011woven}
+M{\"u}ller, C., Hamedi, M., Karlsson, R., Jansson, R., Marcilla, R., Hedhammar,
+  M., and Ingan{\"a}s, O. (2011).
+\newblock Woven electrochemical transistors on silk fibers.
+\newblock {\em Advanced Materials}, 23(7):898--901.
+
+\bibitem[Nilsson et~al., 2002]{nilsson2002all}
+Nilsson, D., Kugler, T., Svensson, P.-O., and Berggren, M. (2002).
+\newblock An all-organic sensor--transistor based on a novel electrochemical
+  transducer concept printed electrochemical sensors on paper.
+\newblock {\em Sensors and Actuators B: Chemical}, 86(2-3):193--197.
+
+\bibitem[Pacheco-Moreno et~al., 2017]{Pacheco-Moreno2017}
+Pacheco-Moreno, C.~M., Schreck, M., Scaccabarozzi, A.~D., Bourgun, P., Wantz,
+  G., Stevens, M.~M., Dautel, O.~J., and Stingelin, N. (2017).
+\newblock {The Importance of Materials Design to Make Ions Flow: Toward Novel
+  Materials Platforms for Bioelectronics Applications}.
+\newblock {\em Advanced Materials}, 29(4):1--5.
+
+\bibitem[Paterson et~al., 2018]{Paterson2018}
+Paterson, A.~F., Singh, S., Fallon, K.~J., Hodsden, T., Han, Y., Schroeder,
+  B.~C., Bronstein, H., Heeney, M., McCulloch, I., and Anthopoulos, T.~D.
+  (2018).
+\newblock {Recent Progress in High-Mobility Organic Transistors: A Reality
+  Check}.
+\newblock {\em Advanced Materials}, 30(36):1--33.
+
+\bibitem[Pettersson et~al., 2014]{pettersson2014patterned}
+Pettersson, F., Koskela, J., Wikman, C.-J., Remonen, T., Wil{\'e}n, C.-E.,
+  Kilpel{\"a}, A., and {\"O}sterbacka, R. (2014).
+\newblock Patterned membrane as substrate and electrolyte in depletion-and
+  enhancement mode ion-modulated transistors.
+\newblock {\em IEEE Journal of the Electron Devices Society}, 3(2):58--66.
+
+\bibitem[Rivnay et~al., 2016a]{Rivnay2016}
+Rivnay, J., Inal, S., Collins, B.~A., Sessolo, M., Stavrinidou, E., Strakosas,
+  X., Tassone, C., Delongchamp, D.~M., and Malliaras, G.~G. (2016a).
+\newblock {Structural control of mixed ionic and electronic transport in
+  conducting polymers}.
+\newblock {\em Nature Communications}, 7:1--9.
+
+\bibitem[Rivnay et~al., 2016b]{rivnay2016structural}
+Rivnay, J., Inal, S., Collins, B.~A., Sessolo, M., Stavrinidou, E., Strakosas,
+  X., Tassone, C., Delongchamp, D.~M., and Malliaras, G.~G. (2016b).
+\newblock Structural control of mixed ionic and electronic transport in
+  conducting polymers.
+\newblock {\em Nature communications}, 7(1):1--9.
+
 \bibitem[Rivnay et~al., 2018]{Rivnay2018}
 Rivnay, J., Inal, S., Salleo, A., Owens, R.~M., Berggren, M., and Malliaras,
   G.~G. (2018).
 \newblock {Organic electrochemical transistors}.
 \newblock {\em Nature Reviews Materials}, 3.
+
+\bibitem[Savva et~al., 2019]{Savva2019}
+Savva, A., Cendra, C., Giugni, A., Torre, B., Surgailis, J., Ohayon, D.,
+  Giovannitti, A., McCulloch, I., {Di Fabrizio}, E., Salleo, A., Rivnay, J.,
+  and Inal, S. (2019).
+\newblock {Influence of Water on the Performance of Organic Electrochemical
+  Transistors}.
+\newblock {\em Chemistry of Materials}, 31(3):927--937.
+
+\bibitem[Savva et~al., 2020]{Savva2020}
+Savva, A., Hallani, R., Cendra, C., Surgailis, J., Hidalgo, T.~C., Wustoni, S.,
+  Sheelamanthula, R., Chen, X., Kirkus, M., Giovannitti, A., Salleo, A.,
+  McCulloch, I., and Inal, S. (2020).
+\newblock {Balancing Ionic and Electronic Conduction for High-Performance
+  Organic Electrochemical Transistors}.
+\newblock {\em Advanced Functional Materials}, 1907657:1--9.
+
+\bibitem[Sessolo et~al., 2013]{sessolo2013simple}
+Sessolo, M., Khodagholy, D., and Malliaras, G. (2013).
+\newblock Simple patterning of conducting polymers and biomolecules.
+\newblock {\em Transactions of Japanese Society for Medical and Biological
+  Engineering}, 51(Supplement):R--301.
+
+\bibitem[Shim et~al., 2009]{shim2009all}
+Shim, N.~Y., Bernards, D.~A., Macaya, D.~J., DeFranco, J.~A., Nikolou, M.,
+  Owens, R.~M., and Malliaras, G.~G. (2009).
+\newblock All-plastic electrochemical transistor for glucose sensing using a
+  ferrocene mediator.
+\newblock {\em Sensors}, 9(12):9896--9902.
 
 \bibitem[Stavrinidou et~al., 2013]{Stavrinidou2013}
 Stavrinidou, E., Leleux, P., Rajaona, H., Khodagholy, D., Rivnay, J., Lindau,
@@ -108,5 +303,31 @@ Strakosas, X., Bongo, M., and Owens, R.~M. (2015).
 Suzuki, D., Kobayashi, T., Yoshida, R., and Hirai, T. (2012).
 \newblock {Soft actuators of organized self-oscillating microgels}.
 \newblock {\em Soft Matter}, 8(45):11447--11449.
+
+\bibitem[Toss et~al., 2014]{Toss2014}
+Toss, H., Susp{\`{e}}ne, C., Piro, B., Yassar, A., Crispin, X., Kergoat, L.,
+  Pham, M.~C., and Berggren, M. (2014).
+\newblock {On the mode of operation in electrolyte-gated thin film transistors
+  based on different substituted polythiophenes}.
+\newblock {\em Organic Electronics}, 15(10):2420--2427.
+
+\bibitem[Tseng et~al., 2014]{Tseng2014}
+Tseng, H.~R., Phan, H., Luo, C., Wang, M., Perez, L.~A., Patel, S.~N., Ying,
+  L., Kramer, E.~J., Nguyen, T.~Q., Bazan, G.~C., and Heeger, A.~J. (2014).
+\newblock {High-mobility field-effect transistors fabricated with macroscopic
+  aligned semiconducting polymers}.
+\newblock {\em Advanced Materials}, 26(19):2993--2998.
+
+\bibitem[Volkov et~al., 2017]{volkov2017understanding}
+Volkov, A.~V., Wijeratne, K., Mitraka, E., Ail, U., Zhao, D., Tybrandt, K.,
+  Andreasen, J.~W., Berggren, M., Crispin, X., and Zozoulenko, I.~V. (2017).
+\newblock Understanding the capacitance of pedot: Pss.
+\newblock {\em Advanced Functional Materials}, 27(28):1700329.
+
+\bibitem[White et~al., 1984]{White1984}
+White, H.~S., Kittlesen, G.~P., and Wrighton, M.~S. (1984).
+\newblock {Chemical Derivatization of an Array of Three Gold Microelectrodes
+  with Polypyrrole: Fabrication of a Molecule-Based Transistor}.
+\newblock {\em Journal of the American Chemical Society}, 106(18):5375--5377.
 
 \end{thebibliography}

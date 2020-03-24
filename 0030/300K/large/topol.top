@@ -1,0 +1,14 @@
+
+; Include forcefield parameters
+#include "../../OBT.ff/forcefield.itp"
+
+; Include geometry parameters
+#include "../../AB.itp"
+
+[ system ]
+; Name
+GS_Crystal
+
+[ molecules ]
+; Compound        #mols
+AB 	8100

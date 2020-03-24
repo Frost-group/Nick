@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 MAR 2020 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 MAR 2020 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -851,9 +851,14 @@ Package caption Info: End \AtBeginDocument code.
 . Activating mapping `default' on line 36.
 .................................................
 
-Overfull \hbox (34.15846pt too wide) in paragraph at lines 63--64
+Overfull \hbox (34.15846pt too wide) in paragraph at lines 49--50
 []\OT1/cmr/m/n/10 Actuation can be done us-ing a Belousov-Zhabotinsky re-dox re
 -ac-tion - look into. See [[], []]. 
+ []
+
+
+Overfull \hbox (10.47319pt too wide) in paragraph at lines 68--69
+[]\OT1/cmr/m/n/10 See [[]], [[]], [[]], [[]], [[]]
  []
 
 
@@ -878,10 +883,16 @@ Package Fancyhdr Warning: \headheight is too small (-5.0pt):
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [2]
-(./notes.bbl
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
+Overfull \hbox (15.93622pt too wide) in paragraph at lines 165--166
+[]\OT1/cmr/m/n/10 Suggests high hole mo-bil-ity is due to high crys-tallinity, 
+but this tends to in-hibit bulk ionic trans-port. [[]].
+ []
+
+
+Overfull \hbox (9.93605pt too wide) in paragraph at lines 167--168
+[]\OT1/cmr/m/n/10 See [[]] and [[]] for car-boxylic acid capped side chains. Se
+e [[]]
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (-5.0pt): 
@@ -892,7 +903,7 @@ Package Fancyhdr Warning: \headheight is too small (-5.0pt):
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [3])
+ [3]
 
 Package Fancyhdr Warning: \headheight is too small (-5.0pt): 
  Make it at least 0.0pt.
@@ -903,25 +914,63 @@ Package Fancyhdr Warning: \headheight is too small (-5.0pt):
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [4]
+(./notes.bbl
+Missing character: There is no â in font cmr8!
+Missing character: There is no € in font cmr8!
+Missing character: There is no “ in font cmr8!
+
+
+Package Fancyhdr Warning: \headheight is too small (-5.0pt): 
+ Make it at least 0.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+
+Overfull \vbox (5.0pt too high) has occurred while \output is active []
+
+ [5]
+
+Package Fancyhdr Warning: \headheight is too small (-5.0pt): 
+ Make it at least 0.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+
+Overfull \vbox (5.0pt too high) has occurred while \output is active []
+
+ [6])
+
+Package Fancyhdr Warning: \headheight is too small (-5.0pt): 
+ Make it at least 0.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+
+Overfull \vbox (5.0pt too high) has occurred while \output is active []
+
+ [7]
 (./notes.aux) ) 
 Here is how much of TeX's memory you used:
- 22342 strings out of 492995
- 452037 string characters out of 6132704
- 485656 words of memory out of 5000000
- 25613 multiletter control sequences out of 15000+600000
- 531985 words of font info for 28 fonts, out of 8000000 for 9000
+ 22398 strings out of 492995
+ 452830 string characters out of 6132704
+ 490466 words of memory out of 5000000
+ 25661 multiletter control sequences out of 15000+600000
+ 534610 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,56p,10438b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb>
-Output written on notes.pdf (4 pages, 80470 bytes).
+cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pf
+b>
+Output written on notes.pdf (7 pages, 136262 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

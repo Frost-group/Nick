@@ -6,7 +6,7 @@ a <- as_tibble(data.frame(q=(4*pi / 1.54)*sin(a$V1*0.0174533 /2),S=a$V2, method=
 lab <- as_tibble(read.table("AM_cryst_merc.hkl", header=TRUE)) %>% select(-c("multiplicity")) %>% 
 	mutate(q= 2*pi / d.spacing) %>% select(-c("d.spacing")) %>%
 	mutate(label=paste("(",h," ", k," ", l,")", sep="")) %>%  
-	dplyr::filter((F.2 > 4000 & q<2) | label=="(0 0 1)" | label=="(0 1 0)" | label=="(1 0 0)" | label=="(0 2 0)"| label=="(0 3 0)") 
+	dplyr::filter((F.2 > 1000 & q<2) | label=="(0 0 1)" | label=="(0 1 0)" | label=="(1 0 0)" | label=="(0 2 0)"| label=="(0 3 0)") 
 		
 plot1 <- a %>% dplyr::filter(q<2 & q>0.1) %>%
 	ggplot(aes(x=q,y=S)) + 

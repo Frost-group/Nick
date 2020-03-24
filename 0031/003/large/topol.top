@@ -1,0 +1,14 @@
+
+; Include forcefield parameters
+#include "../OBT.ff/forcefield.itp"
+
+; Include geometry parameters
+#include "../alk20.itp"
+
+[ system ]
+; Name
+GS_Crystal
+
+[ molecules ]
+; Compound        #mols
+A20 		240

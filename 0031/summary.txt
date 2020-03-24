@@ -1,3 +1,0 @@
-001 - Initial trial structure for alkylated polymer.  Polymers arranged flat with lattive spacings that agree with the xray data, and lattice angles that reproduce the pi-stacking seen in the monomer crystal. 
-
-002 - Take the structure that 001 relaxes into, create super cell and re-run 

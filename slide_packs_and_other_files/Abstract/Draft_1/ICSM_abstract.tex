@@ -1,0 +1,78 @@
+\documentclass{article}
+\hfuzz=1.5pt
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{{\it Nicholas Siemons, University College London}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.7pt}
+\parindent=0pt
+\parskip=1mm
+\headheight=-5pt
+\headsep=0pt
+\oddsidemargin=-15pt
+\evensidemargin=20pt
+\textheight=620pt
+\textwidth=500pt
+\footskip=20pt
+\mathsurround=2pt
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{chronology}
+\usepackage{authblk}
+\usepackage{caption}
+\usepackage[superscript]{cite}
+\usepackage[version=3]{mhchem}
+\usepackage{color}
+\usepackage[titles]{tocloft}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `basename #1 .tif`.png}
+
+
+
+\begin{document}
+
+
+\twocolumn[{
+
+\title{ Multi-scale Modelling of Conjugated Polymers to Understand the Role of Side Chain Chemistry in Mixed Ionic-Electronic Conduction }
+\author{Nicholas Siemons}
+\author{Jarvist Frost}
+\author{Drew Pearce}
+\author{Jenny Nelson}
+\affil{\small{{\it Department of Physics, Imperial College London, Kensington, London, SW7 2AZ, UK}}}
+\maketitle
+
+
+\section*{Abstract}
+
+Conjugated Polymers are becoming increasingly important for their role as the active material in organic optoelectronic devices. In the past the choice of side chain chemistry has been predominantly to optimise the solubility of a polymer.  Recently however it is becoming apparent that side chain engineering can play a much bigger role in the performance of polymers in devices such as organic electrochemical transistors \cite{Mei2014,Giovannitti2018}.  Recently an avenue for increasing device performance has been through enhancing mixed ionic-electronic conduction.  In the solid state it has been shown that the addition of ethelyn-glycol units on the side chains can alter the $\pi - \pi$ interactions, having implications for electronic conduction.  In organic transistors, addition of ethelyn-glycol units can alter the way ions can penetrate into the polymer bulk and therefore have implications for the ionic conductivity \cite{Giovannitti2016,Gladisch2019,Moia2019}.  We develop a Molecular Dynamics force-field to model polymers based on homo-3,3'-dialkoxybithiophene with both ethelyn-glycol (p(gT2)) and alkylated (p(aT2)) side chains, as well as polymers with side chains containing both alkylated and ethelyn-glycolated groups.  Force field parameters are obtained from OPLS-aa, with important degrees of freedom parametrised to fit Density Functional Theory calculations. We verify our force field against known monomer crystal structures.  
+
+
+{\footnotesize
+% \nocite{*}
+\bibliographystyle{unsrt}
+  \bibliography{ICSM_abstract}}
+}]
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+

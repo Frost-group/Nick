@@ -38,11 +38,12 @@ findpeaks(a$S) %>%
 	mutate(fit = Lor(q=q,q0=q0,h=h)) %>% 
 	ungroup() %>%
 	group_by(q) %>% 
-	mutate(fit2 = sum(fit)) %>% 
+	mutate(fit2 = sum(fit)) %>%
+	dplyr::filter(q<2 & q>0.1) %>%  
 	ggplot(aes(x=q,y=fit2+100000)) +
 		geom_line() +
 		scale_y_log10() +
 		labs(x="q/A",y="S(q), A.U")
-	ggsave("smooth1.pdf", width=12)
+	ggsave("smooth1.pdf", width=14)
 	
 

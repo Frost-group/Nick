@@ -54,22 +54,11 @@ MD_scan_on <- read.table("MD_scan_on.txt") %>%
 #	mutate(fit = predict(Harmonic_fit(.)))
 	
 bind_rows(gaussian_b3lyp, MD_scan_off,MD_scan_on) %>% 
-	filter(Energy < 4) %>%
+	dplyr::filter(Energy < 4) %>%
 	ggplot(aes(x=Angle, y=Energy, color=Method)) + 
 		geom_point() + 
-		geom_line() + 
+		geom_line(size=1.2, linetype="dashed") + 
 		labs(y="Energy, KJ/mol", x="Angle, degrees") +
-		theme_classic()
-	ggsave("Energy_scans.pdf") 
-
-#Difference %>% Harmonic_fit(.) %>% print()
-
-#MD_NVT_on <- read.table("MD_NVT_on.txt",skip=1000) %>%
-#	rename(Time=V1,Energy=V2, Angle=V3) %>%
-#	arrange(Angle) %>%
-#	select(Energy,Angle) %>% 
-#	bin(14) %>% 
-#	mutate(Energy = Energy-min(Energy)) %>%
-#	select(Angle, Energy) %>%
-# 	mutate(Method="MD_scan_potential_on")  
+		theme_classic(base_size=20)
+	ggsave("Energy_scans.pdf", width=10) 
 

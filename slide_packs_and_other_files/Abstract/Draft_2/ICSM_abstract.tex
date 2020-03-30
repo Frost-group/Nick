@@ -1,0 +1,81 @@
+\documentclass{article}
+\hfuzz=1.5pt
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{{\it Nicholas Siemons, University College London}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.7pt}
+\parindent=0pt
+\parskip=1mm
+\headheight=-5pt
+\headsep=0pt
+\oddsidemargin=-15pt
+\evensidemargin=20pt
+\textheight=620pt
+\textwidth=500pt
+\footskip=20pt
+\mathsurround=2pt
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{chronology}
+\usepackage{authblk}
+\usepackage{caption}
+\usepackage[superscript]{cite}
+\usepackage[version=3]{mhchem}
+\usepackage{color}
+\usepackage[titles]{tocloft}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `basename #1 .tif`.png}
+
+
+
+\begin{document}
+
+
+\twocolumn[{
+
+\title{ Multi-scale Modelling of Conjugated Polymers to Understand the Role of Side Chain Chemistry in Mixed Ionic-Electronic Conduction }
+\author{Nicholas Siemons}
+\author{Jarvist Frost}
+\author{Drew Pearce}
+\author{Jenny Nelson}
+\affil{\small{{\it Department of Physics, Imperial College London, Kensington, London, SW7 2AZ, UK}}}
+\maketitle
+
+
+{\section*{Abstract}
+
+Organic electrochemical transistors (OECTs) have been gathering increasing interest due to their high reported transconductance values \cite{Khodagholy2013,Khodagholy2013a}, high switching speeds \cite{Savva2019} and low bias operation \cite{Giovannitti2016}, allowing for operation in aqueous electrolyte.  Furthermore they have been shown to operate in a range of biological scenarios \cite{fraser2011electrochemical, shim2009all, sessolo2013simple} as well as being cheap to manufacture \cite{blaudeck2012simplified, basirico2011inkjet, basirico2012electrical, pettersson2014patterned}.  One of the challenges in designing accumulation mode OECTs  is understanding the interplay between the ion-penetration into the channel and device performance (mixed ionic-electronic conduction) \cite{Inal2014}.  Recently it has been shown that increasing the hydrophilicity of the active material through inclusion of ethelyne-glcyol units on the side chains can significantly improve device performance due to increased volumetric swelling of the channel \cite{Giovannitti2016, Giovannitti2018, Inal2016}.  Furthermore it has been shown that crystallinity and crystal structure is important for understanding how ion penetration affects hole mobility \cite{Flagg2019}. We model two polymers based on poly-thiophene backbones with either alkoxy- or glycoxy- sidechains (p(aT2) and p(gT2) respectively).   We verify molecular dynamics forcefields against monomer crystal structures, allowing us to accurately simulate the respective polymer crystals.   Furthermore we extend our simulations to include the aqueous electrolyte, as polymer-ion interactions are critical to understanding the operation of OECTs and how materials could be further tuned through the changing side chain chemistry.
+
+}
+}]
+
+\clearpage
+{\footnotesize
+% \nocite{*}
+\bibliographystyle{unsrt}
+  \bibliography{ICSM_abstract}}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+

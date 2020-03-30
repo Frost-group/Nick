@@ -21,10 +21,10 @@ MD_scan_on <- read.table("MD_scan_on.txt") %>%
 
 Data <- bind_rows(gaussian_b3lyp, MD_scan_off, MD_scan_on)
 
-Data %>% filter(Energy < 220 & Energy > -220) %>%  
+Data %>% dplyr::filter(Energy < 220 & Energy > -220) %>%  
 	ggplot(aes(x=Angle, color=Method)) +
 		geom_point(aes(y=Energy)) +
-		geom_line(aes(y=Energy), linetype="dashed") + 
-		theme_classic() +
+		geom_line(aes(y=Energy), linetype="dashed", size=1.2) + 
+		theme_classic(base_size=20) +
 		labs(x="Angle, Degrees", y="Energy, KJ/mol") 
-	ggsave("Energy_MD.pdf") 
+	ggsave("Energy_MD.pdf", width=8) 

@@ -1,0 +1,55 @@
+#!/bin/sh
+#PBS -l walltime=72:00:00
+#PBS -l select=1:ncpus=32:mem=50gb:avx=true
+
+source /rds/general/user/ns5018/home/.bash_profile
+
+
+cp $PBS_O_WORKDIR/gly20.itp $TMPDIR
+
+cp -r $PBS_O_WORKDIR/OBT.ff $TMPDIR
+cp $PBS_O_WORKDIR/super_cell.pdb $TMPDIR
+cp $PBS_O_WORKDIR/topol.top $TMPDIR
+cp $PBS_O_WORKDIR/EM.mdp $TMPDIR
+cp $PBS_O_WORKDIR/NVT.mdp $TMPDIR
+cp $PBS_O_WORKDIR/NPT.mdp $TMPDIR
+
+
+# EM
+gmx grompp -f EM.mdp -p topol.top -o EM.tpr -c super_cell.pdb
+gmx mdrun -s EM.tpr -deffnm EM -nt 32
+
+cp $TMPDIR/EM.log $PBS_O_WORKDIR
+cp $TMPDIR/EM.edr $PBS_O_WORKDIR
+cp $TMPDIR/EM.tpr $PBS_O_WORKDIR
+cp $TMPDIR/EM.trr $PBS_O_WORKDIR
+cp $TMPDIR/EM.gro $PBS_O_WORKDIR
+cp $TMPDIR/EM.cpt $PBS_O_WORKDIR
+cp $TMPDIR/EM_prev.cpt $PBS_O_WORKDIR
+
+
+# NVT
+gmx grompp -f NVT.mdp -p topol.top -o NVT.tpr -c EM.gro
+gmx mdrun -s NVT.tpr -deffnm NVT -nt 32
+
+cp $TMPDIR/NVT.log $PBS_O_WORKDIR
+cp $TMPDIR/NVT.edr $PBS_O_WORKDIR
+cp $TMPDIR/NVT.tpr $PBS_O_WORKDIR
+cp $TMPDIR/NVT.trr $PBS_O_WORKDIR
+cp $TMPDIR/NVT.gro $PBS_O_WORKDIR
+cp $TMPDIR/NVT.cpt $PBS_O_WORKDIR
+cp $TMPDIR/NVT_prev.cpt $PBS_O_WORKDIR
+
+
+# NPT
+gmx grompp -f NPT.mdp -p topol.top -o NPT.tpr -c NVT.gro
+gmx mdrun -s NPT.tpr -deffnm NPT -nt 32
+
+cp $TMPDIR/NPT.log $PBS_O_WORKDIR
+cp $TMPDIR/NPT.edr $PBS_O_WORKDIR
+cp $TMPDIR/NPT.tpr $PBS_O_WORKDIR
+cp $TMPDIR/NPT.trr $PBS_O_WORKDIR
+cp $TMPDIR/NPT.gro $PBS_O_WORKDIR
+cp $TMPDIR/NPT.cpt $PBS_O_WORKDIR
+cp $TMPDIR/NPT_prev.cpt $PBS_O_WORKDIR
+

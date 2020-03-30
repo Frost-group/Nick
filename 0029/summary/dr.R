@@ -135,5 +135,13 @@ rbind(S001_300,S001_350,S001_400,S004_300,S004_350,S004_400) %>%
 	ggsave("boxplot_sidechain.pdf", width=13)
 
 
+rbind(S001_300,S001_350,S001_400) %>%
+	ggplot(aes(Part,dr, color=Annealling_temp)) + 
+		geom_boxplot(outlier.size = 0, size=1.5) +
+		ylim(0,12) +
+		theme(axis.text.x = element_text(angle = 90)) +
+		labs(y="r / A", x=" ") +
+		theme_classic(base_size=25)
+	ggsave("001_300_boxplot.pdf", width=13)
 
 

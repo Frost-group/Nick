@@ -57,6 +57,7 @@ AB = Bromine terminated monomer with alkylated sidechains
 0031 = Crystal structure for alkylated polymer. MD.
 	0031/001 = Initial trial structure, flat with lattice spacings from xray.  Angles to keep pi stack seen in monomer crystal. MD.
 	0031/002 = Take the structure that 001 relaxes into, create super cell and re-run.  MD.
+	0031/003 = Rerun 002 with bigger box to see if backbones stay straight.  MD.
 0032 = Crystal structure for glycolated polymer. MD.
 	0032/001 = Crystal structure, intiated flat with lattice parameters base on the xray, and angles to maintain same pi stacking as 0031. MD.
 	0032/002 = Crystal structure.  All angles 90 degrees.  Sidechains curled, like in monomer crystal structure. MD.

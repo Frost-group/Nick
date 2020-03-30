@@ -51,3 +51,30 @@ data1 <- read_pdb2("gly3.pdb") %>%
 		guides(size=FALSE) +
 		geom_text(aes(label=Element), color="white", size=3)
 	ggsave("map_gly.pdf")
+
+
+data1 <- read_pdb2("AB.pdb") %>%
+	select(AtomName, Element, x,y,z, Part) %>% 
+	mutate(Charge = as_tibble(read.table("EP_AB.txt"))[[1]]) %>%
+	mutate(radius = if_else(Element=="H", 0.54, NaN) ) %>% 
+	mutate(radius = if_else(Element=="C", 1.7, radius) ) %>% 
+	mutate(radius = if_else(Element=="O", 1.52, radius) ) %>% 
+	mutate(radius = if_else(Element=="Sn", 2.25, radius) ) %>% 
+	mutate(radius = if_else(Element=="S", 1.84, radius) ) %>% 
+	dplyr::filter(!(Part=="Terminal")) %>%
+	dplyr::filter(!(Element=="H")) %>%
+	ggplot(aes(x=x,y=y, color=Charge, size=radius)) +
+		geom_point() + 	
+		scale_color_gradient2(
+			low="blue", 
+			mid="lightgreen", 
+			high="red", 
+			limits=c(-0.5,0.5)
+		) +
+		scale_radius(limits=c(0,2), range=c(0,7)) + 
+		coord_fixed() +
+		stripped() +
+		xlim(-5,5) + 
+		guides(size=FALSE) +
+		geom_text(aes(label=Element), color="white", size=3)
+	ggsave("map_AB.pdf")

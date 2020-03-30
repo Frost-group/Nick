@@ -38,8 +38,9 @@ K400 <- read_pdb2("../400K/frames/frame_11600.pdb") %>%
 
 rbind(K300,K350,K400) %>% 
 	ggplot(aes(Part,dr, color=Anneal_temp)) + 
-		geom_boxplot(outlier.size = 0) +
+		geom_boxplot(outlier.size = 0, size=1.5) +
 		ylim(0,11) +
 		theme(axis.text.x = element_text(angle = 90)) +
+		theme_classic(base_size=25) +
 		labs(y="r / A", x=" ")
 	ggsave("boxplot.pdf", width=11)

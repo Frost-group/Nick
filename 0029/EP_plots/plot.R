@@ -35,7 +35,7 @@ data1 <- read_pdb2("GS.pdb") %>%
 	dplyr::filter(!(Part=="Terminal")) %>%
 	ggplot(aes(x=x,y=y, color=Charge, size=radius)) +
 		geom_point() + 	
-		scale_color_gradient2(low="blue", mid="lightgreen", high="red", limits=c(-1,1)) +
+		scale_color_gradient2(low="blue", mid="lightgreen", high="red", limits=c(-0.5,0.5)) +
 		scale_radius(limits=c(0,2.25), range=c(0,10)) + 
 		coord_fixed() +
 		stripped() +

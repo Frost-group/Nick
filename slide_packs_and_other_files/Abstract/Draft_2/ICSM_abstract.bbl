@@ -1,0 +1,118 @@
+\begin{thebibliography}{10}
+
+\bibitem{Khodagholy2013}
+Dion Khodagholy, Jonathan Rivnay, Michele Sessolo, Moshe Gurfinkel, Pierre
+  Leleux, Leslie~H. Jimison, Eleni Stavrinidou, Thierry Herve, S{\'{e}}bastien
+  Sanaur, R{\'{o}}is{\'{i}}n~M. Owens, and George~G. Malliaras.
+\newblock {High transconductance organic electrochemical transistors}.
+\newblock {\em Nature Communications}, 4:1--6, 2013.
+
+\bibitem{Khodagholy2013a}
+Dion Khodagholy, Thomas Doublet, Pascale Quilichini, Moshe Gurfinkel, Pierre
+  Leleux, Antoine Ghestem, Esma Ismailova, Thierry Herv{\'{e}}, S{\'{e}}bastien
+  Sanaur, Christophe Bernard, and George~G. Malliaras.
+\newblock {In vivo recordings of brain activity using organic transistors}.
+\newblock {\em Nature Communications}, 4, 2013.
+
+\bibitem{Savva2019}
+Achilleas Savva, Camila Cendra, Andrea Giugni, Bruno Torre, Jokubas Surgailis,
+  David Ohayon, Alexander Giovannitti, Iain McCulloch, Enzo {Di Fabrizio},
+  Alberto Salleo, Jonathan Rivnay, and Sahika Inal.
+\newblock {Influence of Water on the Performance of Organic Electrochemical
+  Transistors}.
+\newblock {\em Chemistry of Materials}, 31(3):927--937, 2019.
+
+\bibitem{Giovannitti2016}
+Alexander Giovannitti, Dan~Tiberiu Sbircea, Sahika Inal, Christian~B. Nielsen,
+  Enrico Bandiello, David~A. Hanifi, Michele Sessolo, George~G. Malliaras, Iain
+  McCulloch, and Jonathan Rivnay.
+\newblock {Controlling the mode of operation of organic transistors through
+  side-chain engineering}.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 113(43):12017--12022, 2016.
+
+\bibitem{fraser2011electrochemical}
+Kevin~J Fraser, Sang~Yoon Yang, Fabio Cicoira, Vincenzo~F Curto, Robert Byrne,
+  Fernando Benito-Lopez, Dion Khodagholy, R{\'o}is{\'\i}n~M Owens, George~G
+  Malliaras, and Dermot Diamond.
+\newblock Electrochemical transistors with ionic liquids for enzymatic sensing.
+\newblock In {\em Organic Semiconductors in Sensors and Bioelectronics IV},
+  volume 8118, page 81180U. International Society for Optics and Photonics,
+  2011.
+
+\bibitem{shim2009all}
+Na~Young Shim, Daniel~A Bernards, Daniel~J Macaya, John~A DeFranco, Maria
+  Nikolou, R{\'o}is{\'\i}n~M Owens, and George~G Malliaras.
+\newblock All-plastic electrochemical transistor for glucose sensing using a
+  ferrocene mediator.
+\newblock {\em Sensors}, 9(12):9896--9902, 2009.
+
+\bibitem{sessolo2013simple}
+Michele Sessolo, Dion Khodagholy, and George Malliaras.
+\newblock Simple patterning of conducting polymers and biomolecules.
+\newblock {\em Transactions of Japanese Society for Medical and Biological
+  Engineering}, 51(Supplement):R--301, 2013.
+
+\bibitem{blaudeck2012simplified}
+Thomas Blaudeck, Peter~Andersson Ersman, Mats Sandberg, Sebastian Heinz, Ari
+  Laiho, Jiang Liu, Isak Engquist, Magnus Berggren, and Reinhard~R Baumann.
+\newblock Simplified large-area manufacturing of organic electrochemical
+  transistors combining printing and a self-aligning laser ablation step.
+\newblock {\em Advanced Functional Materials}, 22(14):2939--2948, 2012.
+
+\bibitem{basirico2011inkjet}
+Laura Basiric{\`o}, Piero Cosseddu, Beatrice Fraboni, and Annalisa Bonfiglio.
+\newblock Inkjet printing of transparent, flexible, organic transistors.
+\newblock {\em Thin Solid Films}, 520(4):1291--1294, 2011.
+
+\bibitem{basirico2012electrical}
+Laura Basiric{\`o}, Piero Cosseddu, A~Scid{\`a}, Beatrice Fraboni,
+  GG~Malliaras, and Annalisa Bonfiglio.
+\newblock Electrical characteristics of ink-jet printed, all-polymer
+  electrochemical transistors.
+\newblock {\em Organic Electronics}, 13(2):244--248, 2012.
+
+\bibitem{pettersson2014patterned}
+Fredrik Pettersson, Janne Koskela, Carl-Johan Wikman, Tommi Remonen, Carl-Eric
+  Wil{\'e}n, Ari Kilpel{\"a}, and Ronald {\"O}sterbacka.
+\newblock Patterned membrane as substrate and electrolyte in depletion-and
+  enhancement mode ion-modulated transistors.
+\newblock {\em IEEE Journal of the Electron Devices Society}, 3(2):58--66,
+  2014.
+
+\bibitem{Inal2014}
+Sahika Inal, Jonathan Rivnay, Pierre Leleux, Marc Ferro, Marc Ramuz,
+  Johannes~C. Brendel, Martina~M. Schmidt, Mukundan Thelakkat, and George~G.
+  Malliaras.
+\newblock {A high transconductance accumulation mode electrochemical
+  transistor}.
+\newblock {\em Advanced Materials}, 26(44):7450--7455, 2014.
+
+\bibitem{Giovannitti2018}
+Alexander Giovannitti, Iuliana~P. Maria, David Hanifi, Mary~J. Donahue, Daniel
+  Bryant, Katrina~J. Barth, Beatrice~E. Makdah, Achilleas Savva, Davide Moia,
+  Maty{\'{a}}{\v{s}} Zetek, Piers~R.F. Barnes, Obadiah~G. Reid, Sahika Inal,
+  Garry Rumbles, George~G. Malliaras, Jenny Nelson, Jonathan Rivnay, and Iain
+  McCulloch.
+\newblock {The Role of the Side Chain on the Performance of N-type Conjugated
+  Polymers in Aqueous Electrolytes}.
+\newblock {\em Chemistry of Materials}, 30(9):2945--2953, 2018.
+
+\bibitem{Inal2016}
+Sahika Inal, Jonathan Rivnay, Anna~I. Hofmann, Ilke Uguz, Muhammad Mumtaz,
+  Dimitrios Katsigiannopoulos, Cyril Brochon, Eric Cloutet, Georges
+  Hadziioannou, and George~G. Malliaras.
+\newblock {Organic electrochemical transistors based on PEDOT with different
+  anionic polyelectrolyte dopants}.
+\newblock {\em Journal of Polymer Science, Part B: Polymer Physics},
+  54(2):147--151, 2016.
+
+\bibitem{Flagg2019}
+Lucas~Q. Flagg, Connor~G. Bischak, Jonathan~W. Onorato, Reem~B. Rashid,
+  Christine~K. Luscombe, and David~S. Ginger.
+\newblock {Polymer Crystallinity Controls Water Uptake in Glycol Side-Chain
+  Polymer Organic Electrochemical Transistors}.
+\newblock {\em Journal of the American Chemical Society}, 141(10):4345--4354,
+  2019.
+
+\end{thebibliography}

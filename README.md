@@ -23,6 +23,18 @@ GS = tin-terminated monomer (Sn Me3 terminated) with glycole sidechains
 GB = Bromine terminated monomer with glycol sidecahins
 AS = tin-terminated monomer (Sn Me3 terminated) with alkylated sidechains
 AB = Bromine terminated monomer with alkylated sidechains
+MI = Glycolated with methyl spacer, first unit
+MM = Glycolated with methyl spacer, middle unit
+ME = Glycolated with methyl spacer, end unit
+EI = Glycolated with ethyl spacer, first unit
+EM = Glycolated with ethyl spacer, middle unit
+EE = Glycolated with ethyl spacer, end unit
+PI = Glycolated with propyl spacer, fist unit
+PM = Glycolated with propyl spacer, fist unit
+PE = Glycolated with propyl spacer, fist unit
+BI = Glycolated with Butyl spacer, first unit
+BM = Glycolated with methyl spacer, middle unit
+BE = Glycolated with methyl spacer, end unit
 
 # Main activity 
 0001 = Gaussian opt and freq calculations of different olligomers related to OBT. QCC.
@@ -61,4 +73,7 @@ AB = Bromine terminated monomer with alkylated sidechains
 0032 = Crystal structure for glycolated polymer. MD.
 	0032/001 = Crystal structure, intiated flat with lattice parameters base on the xray, and angles to maintain same pi stacking as 0031. MD.
 	0032/002 = Crystal structure.  All angles 90 degrees.  Sidechains curled, like in monomer crystal structure. MD.
-
+0033 = Simulation of amorphous glykoxylated polymer. MD. 
+0034 = Simulation of amorphous alkoxylated polymer. MD.
+0035 = Gaussian files for making of glycolated polymer with methyl spacer, ethyl spacer, propyl spacer and butyl spacer.  QCC.
+0036 = Gaussian calculations to look at sidechain-backbone interaction using PCM.  QCC.

@@ -529,8 +529,8 @@ CD3	HD
  OD	Caa
 
 ; thiophene-thiophene
- CS1	CD1		
- OS	SD		
+ CS1	CD1
+ OS	SD
  OD	SS
 
 ; Left Sidechain

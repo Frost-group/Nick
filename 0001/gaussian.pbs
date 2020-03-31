@@ -4,7 +4,7 @@
 
 source /rds/general/user/ns5018/home/.bash_profile
 
-root="O3G_1m_0sc_opt"
+root="O2G_2m_7sc_opt_freq"
 
 cp $PBS_O_WORKDIR/${root}.gjf $TMPDIR
 g16 ${root}.gjf

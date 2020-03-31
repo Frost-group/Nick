@@ -3,149 +3,148 @@ source ~/.bash_profile
 packmol << EOF
 tolerance 2.0
 filetype pdb
-output gly20.pdb 
+output but20.pdb 
 
-structure GI.pdb 
+structure BI.pdb 
 number 1 
 center 
 fixed 0 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 7.95 0 0 0 0 0
+fixed 7.85 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 15.9 0 0 0 0 0
+fixed 15.7 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 23.85 0 0 0 0 0
+fixed 23.55 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 31.8 0 0 0 0 0
+fixed 31.4 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 39.75 0 0 0 0 0
+fixed 39.25 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 47.7 0 0 0 0 0
+fixed 47.1 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 55.65 0 0 0 0 0
+fixed 54.95 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 63.6 0 0 0 0 0
+fixed 62.8 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 71.55 0 0 0 0 0
+fixed 70.65 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 79.5 0 0 0 0 0
+fixed 78.5 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 87.45 0 0 0 0 0
+fixed 86.35 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 95.4 0 0 0 0 0
+fixed 94.2 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 103.35 0 0 0 0 0
+fixed 102.05 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 111.3 0 0 0 0 0
+fixed 109.9 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 119.25 0 0 0 0 0
+fixed 117.75 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 127.2 0 0 0 0 0
+fixed 125.6 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 135.15 0 0 0 0 0
+fixed 133.45 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GM.pdb 
+structure BM.pdb 
 number 1 
 center 
-fixed 143.1 0 0 0 0 0
+fixed 141.3 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
-structure GE.pdb 
+structure BE.pdb 
 number 1 
 center 
-fixed 151.05 0 0 0 0 0
+fixed 149.15 0 0 0 0 0
 inside box 0. 0. 0. 0 0 0 
 end structure 
 
 EOF
 
-gmx editconf -f gly20.pdb -o gly20.pdb 
 rm \#*

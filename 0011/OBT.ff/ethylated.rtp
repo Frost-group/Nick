@@ -37,62 +37,74 @@
  HD	HT	+0.222	9
 
 ; Left sidechain 
- C0	CG!	-0.236	13
- H01	HG	+0.100	13
- H02	HG	+0.100	13
- C1	CG	+0.023	14
- H11	HG	+0.100	14
- H12	HG	+0.100	14
- O2	OG	-0.373	15
- C3	CG	+0.015	16
- H31	HG	+0.100	16
- H32	HG	+0.100	16
- C4 	CG	+0.019	17
- H41	HG	+0.100	17
- H42	HG	+0.100	17
- O5	OG	-0.373	18
- C6	CG	+0.019	19
- H61	HG	+0.100	19
- H62	HG	+0.100	19
- C7	CG	+0.012	20
- H71	HG	+0.100	20
- H72	HG	+0.100	20
- O8 	OG	-0.373	21
- C9	CG	-0.039	22
- H91 	HG	+0.100	22
- H92	HG	+0.100	22
- H93	HG	+0.100	22
+ C0	CL!	+0.031	15
+ H01	HL	+0.032	15
+ H02	HL	+0.032	15
+ C1	CL	+0.108	16
+ H11	HL	-0.013	16
+ H12	HL	-0.013	16
+ C2 	CG	-0.243	13
+ H21	HG	+0.093	13
+ H22	HG	+0.093	13
+ C3 	CG	+0.016	14
+ H31	HG	+0.093	14
+ H32	HG	+0.093	14
+ O4 	OG	-0.380	15
+ C5 	CG	+0.008	16
+ H51	HG	+0.093	16
+ H52	HG	+0.093	16
+ C6 	CG	+0.012	17
+ H61	HG	+0.093	17
+ H62	HG	+0.093	17
+ O7 	OG	-0.380	18
+ C8 	CG	+0.012	19
+ H81	HG	+0.093	19
+ H82	HG	+0.093	19
+ C9 	CG	+0.005	20
+ H91	HG	+0.093	20
+ H92	HG	+0.093	20
+ Ov 	OG	-0.380	21
+ Cp 	CG	-0.046	22
+ Hp1 	HG	+0.093	22
+ Hp2	HG	+0.093	22
+ Hp3	HG	+0.093	22
  
 
 ; Right sidechain 
- Caa	CG!	-0.236	23
- Ha1	HG	+0.100	23
- Ha2	HG	+0.100	23
- Cb	CG	+0.023	24
- Hb1	HG	+0.100	24
- Hb2	HG	+0.100	24
- Oc	OG	-0.373	25
- Cd	CG	+0.015	26
- Hd1	HG	+0.100	26
- Hd2	HG	+0.100	26
- Ce 	CG	+0.019	27
- He1	HG	+0.100	27
- He2	HG	+0.100	27
- Of	OG	-0.373	28
- Cg	CG	+0.019	29
- Hg1	HG	+0.100	29
- Hg2	HG	+0.100	29
- Ch	CG	+0.012	30
- Hh1	HG	+0.100	30
- Hh2	HG	+0.100	30
- Oi 	OG	-0.373	31
- Cj	CG	-0.039	32
- Hj1 	HG	+0.100	32
- Hj2	HG	+0.100	32
- Hj3	HG	+0.100	32
+ Caa	CL!	+0.213	29
+ Ha1	HL	-0.040	29
+ Ha2	HL	-0.040	29
+ Cb	CL	+0.076	30
+ Hb1	HL	-0.021	30
+ Hb2	HL	-0.021	30
+ Cc 	CG	-0.243	23
+ Hc1	HG	+0.093	23
+ Hc2	HG	+0.093	23
+ Cd 	CG	+0.016	24
+ Hd1	HG	+0.093	24
+ Hd2	HG	+0.093	24
+ Oe 	OG	-0.380	25
+ Cf 	CG	+0.008	26
+ Hf1	HG	+0.093	26
+ Hf2	HG	+0.093	26
+ Cg 	CG	+0.012	27
+ Hg1	HG	+0.093	27
+ Hg2	HG	+0.093	27
+ Oh 	OG	-0.380	28
+ Ci 	CG	+0.012	29
+ Hi1	HG	+0.093	29
+ Hi2	HG	+0.093	29
+ Cj 	CG	+0.005	30
+ Hj1	HG	+0.093	30
+ Hj2	HG	+0.093	30
+ Ok 	OG	-0.380	31
+ Cl 	CG	-0.046	32
+ Hl1 	HG	+0.093	32
+ Hl2	HG	+0.093	32
+ Hl3	HG	+0.093	32
 
 ; Terminal
- HTe	HT	+0.194	4
+ HTe	HT	+0.200	4
 
 
 [ bonds ]
@@ -125,56 +137,70 @@ CD3	HD
  OD	SS
 
 ; Left Sidechain
- C0	C1
  C0	H01
  C0	H02
- C1	O2
+ C0	C1
  C1	H11
  C1	H12
- O2	C3
- C3	C4
- C3 	H31
+ C1	C2
+ C2	H21
+ C2	H22
+ C2	C3
+ C3	H31
  C3	H32
- C4	O5
- C4	H41
- C4	H42
- O5	C6
- C6	C7
+ C3	O4
+ O4	C5
+ C5	H51
+ C5	H52
+ C5	C6
  C6	H61
  C6	H62
- C7	O8
- C7	H71
- C7	H72
- O8	C9
+ C6	O7
+ O7	C8  
+ C8	H81
+ C8	H82
+ C8	C9
  C9	H91
  C9	H92
- C9	H93
-   
+ C9	Ov
+ Ov	Cp
+ Cp	Hp1
+ Cp	Hp2
+ Cp	Hp3
+
+ 
 ; Right Sidechain
- Caa	Cb
  Caa	Ha1
  Caa	Ha2
- Cb	Oc
+ Caa	Cb
  Cb	Hb1
  Cb	Hb2
- Oc	Cd
- Cd	Ce
+ Cb	Cc
+ Cc	Hc1
+ Cc	Hc2
+ Cc	Cd
  Cd	Hd1
  Cd	Hd2
- Ce	Of
- Ce	He1
- Ce	He2
- Of	Cg
- Cg	Ch
+ Cd	Oe
+ Oe	Cf
+ Cf	Hf1
+ Cf	Hf2
+ Cf	Cg
  Cg	Hg1
  Cg	Hg2
- Ch	Oi
- Ch	Hh1
- Ch	Hh2
- Oi	Cj
+ Cg	Oh
+ Oh	Ci
+ Ci	Hi1
+ Ci	Hi2
+ Ci	Cj
  Cj	Hj1
  Cj	Hj2
- Cj	Hj3
+ Cj	Ok
+ Ok	Cl
+ Cl	Hl1
+ Cl	Hl2
+ Cl	Hl3
+
 
 ; between monomers
   CD4	+CS4	
@@ -216,9 +242,6 @@ CD3	HD
 
 
 
-
-
-
 [ EM ]
 ; Middle unit, without any terminal atoms
 
@@ -245,60 +268,72 @@ CD3	HD
 
 
 ; Left sidechain 
- C0	CG!	-0.236	13
- H01	HG	+0.100	13
- H02	HG	+0.100	13
- C1	CG	+0.023	14
- H11	HG	+0.100	14
- H12	HG	+0.100	14
- O2	OG	-0.373	15
- C3	CG	+0.015	16
- H31	HG	+0.100	16
- H32	HG	+0.100	16
- C4 	CG	+0.019	17
- H41	HG	+0.100	17
- H42	HG	+0.100	17
- O5	OG	-0.373	18
- C6	CG	+0.019	19
- H61	HG	+0.100	19
- H62	HG	+0.100	19
- C7	CG	+0.012	20
- H71	HG	+0.100	20
- H72	HG	+0.100	20
- O8 	OG	-0.373	21
- C9	CG	-0.039	22
- H91 	HG	+0.100	22
- H92	HG	+0.100	22
- H93	HG	+0.100	22
+ C0	CL!	+0.0635	15
+ H01	HL	+0.0075	15
+ H02	HL	+0.0075	15
+ C1	CL	+0.1155	16
+ H11	HL	-0.0145	16
+ H12	HL	-0.0145	16
+ C2 	CG	-0.2426	13
+ H21	HG	+0.0934	13
+ H22	HG	+0.0934	13
+ C3 	CG	+0.0164	14
+ H31	HG	+0.0934	14
+ H32	HG	+0.0934	14
+ O4 	OG	-0.3796	15
+ C5 	CG	+0.0084	16
+ H51	HG	+0.0934	16
+ H52	HG	+0.0934	16
+ C6 	CG	+0.0124	17
+ H61	HG	+0.0934	17
+ H62	HG	+0.0934	17
+ O7 	OG	-0.3796	18
+ C8 	CG	+0.0124	19
+ H81	HG	+0.0934	19
+ H82	HG	+0.0934	19
+ C9 	CG	+0.0054	20
+ H91	HG	+0.0934	20
+ H92	HG	+0.0934	20
+ Ov 	OG	-0.3796	21
+ Cp 	CG	-0.0456	22
+ Hp1 	HG	+0.0934	22
+ Hp2	HG	+0.0934	22
+ Hp3	HG	+0.0934	22
 
  
 
 ; Right sidechain 
- Caa	CG!	-0.236	23
- Ha1	HG	+0.100	23
- Ha2	HG	+0.100	23
- Cb	CG	+0.023	24
- Hb1	HG	+0.100	24
- Hb2	HG	+0.100	24
- Oc	OG	-0.373	25
- Cd	CG	+0.015	26
- Hd1	HG	+0.100	26
- Hd2	HG	+0.100	26
- Ce 	CG	+0.019	27
- He1	HG	+0.100	27
- He2	HG	+0.100	27
- Of	OG	-0.373	28
- Cg	CG	+0.019	29
- Hg1	HG	+0.100	29
- Hg2	HG	+0.100	29
- Ch	CG	+0.012	30
- Hh1	HG	+0.100	30
- Hh2	HG	+0.100	30
- Oi 	OG	-0.373	31
- Cj	CG	-0.039	32
- Hj1 	HG	+0.100	32
- Hj2	HG	+0.100	32
- Hj3	HG	+0.100	32
+ Caa	CL!	+0.0635	29
+ Ha1	HL	+0.0075	29
+ Ha2	HL	+0.0075	29
+ Cb	CL	+0.1155	30
+ Hb1	HL	-0.0145	30
+ Hb2	HL	-0.0145	30
+ Cc 	CG	-0.2426	23
+ Hc1	HG	+0.0934	23
+ Hc2	HG	+0.0934	23
+ Cd 	CG	+0.0164	24
+ Hd1	HG	+0.0934	24
+ Hd2	HG	+0.0934	24
+ Oe 	OG	-0.3796	25
+ Cf 	CG	+0.0084	26
+ Hf1	HG	+0.0934	26
+ Hf2	HG	+0.0934	26
+ Cg 	CG	+0.0124	27
+ Hg1	HG	+0.0934	27
+ Hg2	HG	+0.0934	27
+ Oh 	OG	-0.3796	28
+ Ci 	CG	+0.0124	29
+ Hi1	HG	+0.0934	29
+ Hi2	HG	+0.0934	29
+ Cj  	CG	+0.0054	30
+ Hj1	HG	+0.0934	30
+ Hj2	HG	+0.0934	30
+ Ok 	OG	-0.3796	31
+ Cl 	CG	-0.0456	32
+ Hl1 	HG	+0.0934	32
+ Hl2	HG	+0.0934	32
+ Hl3	HG	+0.0934	32
 
 [ bonds ]
 ; Left Thiophene
@@ -329,56 +364,73 @@ CD3	HD
  SD	OS
 
 ; Left Sidechain
- C0	C1
  C0	H01
  C0	H02
- C1	O2
+ C0	C1
  C1	H11
  C1	H12
- O2	C3
- C3	C4
- C3 	H31
+ C1	C2
+ C2	H21
+ C2	H22
+ C2	C3
+ C3	H31
  C3	H32
- C4	O5
- C4	H41
- C4	H42
- O5	C6
- C6	C7
+ C3	O4
+ O4	C5
+ C5	H51
+ C5	H52
+ C5	C6
  C6	H61
  C6	H62
- C7	O8
- C7	H71
- C7	H72
- O8	C9
+ C6	O7
+ O7	C8  
+ C8	H81
+ C8	H82
+ C8	C9
  C9	H91
  C9	H92
- C9	H93
-   
+ C9	Ov
+ Ov	Cp
+ Cp	Hp1
+ Cp	Hp2
+ Cp	Hp3
+  
+ 
 ; Right Sidechain
- Caa	Cb
  Caa	Ha1
  Caa	Ha2
- Cb	Oc
+ Caa	Cb
  Cb	Hb1
  Cb	Hb2
- Oc	Cd
- Cd	Ce
+ Cb	Cc
+ Cc	Hc1
+ Cc	Hc2
+ Cc	Cd
  Cd	Hd1
  Cd	Hd2
- Ce	Of
- Ce	He1
- Ce	He2
- Of	Cg
- Cg	Ch
+ Cd	Oe
+ Oe	Cf
+ Cf	Hf1
+ Cf	Hf2
+ Cf	Cg
  Cg	Hg1
  Cg	Hg2
- Ch	Oi
- Ch	Hh1
- Ch	Hh2
- Oi	Cj
+ Cg	Oh
+ Oh	Ci
+ Ci	Hi1
+ Ci	Hi2
+ Ci	Cj
  Cj	Hj1
  Cj	Hj2
- Cj	Hj3
+ Cj	Ok
+ Ok	Cl
+ Cl	Hl1
+ Cl	Hl2
+ Cl	Hl3
+
+
+
+
 
 ; between monomers
   CD4	+CS4
@@ -445,63 +497,75 @@ CD3	HD
 
 
 ; Left sidechain 
- C0	CG!	-0.236	13
- H01	HG 	+0.100	13
- H02	HG 	+0.100	13
- C1	CG 	+0.023	14
- H11	HG 	+0.100	14
- H12	HG 	+0.100	14
- O2	OG 	-0.373	15
- C3	CG 	+0.015	16
- H31	HG 	+0.100	16
- H32	HG 	+0.100	16
- C4 	CG 	+0.019	17
- H41	HG 	+0.100	17
- H42	HG 	+0.100	17
- O5	OG 	-0.373	18
- C6	CG 	+0.019	19
- H61	HG 	+0.100	19
- H62	HG 	+0.100	19
- C7	CG 	+0.012	20
- H71	HG 	+0.100	20
- H72	HG 	+0.100	20
- O8 	OG 	-0.373	21
- C9	CG 	-0.039	22
- H91 	HG 	+0.100	22
- H92	HG 	+0.100	22
- H93	HG 	+0.100	22
+ C0	CL!	+0.213	15
+ H01	HL	-0.040	15
+ H02	HL	-0.040	15
+ C1	CL	+0.076	16
+ H11	HL	-0.021	16
+ H12	HL	-0.021	16
+ C2 	CG	-0.243	13
+ H21	HG 	+0.093	13
+ H22	HG 	+0.093	13
+ C3 	CG 	+0.016	14
+ H31	HG 	+0.093	14
+ H32	HG 	+0.093	14
+ O4 	OG 	-0.380	15
+ C5 	CG 	+0.008	16
+ H51	HG 	+0.093	16
+ H52	HG 	+0.093	16
+ C6 	CG 	+0.012	17
+ H61	HG 	+0.093	17
+ H62	HG 	+0.093	17
+ O7 	OG 	-0.380	18
+ C8 	CG 	+0.012	19
+ H81	HG 	+0.093	19
+ H82	HG 	+0.093	19
+ C9 	CG 	+0.005	20
+ H91	HG 	+0.093	20
+ H92	HG 	+0.093	20
+ Ov 	OG 	-0.380	21
+ Cp 	CG 	-0.046	22
+ Hp1 	HG 	+0.093	22
+ Hp2	HG 	+0.093	22
+ Hp3	HG 	+0.093	22
 
  
 
 ; Right sidechain 
- Caa	CG!	-0.236	23
- Ha1	HG 	+0.100	23
- Ha2	HG 	+0.100	23
- Cb	CG 	+0.023	24
- Hb1	HG 	+0.100	24
- Hb2	HG 	+0.100	24
- Oc	OG 	-0.373	25
- Cd	CG 	+0.015	26
- Hd1	HG 	+0.100	26
- Hd2	HG 	+0.100	26
- Ce 	CG 	+0.019	27
- He1	HG 	+0.100	27
- He2	HG 	+0.100	27
- Of	OG 	-0.373	28
- Cg	CG 	+0.019	29
- Hg1	HG 	+0.100	29
- Hg2	HG 	+0.100	29
- Ch	CG 	+0.012	30
- Hh1	HG 	+0.100	30
- Hh2	HG 	+0.100	30
- Oi 	OG 	-0.373	31
- Cj	CG 	-0.039	32
- Hj1 	HG 	+0.100	32
- Hj2	HG 	+0.100	32
- Hj3	HG 	+0.100	32
+ Caa	CL!	+0.031	29
+ Ha1	HL	+0.032	29
+ Ha2	HL	+0.032	29
+ Cb	CL	+0.108	30
+ Hb1	HL	-0.013	30
+ Hb2	HL	-0.013	30
+ Cc 	CG	-0.243	23
+ Hc1	HG 	+0.093	23
+ Hc2	HG 	+0.093	23
+ Cd 	CG 	+0.016	24
+ Hd1	HG 	+0.093	24
+ Hd2	HG 	+0.093	24
+ Oe 	OG 	-0.380	25
+ Cf 	CG 	+0.008	26
+ Hf1	HG 	+0.093	26
+ Hf2	HG 	+0.093	26
+ Cg 	CG 	+0.012	27
+ Hg1	HG 	+0.093	27
+ Hg2	HG 	+0.093	27
+ Oh 	OG 	-0.380	28
+ Ci 	CG 	+0.012	29
+ Hi1	HG 	+0.093	29
+ Hi2	HG 	+0.093	29
+ Cj 	CG 	+0.005	30
+ Hj1	HG 	+0.093	30
+ Hj2	HG 	+0.093	30
+ Ok 	OG 	-0.380	31
+ Cl 	CG 	-0.046	32
+ Hl1 	HG 	+0.093	32
+ Hl2	HG 	+0.093	32
+ Hl3	HG 	+0.093	32
 
 ; Terminal
- HTe	HT 	+0.194	10
+ HTe	HT 	+0.200	10
 
 
 [ bonds ]
@@ -529,61 +593,74 @@ CD3	HD
  OD	Caa
 
 ; thiophene-thiophene
- CS1	CD1		
- OS	SD		
+ CS1	CD1	
+ OS	SD
  OD	SS
 
 ; Left Sidechain
- C0	C1
  C0	H01
  C0	H02
- C1	O2
+ C0	C1
  C1	H11
  C1	H12
- O2	C3
- C3	C4
- C3 	H31
+ C1	C2
+ C2	H21
+ C2	H22
+ C2	C3
+ C3	H31
  C3	H32
- C4	O5
- C4	H41
- C4	H42
- O5	C6
- C6	C7
+ C3	O4
+ O4	C5
+ C5	H51
+ C5	H52
+ C5	C6
  C6	H61
  C6	H62
- C7	O8
- C7	H71
- C7	H72
- O8	C9
+ C6	O7
+ O7	C8  
+ C8	H81
+ C8	H82
+ C8	C9
  C9	H91
  C9	H92
- C9	H93
-   
+ C9	Ov
+ Ov	Cp
+ Cp	Hp1
+ Cp	Hp2
+ Cp	Hp3
+  
+ 
 ; Right Sidechain
- Caa	Cb
  Caa	Ha1
  Caa	Ha2
- Cb	Oc
+ Caa	Cb
  Cb	Hb1
  Cb	Hb2
- Oc	Cd
- Cd	Ce
+ Cb	Cc
+ Cc	Hc1
+ Cc	Hc2
+ Cc	Cd
  Cd	Hd1
  Cd	Hd2
- Ce	Of
- Ce	He1
- Ce	He2
- Of	Cg
- Cg	Ch
+ Cd	Oe
+ Oe	Cf
+ Cf	Hf1
+ Cf	Hf2
+ Cf	Cg
  Cg	Hg1
  Cg	Hg2
- Ch	Oi
- Ch	Hh1
- Ch	Hh2
- Oi	Cj
+ Cg	Oh
+ Oh	Ci
+ Ci	Hi1
+ Ci	Hi2
+ Ci	Cj
  Cj	Hj1
  Cj	Hj2
- Cj	Hj3
+ Cj	Ok
+ Ok	Cl
+ Cl	Hl1
+ Cl	Hl2
+ Cl	Hl3
 
 
 [ dihedrals ]

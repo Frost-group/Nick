@@ -1,0 +1,14 @@
+
+; Include forcefield parameters
+#include "OBT.ff/forcefield.itp"
+
+; Include geometry parameters
+#include "pro20.itp"
+
+[ system ]
+; Name
+Ethelyn spacer amorphous
+
+[ molecules ]
+; Compound        #mols
+pro 		200

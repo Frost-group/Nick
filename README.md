@@ -77,3 +77,6 @@ BE = Glycolated with methyl spacer, end unit
 0034 = Simulation of amorphous alkoxylated polymer. MD.
 0035 = Gaussian files for making of glycolated polymer with methyl spacer, ethyl spacer, propyl spacer and butyl spacer.  QCC.
 0036 = Gaussian calculations to look at sidechain-backbone interaction using PCM.  QCC.
+0037 = Simulation of amorphous glykoxylated polymer with methyl spacer unit in the sidechain. MD.
+0038 = Simulation of amorphous glykoxylated polymer with ethyl spacer unit in the sidechain. MD.
+0039 = Simulation of amorphous glykoxylated polymer with propanyl spacer unit in the sidechain. MD.

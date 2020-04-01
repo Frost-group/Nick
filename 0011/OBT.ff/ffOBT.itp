@@ -137,6 +137,7 @@
  CG	CL	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
  CL	CG	HG	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
  CL	CG	CG	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
+ CL	CL	CG	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
  
 ; thiophene - glycol sidechain
  CBB	OT	CG!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
@@ -219,6 +220,8 @@
 ; mixed sidechain 
  OG	CG	CG	CL!	3	-1.151	1.151   0.000  -0.000  -0.000   0.000	; from Drew
  CL!	CL	CG	CG	3	2.9288  -1.4644  0.209   -1.6736   0.000   0.000     ; opls_139 - opls_139 - opls_139 - opls_139
+ CL!	CL	CL	CG	3	2.9288  -1.4644  0.209   -1.6736   0.000   0.000     ; opls_139 - opls_139 - opls_139 - opls_139
+ CL	CL	CG	CG	3	2.9288 	-1.4644  0.209	 -1.6736   0.000   0.000     ; opls_139 - opls_139 - opls_139 - opls_139 
 
  ; Oxygen to sulfur
  CBB    CBB     OT       ST      3       0.000  0.000  0.000  0.000  0.000  0.000

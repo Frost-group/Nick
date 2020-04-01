@@ -3,7 +3,7 @@
 #include "OBT.ff/forcefield.itp"
 
 ; Include geometry parameters
-#include "eth20.itp"
+#include "pro20.itp"
 
 [ system ]
 ; Name
@@ -11,4 +11,4 @@ GS_Crystal
 
 [ molecules ]
 ; Compound        #mols
-eth 		1
+pro 		1

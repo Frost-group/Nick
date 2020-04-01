@@ -1,21 +1,21 @@
  ; Parameters for the OBT molecules
- CAA	 12.01100
- CE	 12.01100
- CBB	 12.01100
- CG!	 12.01100
- CG	 12.01100 
- HT	  1.00800
- HG 	  1.00800
- ST	 32.06000
- OT	 15.99940
- OG	 15.99940
- BT	 79.90400
- SnT	 118.7100
- CL!	 12.01100
- CL	 12.01100 
- HL	 1.00800
- CSn	 12.01100
- HSn	  1.00800
+ CAA	 12.01100 	; Carbon in ring
+ CE	 12.01100 	; Carbon in ring
+ CBB	 12.01100 	; Carbon in ring
+ CG!	 12.01100 	; First carbon in glycolated side chain
+ CG	 12.01100 	; Carbon in glycolated side chain
+ HT	  1.00800 	; Hydrogen in ring
+ HG 	  1.00800 	; Hydrogen in glycol side chain
+ ST	 32.06000 	; Sulfur in ring
+ OT	 15.99940 	; Oxygen in ring
+ OG	 15.99940 	; Oxygen in glycol side chain
+ BT	 79.90400 	; Boron terminal
+ SnT	 118.7100 	; Tin terminal
+ CL!	 12.01100 	; First carbon in alkyl side chain
+ CL	 12.01100 	; Carbon in alkyl side chain
+ HL	  1.00800 	; Hydrogen in alkyl side chain
+ CSn	 12.01100 	; Carbon in tin terminal
+ HSn	  1.00800 	; Hydrogen in tin terminal
 
 
 ; OPLS atom types and masses.

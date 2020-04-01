@@ -3,12 +3,12 @@
 #include "OBT.ff/forcefield.itp"
 
 ; Include geometry parameters
-#include "gly20.itp"
+#include "met20.itp"
 
 [ system ]
 ; Name
-GS_Crystal
+met test run
 
 [ molecules ]
 ; Compound        #mols
-G20 		1
+met 		1

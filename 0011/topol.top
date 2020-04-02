@@ -3,12 +3,12 @@
 #include "OBT.ff/forcefield.itp"
 
 ; Include geometry parameters
-#include "pro20.itp"
+#include "but20.itp"
 
 [ system ]
 ; Name
-GS_Crystal
+Butyl
 
 [ molecules ]
 ; Compound        #mols
-pro 		1
+but 		1

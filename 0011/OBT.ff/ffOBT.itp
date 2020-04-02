@@ -222,6 +222,7 @@
  CL!	CL	CG	CG	3	2.9288  -1.4644  0.209   -1.6736   0.000   0.000     ; opls_139 - opls_139 - opls_139 - opls_139
  CL!	CL	CL	CG	3	2.9288  -1.4644  0.209   -1.6736   0.000   0.000     ; opls_139 - opls_139 - opls_139 - opls_139
  CL	CL	CG	CG	3	2.9288 	-1.4644  0.209	 -1.6736   0.000   0.000     ; opls_139 - opls_139 - opls_139 - opls_139 
+ CL	CL	CL	CG	3	2.9288 	-1.4644  0.209	 -1.6736   0.000   0.000     ; opls_139 - opls_139 - opls_139 - opls_139 
 
  ; Oxygen to sulfur
  CBB    CBB     OT       ST      3       0.000  0.000  0.000  0.000  0.000  0.000

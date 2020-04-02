@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: nicholassiemons (501)
 ;	On host: Nicholass-MacBook-Pro-2.local
-;	At date: Wed Apr  1 07:50:46 2020
+;	At date: Thu Apr  2 06:18:01 2020
 
 ;
 
@@ -73,7 +73,7 @@ energygrps               =
 ; cut-off scheme (Verlet: particle based cut-offs, group: using charge groups)
 cutoff-scheme            = Verlet
 ; nblist update frequency
-nstlist                  = 10
+nstlist                  = 40
 ; ns algorithm (simple or grid)
 ns_type                  = grid
 ; Periodic boundary conditions: xyz, no, xy
@@ -83,34 +83,34 @@ periodic-molecules       = no
 ; a value of -1 means: use rlist
 verlet-buffer-tolerance  = 0.005
 ; nblist cut-off        
-rlist                    = 1.0
+rlist                    = 1
 ; long-range cut-off for switched potentials
 rlistlong                = -1
 nstcalclr                = -1
 
 ; OPTIONS FOR ELECTROSTATICS AND VDW
 ; Method for doing electrostatics
-coulombtype              = PME
+coulombtype              = cut-off
 coulomb-modifier         = Potential-shift-Verlet
 rcoulomb-switch          = 0
-rcoulomb                 = 1.0
+rcoulomb                 = 1
 ; Relative dielectric constant for the medium and the reaction field
 epsilon_r                = 1
 epsilon-rf               = 0
 ; Method for doing Van der Waals
-vdwtype                  = PME
+vdwtype                  = cut-off
 vdw-modifier             = Potential-shift-Verlet
 ; cut-off lengths       
 rvdw-switch              = 0
-rvdw                     = 1.0
+rvdw                     = 1
 ; Apply long range dispersion corrections for Energy and Pressure
-DispCorr                 = No
+DispCorr                 = no
 ; Extension of the potential lookup tables beyond the cut-off
-table-extension          = 10
+table-extension          = 1
 ; Separate tables between energy group pairs
 energygrp-table          = 
 ; Spacing for the PME/PPPM FFT grid
-fourierspacing           = 0.3
+fourierspacing           = 0.12
 ; FFT grid size, when a value is 0 fourierspacing will be used
 fourier_nx               = 0
 fourier_ny               = 0
@@ -120,7 +120,7 @@ pme_order                = 4
 ewald_rtol               = 1e-05
 ewald-rtol-lj            = 0.001
 lj-pme-comb-rule         = Geometric
-ewald_geometry           = 3d
+ewald-geometry           = 3d
 epsilon_surface          = 0
 
 ; IMPLICIT SOLVENT ALGORITHM
@@ -160,15 +160,15 @@ tc_grps                  = system
 tau_t                    = 0.1
 ref_t                    = 298
 ; pressure coupling     
-pcoupl                   = no
-pcoupltype               = Isotropic
+pcoupl                   = Berendsen
+pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau-p                    = 1
-compressibility          = 
-ref-p                    = 
+tau_p                    = 1
+compressibility          = 4.5e-5
+ref_p                    = 1
 ; Scaling of reference coordinates, No, All or COM
-refcoord-scaling         = No
+refcoord_scaling         = com
 
 ; OPTIONS FOR QMMM calculations
 QMMM                     = no
@@ -210,7 +210,7 @@ annealing-temp           =
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = yes
-gen_temp                 = 300
+gen_temp                 = 298
 gen_seed                 = -1
 
 ; OPTIONS FOR BONDS    

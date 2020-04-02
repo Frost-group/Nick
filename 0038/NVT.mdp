@@ -90,7 +90,7 @@ nstcalclr                = -1
 
 ; OPTIONS FOR ELECTROSTATICS AND VDW
 ; Method for doing electrostatics
-coulombtype              = PME
+coulombtype              = cut-off
 coulomb-modifier         = Potential-shift-Verlet
 rcoulomb-switch          = 0
 rcoulomb                 = 1.0
@@ -98,7 +98,7 @@ rcoulomb                 = 1.0
 epsilon_r                = 1
 epsilon-rf               = 0
 ; Method for doing Van der Waals
-vdwtype                  = PME
+vdwtype                  = cut-off
 vdw-modifier             = Potential-shift-Verlet
 ; cut-off lengths       
 rvdw-switch              = 0
